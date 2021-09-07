@@ -16,9 +16,14 @@ const { css, extractInlineStyles } = require("@leafac/css");
               content="width=device-width, initial-scale=1.0"
             />
             <title>IDDQD Sound</title>
+            <link
+              rel="stylesheet"
+              href="/Media/node_modules/@fontsource/roboto/latin.css"
+            />
           </head>
           <body
             style="${css`
+              font-family: "Roboto", var(--font-family--sans-serif);
               color: var(--color--gray--warm--200);
               background-color: var(--color--gray--warm--900);
             `}"
