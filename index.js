@@ -45,6 +45,14 @@ const { css, extractInlineStyles } = require("@leafac/css");
               }
 
               @at-root {
+                .heading.heading.heading.heading.heading.heading.heading.heading.heading.heading.heading.heading {
+                  font-size: var(--font-size--base);
+                  line-height: var(--line-height--base);
+                  font-weight: var(--font-weight--bold);
+                  color: var(--color--gray--warm--50);
+                  margin-top: var(--space--6);
+                }
+
                 .link {
                   &:hover,
                   &:focus-within,
@@ -150,18 +158,24 @@ const { css, extractInlineStyles } = require("@leafac/css");
                   min-width: var(--space--0);
                   max-width: var(--width--prose);
                   margin: var(--space--4);
+                  & > * + * {
+                    margin-top: var(--space--2);
+                  }
                 `}"
               >
                 <img
                   src="/Media/Arya Headshot_edited.jpg"
                   alt="Arya Afshar at Blue Light Studio"
                 />
-                I’m Arya. I work in the realm of music and film audio & make
-                audio tutorials in my spare time. I was born in Iran, spent most
-                of my twenties moving from continent to continent with my band,
-                yada yada yada (click here for the yada yada yada) and now I
-                live in Canada where I work as a freelance Dialogue & Podcast
-                Editor, Film Composer & Tutor.
+                <h2 class="heading">TL;DR</h2>
+                <p>
+                  I’m Arya. I work in the realm of music and film audio & make
+                  audio tutorials in my spare time. I was born in Iran, spent
+                  most of my twenties moving from continent to continent with my
+                  band, yada yada yada (click here for the yada yada yada) and
+                  now I live in Canada where I work as a freelance Dialogue &
+                  Podcast Editor, Film Composer & Tutor.
+                </p>
               </div>
             </main>
           </body>
