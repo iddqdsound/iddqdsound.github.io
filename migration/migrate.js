@@ -4,6 +4,7 @@ const { JSDOM } = require("jsdom");
 
 (async () => {
   /*
+  // Collect posts HTML
   const postAddresses = require("./posts.json");
   
   for (const postAddress of postAddresses)
@@ -14,7 +15,8 @@ const { JSDOM } = require("jsdom");
       (await got(postAddress)).body
     );
   */
-
+  /*
+  // Collect images from posts HTML
   const imageAddresses = new Set();
   for (const postFile of await fs.readdir("post")) {
     const postHTML = await fs.readFile(`post/${postFile}`, "utf-8");
@@ -23,4 +25,5 @@ const { JSDOM } = require("jsdom");
       imageAddresses.add(element.src);
   }
   await fs.writeFile("images.json", JSON.stringify([...imageAddresses]));
+  */
 })();
