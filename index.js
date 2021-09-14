@@ -38,6 +38,12 @@ const { css, extractInlineStyles } = require("@leafac/css");
                 );
               }
 
+              img {
+                max-width: 100%;
+                height: auto;
+                border-radius: var(--border-radius--lg);
+              }
+
               @at-root {
                 .link {
                   &:hover,
@@ -146,6 +152,10 @@ const { css, extractInlineStyles } = require("@leafac/css");
                   margin: var(--space--4);
                 `}"
               >
+                <img
+                  src="/Media/Arya Headshot_edited.jpg"
+                  alt="Arya Afshar at Blue Light Studio"
+                />
                 I’m Arya. I work in the realm of music and film audio & make
                 audio tutorials in my spare time. I was born in Iran, spent most
                 of my twenties moving from continent to continent with my band,
