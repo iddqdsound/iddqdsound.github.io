@@ -93,8 +93,6 @@ const { css, extractInlineStyles } = require("@leafac/css");
                     <div
                       style="${css`
                         text-transform: uppercase;
-                        font-size: var(--font-size--xs);
-                        line-height: var(--line-height--xs);
                         font-weight: var(--font-weight--bold);
                         letter-spacing: var(--letter-spacing--widest);
                         margin-left: var(--space--2);
@@ -107,6 +105,8 @@ const { css, extractInlineStyles } = require("@leafac/css");
 
                 <nav
                   style="${css`
+                    font-size: var(--font-size--base);
+                    line-height: var(--line-height--base);
                     display: flex;
                     justify-content: center;
                     & > * + * {
