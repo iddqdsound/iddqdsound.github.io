@@ -1,12 +1,14 @@
 {
   "scripts": {
-    "start": "concurrently \"caddy file-server\" \"node-dev --respawn index.js\""
+    "start": "concurrently \"caddy file-server\" \"node-dev --respawn index.js\"",
+    "start:localtunnel": "npx localtunnel --port 80"
   },
   "dependencies": {
     "@leafac/caddy": "^1.0.2",
     "@leafac/css": "^0.2.11",
     "@leafac/html": "^3.0.0",
     "concurrently": "^6.2.1",
+    "localtunnel": "^2.0.1",
     "node-dev": "^7.0.0"
   }
 }
