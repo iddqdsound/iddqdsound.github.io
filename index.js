@@ -106,7 +106,7 @@ const { css, extractInlineStyles } = require("@leafac/css");
                 <nav
                   style="${css`
                     font-size: var(--font-size--base);
-                    line-height: var(--line-height--base);
+                    line-height: var(--space--6);
                     display: flex;
                     justify-content: center;
                     & > * + * {
