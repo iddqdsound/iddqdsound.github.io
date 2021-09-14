@@ -24,6 +24,8 @@ const { css, extractInlineStyles } = require("@leafac/css");
           <body
             style="${css`
               font-family: "Roboto", var(--font-family--sans-serif);
+              font-size: var(--font-size--sm);
+              line-height: var(--line-height--sm);
               color: var(--color--gray--warm--200);
               background-color: var(--color--gray--warm--900);
               display: flex;
@@ -49,7 +51,7 @@ const { css, extractInlineStyles } = require("@leafac/css");
             >
               <header
                 style="${css`
-                  & > * {
+                  & > * + * {
                     margin-top: var(--space--4);
                   }
                 `}"
@@ -100,7 +102,8 @@ const { css, extractInlineStyles } = require("@leafac/css");
                 <nav
                   style="${css`
                     display: flex;
-                    & > * {
+                    justify-content: center;
+                    & > * + * {
                       margin-left: var(--space--4);
                     }
                     flex-wrap: wrap;
