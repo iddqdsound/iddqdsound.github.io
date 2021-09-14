@@ -33,6 +33,9 @@ const { css, extractInlineStyles } = require("@leafac/css");
                 style="${css`
                   width: var(--space--28);
                   height: auto;
+                  * {
+                    fill: currentColor;
+                  }
                 `}"
               >
                 $${await fs.readFile("Media/iddqd3 white.svg")}
