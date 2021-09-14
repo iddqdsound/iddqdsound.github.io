@@ -42,7 +42,12 @@ const { css, extractInlineStyles } = require("@leafac/css");
                 max-width: var(--width--prose);
               `}"
             >
-              <h1>
+              <h1
+                style="${css`
+                  display: flex;
+                  justify-content: center;
+                `}"
+              >
                 <a href="/">
                   <div
                     style="${css`
@@ -55,7 +60,18 @@ const { css, extractInlineStyles } = require("@leafac/css");
                   >
                     $${await fs.readFile("Media/iddqd3 white.svg")}
                   </div>
-                  IDDQD Sound
+                  <div
+                    style="${css`
+                      text-transform: uppercase;
+                      font-size: var(--font-size--xs);
+                      line-height: var(--line-height--xs);
+                      font-weight: var(--font-weight--bold);
+                      letter-spacing: var(--letter-spacing--widest);
+                      margin-top: var(--space---10);
+                    `}"
+                  >
+                    IDDQD Sound
+                  </div>
                 </a>
               </h1>
             </div>
