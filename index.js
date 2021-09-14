@@ -47,47 +47,92 @@ const { css, extractInlineStyles } = require("@leafac/css");
                 max-width: var(--width--prose);
               `}"
             >
-              <h1
+              <header
                 style="${css`
-                  display: flex;
-                  justify-content: center;
+                  & > * {
+                    margin-top: var(--space--4);
+                  }
                 `}"
               >
-                <a
-                  href="/"
+                <h1
                   style="${css`
-                    &:hover,
-                    &:focus-within {
-                      color: var(--color--purple--400);
-                    }
+                    display: flex;
+                    justify-content: center;
                   `}"
                 >
-                  <div
+                  <a
+                    href="/"
                     style="${css`
-                      width: var(--space--28);
-                      height: auto;
-                      * {
-                        fill: currentColor;
+                      &:hover,
+                      &:focus-within {
+                        color: var(--color--purple--400);
                       }
                     `}"
                   >
-                    $${await fs.readFile("Media/iddqd3 white.svg")}
-                  </div>
-                  <div
-                    style="${css`
-                      text-transform: uppercase;
-                      font-size: var(--font-size--xs);
-                      line-height: var(--line-height--xs);
-                      font-weight: var(--font-weight--bold);
-                      letter-spacing: var(--letter-spacing--widest);
-                      margin-top: var(--space---10);
-                      margin-left: var(--space--2);
-                    `}"
-                  >
-                    IDDQD Sound
-                  </div>
-                </a>
-              </h1>
+                    <div
+                      style="${css`
+                        width: var(--space--28);
+                        height: auto;
+                        * {
+                          fill: currentColor;
+                        }
+                      `}"
+                    >
+                      $${await fs.readFile("Media/iddqd3 white.svg")}
+                    </div>
+                    <div
+                      style="${css`
+                        text-transform: uppercase;
+                        font-size: var(--font-size--xs);
+                        line-height: var(--line-height--xs);
+                        font-weight: var(--font-weight--bold);
+                        letter-spacing: var(--letter-spacing--widest);
+                        margin-top: var(--space---10);
+                        margin-left: var(--space--2);
+                      `}"
+                    >
+                      IDDQD Sound
+                    </div>
+                  </a>
+                </h1>
+
+                <nav
+                  style="${css`
+                    display: flex;
+                    & > * {
+                      margin-left: var(--space--4);
+                    }
+                    flex-wrap: wrap;
+                  `}"
+                >
+                  <a href="">Tutorials</a>
+                  <a href="">Film Audio Reel</a>
+                  <a href="">Music</a>
+                  <a href="">Blog</a>
+                  <a href="">Bio</a>
+                  <a href="">Contact</a>
+                </nav>
+
+                <!-- 
+-Bio (Full bio, picture)
+-Music
+-Film Audio Reel
+-Tutorials
+-Blog
+-Contact
+-(Optional) Gallery (or possibly in the music page or spread out in all the pages)
+
+
+
+-Tutorials
+-Film Audio Reel
+-Music
+-Blog
+-Bio (Full bio, picture)
+-Contact
+-(Optional) Gallery (or possibly in the music page or spread out in all the pages)
+              -->
+              </header>
             </div>
           </body>
         </html>
