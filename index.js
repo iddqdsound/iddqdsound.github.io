@@ -27,9 +27,7 @@ const { css, extractInlineStyles } = require("@leafac/css");
               font-size: var(--font-size--sm);
               line-height: var(--line-height--sm);
               color: var(--color--gray--warm--200);
-              background-color: var(--color--gray--warm--900);
-              display: flex;
-              justify-content: center;
+              background-color: var(--color--gray--warm--800);
 
               a {
                 cursor: pointer;
@@ -54,16 +52,19 @@ const { css, extractInlineStyles } = require("@leafac/css");
               }
             `}"
           >
-            <div
+            <header
               style="${css`
-                flex: 1;
-                margin: var(--space--4);
-                min-width: var(--space--0);
-                max-width: var(--width--prose);
+                background-color: var(--color--gray--warm--900);
+                display: flex;
+                justify-content: center;
               `}"
             >
-              <header
+              <div
                 style="${css`
+                  flex: 1;
+                  min-width: var(--space--0);
+                  max-width: var(--width--prose);
+                  margin: var(--space--4);
                   & > * + * {
                     margin-top: var(--space--4);
                   }
@@ -114,7 +115,8 @@ const { css, extractInlineStyles } = require("@leafac/css");
                     flex-wrap: wrap;
                   `}"
                 >
-                  <a href="/tutorials" class="link active">Tutorials</a>
+                  <a href="/" class="link active">Home</a>
+                  <a href="/tutorials" class="link">Tutorials</a>
                   <a href="/reel" class="link">Film Audio Reel</a>
                   <a href="/music" class="link">Music</a>
                   <a href="/blog" class="link">Blog</a>
@@ -126,18 +128,32 @@ const { css, extractInlineStyles } = require("@leafac/css");
 -Bio (Full bio, picture)
 -Contact
 -(Optional) Gallery (or possibly in the music page or spread out in all the pages)
-              -->
-              </header>
+        -->
+              </div>
+            </header>
 
-              <main>
+            <main
+              style="${css`
+                display: flex;
+                justify-content: center;
+              `}"
+            >
+              <div
+                style="${css`
+                  flex: 1;
+                  min-width: var(--space--0);
+                  max-width: var(--width--prose);
+                  margin: var(--space--4);
+                `}"
+              >
                 I’m Arya. I work in the realm of music and film audio & make
                 audio tutorials in my spare time. I was born in Iran, spent most
                 of my twenties moving from continent to continent with my band,
                 yada yada yada (click here for the yada yada yada) and now I
                 live in Canada where I work as a freelance Dialogue & Podcast
                 Editor, Film Composer & Tutor.
-              </main>
-            </div>
+              </div>
+            </main>
           </body>
         </html>
       `
