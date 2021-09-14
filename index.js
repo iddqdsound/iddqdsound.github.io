@@ -105,29 +105,15 @@ const { css, extractInlineStyles } = require("@leafac/css");
                     flex-wrap: wrap;
                   `}"
                 >
-                  <a href="">Tutorials</a>
-                  <a href="">Film Audio Reel</a>
-                  <a href="">Music</a>
-                  <a href="">Blog</a>
-                  <a href="">Bio</a>
-                  <a href="">Contact</a>
+                  <a href="/tutorials">Tutorials</a>
+                  <a href="/reel">Film Audio Reel</a>
+                  <a href="/music">Music</a>
+                  <a href="/blog">Blog</a>
+                  <a href="/bio">Bio</a>
+                  <a href="/contact">Contact</a>
                 </nav>
 
                 <!-- 
--Bio (Full bio, picture)
--Music
--Film Audio Reel
--Tutorials
--Blog
--Contact
--(Optional) Gallery (or possibly in the music page or spread out in all the pages)
-
-
-
--Tutorials
--Film Audio Reel
--Music
--Blog
 -Bio (Full bio, picture)
 -Contact
 -(Optional) Gallery (or possibly in the music page or spread out in all the pages)
