@@ -41,11 +41,11 @@ const { css, extractInlineStyles } = require("@leafac/css");
               @at-root {
                 .link {
                   &:hover,
-                  &:focus-within {
+                  &:focus-within,
+                  &.active {
                     color: var(--color--purple--400);
                   }
-                  &:active,
-                  &.active {
+                  &:active {
                     color: var(--color--purple--500);
                   }
                 }
