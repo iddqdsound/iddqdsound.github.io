@@ -39,6 +39,18 @@ const { css, extractInlineStyles } = require("@leafac/css");
                   --transition-timing-function--in-out
                 );
               }
+
+              @at-root {
+                .link {
+                  &:hover,
+                  &:focus-within {
+                    color: var(--color--purple--400);
+                  }
+                  &:active {
+                    color: var(--color--purple--500);
+                  }
+                }
+              }
             `}"
           >
             <div
@@ -62,18 +74,7 @@ const { css, extractInlineStyles } = require("@leafac/css");
                     justify-content: center;
                   `}"
                 >
-                  <a
-                    href="/"
-                    style="${css`
-                      &:hover,
-                      &:focus-within {
-                        color: var(--color--purple--400);
-                      }
-                      &:active {
-                        color: var(--color--purple--500);
-                      }
-                    `}"
-                  >
+                  <a href="/" class="link">
                     <div
                       style="${css`
                         svg {
@@ -112,12 +113,12 @@ const { css, extractInlineStyles } = require("@leafac/css");
                     flex-wrap: wrap;
                   `}"
                 >
-                  <a href="/tutorials">Tutorials</a>
-                  <a href="/reel">Film Audio Reel</a>
-                  <a href="/music">Music</a>
-                  <a href="/blog">Blog</a>
-                  <a href="/bio">Bio</a>
-                  <a href="/contact">Contact</a>
+                  <a href="/tutorials" class="link">Tutorials</a>
+                  <a href="/reel" class="link">Film Audio Reel</a>
+                  <a href="/music" class="link">Music</a>
+                  <a href="/blog" class="link">Blog</a>
+                  <a href="/bio" class="link">Bio</a>
+                  <a href="/contact" class="link">Contact</a>
                 </nav>
 
                 <!-- 
