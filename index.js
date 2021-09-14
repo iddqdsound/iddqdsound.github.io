@@ -46,7 +46,8 @@ const { css, extractInlineStyles } = require("@leafac/css");
                   &:focus-within {
                     color: var(--color--purple--400);
                   }
-                  &:active {
+                  &:active,
+                  &.active {
                     color: var(--color--purple--500);
                   }
                 }
@@ -113,7 +114,7 @@ const { css, extractInlineStyles } = require("@leafac/css");
                     flex-wrap: wrap;
                   `}"
                 >
-                  <a href="/tutorials" class="link">Tutorials</a>
+                  <a href="/tutorials" class="link active">Tutorials</a>
                   <a href="/reel" class="link">Film Audio Reel</a>
                   <a href="/music" class="link">Music</a>
                   <a href="/blog" class="link">Blog</a>
