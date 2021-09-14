@@ -69,6 +69,9 @@ const { css, extractInlineStyles } = require("@leafac/css");
                       &:focus-within {
                         color: var(--color--purple--400);
                       }
+                      &:active {
+                        color: var(--color--purple--500);
+                      }
                     `}"
                   >
                     <div
