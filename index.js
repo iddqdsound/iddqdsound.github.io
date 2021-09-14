@@ -71,8 +71,10 @@ const { css, extractInlineStyles } = require("@leafac/css");
                   >
                     <div
                       style="${css`
-                        width: var(--space--28);
-                        height: auto;
+                        svg {
+                          width: var(--space--28);
+                          height: auto;
+                        }
                         * {
                           fill: currentColor;
                         }
