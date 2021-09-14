@@ -89,7 +89,6 @@ const { css, extractInlineStyles } = require("@leafac/css");
                         line-height: var(--line-height--xs);
                         font-weight: var(--font-weight--bold);
                         letter-spacing: var(--letter-spacing--widest);
-                        margin-top: var(--space---10);
                         margin-left: var(--space--2);
                       `}"
                     >
