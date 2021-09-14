@@ -26,28 +26,39 @@ const { css, extractInlineStyles } = require("@leafac/css");
               font-family: "Roboto", var(--font-family--sans-serif);
               color: var(--color--gray--warm--200);
               background-color: var(--color--gray--warm--900);
+              display: flex;
+              justify-content: center;
 
               a {
                 cursor: pointer;
               }
             `}"
           >
-            <h1>
-              <a href="/">
-                <div
-                  style="${css`
-                    width: var(--space--28);
-                    height: auto;
-                    * {
-                      fill: currentColor;
-                    }
-                  `}"
-                >
-                  $${await fs.readFile("Media/iddqd3 white.svg")}
-                </div>
-                IDDQD Sound
-              </a>
-            </h1>
+            <div
+              style="${css`
+                flex: 1;
+                margin: var(--space--4);
+                min-width: var(--space--0);
+                max-width: var(--width--prose);
+              `}"
+            >
+              <h1>
+                <a href="/">
+                  <div
+                    style="${css`
+                      width: var(--space--28);
+                      height: auto;
+                      * {
+                        fill: currentColor;
+                      }
+                    `}"
+                  >
+                    $${await fs.readFile("Media/iddqd3 white.svg")}
+                  </div>
+                  IDDQD Sound
+                </a>
+              </h1>
+            </div>
           </body>
         </html>
       `
