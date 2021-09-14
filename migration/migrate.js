@@ -68,4 +68,15 @@ const postAddresses = [
   "https://www.iddqdsound.com/post/manage-your-blog-from-your-live-site",
 ];
 
-console.log(postAddresses.length);
+const got = require("got");
+const fs = require("fs/promises");
+
+(async () => {
+  for (const postAddress of postAddresses)
+    await fs.writeFile(
+      `post/${postAddress.slice(
+        "https://www.iddqdsound.com/post/".length
+      )}.html`,
+      (await got(postAddress)).body
+    );
+})();
