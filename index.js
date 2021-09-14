@@ -128,6 +128,15 @@ const { css, extractInlineStyles } = require("@leafac/css");
 -(Optional) Gallery (or possibly in the music page or spread out in all the pages)
               -->
               </header>
+
+              <main>
+                I’m Arya. I work in the realm of music and film audio & make
+                audio tutorials in my spare time. I was born in Iran, spent most
+                of my twenties moving from continent to continent with my band,
+                yada yada yada (click here for the yada yada yada) and now I
+                live in Canada where I work as a freelance Dialogue & Podcast
+                Editor, Film Composer & Tutor.
+              </main>
             </div>
           </body>
         </html>
