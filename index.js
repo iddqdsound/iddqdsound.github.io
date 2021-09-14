@@ -31,6 +31,11 @@ const { css, extractInlineStyles } = require("@leafac/css");
 
               a {
                 cursor: pointer;
+                transition-property: var(--transition-property--colors);
+                transition-duration: var(--transition-duration--150);
+                transition-timing-function: var(
+                  --transition-timing-function--in-out
+                );
               }
             `}"
           >
@@ -48,7 +53,15 @@ const { css, extractInlineStyles } = require("@leafac/css");
                   justify-content: center;
                 `}"
               >
-                <a href="/">
+                <a
+                  href="/"
+                  style="${css`
+                    &:hover,
+                    &:focus-within {
+                      color: var(--color--purple--400);
+                    }
+                  `}"
+                >
                   <div
                     style="${css`
                       width: var(--space--28);
@@ -68,6 +81,7 @@ const { css, extractInlineStyles } = require("@leafac/css");
                       font-weight: var(--font-weight--bold);
                       letter-spacing: var(--letter-spacing--widest);
                       margin-top: var(--space---10);
+                      margin-left: var(--space--2);
                     `}"
                   >
                     IDDQD Sound
