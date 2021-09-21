@@ -267,15 +267,24 @@ const rehypeStringify = require("rehype-stringify");
     body: (
       await unified()
         .use(remarkParse)
-        .use(remarkRehype)
+        // .use(remarkGfm)
+        .use(remarkRehype, { allowDangerousHtml: true })
         .use(rehypeRaw)
         .use(rehypeStringify)
-        .process("index.md")
+        .process(await fs.readFile("index.md", "utf8"))
     ).toString(),
   });
 
   await page({
     file: "bio/index.html",
-    body: html``,
+    body: (
+      await unified()
+        .use(remarkParse)
+        // .use(remarkGfm)
+        .use(remarkRehype, { allowDangerousHtml: true })
+        .use(rehypeRaw)
+        .use(rehypeStringify)
+        .process(await fs.readFile("bio/index.md", "utf8"))
+    ).toString(),
   });
 })();
