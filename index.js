@@ -118,6 +118,7 @@ const { css, extractInlineStyles } = require("@leafac/css");
                 </h1>
 
                 <nav
+                  hidden
                   style="${css`
                     font-size: var(--font-size--base);
                     line-height: var(--space--6);
