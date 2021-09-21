@@ -264,7 +264,14 @@ const rehypeStringify = require("rehype-stringify");
 
   await page({
     file: "index.html",
-    body: html``,
+    body: (
+      await unified()
+        .use(remarkParse)
+        .use(remarkRehype)
+        .use(rehypeRaw)
+        .use(rehypeStringify)
+        .process("index.md")
+    ).toString(),
   });
 
   await page({
