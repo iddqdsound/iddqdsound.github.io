@@ -4,6 +4,7 @@ const { html } = require("@leafac/html");
 const { css, extractInlineStyles } = require("@leafac/css");
 const unified = require("unified");
 const remarkParse = require("remark-parse");
+const remarkGfm = require("remark-gfm");
 const remarkRehype = require("remark-rehype");
 const rehypeRaw = require("rehype-raw");
 const rehypeStringify = require("rehype-stringify");
@@ -259,7 +260,7 @@ const rehypeStringify = require("rehype-stringify");
 
   const markdownProcessor = unified()
     .use(remarkParse)
-    // .use(remarkGfm)
+    .use(remarkGfm)
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
     .use(rehypeStringify);
