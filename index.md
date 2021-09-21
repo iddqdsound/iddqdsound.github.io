@@ -1,7 +1,4 @@
-<img
-  src="/Media/Arya Headshot_edited.jpg"
-  alt="Arya Afshar at Blue Light Studio"
-/>
+<img src="/Media/Arya Headshot_edited.jpg" alt="Arya Afshar at Blue Light Studio" width="750">
 
 ## TL;DR
 
