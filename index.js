@@ -51,14 +51,6 @@ const rehypeStringify = require("rehype-stringify");
               }
 
               @at-root {
-                .heading.heading.heading.heading.heading.heading.heading.heading.heading.heading.heading.heading {
-                  font-size: var(--font-size--base);
-                  line-height: var(--line-height--base);
-                  font-weight: var(--font-weight--bold);
-                  color: var(--color--gray--warm--50);
-                  margin-top: var(--space--6);
-                }
-
                 .link {
                   &:hover,
                   &:focus-within,
@@ -247,6 +239,14 @@ const rehypeStringify = require("rehype-stringify");
                     &:active {
                       color: var(--color--purple--400);
                     }
+                  }
+
+                  h2 {
+                    font-size: var(--font-size--base);
+                    line-height: var(--line-height--base);
+                    font-weight: var(--font-weight--bold);
+                    color: var(--color--gray--warm--50);
+                    margin-top: var(--space--6);
                   }
                 `}"
               >

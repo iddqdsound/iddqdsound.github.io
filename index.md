@@ -2,7 +2,9 @@
   src="/Media/Arya Headshot_edited.jpg"
   alt="Arya Afshar at Blue Light Studio"
 />
-<h2 class="heading">TL;DR</h2>
+
+## TL;DR
+
 <p>
 I’m Arya. I work in the realm of music and film audio & make audio
 tutorials in my spare time. I was born in Iran, spent most of my
