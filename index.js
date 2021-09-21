@@ -1,4 +1,5 @@
 const fs = require("fs-extra");
+const path = require("path");
 const { html } = require("@leafac/html");
 const { css, extractInlineStyles } = require("@leafac/css");
 
@@ -251,46 +252,44 @@ const { css, extractInlineStyles } = require("@leafac/css");
       `
     );
 
-  await fs.writeFile(
-    "index.html",
-    await layout({
-      file: "index.html",
-      body: html`
-        <img
-          src="/Media/Arya Headshot_edited.jpg"
-          alt="Arya Afshar at Blue Light Studio"
-        />
-        <h2 class="heading">TL;DR</h2>
-        <p>
-          I’m Arya. I work in the realm of music and film audio & make audio
-          tutorials in my spare time. I was born in Iran, spent most of my
-          twenties moving from continent to continent with my band,
-          <a href="/bio">yada yada yada</a> and now I live in Canada where I
-          work as a freelance Dialogue & Podcast Editor, Film Composer & Tutor.
-        </p>
-      `,
-    })
-  );
+  const page = async ({ file, body }) => {
+    await fs.ensureDir(path.dirname(file));
+    await fs.writeFile(file, await layout({ file, body }));
+  };
 
-  await fs.ensureDir("bio");
-  await fs.writeFile(
-    "bio/index.html",
-    await layout({
-      file: "bio/index.html",
-      body: html`
-        <img
-          src="/Media/Arya Headshot_edited.jpg"
-          alt="Arya Afshar at Blue Light Studio"
-        />
-        <h2 class="heading">TL;DR</h2>
-        <p>
-          I’m Arya. I work in the realm of music and film audio & make audio
-          tutorials in my spare time. I was born in Iran, spent most of my
-          twenties moving from continent to continent with my band,
-          <a href="/bio">yada yada yada</a> and now I live in Canada where I
-          work as a freelance Dialogue & Podcast Editor, Film Composer & Tutor.
-        </p>
-      `,
-    })
-  );
+  await page({
+    file: "index.html",
+    body: html`
+      <img
+        src="/Media/Arya Headshot_edited.jpg"
+        alt="Arya Afshar at Blue Light Studio"
+      />
+      <h2 class="heading">TL;DR</h2>
+      <p>
+        I’m Arya. I work in the realm of music and film audio & make audio
+        tutorials in my spare time. I was born in Iran, spent most of my
+        twenties moving from continent to continent with my band,
+        <a href="/bio">yada yada yada</a> and now I live in Canada where I work
+        as a freelance Dialogue & Podcast Editor, Film Composer & Tutor.
+      </p>
+    `,
+  });
+
+  await page({
+    file: "bio/index.html",
+    body: html`
+      <img
+        src="/Media/Arya Headshot_edited.jpg"
+        alt="Arya Afshar at Blue Light Studio"
+      />
+      <h2 class="heading">TL;DR</h2>
+      <p>
+        I’m Arya. I work in the realm of music and film audio & make audio
+        tutorials in my spare time. I was born in Iran, spent most of my
+        twenties moving from continent to continent with my band,
+        <a href="/bio">yada yada yada</a> and now I live in Canada where I work
+        as a freelance Dialogue & Podcast Editor, Film Composer & Tutor.
+      </p>
+    `,
+  });
 })();
