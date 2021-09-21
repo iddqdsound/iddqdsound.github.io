@@ -3,7 +3,7 @@ const { html } = require("@leafac/html");
 const { css, extractInlineStyles } = require("@leafac/css");
 
 (async () => {
-  const layout = async ({ body }) =>
+  const layout = async ({ file, body }) =>
     extractInlineStyles(
       html`
         <!DOCTYPE html>
@@ -217,6 +217,7 @@ const { css, extractInlineStyles } = require("@leafac/css");
   await fs.writeFile(
     "index.html",
     await layout({
+      file: "index.html",
       body: html`
         <img
           src="/Media/Arya Headshot_edited.jpg"
@@ -238,6 +239,7 @@ const { css, extractInlineStyles } = require("@leafac/css");
   await fs.writeFile(
     "bio/index.html",
     await layout({
+      file: "bio/index.html",
       body: html`
         <img
           src="/Media/Arya Headshot_edited.jpg"
