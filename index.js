@@ -66,6 +66,25 @@ const { css, extractInlineStyles } = require("@leafac/css");
               }
             `}"
           >
+            <div
+              style="${css`
+                color: var(--color--red--50);
+                background-color: var(--color--red--700);
+                display: flex;
+                justify-content: center;
+              `}"
+            >
+              <div
+                style="${css`
+                  flex: 1;
+                  min-width: var(--space--0);
+                  max-width: var(--width--prose);
+                  margin: var(--space--4);
+                `}"
+              >
+                WARNING!!!
+              </div>
+            </div>
             <header
               style="${css`
                 background-color: var(--color--gray--warm--900);
