@@ -3,8 +3,7 @@ const { html } = require("@leafac/html");
 const { css, extractInlineStyles } = require("@leafac/css");
 
 (async () => {
-  await fs.writeFile(
-    "index.html",
+  const layout = async ({ body }) =>
     extractInlineStyles(
       html`
         <!DOCTYPE html>
@@ -176,8 +175,7 @@ const { css, extractInlineStyles } = require("@leafac/css");
 -Bio (Full bio, picture)
 -Contact
 -(Optional) Gallery (or possibly in the music page or spread out in all the pages)
-        -->
-              </div>
+      --></div>
             </header>
 
             <main
@@ -209,24 +207,31 @@ const { css, extractInlineStyles } = require("@leafac/css");
                   }
                 `}"
               >
-                <img
-                  src="/Media/Arya Headshot_edited.jpg"
-                  alt="Arya Afshar at Blue Light Studio"
-                />
-                <h2 class="heading">TL;DR</h2>
-                <p>
-                  I’m Arya. I work in the realm of music and film audio & make
-                  audio tutorials in my spare time. I was born in Iran, spent
-                  most of my twenties moving from continent to continent with my
-                  band, <a href="/bio">yada yada yada</a> and now I live in
-                  Canada where I work as a freelance Dialogue & Podcast Editor,
-                  Film Composer & Tutor.
-                </p>
+                $${body}
               </div>
             </main>
           </body>
         </html>
       `
-    )
+    );
+
+  await fs.writeFile(
+    "index.html",
+    await layout({
+      body: html`
+        <img
+          src="/Media/Arya Headshot_edited.jpg"
+          alt="Arya Afshar at Blue Light Studio"
+        />
+        <h2 class="heading">TL;DR</h2>
+        <p>
+          I’m Arya. I work in the realm of music and film audio & make audio
+          tutorials in my spare time. I was born in Iran, spent most of my
+          twenties moving from continent to continent with my band,
+          <a href="/bio">yada yada yada</a> and now I live in Canada where I
+          work as a freelance Dialogue & Podcast Editor, Film Composer & Tutor.
+        </p>
+      `,
+    })
   );
 })();
