@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "download": "^8.0.0",
     "got": "^11.8.2",
     "jsdom": "^17.0.0"
   }

@@ -1,6 +1,8 @@
 const fs = require("fs/promises");
+const path = require("path");
 const got = require("got");
 const { JSDOM } = require("jsdom");
+const download = require("download");
 
 (async () => {
   /*
@@ -26,4 +28,12 @@ const { JSDOM } = require("jsdom");
   }
   await fs.writeFile("images.json", JSON.stringify([...imageAddresses]));
   */
+
+  const images = require("./images.json");
+  for (let index = 0; index < images.length; index++) {
+    const image = images[index];
+    const extension = path.extname(image);
+    const file = `images/${index}${extension}`;
+    await fs.writeFile(file, await download(image));
+  }
 })();
