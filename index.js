@@ -72,7 +72,7 @@ const { css, extractInlineStyles } = require("@leafac/css");
                 background-color: var(--color--red--700);
                 display: flex;
                 justify-content: center;
-                .link {
+                a {
                   text-decoration: underline;
                   &:hover,
                   &:focus-within {
@@ -94,7 +94,7 @@ const { css, extractInlineStyles } = require("@leafac/css");
               >
                 Hi! We are currently under reconstruction. If you have questions
                 or comments. Contact me at:
-                <a href="mailto:iddqdsoundofficial@gmail.com" class="link"
+                <a href="mailto:iddqdsoundofficial@gmail.com"
                   >iddqdsoundofficial@gmail.com</a
                 >
               </div>
