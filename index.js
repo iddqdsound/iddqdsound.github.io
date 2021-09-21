@@ -72,6 +72,16 @@ const { css, extractInlineStyles } = require("@leafac/css");
                 background-color: var(--color--red--700);
                 display: flex;
                 justify-content: center;
+                .link {
+                  text-decoration: underline;
+                  &:hover,
+                  &:focus-within {
+                    color: var(--color--red--200);
+                  }
+                  &:active {
+                    color: var(--color--red--300);
+                  }
+                }
               `}"
             >
               <div
@@ -82,7 +92,11 @@ const { css, extractInlineStyles } = require("@leafac/css");
                   margin: var(--space--4);
                 `}"
               >
-                WARNING!!!
+                Hi! We are currently under reconstruction. If you have questions
+                or comments. Contact me at:
+                <a href="mailto:iddqdsoundofficial@gmail.com" class="link"
+                  >iddqdsoundofficial@gmail.com</a
+                >
               </div>
             </div>
             <header
