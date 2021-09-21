@@ -264,22 +264,18 @@ const rehypeStringify = require("rehype-stringify");
     .use(rehypeRaw)
     .use(rehypeStringify);
 
-  const page = async ({ file, body }) => {
+  const page = async ({ file }) => {
     await fs.ensureDir(path.dirname(file));
-    await fs.writeFile(file, await layout({ file, body }));
+    await fs.writeFile(
+      `${file}.html`,
+      await layout({
+        file: `${file}.html`,
+        body: await markdownProcessor.process(
+          await fs.readFile(`${file}.md`, "utf8")
+        ),
+      })
+    );
   };
-
-  await page({
-    file: "index.html",
-    body: (
-      await markdownProcessor.process(await fs.readFile("index.md", "utf8"))
-    ).toString(),
-  });
-
-  await page({
-    file: "bio/index.html",
-    body: (
-      await markdownProcessor.process(await fs.readFile("bio/index.md", "utf8"))
-    ).toString(),
-  });
+  await page({ file: "index" });
+  await page({ file: "bio/index" });
 })();
