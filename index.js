@@ -257,6 +257,13 @@ const rehypeStringify = require("rehype-stringify");
       `
     );
 
+  const markdownProcessor = unified()
+    .use(remarkParse)
+    // .use(remarkGfm)
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeRaw)
+    .use(rehypeStringify);
+
   const page = async ({ file, body }) => {
     await fs.ensureDir(path.dirname(file));
     await fs.writeFile(file, await layout({ file, body }));
