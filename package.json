@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "concurrently \"caddy file-server\" \"node-dev --respawn index.js\"",
+    "start": "concurrently \"caddy file-server\" \"nodemon --ext js,md index.js\"",
     "start:localtunnel": "npx localtunnel --port 80"
   },
   "dependencies": {
@@ -10,7 +10,7 @@
     "concurrently": "^6.2.1",
     "fs-extra": "^10.0.0",
     "localtunnel": "^2.0.1",
-    "node-dev": "^7.0.0",
+    "nodemon": "^2.0.12",
     "rehype-raw": "^5.1.0",
     "rehype-stringify": "^8.0.0",
     "remark-gfm": "^1.0.0",
