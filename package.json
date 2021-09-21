@@ -10,6 +10,11 @@
     "concurrently": "^6.2.1",
     "fs-extra": "^10.0.0",
     "localtunnel": "^2.0.1",
-    "node-dev": "^7.0.0"
+    "node-dev": "^7.0.0",
+    "rehype-raw": "^5.1.0",
+    "rehype-stringify": "^8.0.0",
+    "remark-parse": "^9.0.0",
+    "remark-rehype": "^8.1.0",
+    "unified": "^9.2.2"
   }
 }
