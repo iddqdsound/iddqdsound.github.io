@@ -195,6 +195,18 @@ const { css, extractInlineStyles } = require("@leafac/css");
                   & > * + * {
                     margin-top: var(--space--2);
                   }
+
+                  a {
+                    text-decoration: underline;
+                    color: var(--color--purple--300);
+                    &:hover,
+                    &:focus-within {
+                      color: var(--color--purple--200);
+                    }
+                    &:active {
+                      color: var(--color--purple--400);
+                    }
+                  }
                 `}"
               >
                 <img
