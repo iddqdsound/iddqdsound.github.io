@@ -1,5 +1,4 @@
 - Plan for today:
-  - Get the home page in shape for a transition.
   - Scrape everything else that we may need from the current website.
   - Start the transition.
 
