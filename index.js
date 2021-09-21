@@ -161,13 +161,50 @@ const { css, extractInlineStyles } = require("@leafac/css");
                     flex-wrap: wrap;
                   `}"
                 >
-                  <a href="/" class="link active">Home</a>
-                  <a hidden href="/tutorials" class="link">Tutorials</a>
-                  <a hidden href="/reel" class="link">Film Audio Reel</a>
-                  <a hidden href="/music" class="link">Music</a>
-                  <a hidden href="/blog" class="link">Blog</a>
-                  <a href="/bio" class="link">Bio</a>
-                  <a hidden href="/contact" class="link">Contact</a>
+                  <a
+                    href="/"
+                    class="link ${file === "index.html" ? "active" : ""}"
+                    >Home</a
+                  >
+                  <a
+                    hidden
+                    href="/tutorials"
+                    class="link ${file === "tutorials/index.html"
+                      ? "active"
+                      : ""}"
+                    >Tutorials</a
+                  >
+                  <a
+                    hidden
+                    href="/reel"
+                    class="link ${file === "reel/index.html" ? "active" : ""}"
+                    >Film Audio Reel</a
+                  >
+                  <a
+                    hidden
+                    href="/music"
+                    class="link ${file === "music/index.html" ? "active" : ""}"
+                    >Music</a
+                  >
+                  <a
+                    hidden
+                    href="/blog"
+                    class="link ${file === "blog/index.html" ? "active" : ""}"
+                    >Blog</a
+                  >
+                  <a
+                    href="/bio"
+                    class="link ${file === "bio/index.html" ? "active" : ""}"
+                    >Bio</a
+                  >
+                  <a
+                    hidden
+                    href="/contact"
+                    class="link ${file === "contact/index.html"
+                      ? "active"
+                      : ""}"
+                    >Contact</a
+                  >
                 </nav>
 
                 <!-- 
