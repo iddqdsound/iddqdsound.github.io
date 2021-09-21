@@ -1,5 +1,6 @@
-const fs = require("fs-extra");
 const path = require("path");
+const fs = require("fs-extra");
+const globby = require("globby");
 const { html } = require("@leafac/html");
 const { css, extractInlineStyles } = require("@leafac/css");
 const unified = require("unified");
@@ -265,18 +266,19 @@ const rehypeStringify = require("rehype-stringify");
     .use(rehypeRaw)
     .use(rehypeStringify);
 
-  const page = async ({ file }) => {
-    await fs.ensureDir(path.dirname(file));
+  for (const fileMarkdown of await globby("**/*.md", {
+    ignore: ["node_modules", "Media", "migration", "README.md"],
+  })) {
+    const fileHTML = `${fileMarkdown.slice(0, -".md".length)}.html`;
+    await fs.ensureDir(path.dirname(fileMarkdown));
     await fs.writeFile(
-      `${file}.html`,
+      fileHTML,
       await layout({
-        file: `${file}.html`,
+        file: fileHTML,
         body: await markdownProcessor.process(
-          await fs.readFile(`${file}.md`, "utf8")
+          await fs.readFile(fileMarkdown, "utf8")
         ),
       })
     );
-  };
-  await page({ file: "index" });
-  await page({ file: "bio/index" });
+  }
 })();
