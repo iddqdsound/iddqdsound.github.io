@@ -1,4 +1,4 @@
-const fs = require("fs/promises");
+const fs = require("fs-extra");
 const { html } = require("@leafac/html");
 const { css, extractInlineStyles } = require("@leafac/css");
 
@@ -150,7 +150,6 @@ const { css, extractInlineStyles } = require("@leafac/css");
                 </h1>
 
                 <nav
-                  hidden
                   style="${css`
                     font-size: var(--font-size--base);
                     line-height: var(--space--6);
@@ -235,7 +234,7 @@ const { css, extractInlineStyles } = require("@leafac/css");
     })
   );
 
-  await fs.mkdir("bio");
+  await fs.ensureDir("bio");
   await fs.writeFile(
     "bio/index.html",
     await layout({
