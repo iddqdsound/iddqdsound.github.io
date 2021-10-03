@@ -176,10 +176,9 @@ const rehypeStringify = require("rehype-stringify");
                     >Tutorials</a
                   >
                   <a
-                    hidden
                     href="/reel"
                     class="link ${file === "reel/index.html" ? "active" : ""}"
-                    >Film Audio Reel</a
+                    >Reel</a
                   >
                   <a
                     hidden
