@@ -257,59 +257,81 @@ const rehypeStringify = require("rehype-stringify");
                     <i class="fab fa-youtube"></i>
                   </a>
                   <a
-                    href="https://www.youtube.com/c/iddqdmusic"
+                    href="https://www.facebook.com/IDDQD-Sound-102849891477564/"
                     class="link"
                     oninteractive="${javascript`
                       tippy(this, {
-                        content: "YouTube",
+                        content: "Facebook",
                       });
                     `}"
                   >
-                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-facebook"></i>
                   </a>
                   <a
-                    href="https://www.youtube.com/c/iddqdmusic"
+                    href="https://linktr.ee/iddqdsound"
                     class="link"
                     oninteractive="${javascript`
                       tippy(this, {
-                        content: "YouTube",
+                        content: "My Music",
                       });
                     `}"
                   >
-                    <i class="fab fa-youtube"></i>
+                    <i class="fas fa-music"></i>
                   </a>
                   <a
-                    href="https://www.youtube.com/c/iddqdmusic"
+                    href="https://www.buymeacoffee.com/iddqdsound"
                     class="link"
                     oninteractive="${javascript`
                       tippy(this, {
-                        content: "YouTube",
+                        content: "Buy Me a Coffee",
                       });
                     `}"
                   >
-                    <i class="fab fa-youtube"></i>
+                    <i class="fas fa-mug-hot"></i>
                   </a>
                   <a
-                    href="https://www.youtube.com/c/iddqdmusic"
+                    href="https://www.paypal.me/iddqdsound"
                     class="link"
                     oninteractive="${javascript`
                       tippy(this, {
-                        content: "YouTube",
+                        content: "Donate on Paypal",
                       });
                     `}"
                   >
-                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-paypal"></i>
                   </a>
                   <a
-                    href="https://www.youtube.com/c/iddqdmusic"
+                    href="https://www.instagram.com/iddqdmusic"
                     class="link"
                     oninteractive="${javascript`
                       tippy(this, {
-                        content: "YouTube",
+                        content: "Instagram",
                       });
                     `}"
                   >
-                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="https://twitter.com/IDDQDMusic"
+                    class="link"
+                    oninteractive="${javascript`
+                      tippy(this, {
+                        content: "Twitter",
+                      });
+                    `}"
+                  >
+                    <i class="fab fa-twitter-square"></i>
+                  </a>
+                  <a
+                    href="https://github.com/iddqdsound/reaper/tree/main"
+                    class="link"
+                    oninteractive="${javascript`
+                      tippy(this, {
+                        content: "Github Repository",
+                      });
+                    `}"
+                  >
+                    <i class="fab fa-github"></i>
                   </a>
                 </nav>
 
