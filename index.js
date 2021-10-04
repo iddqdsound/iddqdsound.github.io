@@ -143,7 +143,7 @@ const rehypeStringify = require("rehype-stringify");
                   flex: 1;
                   min-width: var(--space--0);
                   max-width: var(--width--prose);
-                  margin: var(--space--4);
+                  margin: var(--space--4) var(--space--4) var(--space--2);
                   & > * + * {
                     margin-top: var(--space--4);
                   }
@@ -238,7 +238,68 @@ const rehypeStringify = require("rehype-stringify");
                   >
                 </nav>
 
-                <nav>
+                <nav
+                  style="${css`
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: var(--space--2);
+                  `}"
+                >
+                  <a
+                    href="https://www.youtube.com/c/iddqdmusic"
+                    class="link"
+                    oninteractive="${javascript`
+                      tippy(this, {
+                        content: "YouTube",
+                      });
+                    `}"
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/c/iddqdmusic"
+                    class="link"
+                    oninteractive="${javascript`
+                      tippy(this, {
+                        content: "YouTube",
+                      });
+                    `}"
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/c/iddqdmusic"
+                    class="link"
+                    oninteractive="${javascript`
+                      tippy(this, {
+                        content: "YouTube",
+                      });
+                    `}"
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/c/iddqdmusic"
+                    class="link"
+                    oninteractive="${javascript`
+                      tippy(this, {
+                        content: "YouTube",
+                      });
+                    `}"
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/c/iddqdmusic"
+                    class="link"
+                    oninteractive="${javascript`
+                      tippy(this, {
+                        content: "YouTube",
+                      });
+                    `}"
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
                   <a
                     href="https://www.youtube.com/c/iddqdmusic"
                     class="link"
