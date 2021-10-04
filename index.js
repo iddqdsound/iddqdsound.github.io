@@ -3,6 +3,7 @@ const fs = require("fs-extra");
 const globby = require("globby");
 const { html } = require("@leafac/html");
 const { css, extractInlineStyles } = require("@leafac/css");
+const { javascript } = require("@leafac/javascript");
 const unified = require("unified");
 const remarkParse = require("remark-parse");
 const remarkGfm = require("remark-gfm");
