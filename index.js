@@ -32,7 +32,21 @@ const rehypeStringify = require("rehype-stringify");
               rel="stylesheet"
               href="/Media/node_modules/@fortawesome/fontawesome-free/css/all.min.css"
             />
+            <script src="/Media/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+            <script src="/Media/node_modules/tippy.js/dist/tippy-bundle.umd.js"></script>
+            <link
+              rel="stylesheet"
+              href="/Media/node_modules/tippy.js/dist/svg-arrow.css"
+            />
+            <link
+              rel="stylesheet"
+              href="/Media/node_modules/tippy.js/dist/border.css"
+            />
             <script src="/Media/node_modules/@leafac/javascript/browser.js"></script>
+            <script>
+              leafac.evaluateOnInteractive();
+              leafac.tippySetDefaultProps();
+            </script>
           </head>
           <body
             style="${css`
