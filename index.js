@@ -83,6 +83,20 @@ const rehypeStringify = require("rehype-stringify");
                     color: var(--color--purple--500);
                   }
                 }
+
+                .tippy-box {
+                  font-size: var(--font-size--sm);
+                  line-height: var(--line-height--sm);
+                  color: var(--color--purple--200);
+                  background-color: var(--color--purple--900);
+                  .tippy-svg-arrow {
+                    fill: var(--color--purple--900);
+                  }
+                  border-radius: var(--border-radius--md);
+                  .tippy-content {
+                    padding: var(--space--1) var(--space--2);
+                  }
+                }
               }
             `}"
           >
