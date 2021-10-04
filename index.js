@@ -32,6 +32,7 @@ const rehypeStringify = require("rehype-stringify");
               rel="stylesheet"
               href="/Media/node_modules/@fortawesome/fontawesome-free/css/all.min.css"
             />
+            <script src="/Media/node_modules/@leafac/javascript/browser.js"></script>
           </head>
           <body
             style="${css`
