@@ -27,6 +27,10 @@ const rehypeStringify = require("rehype-stringify");
               rel="stylesheet"
               href="/Media/node_modules/@fontsource/roboto/latin.css"
             />
+            <link
+              rel="stylesheet"
+              href="/Media/node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+            />
           </head>
           <body
             style="${css`
