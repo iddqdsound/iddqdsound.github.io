@@ -7,6 +7,7 @@ https://aryafsharm.wixsite.com/iddqdsound
   - Add content for most pages (except blog).
   - Scrape new posts.
   - Contact.
+  - Fill in `migration/redirects.json`.
 
 - Footer.
 - Atom feed.
