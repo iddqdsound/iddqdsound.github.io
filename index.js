@@ -247,8 +247,9 @@ const rehypeStringify = require("rehype-stringify");
                         content: "YouTube",
                       });
                     `}"
-                    ><i class="fab fa-youtube"></i
-                  ></a>
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
                 </nav>
 
                 <!-- 
