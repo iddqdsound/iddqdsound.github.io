@@ -225,7 +225,14 @@ const rehypeStringify = require("rehype-stringify");
                 </nav>
 
                 <nav>
-                  <a href="https://www.youtube.com/c/iddqdmusic" class="link"
+                  <a
+                    href="https://www.youtube.com/c/iddqdmusic"
+                    class="link"
+                    oninteractive="${javascript`
+                      tippy(this, {
+                        content: "YouTube",
+                      });
+                    `}"
                     ><i class="fab fa-youtube"></i
                   ></a>
                 </nav>
