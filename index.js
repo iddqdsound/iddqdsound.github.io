@@ -98,9 +98,7 @@ const rehypeStringify = require("rehype-stringify");
               >
                 Hi! We are currently under reconstruction. If you have questions
                 or comments. Contact me at:
-                <a href="mailto:info@iddqdsound.com"
-                  >info@iddqdsound.com</a
-                >
+                <a href="mailto:info@iddqdsound.com">info@iddqdsound.com</a>
               </div>
             </div>
             <header
@@ -208,6 +206,12 @@ const rehypeStringify = require("rehype-stringify");
                       : ""}"
                     >Contact</a
                   >
+                </nav>
+
+                <nav>
+                  <a href="https://www.youtube.com/c/iddqdmusic" class="link"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
                 </nav>
 
                 <!-- 
