@@ -94,8 +94,8 @@ const rehypeStringify = require("rehype-stringify");
               >
                 Hi! We are currently under reconstruction. If you have questions
                 or comments. Contact me at:
-                <a href="mailto:iddqdsoundofficial@gmail.com"
-                  >iddqdsoundofficial@gmail.com</a
+                <a href="mailto:info@iddqdsound.com"
+                  >info@iddqdsound.com</a
                 >
               </div>
             </div>
@@ -181,7 +181,6 @@ const rehypeStringify = require("rehype-stringify");
                     >Reel</a
                   >
                   <a
-                    hidden
                     href="/music"
                     class="link ${file === "music/index.html" ? "active" : ""}"
                     >Music</a

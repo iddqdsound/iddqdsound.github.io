@@ -4,6 +4,11 @@
   - Stay on top of DNS.
   - Scrape new posts.
 
+- Blog posts presentations:
+  - Auto-update the list of posts based on the YouTube videos.
+  - Timeline-based thingy.
+  - Categories.
+
 - References:
   - https://leafac.com/
   - https://snarkypuppy.com/
