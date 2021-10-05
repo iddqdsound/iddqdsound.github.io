@@ -4,6 +4,7 @@ https://aryafsharm.wixsite.com/iddqdsound
 
   - Add links to social media platforms.
     - https://fontawesome.com/
+    (Can we have a link that when you click it auto-copies my Github Repo Link?)
   - Add content for most pages (except blog).
   - Scrape new posts.
   - Contact.
