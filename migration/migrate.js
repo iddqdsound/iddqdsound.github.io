@@ -4,6 +4,10 @@ const path = require("path");
 const got = require("got");
 const { JSDOM } = require("jsdom");
 const download = require("download");
+const unified = require("unified");
+const rehypeParse = require("rehype-parse");
+const rehypeRemark = require("rehype-remark");
+const remarkStringify = require("remark-stringify");
 
 (async () => {
   /*
@@ -83,6 +87,10 @@ const download = require("download");
   // const images = [
   //   "https://static.wixstatic.com/media/d8c465_c8db70b28d5744108a58bf910a7a50f4~mv2.png/v1/fill/w_118,h_41,al_c,usm_0.66_1.00_0.01,blur_2/d8c465_c8db70b28d5744108a58bf910a7a50f4~mv2.png",
   // ];
+  const htmlToMarkdown = unified()
+    .use(rehypeParse)
+    .use(rehypeRemark)
+    .use(remarkStringify);
   for (const [from, to] of Object.entries(redirects)) {
     let migrationHTML = await fs.readFile(`.${from}.html`, "utf8");
     await fs.ensureDir(`..${to}`);
@@ -97,7 +105,11 @@ const download = require("download");
       `..${to}/index.md`,
       `## ${document.querySelector(`[class^="blog-post-title"]`).textContent}
 
-${document.querySelector("article").innerHTML}
+${htmlToMarkdown
+  .processSync(
+    document.querySelector(`[data-hook="post-description"]`).innerHTML
+  )
+  .toString()}
 `
     );
   }
