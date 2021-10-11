@@ -95,7 +95,8 @@ const download = require("download");
     const document = new JSDOM(migrationHTML).window.document;
     await fs.writeFile(
       `..${to}/index.md`,
-      `## ${document.querySelector(`[class^="blog-post-title"]`).textContent}`
+      `## ${document.querySelector(`[class^="blog-post-title"]`).textContent}
+`
     );
   }
 })();
