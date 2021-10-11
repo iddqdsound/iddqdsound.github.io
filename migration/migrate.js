@@ -29,6 +29,8 @@ const download = require("download");
   await fs.writeFile("images.json", JSON.stringify([...imageAddresses]));
   */
 
+  /*
+  // Download images
   const images = require("./images.json");
   for (let index = 0; index < images.length; index++) {
     const image = images[index];
@@ -36,4 +38,5 @@ const download = require("download");
     const file = `images/${index}${extension}`;
     await fs.writeFile(file, await download(image));
   }
+  */
 })();
