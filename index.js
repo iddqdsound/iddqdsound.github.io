@@ -377,6 +377,15 @@ const rehypeStringify = require("rehype-stringify");
                     color: var(--color--gray--warm--50);
                     margin-top: var(--space--6);
                   }
+
+                  strong {
+                    font-weight: var(--font-weight--bold);
+                    color: var(--color--gray--warm--50);
+                  }
+
+                  em {
+                    font-style: italic;
+                  }
                 `}"
               >
                 $${body}
