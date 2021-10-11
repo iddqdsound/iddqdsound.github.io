@@ -81,14 +81,14 @@ const download = require("download");
   };
   const images = require("./images.json");
   for (const [from, to] of Object.entries(redirects)) {
-    let arya = await fs.readFile(`.${from}.html`, "utf8");
+    let migrationHTML = await fs.readFile(`.${from}.html`, "utf8");
     await fs.ensureDir(`..${to}`);
     for (const image of images) {
       const name = `${images.indexOf(image)}.${image.slice(-3)}`;
-      if (arya.includes(image))
+      if (migrationHTML.includes(image))
         await fs.copyFile(`images/${name}`, `..${to}/${name}`);
-      arya = arya.replaceAll(image, `${to}/${name}`);
+      migrationHTML = migrationHTML.replaceAll(image, `${to}/${name}`);
     }
-    await fs.writeFile(`..${to}/index.md`, arya);
+    await fs.writeFile(`..${to}/index.md`, migrationHTML);
   }
 })();
