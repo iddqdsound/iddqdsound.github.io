@@ -85,15 +85,13 @@ const download = require("download");
   // ];
   for (const [from, to] of Object.entries(redirects)) {
     let migrationHTML = await fs.readFile(`.${from}.html`, "utf8");
-    // await fs.ensureDir(`..${to}`);
+    await fs.ensureDir(`..${to}`);
     for (const image of images) {
       const name = `${images.indexOf(image)}.${image.slice(-3)}`;
-      //   if (migrationHTML.includes(image))
-      //     await fs.copyFile(`images/${name}`, `..${to}/${name}`);
+      if (migrationHTML.includes(image))
+        await fs.copyFile(`images/${name}`, `..${to}/${name}`);
       migrationHTML = migrationHTML.replaceAll(image, `${to}/${name}`);
     }
-
-    console.log(migrationHTML);
-    // await fs.writeFile(`..${to}/index.md`, migrationHTML);
+    await fs.writeFile(`..${to}/index.md`, migrationHTML);
   }
 })();
