@@ -398,6 +398,7 @@ const rehypeStringify = require("rehype-stringify");
     ignore: ["node_modules", "Media", "migration", "README.md"],
   })) {
     const fileHTML = `${fileMarkdown.slice(0, -".md".length)}.html`;
+    console.log(`Starting ‘${fileMarkdown}’ → ‘${fileHTML}’...`);
     await fs.ensureDir(path.dirname(fileMarkdown));
     await fs.writeFile(
       fileHTML,

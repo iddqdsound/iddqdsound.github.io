@@ -74,5 +74,14 @@ const download = require("download");
   */
 
   // Blog content migration
-  
+  // const redirects = require("./redirects.json");
+  const redirects = {
+    "/post/sws-snapshots-how-to-save-recall-mix-states-with-one-click-rapid-fire-reaper-tutorials-ep86":
+      "/blog/rfrt/86",
+  };
+  for (const [from, to] of Object.entries(redirects)) {
+    const oldHTML = await fs.readFile(`.${from}.html`, "utf8");
+    await fs.ensureDir(`..${to}`);
+    await fs.writeFile(`..${to}/index.md`, oldHTML);
+  }
 })();
