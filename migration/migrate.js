@@ -79,9 +79,16 @@ const download = require("download");
     "/post/sws-snapshots-how-to-save-recall-mix-states-with-one-click-rapid-fire-reaper-tutorials-ep86":
       "/blog/rfrt/86",
   };
+  const images = require("./images.json");
   for (const [from, to] of Object.entries(redirects)) {
-    const oldHTML = await fs.readFile(`.${from}.html`, "utf8");
+    let arya = await fs.readFile(`.${from}.html`, "utf8");
     await fs.ensureDir(`..${to}`);
-    await fs.writeFile(`..${to}/index.md`, oldHTML);
+    for (const image of images) {
+      const name = `${images.indexOf(image)}.${image.slice(-3)}`;
+      if (arya.includes(image))
+        await fs.copyFile(`images/${name}`, `..${to}/${name}`);
+      arya = arya.replaceAll(image, `${to}/${name}`);
+    }
+    await fs.writeFile(`..${to}/index.md`, arya);
   }
 })();

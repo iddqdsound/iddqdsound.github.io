@@ -1,5 +1,7 @@
 https://aryafsharm.wixsite.com/iddqdsound
 
+- Only recreate pages that changed.
+
 - Blog post migration:
   - Hard: /post/sound-design-for-visual-media-tutorial-notes-ep00-ep01
 
