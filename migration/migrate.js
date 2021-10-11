@@ -39,4 +39,7 @@ const download = require("download");
     await fs.writeFile(file, await download(image));
   }
   */
+
+  const redirects = require("./redirects.json");
+
 })();
