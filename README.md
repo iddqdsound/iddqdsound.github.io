@@ -5,15 +5,16 @@ https://aryafsharm.wixsite.com/iddqdsound
 - Blog post migration:
   - Hard: /post/sound-design-for-visual-media-tutorial-notes-ep00-ep01
 
+- Can we have a link that when you click it auto-copies my Github Repo Link?
+
 - Homework:
 
-  - Add links to social media platforms.
-    - https://fontawesome.com/
-    (Can we have a link that when you click it auto-copies my Github Repo Link?)
-  - Add content for most pages (except blog).
-  - Scrape new posts.
+  - Github -> GitHub.
+  - Migrate the new posts by hand.
   - Contact.
-  - Fill in `migration/redirects.json`.
+    - Form.
+  - Add content for most pages (except blog).
+  - Make image for custom 404.
 
 - Footer.
 - Atom feed.
