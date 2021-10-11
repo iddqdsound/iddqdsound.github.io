@@ -1,4 +1,5 @@
-const fs = require("fs/promises");
+const fs = require("fs-extra");
+const { html } = require("@leafac/html");
 const path = require("path");
 const got = require("got");
 const { JSDOM } = require("jsdom");
@@ -40,6 +41,33 @@ const download = require("download");
   }
   */
 
+  // Create redirects
   const redirects = require("./redirects.json");
-
+  for (const [from, to] of Object.entries(redirects)) {
+    await fs.ensureDir(`../${from}`);
+    await fs.writeFile(
+      `../${from}/index.html`,
+      html`
+        <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta
+              http-equiv="refresh"
+              content="0; url=https://iddqdsound.com${to}"
+            />
+            <title>This page has moved to https://iddqdsound.com${to}</title>
+          </head>
+          <body>
+            <p>
+              This page has moved to
+              <a href="https://iddqdsound.com${to}"
+                >https://iddqdsound.com${to}</a
+              >
+            </p>
+          </body>
+        </html>
+      `.trim()
+    );
+  }
 })();

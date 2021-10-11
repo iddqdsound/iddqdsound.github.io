@@ -12,6 +12,7 @@ https://aryafsharm.wixsite.com/iddqdsound
 
 - Footer.
 - Atom feed.
+- Custom 404.
 
 - Blog posts presentations:
 
