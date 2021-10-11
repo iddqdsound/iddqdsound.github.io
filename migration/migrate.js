@@ -41,6 +41,7 @@ const download = require("download");
   }
   */
 
+  /*
   // Create redirects
   const redirects = require("./redirects.json");
   for (const [from, to] of Object.entries(redirects)) {
@@ -70,4 +71,5 @@ const download = require("download");
       `.trim()
     );
   }
+  */
 })();
