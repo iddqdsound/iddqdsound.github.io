@@ -1,5 +1,8 @@
 https://aryafsharm.wixsite.com/iddqdsound
 
+- Blog post migration:
+  - Hard: /post/sound-design-for-visual-media-tutorial-notes-ep00-ep01
+
 - Homework:
 
   - Add links to social media platforms.
