@@ -447,13 +447,29 @@ const { JSDOM } = require("jsdom");
     await layout({
       file: "blog/index.html",
       body: html`
-        $${(
-          await globby("blog/**/index.md")
-        ).map((markdownFile) => {
-          return html`<a href="/${markdownFile.slice(0, -"/index.md".length)}"
-            >/${markdownFile.slice(0, -"/index.md".length)}</a
-          >`;
-        })}
+        $${await Promise.all(
+          (
+            await globby("blog/**/index.md")
+          ).map(async (fileMarkdown) => {
+            const document = JSDOM.fragment(
+              html`
+                <div>
+                  $${await markdownProcessor.process(
+                    await fs.readFile(fileMarkdown, "utf8")
+                  )}
+                </div>
+              `
+            );
+
+            return html`
+              <p>
+                <a href="/${fileMarkdown.slice(0, -"/index.md".length)}"
+                  >$${document.querySelector("h2").innerHTML}</a
+                >
+              </p>
+            `;
+          })
+        )}
       `,
     })
   );
