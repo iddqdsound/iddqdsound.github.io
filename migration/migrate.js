@@ -85,7 +85,7 @@ const prettier = require("prettier");
   */
 
   // Blog content migration
-  const redirects = require("./redirects.json");
+  const redirects = require("./migration.json");
   const images = require("./images.json");
   // const redirects = {
   //   "/post/sws-snapshots-how-to-save-recall-mix-states-with-one-click-rapid-fire-reaper-tutorials-ep86":

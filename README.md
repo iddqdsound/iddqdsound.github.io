@@ -27,6 +27,12 @@ https://aryafsharm.wixsite.com/iddqdsound
     - Form.
   - Add content for most pages (except blog).
   - Make image for custom 404.
+  - Review migration.
+    - Get rid of Buy me a Coffee at the end.
+    - Fix some YouTube links.
+    - Zips.
+    - That most recent blog post that we ignored in the migration: `"/post/de-cluttering-big-projects-with-track-visibility-actions-rapid-fire-reaper-tutorials-ep87": "/blog/rfrt/87"`
+
 
 - Footer.
 - Atom feed.
