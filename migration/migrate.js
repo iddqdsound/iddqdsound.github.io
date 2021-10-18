@@ -102,15 +102,8 @@ const prettier = require("prettier");
   // const converter = new showdown.Converter();
   const turndownService = new TurndownService();
   for (const [from, to] of Object.entries(redirects)) {
-    let migrationHTML = await fs.readFile(`.${from}.html`, "utf8");
-    await fs.ensureDir(`..${to}`);
-    for (const image of images) {
-      const name = `${images.indexOf(image)}.${image.slice(-3)}`;
-      if (migrationHTML.includes(image))
-        await fs.copyFile(`images/${name}`, `..${to}/${name}`);
-      migrationHTML = migrationHTML.replaceAll(image, `${to}/${name}`);
-    }
-    const document = new JSDOM(migrationHTML).window.document;
+    const document = new JSDOM(await fs.readFile(`.${from}.html`, "utf8"))
+      .window.document;
     const content = document.querySelector(`[data-hook="post-description"]`);
 
     for (const element of content.querySelectorAll("p"))
@@ -140,6 +133,14 @@ $${element.innerHTML.replaceAll("\n", "  \n")}</pre
       (_, url) =>
         html`<youtube id="${url.slice("https://youtu.be/".length)}"></youtube>`
     );
+
+    await fs.ensureDir(`..${to}`);
+    for (const image of images) {
+      const name = `${images.indexOf(image)}.${image.slice(-3)}`;
+      if (markdown.includes(image) && name !== "8.png")
+        await fs.copyFile(`images/${name}`, `..${to}/${name}`);
+      markdown = markdown.replaceAll(image, `${to}/${name}`);
+    }
 
     await fs.writeFile(
       `..${to}/index.md`,
