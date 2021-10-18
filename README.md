@@ -1,3 +1,6 @@
+- Finish the migration.
+- A list of blog posts.
+
 https://aryafsharm.wixsite.com/iddqdsound
 
 - Only recreate pages that changed.
