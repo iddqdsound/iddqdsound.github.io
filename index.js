@@ -69,8 +69,11 @@ const { JSDOM } = require("jsdom");
               img,
               iframe {
                 max-width: 100%;
-                height: auto;
                 border-radius: var(--border-radius--lg);
+              }
+
+              img {
+                height: auto;
               }
 
               @at-root {
