@@ -1,5 +1,8 @@
 - A list of blog posts.
 
+- Migrate post data & order posts by date.
+- Categories.
+
 https://aryafsharm.wixsite.com/iddqdsound
 
 - Only recreate pages that changed.
