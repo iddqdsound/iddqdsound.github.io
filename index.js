@@ -444,6 +444,17 @@ const { JSDOM } = require("jsdom");
 
   await fs.writeFile(
     "blog/index.html",
-    await layout({ file: "blog/index.html", body: html` <p>Hello</p> ` })
+    await layout({
+      file: "blog/index.html",
+      body: html`
+        $${(
+          await globby("blog/**/index.md")
+        ).map((markdownFile) => {
+          return html`<a href="/${markdownFile.slice(0, -"/index.md".length)}"
+            >/${markdownFile.slice(0, -"/index.md".length)}</a
+          >`;
+        })}
+      `,
+    })
   );
 })();
