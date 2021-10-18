@@ -14,6 +14,7 @@ const {
   NodeHtmlMarkdown,
   NodeHtmlMarkdownOptions,
 } = require("node-html-markdown");
+const prettier = require("prettier");
 
 (async () => {
   /*
@@ -119,7 +120,7 @@ $${element.innerHTML.replaceAll("\n", "  \n")}</pre
       `..${to}/index.md`,
       `## ${document.querySelector(`[class^="blog-post-title"]`).textContent}
 
-${
+${prettier.format(
   // htmlToMarkdown
   // .processSync(
   //   content.innerHTML
@@ -131,8 +132,9 @@ ${
   // turndownService.turndown(
   //   content.innerHTML
   // )
-  NodeHtmlMarkdown.translate(content.innerHTML)
-}
+  NodeHtmlMarkdown.translate(content.innerHTML),
+  { parser: "markdown" }
+)}
 `
     );
   }
