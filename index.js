@@ -411,6 +411,12 @@ const { JSDOM } = require("jsdom");
     ignore: ["node_modules", "Media", "migration", "README.md"],
   })) {
     const fileHTML = `${fileMarkdown.slice(0, -".md".length)}.html`;
+    if (
+      fs.existsSync(fileHTML) &&
+      (await fs.stat(fileMarkdown)).mtime.getTime() <
+        (await fs.stat(fileHTML)).mtime.getTime()
+    )
+      continue;
     console.log(`Starting ‘${fileMarkdown}’ → ‘${fileHTML}’...`);
     await fs.ensureDir(path.dirname(fileMarkdown));
     const dom = new JSDOM(
