@@ -407,43 +407,46 @@ const { JSDOM } = require("jsdom");
     .use(rehypeRaw)
     .use(rehypeStringify);
 
-  const layoutMtime = (await fs.stat(__filename)).mtime.getTime();
-  for (const fileMarkdown of await globby("**/*.md", {
-    ignore: ["node_modules", "Media", "migration", "README.md"],
-  })) {
-    const fileHTML = `${fileMarkdown.slice(0, -".md".length)}.html`;
-    if (
-      fs.existsSync(fileHTML) &&
-      Math.max((await fs.stat(fileMarkdown)).mtime.getTime(), layoutMtime) <
-        (await fs.stat(fileHTML)).mtime.getTime()
-    )
-      continue;
-    process.stdout.write(`Starting ‘${fileMarkdown}’ → ‘${fileHTML}’...`);
-    await fs.ensureDir(path.dirname(fileMarkdown));
-    const dom = new JSDOM(
-      await layout({
-        file: fileHTML,
-        body: await markdownProcessor.process(
-          await fs.readFile(fileMarkdown, "utf8")
-        ),
-      })
-    );
-    const document = dom.window.document;
-    for (const element of document.querySelectorAll("youtube"))
-      element.outerHTML = html`
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/${element.getAttribute("id")}"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      `;
-    await fs.writeFile(fileHTML, dom.serialize());
-    console.log(" Done.");
-  }
+  // const layoutMtime = (await fs.stat(__filename)).mtime.getTime();
+  // for (const fileMarkdown of await globby("**/*.md", {
+  //   ignore: ["node_modules", "Media", "migration", "README.md"],
+  // })) {
+  //   const fileHTML = `${fileMarkdown.slice(0, -".md".length)}.html`;
+  //   if (
+  //     fs.existsSync(fileHTML) &&
+  //     Math.max((await fs.stat(fileMarkdown)).mtime.getTime(), layoutMtime) <
+  //       (await fs.stat(fileHTML)).mtime.getTime()
+  //   )
+  //     continue;
+  //   process.stdout.write(`Starting ‘${fileMarkdown}’ → ‘${fileHTML}’...`);
+  //   await fs.ensureDir(path.dirname(fileMarkdown));
+  //   const dom = new JSDOM(
+  //     await layout({
+  //       file: fileHTML,
+  //       body: await markdownProcessor.process(
+  //         await fs.readFile(fileMarkdown, "utf8")
+  //       ),
+  //     })
+  //   );
+  //   const document = dom.window.document;
+  //   for (const element of document.querySelectorAll("youtube"))
+  //     element.outerHTML = html`
+  //       <iframe
+  //         width="560"
+  //         height="315"
+  //         src="https://www.youtube.com/embed/${element.getAttribute("id")}"
+  //         title="YouTube video player"
+  //         frameborder="0"
+  //         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  //         allowfullscreen
+  //       ></iframe>
+  //     `;
+  //   await fs.writeFile(fileHTML, dom.serialize());
+  //   console.log(" Done.");
+  // }
 
-  // await fs.writeFile("")
+  await fs.writeFile(
+    "blog/index.html",
+    await layout({ file: "blog/index.html", body: html` <p>Hello</p> ` })
+  );
 })();
