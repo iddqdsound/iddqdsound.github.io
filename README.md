@@ -1,5 +1,3 @@
-- A list of blog posts.
-
 - Migrate post data & order posts by date.
 - Categories.
 
