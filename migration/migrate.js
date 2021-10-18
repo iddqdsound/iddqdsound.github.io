@@ -8,6 +8,12 @@ const unified = require("unified");
 const rehypeParse = require("rehype-parse");
 const rehypeRemark = require("rehype-remark");
 const remarkStringify = require("remark-stringify");
+const showdown = require("showdown");
+const TurndownService = require("turndown");
+const {
+  NodeHtmlMarkdown,
+  NodeHtmlMarkdownOptions,
+} = require("node-html-markdown");
 
 (async () => {
   /*
@@ -87,10 +93,13 @@ const remarkStringify = require("remark-stringify");
   // const images = [
   //   "https://static.wixstatic.com/media/d8c465_c8db70b28d5744108a58bf910a7a50f4~mv2.png/v1/fill/w_118,h_41,al_c,usm_0.66_1.00_0.01,blur_2/d8c465_c8db70b28d5744108a58bf910a7a50f4~mv2.png",
   // ];
-  const htmlToMarkdown = unified()
-    .use(rehypeParse)
-    .use(rehypeRemark)
-    .use(remarkStringify);
+
+  // const htmlToMarkdown = unified()
+  //   .use(rehypeParse)
+  //   .use(rehypeRemark)
+  //   .use(remarkStringify);
+  // const converter = new showdown.Converter();
+  const turndownService = new TurndownService();
   for (const [from, to] of Object.entries(redirects)) {
     let migrationHTML = await fs.readFile(`.${from}.html`, "utf8");
     await fs.ensureDir(`..${to}`);
@@ -101,15 +110,29 @@ const remarkStringify = require("remark-stringify");
       migrationHTML = migrationHTML.replaceAll(image, `${to}/${name}`);
     }
     const document = new JSDOM(migrationHTML).window.document;
+    const content = document.querySelector(`[data-hook="post-description"]`);
+    for (const element of content.querySelectorAll("p"))
+      element.outerHTML = html`<pre>
+$${element.innerHTML.replaceAll("\n", "  \n")}</pre
+      >`;
     await fs.writeFile(
       `..${to}/index.md`,
       `## ${document.querySelector(`[class^="blog-post-title"]`).textContent}
 
-${htmlToMarkdown
-  .processSync(
-    document.querySelector(`[data-hook="post-description"]`).innerHTML
-  )
-  .toString()}
+${
+  // htmlToMarkdown
+  // .processSync(
+  //   content.innerHTML
+  // )
+  // .toString()
+  // converter.makeMarkdown(
+  //   content.innerHTML
+  // )
+  // turndownService.turndown(
+  //   content.innerHTML
+  // )
+  NodeHtmlMarkdown.translate(content.innerHTML)
+}
 `
     );
   }
