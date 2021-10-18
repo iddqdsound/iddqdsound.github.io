@@ -112,29 +112,40 @@ const prettier = require("prettier");
     }
     const document = new JSDOM(migrationHTML).window.document;
     const content = document.querySelector(`[data-hook="post-description"]`);
+
     for (const element of content.querySelectorAll("p"))
       element.outerHTML = html`<pre>
 $${element.innerHTML.replaceAll("\n", "  \n")}</pre
       >`;
+    for (const element of content.querySelectorAll(`[type="video"]`))
+      element.outerHTML = `◊${content.querySelector("a").href}◊`;
+
+    let markdown = prettier.format(
+      // htmlToMarkdown
+      // .processSync(
+      //   content.innerHTML
+      // )
+      // .toString()
+      // converter.makeMarkdown(
+      //   content.innerHTML
+      // )
+      // turndownService.turndown(
+      //   content.innerHTML
+      // )
+      NodeHtmlMarkdown.translate(content.innerHTML),
+      { parser: "markdown" }
+    );
+    markdown = markdown.replace(
+      /◊(.*?)◊/g,
+      (_, url) =>
+        html`<youtube id="${url.slice("https://youtu.be/".length)}"></youtube>`
+    );
+
     await fs.writeFile(
       `..${to}/index.md`,
       `## ${document.querySelector(`[class^="blog-post-title"]`).textContent}
 
-${prettier.format(
-  // htmlToMarkdown
-  // .processSync(
-  //   content.innerHTML
-  // )
-  // .toString()
-  // converter.makeMarkdown(
-  //   content.innerHTML
-  // )
-  // turndownService.turndown(
-  //   content.innerHTML
-  // )
-  NodeHtmlMarkdown.translate(content.innerHTML),
-  { parser: "markdown" }
-)}
+${markdown}
 `
     );
   }

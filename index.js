@@ -10,6 +10,7 @@ const remarkGfm = require("remark-gfm");
 const remarkRehype = require("remark-rehype");
 const rehypeRaw = require("rehype-raw");
 const rehypeStringify = require("rehype-stringify");
+const { JSDOM } = require("jsdom");
 
 (async () => {
   const layout = async ({ file, body }) =>
@@ -409,8 +410,7 @@ const rehypeStringify = require("rehype-stringify");
     const fileHTML = `${fileMarkdown.slice(0, -".md".length)}.html`;
     console.log(`Starting ‘${fileMarkdown}’ → ‘${fileHTML}’...`);
     await fs.ensureDir(path.dirname(fileMarkdown));
-    await fs.writeFile(
-      fileHTML,
+    const dom = new JSDOM(
       await layout({
         file: fileHTML,
         body: await markdownProcessor.process(
@@ -418,5 +418,19 @@ const rehypeStringify = require("rehype-stringify");
         ),
       })
     );
+    const document = dom.window.document;
+    for (const element of document.querySelectorAll("youtube"))
+      element.outerHTML = html`
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/${element.getAttribute("id")}"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      `;
+    await fs.writeFile(fileHTML, dom.serialize());
   }
 })();
