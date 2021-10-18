@@ -206,38 +206,35 @@ const { JSDOM } = require("jsdom");
                   <a
                     hidden
                     href="/tutorials"
-                    class="link ${file === "tutorials/index.html"
+                    class="link ${file.startsWith("tutorials/")
                       ? "active"
                       : ""}"
                     >Tutorials</a
                   >
                   <a
                     href="/reel"
-                    class="link ${file === "reel/index.html" ? "active" : ""}"
+                    class="link ${file.startsWith("reel/") ? "active" : ""}"
                     >Reel</a
                   >
                   <a
                     href="/music"
-                    class="link ${file === "music/index.html" ? "active" : ""}"
+                    class="link ${file.startsWith("music/") ? "active" : ""}"
                     >Music</a
                   >
                   <a
-                    hidden
                     href="/blog"
-                    class="link ${file === "blog/index.html" ? "active" : ""}"
+                    class="link ${file.startsWith("blog/") ? "active" : ""}"
                     >Blog</a
                   >
                   <a
                     href="/bio"
-                    class="link ${file === "bio/index.html" ? "active" : ""}"
+                    class="link ${file.startsWith("bio/") ? "active" : ""}"
                     >Bio</a
                   >
                   <a
                     hidden
                     href="/contact"
-                    class="link ${file === "contact/index.html"
-                      ? "active"
-                      : ""}"
+                    class="link ${file.startsWith("contact/") ? "active" : ""}"
                     >Contact</a
                   >
                 </nav>
