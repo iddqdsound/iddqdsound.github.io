@@ -85,12 +85,12 @@ const prettier = require("prettier");
   */
 
   // Blog content migration
-  // const redirects = require("./redirects.json");
+  const redirects = require("./redirects.json");
   const images = require("./images.json");
-  const redirects = {
-    "/post/sws-snapshots-how-to-save-recall-mix-states-with-one-click-rapid-fire-reaper-tutorials-ep86":
-      "/blog/rfrt/86",
-  };
+  // const redirects = {
+  //   "/post/sws-snapshots-how-to-save-recall-mix-states-with-one-click-rapid-fire-reaper-tutorials-ep86":
+  //     "/blog/rfrt/86",
+  // };
   // const images = [
   //   "https://static.wixstatic.com/media/d8c465_c8db70b28d5744108a58bf910a7a50f4~mv2.png/v1/fill/w_118,h_41,al_c,usm_0.66_1.00_0.01,blur_2/d8c465_c8db70b28d5744108a58bf910a7a50f4~mv2.png",
   // ];
@@ -110,9 +110,11 @@ const prettier = require("prettier");
       element.outerHTML = html`<pre>
 $${element.innerHTML.replaceAll("\n", "  \n")}</pre
       >`;
-    for (const element of content.querySelectorAll(`[type="video"]`))
-      element.outerHTML = `◊${content.querySelector("a").href}◊`;
-
+    for (const element of content.querySelectorAll(`[type="video"]`)) {
+      const link = content.querySelector("a");
+      if (link === null) continue;
+      element.outerHTML = `◊${link.href}◊`;
+    }
     let markdown = prettier.format(
       // htmlToMarkdown
       // .processSync(
