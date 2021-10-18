@@ -1112,24 +1112,48 @@
 
             <main class="style--xv70n9">
               <div class="style--ku4mf3">
-                <h2>REAPER Tutorials</h2>
-<p>Since 2020, I've been making Tutorials on my YouTube Channel. Each Tutorial is also accompanied by a Blog Post, including more details, free downloads &amp; More. See some of our running series below:</p>
-<h2>Donate</h2>
-<p>If you like the work I do, you can donate to me using the links below:
-Paypal donation link
-BMAC Donation link
-YouTube Memberships</p>
-<h2>RAPID-FIRE REAPER TUTORIALS</h2>
-<p>Short, Fast-paced tutorials exploring some of REAPER's vast toolkit &amp; customization options. Since most tutorials are inspired by viewer questions, there's no real order to watching most of this series, but you can see these sorted under various topics.</p>
-<h2>SOUND EDITING &amp; DESIGN FOR VISUAL MEDIA</h2>
-<p>In this series, I explore workflow tips &amp; share knowledge I've picked up doing Sound Editing, Foley Recording, Sound Design, Dialogue Editing &amp; Post-Production Mixing for Film, TV, and other visual media, in REAPER.
-My own career in Sound Design began in Pro Tools, but I have since been able to fully transition to REAPER, and I want to share some of REAPER's wonderful capabilities in this realm of audio!</p>
-<h2>MIXING FEEDBACK MONDAYS</h2>
-<p>In This series I take projects from my viewers and provide detailed feedback to them. If you want to send me a mix, you can do so by becoming a member of the YouTube Channel, and you can receive feedback for one project every month, but feel free to contact me at <a href="mailto:mfm@iddqdsound.com">mfm@iddqdsound.com</a> if you are interested in a one-off feedback session!</p>
-<h2>LET'S LEARN SCRIPTING IN REAPER</h2>
-<p>I am far from a professional coder myself, but with a little bit of help from REAPER community of coders, I've been exploring some of the scripting capabilities of REAPER through Tutorials and Livestreams, featuring mentors such as Leandro Facchinetti, Geraint Luff &amp; Bo Danerius.</p>
-<h2>SOUND RECIPES</h2>
-<p>This series focuses on some of the whacky FX that I've concocted.</p>
+                <h2>25+ Hotkeys for Track Controls (Rapid-Fire REAPER tutorials Ep68)</h2>
+<p><img src="/blog/rfrt/68/10.jpg" alt=""></p>
+<p>Hey folks!<br>
+<a href="https://youtu.be/uprTMzSOL20">In this episode</a> we will look at some hotkeys to control your tracks easily, and more importantly, without having to resize your tracks to take up a third of your screen! Here's the list of all the hotkeys discussed in the video:</p>
+<p><img src="/blog/rfrt/68/11.png" alt=""></p>
+<p><strong>Track Controls</strong>
+It's understandable why REAPER doesn't have a lot of default track control hotkeys. The hotkeys are incredibly intuitive: Select any track or tracks, and click on any of the controls (Mute, Solo, Record Arm, Pan, Fader) and you can adjust those controls. However, having hotkeys is scientifically proven to make you look cool, and also, setting track control hotkeys allows me to resize my TCP to take up less of my screen real estate, which as we discussed in <a href="https://youtu.be/aqGtXK1EN0o">Episode 67, is important</a>!<br>
+Other track controls are tucked away in the right-click menus, and some of them I want a hotkey for, and hopefully you do too, otherwise, I guess I'm just gonna look like a nitpicker!</p>
+<p>Some extra Hotkeys that you can't change (AFAIK):<br>
+On any Solo button(s)<br>
+Cmd+Opt+Left Click - Exclusive Solo Track(s) - This will Unsolo everything else.<br>
+Opt+Left Click - Solo (Ignoring routing) - Normally (Based on Prefs) soloing a track will not mute its sends. With this, you will.<br>
+Cmd+Left Click - Unsolo All - Every Solo button will be off<br>
+Cmd+Shift+Left Click - Solo Defeat - Places a lock on track(s) meaning that track can't be soloed and won't be muted if other tracks are soloed. Good to use in Video tracks, or on certain types of Sends &amp; Bus Compressors.</p>
+<p>On any Mute button(s)<br>
+Cmd+Left Click - Unmute all - every mute button will be off.<br>
+Cmd+Opt+Left Click - Exclusive Mute - Every mute but the select track(s) will be off.<br>
+Opt+Left Click - Mute all others - Every track but selected track(s) will be muted. Essentially solos selected tracks (routing exceptions apply, but so defeated tracks will be muted too)</p>
+<p><strong>Selecting Tracks</strong>
+REAPER's default hotkeys to navigate through and select tracks are not very useful to me, because there's already a native system built-in to almost any program on earth to select a bunch of things. Click to select any one track. Hold Command and you can add any other track to that selection. Click on any one track, Hold Shift, and click on any other track to select all the tracks between these two tracks. From there you can still hold command to add other tracks to selection, or command and shift to add a range of tracks to your selection!</p>
+<p><strong>Cycle Actions</strong>
+The three cycle actions I mentioned here have all been covered in my early videos on <a href="https://youtu.be/SwbcLZDccB0">freezing</a>, and <a href="https://youtu.be/y2fQYIWtaTY">Quick mixing</a> tracks. I didn't use to write these blog posts so here's why I do them this way:</p>
+<p><strong>Freeze to Mono &amp; Stereo:</strong> One thing I don't like when I freeze a track in REAPER, is that I get no visual indication from a quick glance that the track is frozen. It just looks like a regular track with locked items on it. I fixed this by creating two cycle actions, one for mono and stereo each:</p>
+<p>-Track: Freeze to mono/stereo<br>
+-Resources - set track icon for selected tracks, slot 1<br>
+---Step---<br>
+-Track: Remove track icon<br>
+-Track: Unfreeze tracks</p>
+<p>I downloaded a snowflake icon from the REAPER Stash, and added it to <a href="https://youtu.be/4SPfUPKZ4fE">SWS Resources (I have previously shown how here</a>) and this way I have a cool hotkey to use, and the track icon lets me know at a quick glance, which tracks are frozen!</p>
+<p><strong>Quick Mix Selected Tracks:</strong> With big projects that have tons of tracks on them, your Mixer can get quite hard to navigate through. I created this cycle action that allows me to select a bunch of items, and my MCP will be expanded to show only those tracks with the items I selected. Hitting the cycle action again takes me to my usual screenset and takes my MCP back to normal! Watch this video for more detail!</p>
+<p><strong>Deprecated SWS Actions</strong>
+One of the hotkeys I showed you in this video (Insert multiple tracks) is a deprecated SWS actions. These actions are not always necessarily impossible to use, but they are either rendered obsolete by REAPER updates, or some of their functionality no longer works. This one for example is deprecated because you can no longer select inputs but everything else about it works!</p>
+<p><strong>Archive &amp; UnArchive Tracks</strong>
+I took both of these actions from the <a href="https://www.sws-extension.org/download/REAPERPlusSWS171.pdf">SWS Manual</a>. Page 44-46. I'm gonna make you go get the manual for this because it's full of useful info. You're welcome!</p>
+<p><strong>Nudge Pan Action</strong>
+There are default actions that allow you Nudge any track pan, but they only nudge it 1 percent. I simply chained together 10 of these to create <strong>Nudge track Pan 10x Left/Right</strong> and I can quickly move my pan knobs for one or many tracks at the same time!</p>
+<p><strong>Conclusion</strong>
+I won't lie, not everybody will find it worthwhile to set all these hotkeys but hopefully some of you may. I amassed all of these over time, and maybe a few of them will give you some ideas you want to implement. Another reason I have some of these like Shift+M/S/I/R is that Pro Tools had them, or I use Command+Shift+D to create parent tracks cuz Logic Pro X had that, so some of these are engrained in my muscle memory and I find it convenient to do in Pro Tools! Let me know in the comments if any of these Hotkey videos I've been doing is giving you something or not!</p>
+<p>Here's the video:</p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uprTMzSOL20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
               </div>
             </main>
           

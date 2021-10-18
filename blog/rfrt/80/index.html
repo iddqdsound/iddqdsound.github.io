@@ -1112,24 +1112,108 @@
 
             <main class="style--xv70n9">
               <div class="style--ku4mf3">
-                <h2>REAPER Tutorials</h2>
-<p>Since 2020, I've been making Tutorials on my YouTube Channel. Each Tutorial is also accompanied by a Blog Post, including more details, free downloads &amp; More. See some of our running series below:</p>
-<h2>Donate</h2>
-<p>If you like the work I do, you can donate to me using the links below:
-Paypal donation link
-BMAC Donation link
-YouTube Memberships</p>
-<h2>RAPID-FIRE REAPER TUTORIALS</h2>
-<p>Short, Fast-paced tutorials exploring some of REAPER's vast toolkit &amp; customization options. Since most tutorials are inspired by viewer questions, there's no real order to watching most of this series, but you can see these sorted under various topics.</p>
-<h2>SOUND EDITING &amp; DESIGN FOR VISUAL MEDIA</h2>
-<p>In this series, I explore workflow tips &amp; share knowledge I've picked up doing Sound Editing, Foley Recording, Sound Design, Dialogue Editing &amp; Post-Production Mixing for Film, TV, and other visual media, in REAPER.
-My own career in Sound Design began in Pro Tools, but I have since been able to fully transition to REAPER, and I want to share some of REAPER's wonderful capabilities in this realm of audio!</p>
-<h2>MIXING FEEDBACK MONDAYS</h2>
-<p>In This series I take projects from my viewers and provide detailed feedback to them. If you want to send me a mix, you can do so by becoming a member of the YouTube Channel, and you can receive feedback for one project every month, but feel free to contact me at <a href="mailto:mfm@iddqdsound.com">mfm@iddqdsound.com</a> if you are interested in a one-off feedback session!</p>
-<h2>LET'S LEARN SCRIPTING IN REAPER</h2>
-<p>I am far from a professional coder myself, but with a little bit of help from REAPER community of coders, I've been exploring some of the scripting capabilities of REAPER through Tutorials and Livestreams, featuring mentors such as Leandro Facchinetti, Geraint Luff &amp; Bo Danerius.</p>
-<h2>SOUND RECIPES</h2>
-<p>This series focuses on some of the whacky FX that I've concocted.</p>
+                <h2>How to Route Audio &amp; MIDI Between Any two DAWs &amp; Sync them! (Rapid-fire REAPER Tutorials Ep80/81)</h2>
+<p><img src="/blog/rfrt/80/66.jpg" alt=""></p>
+<p>Hey folks!</p>
+<p><a href="https://youtu.be/FWhJqK2XKW0">Today we're looking at my alternative to ReWire</a> for Routing Audio/MIDI between REAPER and other DAWs. <a href="https://www.youtube.com/watch?v=9wpndk1v75Q">ReWire, as we saw last episode</a>, is quick and easy but unfortunately it's no longer supported, and while someone showed me a way to enable it for Ableton 11, it's still something we're gonna have to learn to live without, so we might as well get to it!</p>
+<p>The alternative(s) I'm gonna show you today take longer to setup, but they work for any DAW, not just ReWire-compatible ones, and both the audio and MIDI parts of it work both ways, and even for more than 2 DAWs and applications. If you ever wondered how to use Logic Pro X Scripter to output MIDI to Ableton, capture it in REAPER all while streaming to OBS, this video will give you all the tools to do that!</p>
+<p><strong>Downloads</strong></p>
+<p>For this set-up we need a <strong>Virtual MIDI Bus</strong> and a <strong>Virtual Audio Interface.</strong> Mac users only need the latter because Apple has the built-in <strong>IAC Driver</strong> for MIDI routing, while PC users only the need the former, as their install of REAPER comes with <a href="https://www.soundonsound.com/techniques/route-master">ReaRoute</a>, which takes care of the Audio Routing.</p>
+<p><strong>Mac Set-up</strong>
+<strong>MIDI:</strong>
+**-**From Spotlight, go to <strong>Audio MIDI Setup.</strong></p>
+<p><img src="/blog/rfrt/80/67.png" alt=""></p>
+<p>**-**Go to <strong>Window&gt;Show MIDI Studio</strong> or press <strong>Cmd+2</strong>.</p>
+<p>-You will see all your MIDI devices here, and a red Icon (that may be greyed out) named <strong>IAC Driver</strong>. Double-Click in and the new window, make sure that <strong>Device is Online</strong> is ticked.</p>
+<p>-(Optional) Create additional MIDI Busses in the new window by clicking on the <strong>+</strong> sign.</p>
+<p><img src="/blog/rfrt/80/68.png" alt=""></p>
+<p>I like to create one bus per DAW that I want to send MIDI out from, but you can make as many as you need and name them!</p>
+<p>-in REAPER, go to <strong>Preferences&gt;Audio&gt;MIDI Devices</strong> and in the output section, locate your MIDI bus, right click and select <strong>Enable Output.</strong></p>
+<p>-in your Destination DAW, go to where you would normally assign MIDI devices and find the same MIDI bus, this time enabling it only as an input.</p>
+<p><strong>Audio:</strong><br>
+-Download <a href="https://soundflower.en.softonic.com/mac">Soundflower</a> or a similar Virtual Audio Interface.<br>
+-Once Installed, go to your Destination DAW, and in its Audio settings, choose Soundflowe (64ch) as your output device.<br>
+-From Spotlight, go to <strong>Audio MIDI Setup.</strong>
+-Go to <strong>Window&gt;Show Audio Devices</strong> or press <strong>Cmd+1</strong>.<br>
+-In the window below, click on the <strong>+</strong> sign near the bottom left corner and select <strong>Create Aggregate Device...</strong></p>
+<p><img src="/blog/rfrt/80/69.png" alt=""></p>
+<p>-Tick the box next to your Audio Interface first, and then select Soundflower. This will create an aggregate device with a total I/O count of your interface + the 64 channels from Soundflower, but 1/2 remains to be your main interface out. Hit Okay and close this window.</p>
+<p>-In REAPER, set your Audio Device as this new Aggregate Device.</p>
+<p><strong>PC Set-Up</strong>
+<strong>MIDI:</strong>
+**-**Download &amp; Install <a href="https://www.tobias-erichsen.de/software/loopmidi.html">loopMIDI</a> or a similar Virtual MIDI bus.<br>
+-Open REAPER, and go to <strong>Preferences&gt;Audio&gt;MIDI Devices.</strong>
+-Find loopMIDI in the output section of the window, right-click and <strong>Enable Output.</strong>
+-In your destination DAW, go to MIDI preferences and enable it like you would do any MIDI Controller for input.<br>
+-I apologize if the install is more complex than this, but I don't own a PC and can't test this. Forums seems to be endorsing this.</p>
+<p><strong>Audio:</strong>
+**-**Make sure you have ReaRoute installed.<br>
+-In your destination DAW, Select it as the audio output device<br>
+-In REAPER, Select it as the audio input device, keeping the output device whatever it used to be.</p>
+<p><strong>Sending MIDI out from REAPER</strong></p>
+<p>REAPER can send MIDI data to external DAWs and hardware synths using MIDI Hardware outputs.<br>
+-Create tracks, and set their input to your MIDI Controller, or manually edit MIDI events on the timeline.<br>
+-Click on the Routing button on each track, and in the top right corner Click on add in the dropdown menu below <strong>MIDI Hardware Output.</strong></p>
+<p>-Select your MIDI Bus and set it to the next available MIDI Channel/<br>
+-In your destination DAW, create MIDI tracks and set their inputs to the corresponding Bus and channel number as the tracks in REAPER.</p>
+<p><strong>Receiving Audio in REAPER</strong>
+REAPER can then receive the audio back from external DAWs the same way you would out of a hardware synth, by plugging it into your interface. Only this time, the cables and ports are all virtual.<br>
+-In Your Destination DAW, set your output audio device to your virtual audio interface.<br>
+-You can simply send all the audio from your destination DAW to output 1/2 and receive it in REAPER, or you can assign tracks to channel 3-64 on your Virtual Audio Bus.<br>
+-In REAPER, set your input device to the Virtual Audio Bus (PC) or Aggregate Device (Mac).<br>
+-Create as many tracks as needed, setting their inputs sequentially to the as many channels as you wish to receive. (The fastest way to do this is to select them all, right-click on the record-arm button, and choose <strong>Set inputs sequentially&gt; n Stereo Pairs</strong> and select the first channel number from the next dropdown menu.<br>
+-Record-arm the tracks, set record to input, and enable monitoring if you wish to hear them out of your monitoring system.</p>
+<p><strong>What's missing from this set-up?</strong></p>
+<p>If you've used ReWire before, you know that ReWire, other than sending and receiving MIDI and receiving Audio, also syncs up <strong>Transport Controls</strong> and <strong>Tempo</strong> between the host DAW and the ReWire application. Our set-up doesn't have this. Furthermore, because of the round-trip latency caused by multiple virtual devices working together, you will find that your recordings don't sync up to the grid.</p>
+<p>The easy fix for this is to manually set the tempo to your project tempo in both DAWs, and manually dragging recorded audio to the grid after recording. This is fine enough for most applications, but you have a live set-up, or if you are also performing vocals or an instruments while recording other DAWs, then you need to sync your transport controls, and send MIDI Clock or MTC from REAPER to your destination DAW, and offset the latency coming back into REAPER.</p>
+<p><strong>Sending MIDI Clock to Other DAWs or External Synths</strong></p>
+<p>This topic is covered in <a href="https://youtu.be/vrpR4cIQbSs">Episode 81</a>, but I merged the blog post for the two episode for convenience.<br>
+The set-up shown in Episode 80 is more than adequate for recording applications, but once we start to get into live performances (especially improvised ones) or if we are using external synths with arpeggiators and other time-based fx, or if we're using Drum Machines, then it becomes crucial to sync those things to beat with REAPER. This is where MIDI Clock comes in!</p>
+<p>You can send Clock from every output device in REAPER, by simply going to <strong>Preferences&gt;Audio&gt;MIDI Devices</strong> &amp; double-clicking on the output device, enabling the box 'Send Clock to this device'</p>
+<p><img src="/blog/rfrt/80/70.png" alt=""></p>
+<p>From this window you can also offset the output to the device if they are having trouble syncing to each other. Start by recording the click track from that device (when possible) and comparing it with the REAPER click.</p>
+<p>On your destination DAW or Synthesizer, you need to now enable the setting to receive external MIDI Clock via MIDI. This will of course be different based on what it is so refer to your user manual (The video shows this set-up using Ableton 11) to find the exact steps to follow. In most devices, this is called something like 'Sync', 'External MIDI', 'MIDI Slave', 'MIDI Follow' or something along these lines.</p>
+<p>Doing this will basically give REAPER control over the tempo &amp; transport controls of the destination synth/DAW and in the case of DAWs, will also move their edit cursor/playhead along with REAPER both during playback and while the projects are stopped.</p>
+<p>The benefit to doing this is obviously getting to play two projects at the same time, and the tempo and time signature changes are also conveyed to the destination.</p>
+<p><strong>Audio Latency</strong></p>
+<p>Once the destination DAW/Synth receives the MIDI Clock and other MIDI events from REAPER, it'll make some noise, which you can capture through virtual audio busses (in the event of it being another program on your system) or by connecting the outputs of that device to your interface (in the case of synths)</p>
+<p>This will always introduce a non-zero amount of latency. MIDI information is sent, read, processed, and then audio is produced and returned to REAPER, which takes time.</p>
+<p>This is usually an amount hardly perceivable by human ears, but if you are recording or doing any kind of tightly gridded music, you have to address this.</p>
+<p>Simply record some audio and calculate this latency, and you can fix it by setting the input offset in REAPER by going to <strong>Preferences&gt;Audio&gt;Recording</strong></p>
+<p><img src="/blog/rfrt/80/71.png" alt=""></p>
+<p><strong>Calculating MIDI Clock &amp; Audio Return Offsets</strong></p>
+<p>The best way to manually do this is using a time selection. Audio will arrive to REAPER slightly off-grid.</p>
+<ol>
+<li>Make some kind of sound in the destination DAW/Synth &amp; Record the audio in REAPER. Simple, short sounds with a clear transient and no attack are the best way to do this.</li>
+<li>Disable snap in REAPER (Opt+S in Mac, Alt+S in PC) and zoom way in!</li>
+<li>Set a time selection from the onset of the recorded sound to the grid it's supposed to be on.</li>
+<li>Right Click on your ruler, set its unit to Minutes: Seconds. This will tell you the duration of the time selection in seconds on your transport bar.</li>
+<li>This amount is what you set as the offset amount.</li>
+</ol>
+<p><em>Note: this will calculate the offset with a precision of 1ms. There are still 480 samples in a second (at 48k Sample Rate) so there's still room for error. You can repeat steps 3-5 while unit is set to sample to get the sample-accurate value, but I personally don't think this is super necessary. Also note that REAPER allows offsetting audio by sample amounts, but for MIDI Clock, the resolution is 0.01ms.</em></p>
+<p><strong>How is all this worth it?</strong></p>
+<p>Only you can answer this question! For recording, you can circumvent all of this by simply rendering audio in destination DAWs and importing into REAPER. If this is something you do often, you will probably lose time in the long term. If you are doing any kind of live performance work, then this is the best way imo, unless you are sticking to the same tempo.</p>
+<p>It's also possible to send MIDI via a virtual Network MIDI bus, which means you can do this across multiple systems, so this system also allows you to collaborate in real-time with musicians using other DAWs.</p>
+<p>As with most of the stuff I show on this channel, the key is to go through the time-consuming set-up once, save what you can of the set-up as templates, and it'll work for you whenever you need it!</p>
+<p>These are the types of things I do when I am feeling uninspired to create. I take off the producer hat and become my own assistant.</p>
+<p><strong>Conclusion</strong></p>
+<p>This is a lengthy set-up but for the most part it's a set-it-and-forget-it type of set-up, as long as you name everything clearly and you can even create template projects in all your DAWs. If you use Logic Pro X, there's a <a href="https://www.youtube.com/watch?v=3q78Qi_1pgo">REAPER Mania tutorial on how to use Logic Pro X with REAPER</a>, and obviously REAPER doesn't have to be the host application. You can just as easily reverse all these applications, or even introduce more DAWs and external applications into the mix!</p>
+<p>Here's Episode 80:</p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FWhJqK2XKW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
+<p>Here's Episode 81:</p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FWhJqK2XKW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
+<p><a href="http://www.buymeacoffee.com/iddqdsound"><img src="/blog/rfrt/80/8.png" alt=""></a></p>
+<p>If you like the work I do, <a href="http://www.buymeacoffee.com/iddqdsound">you can donate to me here</a>! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!<br>
+Join the REAPER squad on our Discord Server:<br>
+<a href="https://discord.gg/YwQESKpBfE">https://discord.gg/YwQESKpBfE</a></p>
+<p><strong>My Reaper Stash:</strong> <a href="https://stash.reaper.fm/u/IDDQDSound">https://stash.reaper.fm/u/IDDQDSound</a></p>
+<p><strong>Follow me on Instagram:</strong> <a href="https://www.instagram.com/iddqdmusic/">https://www.instagram.com/iddqdmusic/</a></p>
+<p><strong>My Music:</strong> <a href="https://soundcloud.com/iddqdmusic"><strong>https://Soundcloud.com/iddqdmusic</strong></a></p>
+<p><a href="https://soundcloud.com/iddqdmusic"> </a> <a href="https://iddqdmusic.bandcamp.com/"><strong>https://iddqdmusic.bandcamp.com</strong></a></p>
               </div>
             </main>
           

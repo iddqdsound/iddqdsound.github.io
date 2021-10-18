@@ -1112,24 +1112,97 @@
 
             <main class="style--xv70n9">
               <div class="style--ku4mf3">
-                <h2>REAPER Tutorials</h2>
-<p>Since 2020, I've been making Tutorials on my YouTube Channel. Each Tutorial is also accompanied by a Blog Post, including more details, free downloads &amp; More. See some of our running series below:</p>
-<h2>Donate</h2>
-<p>If you like the work I do, you can donate to me using the links below:
-Paypal donation link
-BMAC Donation link
-YouTube Memberships</p>
-<h2>RAPID-FIRE REAPER TUTORIALS</h2>
-<p>Short, Fast-paced tutorials exploring some of REAPER's vast toolkit &amp; customization options. Since most tutorials are inspired by viewer questions, there's no real order to watching most of this series, but you can see these sorted under various topics.</p>
-<h2>SOUND EDITING &amp; DESIGN FOR VISUAL MEDIA</h2>
-<p>In this series, I explore workflow tips &amp; share knowledge I've picked up doing Sound Editing, Foley Recording, Sound Design, Dialogue Editing &amp; Post-Production Mixing for Film, TV, and other visual media, in REAPER.
-My own career in Sound Design began in Pro Tools, but I have since been able to fully transition to REAPER, and I want to share some of REAPER's wonderful capabilities in this realm of audio!</p>
-<h2>MIXING FEEDBACK MONDAYS</h2>
-<p>In This series I take projects from my viewers and provide detailed feedback to them. If you want to send me a mix, you can do so by becoming a member of the YouTube Channel, and you can receive feedback for one project every month, but feel free to contact me at <a href="mailto:mfm@iddqdsound.com">mfm@iddqdsound.com</a> if you are interested in a one-off feedback session!</p>
-<h2>LET'S LEARN SCRIPTING IN REAPER</h2>
-<p>I am far from a professional coder myself, but with a little bit of help from REAPER community of coders, I've been exploring some of the scripting capabilities of REAPER through Tutorials and Livestreams, featuring mentors such as Leandro Facchinetti, Geraint Luff &amp; Bo Danerius.</p>
-<h2>SOUND RECIPES</h2>
-<p>This series focuses on some of the whacky FX that I've concocted.</p>
+                <h2>SWS Snapshots: How to save/recall mix states with one click (Rapid-Fire REAPER Tutorials Ep86)</h2>
+<p><img src="/blog/rfrt/86/190.jpg" alt=""></p>
+<p>Hey folks!<br>
+In <a href="https://youtu.be/atWmyZxob30">this episode</a> we're gonna take a deep-ish dive into SWS: Snapshots. I have to admit, <a href="https://www.youtube.com/watch?v=DsWC4XbVXSA">I have covered this topic in the past</a>, but I did a terrible job of it, and nearly a year into these tutorials, I feel like I have earned myself a re-do! Also while we're on the topic of A/B action from <a href="https://youtu.be/3EhIoFe3vEY">the last tutorial</a>, we may as well get this out of the way!</p>
+<p><strong>What are Snapshots?</strong>
+Snapshots are like save points within your project for the overall state of your mix. Unlike regular saving, Snapshots don't save every single thing in your project (more on that in a second) but also unlike regular saving, recalling snapshots can be done instantly and without having to load an actual project! This makes them the perfect for the mixing/mastering stage!</p>
+<p>With Snapshots, you can save and later recall multiple states of your entire project or certain tracks, including their levels, pan, I/O routing, FX Chain and parameters, and more!</p>
+<p>They are THE staple feature of SWS in my opinion, an extension that offers so much I can't imagine living without it (<a href="https://www.youtube.com/watch?v=gVbMbqGSB7E">Here are instructions on how to install SWS!</a>)</p>
+<p><strong>The Snapshots Window</strong></p>
+<p>Go to <strong>Extensions&gt;Snapshots</strong> to open this dockable resizable window:</p>
+<p><img src="/blog/rfrt/86/191.png" alt=""></p>
+<p>Click on 'New' or right click on an empty name column and choose 'New Snapshot' to create your first snapshot. Your first snapshot will save the current state of your entire project, but we can change that to 'Current Visibility' to only save visible tracks, or 'Custom' to select a subset of the 10 things Snapshots can save. These are:</p>
+<p><strong>-Pan:</strong> Pan position, type, Width, &amp; pan law of tracks<br>
+<strong>-Volume:</strong> Fader position of tracks<br>
+<strong>-Mute:</strong> Mute state of tracks<br>
+<strong>-Fx Chains:</strong> Assignment, Settings &amp; Routing of track FX Chains<br>
+<strong>-Solo:</strong> Solo state of tracks<br>
+<strong>-Sends:</strong> Assignment, Fader Position, Pan &amp; Mono Summing of Sends<br>
+<strong>-VIs:</strong> Track Control Panel &amp; Mixer Control Panel Visibility status of tracks*</p>
+<p><strong>-Selection:</strong> Current Track Selection*<br>
+<strong>-Phase:</strong> State of polarity switch of tracks &amp; Sends<br>
+<strong>-Offset:</strong> Manual playback offset assignment of tracks (in Track I/O &amp; 0 by default)</p>
+<p><em>*I took a page out of</em> <a href="https://www.sws-extension.org/download/REAPERPlusSWS171.pdf"><em>the SWS manual</em> </a><em>and left these two for another tutorial, as they are their own kind of monster all together!</em></p>
+<p>There are also some things that Snapshots WILL NOT SAVE so note that Snapshots cannot entirely replace regular saving and in fact, snapshots themselves are only truly saved after the project is saved. Otherwise quitting the project without saving will not save snapshots created in that session! These settings are among the things that Snapshots will not save:</p>
+<p>-Items Position, Length, Rate<br>
+-Items Fade, Take FX, Snap Offset, Mute state<br>
+-Markers &amp; Regions (<a href="https://youtu.be/Vzx4F-IaCKw">though SWS has a feature for that too covered here</a>)<br>
+-Project-wide preferences (Snap, Ripple State, etc.)<br>
+-Automation</p>
+<p><em>Note: Snapshots WILL NOT Bring back deleted tracks &amp; items!</em></p>
+<p><strong>Snapshots Filter Options</strong></p>
+<p><strong>-Filter on recall:</strong> upon recalling an older snapshot, will only load the selected subset (10 boxes above the option) of states.<br>
+<strong>-Save Sel Tracks Only:</strong> Snapshots saved will only save states of selected tracks (works in conjunction with Full Mix, Visibility &amp; Custom options above). You can still choose Full Track Mix, but that will only save all the settings for selected tracks, so hopefully that distinction is clear!<br>
+<strong>-Recall Sel Tracks Only:</strong> Will only load states of selected tracks. This works even when your actual snapshots contains more states which is very useful!<br>
+<strong>-Show Snapshots for selected tracks:</strong> Hides snapshots that don't include references to selected tracks (useful for huge projects with many track/group-specific mix states)<br>
+-Prompt For name: Creating New Snapshots will instantly ask you to name them!<br>
+<strong>-Hide New Tracks on VIs Recall:</strong> Tracks newly created since the snapshot saved will also be hidden upon recall.<br>
+<strong>-Prompt on recalling deleted tracks:</strong> When a snapshot is recalled that includes references to tracks deleted since it was saved, you will be prompted to delete or keep references to those tracks from the snapshot. Clicking Yes will remove the references to deleted tracks. Clicking No will close the window but you will prompted again on next recall, unless you untick the box.</p>
+<p><img src="/blog/rfrt/86/192.png" alt=""></p>
+<p><strong>-Previous/Next</strong>: Recalls Previous/Next Snapshots from selected snapshot.<br>
+<strong>-Move Up/Down:</strong> Use when you need to re-organize your snapshots!</p>
+<p><strong>Right-Click Menu</strong></p>
+<p>Right-clicking the body of the window will open a right-click menu with some additional &amp; some duplicate options:</p>
+<p><img src="/blog/rfrt/86/193.png" alt=""></p>
+<p>Some are very obvious but here are some of the less obvious ones explained:<br>
+<strong>-Merge Into Project:</strong> Opens additional window (we will cover this below) to help integrate a snapshot into a project that has gone through some changes.<br>
+<strong>-Show Snapshot Details:</strong> Opens additional window (covered below) with text information on what the snapshot contains.<br>
+<strong>-Add/Delete Selected Tracks to snapshot:</strong> A special type of overwrite. This retains/removes all the info currently in the snapshots, but adds references to the selected tracks.<br>
+<strong>-Overwrite Snapshot:</strong> fully re-writes all the settings in selected snapshot with current mix state.<br>
+<strong>-Export/Import Snapshot:</strong> Used to move snapshots between projects. Very useful for migrating settings from a current mix to similar mixes. For example, I will probably get a good mix on my new album's drums once and then export that to all other projects from there, making minor adjustments. Snapshots are Text files with a special extension (.swssnap)</p>
+<p><strong>Merge Window:</strong>
+This window is shown when 'Merge into Project', 'Import snapshot' or 'Paste snapshot' are selected.</p>
+<p><img src="/blog/rfrt/86/194.png" alt=""></p>
+<p>From the left two columns, you can match/unmatch tracks, useful for when you import or export tracks, or if your track names/structure has changed since the last recall.<br>
+You can unchain two tracks, or chain any two tracks to each other.<br>
+On the right, you have the same filter window to further customize your new snapshots, and you can then choose to save your new settings as its own snapshot!</p>
+<p><strong>Snapshot Details:</strong>
+Clicking on 'Show Snapshot Details' will open this window:</p>
+<p><img src="/blog/rfrt/86/195.png" alt=""></p>
+<p>This window contains text information of everything saved in a given snapshot, such as the name of plugins, States that are unsaved (off) or the saved state of what was saved.<br>
+Familiarizing yourself with these also helps in case you have some plugins that you no longer have access to. You can manually erase them by exporting the snapshots, editing them in any text editor, and re-importing them into the project!</p>
+<p><strong>Usage</strong></p>
+<p>Obviously the uses for a feature this massive are endless, but here are some things I use them for:<br>
+<strong>-Saving the Starting Point of my mixes:</strong> When I start a mixing project, after importing, grouping and routing my tracks, I take my first snapshots. I can always go back to square one if I hit a dead end.<br>
+<strong>-Creating checkpoints in the mix:</strong> Similarly, at certain milestones I keep a snapshot, like when all levels &amp; pans are set, when basic EQ &amp; Compression is done, etc.<br>
+<strong>-Experiments:</strong> I can save snapshots of my current mix, and then go nuts on it, experimenting with weird routing &amp; plugins, knowing that I can safely return to the point of sanity!<br>
+<strong>-A/B ing Mixes:</strong> With a few snapshots, you can quickly A/B your mixes. Is it really better now than before you added any plugins? Does your experimental DSP sound as good as the more straight-forward one? Of course, you don't have to A/B per se, you can save and switch between any number of states!<br>
+<strong>-A/B ing track groups:</strong> With multi-mic setups, you can toggle between having some or a blend of all of them or none of them. You can take your time &amp; level match these so you don't fool your ears as you A/B/C/D!<br>
+<strong>-Changing perspective/Width of projects:</strong> You can save certain image-based settings as separate snapshots per groups of tracks and mix and match to find an image you like. Save your drum mix from drummer &amp; audience perspective and audition both against your track. Instantly go between a full LCR mix of your guitars/keys &amp; a more panoramic approach.<br>
+<strong>-Compare FX Chains, gear &amp; monitoring systems:</strong> Put them on tracks, dial each in, and instantly switch between hem. You can also see if you get a vastly different when mixing with Headphones vs. Speakers and make possible corrections to your set up.<br>
+<strong>-Live Performance:</strong> Once we bring in live performance into the mix, the possibility once again multiply! Especially if you change a lot of settings while performing live, you can save these on the fly and toggle between vastly different FX Chains. Just remember that the more complex the switch, the more time you need to allow REAPER to unload/load them. Do lots of testing and plan it out carefully based on your upcoming performances!<br>
+-<strong>Comment with how you use them &amp; I'll add them here.</strong></p>
+<p><strong>Conclusion</strong></p>
+<p>Snapshots are one of the features that make REAPER a step above any other DAW in my opinion. In my older DAWs, I always had a weird fear of experimenting, or pushing things too far once I had a "safe" mix going but safe mixes are also boring in my opinion.<br>
+The only solution with other DAWs is to Constantly save new versions of your mix (Logic has an approximation of snapshots with project alternatives, but nowhere near this level of functionality IMO. Pro Tools has Playlists, but not the same thing, in fact, REAPER could use playlist IMO)<br>
+The best analogy I can think of is that mixing without snapshots is like playing an old arcade machine or NES console. You are too careful not to die, because you don't want to start over, so much so that it can actually give you anxiety. REAPER &amp; SWS make mixing like a modern video game, where you can go nuts and have fun knowing that you are always a few clicks away from your last checkpoint, and will only lose a few minutes of work at worst!</p>
+<p>We will definitely revisit Snapshots in the future, as I doubt any single video can truly do its vast feature set justice and still be palatable!</p>
+<p>Here's the video:</p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/atWmyZxob30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
+<p><img src="/blog/rfrt/86/8.png" alt=""></p>
+<p>If you like the work I do, <a href="http://www.buymeacoffee.com/iddqdsound">you can donate to me here</a>! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!<br>
+Join the REAPER squad on our Discord Server:<br>
+<a href="https://discord.gg/YwQESKpBfE">https://discord.gg/YwQESKpBfE</a></p>
+<p>Become a member of ‘IDDQD Sound’ on YouTube: <a href="https://www.youtube.com/channel/UCXom6oGEQL7iBGTGaCpyHng/join">https://www.youtube.com/channel/UCXom6oGEQL7iBGTGaCpyHng/join</a></p>
+<p><strong>My Reaper Stash:</strong> <a href="https://stash.reaper.fm/u/IDDQDSound">https://stash.reaper.fm/u/IDDQDSound</a><br>
+<strong>My Reaper Repository:</strong> <a href="https://github.com/iddqdsound/reaper/raw/main/index.xml">https://github.com/iddqdsound/reaper/raw/main/index.xml</a></p>
+<p><strong>Follow me on Instagram:</strong> <a href="https://www.instagram.com/iddqdmusic/">https://www.instagram.com/iddqdmusic/</a></p>
+<p><strong>My Music:</strong> <a href="https://soundcloud.com/iddqdmusic"><strong>https://Soundcloud.com/iddqdmusic</strong></a></p>
+<p><a href="https://soundcloud.com/iddqdmusic"> </a> <a href="https://iddqdmusic.bandcamp.com/"><strong>https://iddqdmusic.bandcamp.com</strong></a></p>
               </div>
             </main>
           

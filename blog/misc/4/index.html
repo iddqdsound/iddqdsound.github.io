@@ -1112,24 +1112,63 @@
 
             <main class="style--xv70n9">
               <div class="style--ku4mf3">
-                <h2>REAPER Tutorials</h2>
-<p>Since 2020, I've been making Tutorials on my YouTube Channel. Each Tutorial is also accompanied by a Blog Post, including more details, free downloads &amp; More. See some of our running series below:</p>
-<h2>Donate</h2>
-<p>If you like the work I do, you can donate to me using the links below:
-Paypal donation link
-BMAC Donation link
-YouTube Memberships</p>
-<h2>RAPID-FIRE REAPER TUTORIALS</h2>
-<p>Short, Fast-paced tutorials exploring some of REAPER's vast toolkit &amp; customization options. Since most tutorials are inspired by viewer questions, there's no real order to watching most of this series, but you can see these sorted under various topics.</p>
-<h2>SOUND EDITING &amp; DESIGN FOR VISUAL MEDIA</h2>
-<p>In this series, I explore workflow tips &amp; share knowledge I've picked up doing Sound Editing, Foley Recording, Sound Design, Dialogue Editing &amp; Post-Production Mixing for Film, TV, and other visual media, in REAPER.
-My own career in Sound Design began in Pro Tools, but I have since been able to fully transition to REAPER, and I want to share some of REAPER's wonderful capabilities in this realm of audio!</p>
-<h2>MIXING FEEDBACK MONDAYS</h2>
-<p>In This series I take projects from my viewers and provide detailed feedback to them. If you want to send me a mix, you can do so by becoming a member of the YouTube Channel, and you can receive feedback for one project every month, but feel free to contact me at <a href="mailto:mfm@iddqdsound.com">mfm@iddqdsound.com</a> if you are interested in a one-off feedback session!</p>
-<h2>LET'S LEARN SCRIPTING IN REAPER</h2>
-<p>I am far from a professional coder myself, but with a little bit of help from REAPER community of coders, I've been exploring some of the scripting capabilities of REAPER through Tutorials and Livestreams, featuring mentors such as Leandro Facchinetti, Geraint Luff &amp; Bo Danerius.</p>
-<h2>SOUND RECIPES</h2>
-<p>This series focuses on some of the whacky FX that I've concocted.</p>
+                <h2>Time Signature Mapping in REAPER: From N00b to GOAT</h2>
+<p><img src="/blog/misc/4/202.png" alt=""></p>
+<p>Hey folks!<br>
+In this episode we will explore time signature in REAPER in as much detail as possible. Based on the style of music you do, your time signature needs may range from very simple (setting one time signature per project) to very complex (needing to change time signatures often and also loop and arrange complex rhythm structures) and I tried to structure the video in a way that starts simple and works it up in terms of complexity so that hopefully you can hop on and hop off when you feel like all your time signature needs can be met!</p>
+<p>That said, I highly recommend you watch all the way to Level 3 and check out my Time Signature Toolbar, which you can download, with all its icons right here:</p>
+<p>iddqd_Time Signature Toolbar Download Bundle</p>
+<p>.zip</p>
+<p>Download ZIP • 45KB</p>
+<p><strong>Contents:</strong>
+1 toolbar (iddqd_time signature toolbar.ReaperMenu<br>
+29 toolbar icons</p>
+<p><strong>Installation:</strong>
+Step 1: Make sure you have 'mpl<em>add x to y time signature' installed. If you don't you can import them in ReaPack (they come pre-packaged) under MPL Scripts&gt;Various.<br>
+Step 2: in REAPER, go to Options&gt;Show REAPER Resource path in Explorer Finder<br>
+Step 3: in your resource path, go to Data&gt;toolbar_icons and paste all 29 toolbar icons there!<br>
+_IMPORTANT NOTE: by default, the toolbar will be imported and replace your toolbar number 15. If you have a toolbar assigned to that, do Step 4, otherwise, skip to step 5.</em><br>
+Step 4: open 'iddqd_time signature toolbar.ReaperMenu' with a text editor. at the very top you will see [Floating toolbar 15]. If your toolbar 15 is already occupied, change that number to that of an unassigned toolbar. In the next step, you will have to navigate to that empty toolbar.<br>
+Step 5: in REAPER, go to Options&gt;Customize menus/toolbars...</p>
+<p><img src="/blog/misc/4/203.png" alt=""></p>
+<p>Step 6: From the dropdown menu on the top left (pictured above) navigate to Floating toolbar 15.<br>
+Step 7: From the bottom right click on import, and navigate to my toolbar, and import it.</p>
+<p>REAPER should automatically import the toolbar and its actions and all the toolbar icons! You can then set a hotkey to this, or add it as the contextual toolbar for your ruler (we will cover contextual toolbars in the near future)</p>
+<p><strong>Creating a Time Signature Marker</strong>
+By default, your project will have a default tempo of 110bpm and will be in 4/4. You can change this for your project from <strong>File&gt;Project Settings...</strong> or by placing your edit cursor at the beginning of your project (Default hotkey: <strong>W</strong>) and double clicking in the relevant fields in your transport bar.<br>
+<em>Note: If you don't see time signature in your transport bar, right click on it and click on 'show time signature'</em>
+You can also hit <strong>Shift+C</strong> to open this submenu:</p>
+<p><img src="/blog/misc/4/204.png" alt=""></p>
+<p><strong>Position:</strong> Determines the time where the marker will be placed.<br>
+<strong>Set Tempo:</strong> When ticked, will change the tempo at the marker<strong>Set Time Signature:</strong> when ticked, will change the time signature at the marker<br>
+<strong>Set Metronome Pattern:</strong> when ticked, allows you set your own custom beating patterns by the metronome, by inputting one of the 4 characters below:<br>
+<strong>A -</strong> Primary beat <strong>B -</strong> Secondary beat <strong>T -</strong> Triplets <strong>. -</strong> Skip<br>
+The number of characters in this box MUST correspond to the top number of your time signature. Normally all patterns will be beat as <strong>A</strong> for the first beat followed by all <strong>B</strong>s.<br>
+We will cover the rest of the options in the tempo episode!</p>
+<p><strong>Important Hotkeys &amp; Actions to know</strong>
+<strong>Shift+C -</strong> Insert tempo marker at edit cursor - This opens the tempo/time signature marker submenu, where you can create a tempo/time signature marker anywhere on your project, and set the beating pattern for the metronome.<br>
+<strong>Shift+T -</strong> Insert Region at time selection - This is useful when you have a complex set of time signature markers that you want to duplicating/move around the timeline. For example, if you have a phrase made up of three 4/4 measures, and a 5/4 measure, that you want to loop, set a Region to the first 4 measures, then you can duplicate it using <strong>Cmd+Left Drag.</strong>
+<strong>Ctl+Shift+T -</strong> This is a custom hotkey I have set to the action 'Insert measure from time selection (new time signature)...' which allows you to change the time signature and tempo of a section of your project, based on its duration! Useful for re-arranging or fixing your mistakes when time signature mapping!</p>
+<p><strong>Alternative to using Regions</strong>
+I like to keep my region lane free to denote different sections of my song. Because of this, I prefer to use Empty Items to move/duplicate my time signature markers. To do this, make sure you are in <strong>Ripple Editing All mode</strong> and simply duplicate the item. Copying and pasting will unfortunately not copy over the time signature markers, but duplicating (<strong>Cmd+D</strong>) will!<br>
+You can insert an empty item by going to Insert&gt;Empty MIDI Item after setting a time selection, or alternatively, you can set up a mouse modifier for the same action in <strong>Mouse Modifiers&gt;Track&gt;Left drag.</strong></p>
+<p><strong>Conclusion &amp; Important announcement!</strong></p>
+<p>My website is going to be down starting from September 9th for a short time, while I try to figure out where to move my domain, and honestly, I'm debating whether or not I should keep it at all. I feel like the blog posts take a long time to make and are rarely visited by you lovely folks! That said, if any of you really like these, please let me know. If they are actually valued by you folks, I'll do my best to maintain them! Of course, if you can, please donate to the channel as the cost of upkeeping a website is also quite significant, and not currently offset by what I make off of YouTube monetization!</p>
+<p>Here's the video:</p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/coffee.com/iddqdsound" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
+<p><img src="/blog/misc/4/8.png" alt=""></p>
+<p>If you like the work I do, <a href="http://www.buymeacoffee.com/iddqdsound">you can donate to me here</a>! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!</p>
+<p><strong>My Reaper Stash:</strong> <a href="https://stash.reaper.fm/u/IDDQDSound">https://stash.reaper.fm/u/IDDQDSound</a><br>
+<strong>My Reaper Repository: <a href="https://github.com/iddqdsound/reaper/raw/main/index.xml">https://github.com/iddqdsound/reaper/raw/main/index.xml</a></strong></p>
+<p><strong>Follow me on Instagram:</strong> <a href="https://www.instagram.com/iddqdmusic/">https://www.instagram.com/iddqdmusic/</a></p>
+<p><strong>My Music:</strong> <a href="https://soundcloud.com/iddqdmusic"><strong>https://Soundcloud.com/iddqdmusic</strong></a></p>
+<p><a href="https://soundcloud.com/iddqdmusic"> </a> <a href="https://iddqdmusic.bandcamp.com/"><strong>https://iddqdmusic.bandcamp.com</strong></a></p>
+<p><strong>How to Download my custom scripts</strong><br>
+You can download my custom script by copying the link below to your ReaPack. Go to Extensions&gt;Import Repositories and paste this link:</p>
+<p><a href="https://github.com/iddqdsound/reaper/raw/master/index.xml">https://github.com/iddqdsound/reaper/raw/master/index.xml</a></p>
+<p>Next go to Extensions&gt;Browse Packages and search for iddqd. You can then select some or all of my actions to install!</p>
               </div>
             </main>
           

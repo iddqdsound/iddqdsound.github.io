@@ -1112,24 +1112,33 @@
 
             <main class="style--xv70n9">
               <div class="style--ku4mf3">
-                <h2>REAPER Tutorials</h2>
-<p>Since 2020, I've been making Tutorials on my YouTube Channel. Each Tutorial is also accompanied by a Blog Post, including more details, free downloads &amp; More. See some of our running series below:</p>
-<h2>Donate</h2>
-<p>If you like the work I do, you can donate to me using the links below:
-Paypal donation link
-BMAC Donation link
-YouTube Memberships</p>
-<h2>RAPID-FIRE REAPER TUTORIALS</h2>
-<p>Short, Fast-paced tutorials exploring some of REAPER's vast toolkit &amp; customization options. Since most tutorials are inspired by viewer questions, there's no real order to watching most of this series, but you can see these sorted under various topics.</p>
-<h2>SOUND EDITING &amp; DESIGN FOR VISUAL MEDIA</h2>
-<p>In this series, I explore workflow tips &amp; share knowledge I've picked up doing Sound Editing, Foley Recording, Sound Design, Dialogue Editing &amp; Post-Production Mixing for Film, TV, and other visual media, in REAPER.
-My own career in Sound Design began in Pro Tools, but I have since been able to fully transition to REAPER, and I want to share some of REAPER's wonderful capabilities in this realm of audio!</p>
-<h2>MIXING FEEDBACK MONDAYS</h2>
-<p>In This series I take projects from my viewers and provide detailed feedback to them. If you want to send me a mix, you can do so by becoming a member of the YouTube Channel, and you can receive feedback for one project every month, but feel free to contact me at <a href="mailto:mfm@iddqdsound.com">mfm@iddqdsound.com</a> if you are interested in a one-off feedback session!</p>
-<h2>LET'S LEARN SCRIPTING IN REAPER</h2>
-<p>I am far from a professional coder myself, but with a little bit of help from REAPER community of coders, I've been exploring some of the scripting capabilities of REAPER through Tutorials and Livestreams, featuring mentors such as Leandro Facchinetti, Geraint Luff &amp; Bo Danerius.</p>
-<h2>SOUND RECIPES</h2>
-<p>This series focuses on some of the whacky FX that I've concocted.</p>
+                <h2>LUFS, True Peak &amp; Dynamic Range Analysis with SWS Loudness (Rapid-fire Reaper Tutorials Ep69)</h2>
+<p><img src="/blog/rfrt/69/87.jpg" alt=""></p>
+<p>Hey folks! <a href="https://youtu.be/CJpTV3Zzdtw">In this episode</a> we will look at another SWS feature, called Loudness. Loudness is a tool to quickly batch analyze a bunch of audio files for Loudness. It can calculate Integrated and Short-Term Loudness in LUFS, your True Peak value, as well as your dynamic range in LU.<br>
+<a href="https://www.youtube.com/watch?v=PQAaAN6AI0I&amp;list=PLjvmrOUg3J0pEil4PDHyupUI-9MQwsPmd">Here is a playlist of all the SWS features we have covered in the past</a>.</p>
+<p><strong>Loudness</strong></p>
+<p>Loudness is an important factor when exporting audio files, whether they are songs you are getting mastered, masters you are going to upload, or SFX files you are exporting to a library. I use this tool also as a way to Quality Control my videos, making sure that my Videos are all around the same Loudness, so that if you are binging them, they all sound around the same!</p>
+<p><strong>What SWS Loudness Analyzer Calculates</strong></p>
+<p>SWS Loudness, unlike Loudness meters that analyze your audio in real-time, works on files. That means it may not be of too much use while you are mastering, because it doesn't analyze any Master Track, Track, or Item Processing on your items, just the source file itself. That's why for mastering, I still always have a Loudness analyzer, like the Youlean Loudness Meter, on my monitoring FX, but where those plugins analyze audio in real-time, SWS Loudness can do it in almost an instant!</p>
+<p>Below are the things that the Loudness analyzer can show you and a brief explanation of each:</p>
+<p><strong>Integrated, Short-Term and Momentary LUFS</strong></p>
+<p>to best understand these first it's important to understand what LUFS is. LUFS stands for Loudness Units Full Scale, and it's a measure of a sound's perceived loudness compared to Full Scale. Normally, your meters in REAPER and most other DAWs, show you peak and RMS values. These values are very useful to you, but may not tell you much about how loud something is compared to others. For example, take a Kick sound and a fingered Bass note. A Kick sound has a fuller transient and decays quickly, whereas a bass note decays more slowly, sustains for longer, but has a softer attack compared to a kick. So the Kick will show you a higher Peak, and a lower RMS, while the bass will show a lower peak and a higher RMS. So which is louder?</p>
+<p>This is where LUFS comes in. LUFS calculates average loudness over a period of time, so two songs that both hit -14LUFS should theoretically feel about the same loud. This is why LUFS values are now the standard for streaming platforms to make sure the music they host is nearly the same loudness, so that, for example, when you have a bunch of songs in a playlist, you're not constantly having to adjust your speaker's volume knob to hear them at a comfortable level!</p>
+<p><strong>Integrated LUFS</strong> refers to the average Loudness of your song from start to finish. This is the value you will have to conform to platform-specific values when mastering your own music, but it also doesn't tell the full story. For example, a track can be very quiet, hovering around -18LUFS during the intro, with a sudden burst of loudness in the chorus, bringing the LUFS value to -10LUFS. Assuming the loud and the quiet bit are equal duration, then your integrated LUFS value will be -14LUFS. That makes it pass the Spotify specs, but it doesn't mean your song won't annoy the listener. In the example above, your <strong>short-term LUFS</strong> is peaking at -10LUFS and your <strong>short-term minimum LUFS</strong> is well below the standard for Spotify, at -18LUFS.</p>
+<p>It's totally okay for <strong>momentary</strong> or <strong>Short Term LUFS</strong> values to go below or above the standard, and that's actually encouraged! Afterall, if your song does have a quieter part and a louder bit, you want the transition between the two to be impactful. However, what you don't want to do is make the listener have to turn up their speakers during the quiet part and then have to turn it down. This is where the Loudness Range Comes in.</p>
+<p><strong>Range (LU)</strong> can be seen as the dynamic range of your track, comparing the momentary Maximum against the minimum. In the example above, our <strong>LU Range</strong> will be 8.</p>
+<p>8 is not unheard of, but it is significant, and probably not suitable for most genres. It could be fine for an orchestral recording, but if you make rock music, you'd want to reduce the dynamic range a bit. There's no real standard for this and every song is different, but for rock music you should aim for anywhere between 5-7LU, for Hip-Hop you should have 4LU, and unless your song is full-on start to finish, you want to avoid leaving less than 4LU of Dynamic range for your track, <a href="https://iddqdmusic.bandcamp.com/">something I massively failed when mastering my last album</a>! Learn from my mistakes, and try to consult a mastering engineer for your own genre, if not fully outsource your mastering to another professional!</p>
+<p><strong>Conclusion</strong></p>
+<p>If you are after quickly batch-analyzing a bunch of Audio files, Loudness is as good as it gets! I hope you can put this awesome tool to good use!</p>
+<p>Here's the video:</p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CJpTV3Zzdtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
+<p>If you like the work I do, <a href="http://www.buymeacoffee.com/iddqdsound">you can donate to me here</a>! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!</p>
+<p><strong>My Reaper Stash:</strong> <a href="https://stash.reaper.fm/u/IDDQDSound">https://stash.reaper.fm/u/IDDQDSound</a></p>
+<p><strong>Follow me on Instagram:</strong> <a href="https://www.instagram.com/iddqdmusic/">https://www.instagram.com/iddqdmusic/</a></p>
+<p><strong>My Music:</strong> <a href="https://soundcloud.com/iddqdmusic"><strong>https://Soundcloud.com/iddqdmusic</strong></a></p>
+<p><a href="https://soundcloud.com/iddqdmusic"> </a> <a href="https://iddqdmusic.bandcamp.com/"><strong>https://iddqdmusic.bandcamp.com</strong></a></p>
               </div>
             </main>
           

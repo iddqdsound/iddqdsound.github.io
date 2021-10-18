@@ -1112,24 +1112,32 @@
 
             <main class="style--xv70n9">
               <div class="style--ku4mf3">
-                <h2>REAPER Tutorials</h2>
-<p>Since 2020, I've been making Tutorials on my YouTube Channel. Each Tutorial is also accompanied by a Blog Post, including more details, free downloads &amp; More. See some of our running series below:</p>
-<h2>Donate</h2>
-<p>If you like the work I do, you can donate to me using the links below:
-Paypal donation link
-BMAC Donation link
-YouTube Memberships</p>
-<h2>RAPID-FIRE REAPER TUTORIALS</h2>
-<p>Short, Fast-paced tutorials exploring some of REAPER's vast toolkit &amp; customization options. Since most tutorials are inspired by viewer questions, there's no real order to watching most of this series, but you can see these sorted under various topics.</p>
-<h2>SOUND EDITING &amp; DESIGN FOR VISUAL MEDIA</h2>
-<p>In this series, I explore workflow tips &amp; share knowledge I've picked up doing Sound Editing, Foley Recording, Sound Design, Dialogue Editing &amp; Post-Production Mixing for Film, TV, and other visual media, in REAPER.
-My own career in Sound Design began in Pro Tools, but I have since been able to fully transition to REAPER, and I want to share some of REAPER's wonderful capabilities in this realm of audio!</p>
-<h2>MIXING FEEDBACK MONDAYS</h2>
-<p>In This series I take projects from my viewers and provide detailed feedback to them. If you want to send me a mix, you can do so by becoming a member of the YouTube Channel, and you can receive feedback for one project every month, but feel free to contact me at <a href="mailto:mfm@iddqdsound.com">mfm@iddqdsound.com</a> if you are interested in a one-off feedback session!</p>
-<h2>LET'S LEARN SCRIPTING IN REAPER</h2>
-<p>I am far from a professional coder myself, but with a little bit of help from REAPER community of coders, I've been exploring some of the scripting capabilities of REAPER through Tutorials and Livestreams, featuring mentors such as Leandro Facchinetti, Geraint Luff &amp; Bo Danerius.</p>
-<h2>SOUND RECIPES</h2>
-<p>This series focuses on some of the whacky FX that I've concocted.</p>
+                <h2>Padre LFO Generator: LFO/Randomize Items, Takes &amp; CC (Rapid-Fire Reaper Tutorials Ep60)</h2>
+<p><img src="/blog/rfrt/60/111.jpg" alt=""></p>
+<p>Hey folks!</p>
+<p><a href="https://youtu.be/L0TjiCQB8Xo">In this episode</a> I'm gonna show you, through a few examples, the SWS Padre LFO Generator. It's one of the best SWS features and does certain things beyond the capabilities of REAPER's native Automation Items (<a href="https://youtu.be/Kf8TFQ8ov_s">which we have covered previously here</a>).</p>
+<p>In the video I'll show you some practical examples, but for the more theory-minded, here's a full breakdown of all the Parameters:</p>
+<p><strong>Target:</strong> Sets the target for the LFO/Randomizer. You can do this with Selected track envelopes, Takes/Item Envelopes, or MIDI items (for CC operations)</p>
+<p><em>Note: With track envelopes, we already have automation items, but it's still useful as Automation item editor doesn't have a random generator, and this window also makes it easier to generate envelopes for multiple parameters more quickly.</em></p>
+<p><strong>Segment:</strong> Allows for applying the LFO/Randomizer to a segment of the whole item/track envelope. You can choose loop, time selection or simply selected item(s).</p>
+<p><strong>LFO Shape:</strong> Sets the LFO shape. Other than all basic waveforms (Sine, Saw Up, Saw Down, Square, Triangle) You can also set it to Random or Random Bezier. The Random generator creates totally vertical automation points which makes the values jump, so it's more appropriate for example, to create a random sine wave melody, but the Bezier creates curved points which sound more smooth, for example to use to randomize Cutoff points on a filter or do random frequency sweeps (like we will show in the video.</p>
+<p><strong>Frequency:</strong> Sets the Frequency of the LFO in beat values, or with 'Sync off' selected, allows you to set the frequency in Hertz (watch out for really high values)</p>
+<p><em>Note: The values divided by 1 indicate beats not measure, so note that 2/1, for example, doesn't mean 2 measures, but 2 beats, and 4/1 is 4 beats or 1 measure, and so on.</em></p>
+<p><strong>Delay:</strong> Sets the offset for the LFO generator. By default, it starts at the midpoint going up first and then down, but with the Delay (which is really a phase parameter as it doesn't actually delay things) you can change the start point of the generated LFO/Randomizer.</p>
+<p><strong>Offset:</strong> Sets the offset amount for the midpoint. Could be anywhere from -99% (midpoint is close to the lowest value possible for the parameter) to +99% (midpoint is almost the highest value possible for the parameter)</p>
+<p><strong>Strength:</strong> Sets the amount of the LFO's deviation (whether cyclical or random) from the midpoint. At 0% there will be no deviation (ie no envelope applied) and at %100 the value goes from the midpoint to the highest and lowest values possible for the parameter.</p>
+<p><strong>Envelope:</strong> This is greyed out unless you have Items/Takes selected in Target. When Items/Takes are selected, this allows you to choose Volume, Pan, Pitch, or Rate for the item and apply the LFO to it. A free and quick way to add a Vibrato, Tremolo, or Autopan effect to your sounds without a plugin!</p>
+<p><strong>MIDI CC:</strong> This is greyed out unless you have MIDI items selected in Target. Simply choose the CC number from here. The values don't indicate what the CC is, but you can open any MIDI item and use the CC lanes as a cheat sheet!</p>
+<p><em>Note: If selected Track Envelopes is selected in Target, both the above parameters are greyed out. You instead have to click on any visible envelope lane to apply the LFO/Randomizer</em></p>
+<p><em>Here's the video:</em></p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/L0TjiCQB8Xo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
+<p>If you like the work I do, you can donate to me <a href="http://www.buymeacoffee.com/iddqdsound">here</a>. Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!</p>
+<p><a href="https://stash.reaper.fm/u/IDDQDSound"><strong>My Reaper Stash</strong></a><a href="http://www.instagram.com/iddqdmusic"><strong>My Instagram</strong></a></p>
+<p><strong>My Music:</strong></p>
+<p><a href="https://Soundcloud.com/iddqdmusic">https://Soundcloud.com/iddqdmusic</a></p>
+<p><a href="https://iddqdmusic.bandcamp.com/">https://iddqdmusic.bandcamp.com</a></p>
               </div>
             </main>
           

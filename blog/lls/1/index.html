@@ -1112,24 +1112,98 @@
 
             <main class="style--xv70n9">
               <div class="style--ku4mf3">
-                <h2>REAPER Tutorials</h2>
-<p>Since 2020, I've been making Tutorials on my YouTube Channel. Each Tutorial is also accompanied by a Blog Post, including more details, free downloads &amp; More. See some of our running series below:</p>
-<h2>Donate</h2>
-<p>If you like the work I do, you can donate to me using the links below:
-Paypal donation link
-BMAC Donation link
-YouTube Memberships</p>
-<h2>RAPID-FIRE REAPER TUTORIALS</h2>
-<p>Short, Fast-paced tutorials exploring some of REAPER's vast toolkit &amp; customization options. Since most tutorials are inspired by viewer questions, there's no real order to watching most of this series, but you can see these sorted under various topics.</p>
-<h2>SOUND EDITING &amp; DESIGN FOR VISUAL MEDIA</h2>
-<p>In this series, I explore workflow tips &amp; share knowledge I've picked up doing Sound Editing, Foley Recording, Sound Design, Dialogue Editing &amp; Post-Production Mixing for Film, TV, and other visual media, in REAPER.
-My own career in Sound Design began in Pro Tools, but I have since been able to fully transition to REAPER, and I want to share some of REAPER's wonderful capabilities in this realm of audio!</p>
-<h2>MIXING FEEDBACK MONDAYS</h2>
-<p>In This series I take projects from my viewers and provide detailed feedback to them. If you want to send me a mix, you can do so by becoming a member of the YouTube Channel, and you can receive feedback for one project every month, but feel free to contact me at <a href="mailto:mfm@iddqdsound.com">mfm@iddqdsound.com</a> if you are interested in a one-off feedback session!</p>
-<h2>LET'S LEARN SCRIPTING IN REAPER</h2>
-<p>I am far from a professional coder myself, but with a little bit of help from REAPER community of coders, I've been exploring some of the scripting capabilities of REAPER through Tutorials and Livestreams, featuring mentors such as Leandro Facchinetti, Geraint Luff &amp; Bo Danerius.</p>
-<h2>SOUND RECIPES</h2>
-<p>This series focuses on some of the whacky FX that I've concocted.</p>
+                <h2>Let's Learn Scripting in REAPER: Ep00 &amp; Ep01 Notes</h2>
+<p><img src="/blog/lls/1/82.png" alt=""></p>
+<p>Hey folks!</p>
+<p>Very excited to be getting into ReaScripts in this brand-new series. Just to clarify something outright, I am an Absolute n00b of scripting in REAPER. I know Max/MSP, an object-based audio programming language, and a basic amount of Python, but I consider myself an absolute beginner. I will NOT be teaching this series. I'll be the student, and I'll try to embark on this journey to learn to code, and every month, bring to you all the stuff I learned in condensed form. I will pour through resources, get help from the pros in the field (like this episode's Guest Leandro Facchinetti) and hopefully through my trails, failures and tribulations, you will learn a few things as well!</p>
+<p>You, my viewers, in turn, will be my motivation. I have tried to learn scripting with varying degrees of success in the past, but I always got distracted midway and didn't keep going. By promising you to work on my scripting monthly, I will hopefully get a boost of motivation when I inevitably get lazy or start facing hurdles as we get into more pro territory!</p>
+<p>With the caveat out of the way, let's begin the series with an overview. On the first Monday of Every month, I will release a new episode, and document some of the stuff I learned. Every video will come with a blog post, where I will post additional info cut for time, links to external resources and tutorials, and feature guest coders to go over everything from the basic to more advanced stuff.</p>
+<p>Here's Episode 00:</p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/be.com/playlist?list=PLjvmrOUg3J0qUO8LLIbJTYD7j0l9VUsJ3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
+<p><strong>What are ReaScripts and what are their benefits?</strong></p>
+<p>ReaScripts come in two forms:<br>
+<strong>Custom scripts:</strong> These are bits of code that we import into REAPER as an action. They work like any other action. They can be assigned to a hotkey, or put on a toolbar, or ran from the Action list.<br>
+<strong>JSFX:</strong> These are custom plug-ins that can process Audio/MIDI/Video in real-time*</p>
+<p><em>*videos can't be ingested in real-time by REAPER, but Video processors process video on your timeline as you play. So it's not exactly real-time in that case.</em></p>
+<p>In both case, there are already thousands of scripts that you can download from the REAPER stash, or using ReaPack. Most are donation-ware, so you can download them from free, but make sure to donate to the creators who make your life easier!</p>
+<p><strong>Benefits of Custom Scripts:</strong></p>
+<p>Custom scripts are easier to distribute than custom actions between users. Sometimes when you lovely folks download my custom actions from the <a href="https://www.youtube.com/playlist?list=PLjvmrOUg3J0qUO8LLIbJTYD7j0l9VUsJ3">Rapid-Fire REAPER tutorials</a>, I've received emails that they didn't work, because the viewer didn't have SWS installed or even specific custom scripts I may have used in my custom actions. With a custom script, everything they need to run the action is in the code.</p>
+<p>They are also more customizable. The range of what you can do with custom actions is still limited, especially if your custom actions requires some steps in the middle of the process to get any kind of input or selection from the user.</p>
+<p><strong>Choice of programming languages:</strong> You can write scripts for REAPER with 4 languages. Below are the pros and cons of each one. Also check out the <a href="https://www.reaper.fm/sdk/reascript/reascript.php">REAPER documentation on these here</a>.</p>
+<p><strong>1. EEL2:</strong> An open-source programming language designed by <a href="http://Cockos.It">Cockos.</a><br>
+✓Easy to learn<br>
+✓JSFX and Video Processors are written in EEL2<br>
+✓Basic UI (User Interface) Design features<br>
+✓Comes standard with REAPER and requires no additional installs<br>
+✗ Relative to the other languages, very little study materials available</p>
+<p>Admiral Bumblebee is one of the best educators for EEL2. <a href="https://www.admiralbumblebee.com/">I highly recommend exploring his website</a>, and we will do it together in the future.</p>
+<p><strong>2. Lua:</strong> Popular language used by many video games, adobe products, OBS. This is the language we will begin with in this series. Most custom scripts are written in Lua.<br>
+✓Simple yet powerful language<br>
+✓Code-Assembly* is easy with lua<br>
+✓Lots of resources available<br>
+✓Can bridge other programs with REAPER<br>
+✓Comes standard with REAPER and requires no additional installs✗ Only very basic UI Design</p>
+<p><em>*Using the REAPER API, we can assemble codes we want to script with, rather than having to write much base-level code.</em></p>
+<p><strong>3. Python:</strong> The most popular of the languages we have so far. Python doesn't come installed with REAPER, but does come with a huge code library of amazing functionality not possible using EEL2/LUA, including Machine learning AI features!<br>
+✓Lots of resources available<br>
+✓Rich Code library full of very advanced functions<br>
+✗ Requires additional installs &amp; set-up to write and distribute</p>
+<p><strong>4. C/C++:</strong> Scripts with this language work a bit differently than the rest. Even their documentation is in a <a href="https://www.reaper.fm/sdk/plugin/plugin.php">different place on the REAPER website</a>.<br>
+✓The most powerful and advanced of all (SWS <a href="https://github.com/reaper-oss/sws">scripts are in C++</a>)<br>
+✓Lots of resources available<br>
+✓Rich Code library full of very advanced functions<br>
+✗ More difficult to debug<br>
+✗ Not very suitable for beginners to scripting.</p>
+<p><strong>The REAPER API</strong>
+The <a href="https://www.reaper.fm/sdk/reascript/reascripthelp.html">REAPER API</a> (Advanced programming interface) is a searchable database of functions for ReaScripts. It can be accessed from REAPER by clicking on API Help in the ReaScript Development Window.</p>
+<p><img src="/blog/lls/1/83.jpg" alt=""></p>
+<p><em>To access this window go to Window&gt;ReaScript Documentation</em></p>
+<p>This is where you find bits of code that you can assemble into your scripts, not unlike what we do with custom actions.</p>
+<p>Here's Episode 01:</p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/be.com/playlist?list=PLjvmrOUg3J0qUO8LLIbJTYD7j0l9VUsJ3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
+<p><strong>API/ReaScript Development Window Tips</strong></p>
+<p>The ReaScript Development Window can be accessed for any custom script you may have downloaded. Simply highlight the script, choose <strong>Edit Action</strong> and the window will open revealing the code, which you can study.</p>
+<p>Hovering the mouse over any of the functions (color-coded in Yellow) will reveal additional information on the function. Pressing F1 will open the documentation for that action in the API.</p>
+<p>Pressing <strong>Cmd+K (Ctrl+K for PC)</strong> will reveal all the arguments and outputs for functions in the blue pane at the bottom of the window.</p>
+<p><strong>Cmd+Mousewheel (Ctrl+Mousewheel for PC)</strong> Will zoom in and out, resizing the font.</p>
+<p><strong>leafac_iddqd_Search REAPER Mania tutorial</strong></p>
+<p>For the <a href="https://www.youtube.com/watch?v=y6_r9SQKUHA">50th episode of Rapid-Fire REAPER Tutorials</a>, we created an action to look up a Kenny Gioia tutorial. Watch that video for more on that. That action pretty much just open Kenny Gioia's page. This custom script opens a dialog box right in REAPER, where you can search for any video. In Episode 1 we showed you how to modify it to perform any internet search right from REAPER, which is pretty powerful if you ask me.</p>
+<p>You can download the action from <a href="https://github.com/leafac">Leandro's Github</a>. Simply copy this link, and go to Extensions&gt;Reapack&gt;Import <a href="https://github.com/leafac/reaper/raw/master/index.xml">Repositories... https://github.com/leafac/reaper/raw/master/index.xml </a>Paste the link there, hit okay and then you can go to Extensions&gt;Reapack&gt;Browse Packages, and search for leafac. Select all and right click&gt;Install.</p>
+<p><strong>Resources:</strong></p>
+<li id="viewer-8j373" class="\_1atvN \_2TTR5 \_1BJwx public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth1 public-DraftStyleDefault-list-ltr public-DraftStyleDefault-reset \_2QAo- \_25MYV \_2WrB- \_1atvN">
+<p><strong>Beginners</strong></p>
+</li><li id="viewer-82e6v" class="\_1atvN \_2TTR5 \_1BJwx public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth2 public-DraftStyleDefault-list-ltr public-DraftStyleDefault-reset \_2QAo- \_25MYV \_2WrB- \_1atvN">
+<p>Leandro Facchinetti’s channel: <a href="https://www.youtube.com/channel/UC_R-6HcHW5V9_FlZe30tnGA">https://www.youtube.com/channel/UC_R-6HcHW5V9_FlZe30tnGA</a> / <a href="https://github.com/leafac/reaper">https://github.com/leafac/reaper</a><br>
+Leandro creates REAPER scripts under the name leafac, livestreams many weekly coding sessions, and does a lot of tutorials on scripting and other REAPER goodies!</p>
+</li><li id="viewer-3na8q" class="\_1atvN \_2TTR5 \_1BJwx public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth2 public-DraftStyleDefault-list-ltr \_2QAo- \_25MYV \_2WrB- \_1atvN">
+<p>ReaTeam ReaScripts Templates: <a href="https://github.com/ReaTeam/ReaScripts-Templates">https://github.com/ReaTeam/ReaScripts-Templates</a><br>
+A collection of template scripts from ReaTeam, each with very thoroughly-explained documentation.</p>
+</li><li id="viewer-dpds4" class="\_1atvN \_2TTR5 \_1BJwx public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth2 public-DraftStyleDefault-list-ltr \_2QAo- \_25MYV \_2WrB- \_1atvN">
+<p>X-Raym: <a href="https://www.extremraym.com/">https://www.extremraym.com/</a><br>
+X-Raym makes some of the best scripts for REAPER, and is one of the best educators of lua scripting for REAPER as well. Check out the next link for an awesome tutorial series for lua. It's in French but with great English subtitles and a great course overall!</p>
+</li><li id="viewer-ap7dg" class="\_1atvN \_2TTR5 \_1BJwx public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth2 public-DraftStyleDefault-list-ltr \_2QAo- \_25MYV \_2WrB- \_1atvN">
+<p>X-Raym Video tutorials: <a href="https://www.youtube.com/watch?v=0Dwonn3Pe2Q&amp;list=PL7M70tQL6s1IOYycGilaHLs5G4vOcyLF8">https://www.youtube.com/watch?v=0Dwonn3Pe2Q&amp;list=PL7M70tQL6s1IOYycGilaHLs5G4vOcyLF8</a></p>
+</li><li id="viewer-6h348" class="\_1atvN \_2TTR5 \_1BJwx public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth1 public-DraftStyleDefault-list-ltr \_2QAo- \_25MYV \_2WrB- \_1atvN">
+<p><strong>Programmers</strong></p>
+</li><li id="viewer-5q017" class="\_1atvN \_2TTR5 \_1BJwx public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth2 public-DraftStyleDefault-list-ltr public-DraftStyleDefault-reset \_2QAo- \_25MYV \_2WrB- \_1atvN">
+<p>Learn X in Y minutes (Where X=Lua): <a href="https://learnxinyminutes.com/docs/lua/">https://learnxinyminutes.com/docs/lua/ This</a> series is more geared towards advanced coders, who may be fluent in other programming languages, and gives them a 2-3 hour crash course! For beginners this may be a bit heavy but if you are feeling adventurous, give it a go!</p>
+</li><li id="viewer-abcr3" class="\_1atvN \_2TTR5 \_1BJwx public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth2 public-DraftStyleDefault-list-ltr \_2QAo- \_25MYV \_2WrB- \_1atvN">
+<p>Programming in Lua: <a href="https://www.lua.org/pil/">https://www.lua.org/pil/</a><br>
+This is obviously a wonderful and comprehensive resource for Lua in general, which covers more than just REAPER-based scripts, but also, it's very long and quite hard to self-teach (at least for me!) but as far as textbooks go, this is THE book on lua.</p>
+</li><li id="viewer-471kq" class="\_1atvN \_2TTR5 \_1BJwx public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-list-ltr public-DraftStyleDefault-reset \_2QAo- \_25MYV \_2WrB- \_1atvN">
+<p><strong>Downloads</strong></p>
+</li><li id="viewer-c4feq" class="\_1atvN \_2TTR5 \_1BJwx public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth2 public-DraftStyleDefault-list-ltr public-DraftStyleDefault-reset \_2QAo- \_25MYV \_2WrB- \_1atvN">
+<p>Leandro's Repository: <a href="https://github.com/leafac">https://github.com/leafac</a><br>
+Download Leandros' awesome actions here!</p>
+</li><li id="viewer-ihng" class="\_1atvN \_2TTR5 \_1BJwx public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-list-ltr \_2QAo- \_25MYV \_2WrB- \_1atvN">
+<p><strong>More videos</strong></p>
+</li><li id="viewer-r414" class="\_1atvN \_2TTR5 \_1BJwx public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth2 public-DraftStyleDefault-list-ltr public-DraftStyleDefault-reset \_2QAo- \_25MYV \_2WrB- \_1atvN">
+<p>Our Livestream Coding session: <a href="https://www.youtube.com/watch?v=y6f2nqiVSrk">https://www.youtube.com/watch?v=y6f2nqiVSrk</a><br>
+Watch how Leandro coded the Search script</p></li>
               </div>
             </main>
           

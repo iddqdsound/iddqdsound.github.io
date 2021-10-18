@@ -1112,24 +1112,66 @@
 
             <main class="style--xv70n9">
               <div class="style--ku4mf3">
-                <h2>REAPER Tutorials</h2>
-<p>Since 2020, I've been making Tutorials on my YouTube Channel. Each Tutorial is also accompanied by a Blog Post, including more details, free downloads &amp; More. See some of our running series below:</p>
-<h2>Donate</h2>
-<p>If you like the work I do, you can donate to me using the links below:
-Paypal donation link
-BMAC Donation link
-YouTube Memberships</p>
-<h2>RAPID-FIRE REAPER TUTORIALS</h2>
-<p>Short, Fast-paced tutorials exploring some of REAPER's vast toolkit &amp; customization options. Since most tutorials are inspired by viewer questions, there's no real order to watching most of this series, but you can see these sorted under various topics.</p>
-<h2>SOUND EDITING &amp; DESIGN FOR VISUAL MEDIA</h2>
-<p>In this series, I explore workflow tips &amp; share knowledge I've picked up doing Sound Editing, Foley Recording, Sound Design, Dialogue Editing &amp; Post-Production Mixing for Film, TV, and other visual media, in REAPER.
-My own career in Sound Design began in Pro Tools, but I have since been able to fully transition to REAPER, and I want to share some of REAPER's wonderful capabilities in this realm of audio!</p>
-<h2>MIXING FEEDBACK MONDAYS</h2>
-<p>In This series I take projects from my viewers and provide detailed feedback to them. If you want to send me a mix, you can do so by becoming a member of the YouTube Channel, and you can receive feedback for one project every month, but feel free to contact me at <a href="mailto:mfm@iddqdsound.com">mfm@iddqdsound.com</a> if you are interested in a one-off feedback session!</p>
-<h2>LET'S LEARN SCRIPTING IN REAPER</h2>
-<p>I am far from a professional coder myself, but with a little bit of help from REAPER community of coders, I've been exploring some of the scripting capabilities of REAPER through Tutorials and Livestreams, featuring mentors such as Leandro Facchinetti, Geraint Luff &amp; Bo Danerius.</p>
-<h2>SOUND RECIPES</h2>
-<p>This series focuses on some of the whacky FX that I've concocted.</p>
+                <h2>Hotkeys &amp; Hacks to A/B Plugins &amp; Tracks (Rapid-Fire REAPER Tutorials Ep85)</h2>
+<p><img src="/blog/rfrt/85/39.jpg" alt=""></p>
+<p>Hey folks!<br>
+<a href="https://youtu.be/3EhIoFe3vEY">This episode </a>is all about how to A/B stuff. We will cover ways to A/B between:<br>
+-Different Plugins on the same FX Window<br>
+-One track and everything else<br>
+-Multiple tracks and everything else<br>
+-Multiple tracks and Multiple other tracks</p>
+<p>As well as a few hotkeys and mouse modifiers that can make quick work of this stuff.</p>
+<p><strong>What is A/B?</strong>
+A/B is fancy audio jargon for quite a simple and effective comparative move when mixing or dialling in tones. It means to compare two different states of plugins, tracks or groups of tracks against each other as you listen to them, and this helps you decide between plugins, tracks, or just to listen for masked frequencies and problem areas. One set of settings, track states or plugins is our A, another set is our B, and we want to (hopefully with a single click or hotkey) switch between them and listen for differences!</p>
+<p><strong>Common A/B Uses in Tone &amp; Sound Design</strong>
+When you are dialling in your tone for an instrument, or comparing different instruments with each other, it's very useful to be able to quickly A/B two or two sets of different plugins against each other. For example, I may have 2 reverb plugins on a reverb send, and I want to compare how they sound in the context of my mix.</p>
+<p>After sending some of my tracks to the Reverb Aux track, I can bypass one and keep the other one active, then select both of them, and by hitting <strong>Cmd+B (Mac) or Ctrl+B (PC)</strong> with my FX window focused, I can bypass one while unbypassing the other.<br>
+This also works for whole groups of plugins!</p>
+<p><img src="/blog/rfrt/85/40.gif" alt=""></p>
+<p><em>A/B action for two or more plugins using Cmd+B hotkey (Toggle Bypass Selected Tracks)</em></p>
+<p><strong>A/B Between your mix &amp; Reference Tracks</strong>
+If you use Reference Tracks as part of your mixing workflow, you may want to quickly A/B between your entire mix and your reference track. This is what I do:<br>
+-Import your reference track as an item, place it on a track and put that track on top of your project. I call my track 'Ref'<br>
+-Mute your 'Ref' track and play the project. Now you will hear your whole mix!<br>
+-Next, hit Solo on the 'Ref' track while its mute button is still on! This will toggle between muting and soloing on your reference track!</p>
+<p><em>Note: Solo negates Mute if both are on, on the same track! So if a track is both muted and soloed, then it will be soloed and its mute state is ignored.</em></p>
+<p><strong>A/B between your mix &amp; multiple Reference Tracks</strong>
+I personally have all my reference track items on the same track, as takes. After importing them, I place them on adjacent tracks, select them all, right click and go to <strong>Take&gt;Implode items across tracks into takes.</strong></p>
+<p>This way all my reference tracks are running parallel to each other, I can click to switch quickly between different takes. Optionally, you can use the default hotkey <strong>T</strong> to switch to the next take.</p>
+<p>However, if you prefer to have each reference track on its on track (maybe useful if you need to level match or do some EQ'ing to them) then you can still A/B between them. Put them on separate tracks and mute all of them!</p>
+<p>This will be a lot easier to do if you use the Exclusive track Solo mouse modifier. If you hold <strong>Cmd+Opt</strong> as you click on the solo or mute button on any track, you will exclusive solo/mute that track. I can now A/B between my mix and multiple reference track, by <strong>Cmd+Opt+Left Clicking</strong> on each reference tracks. Each time I do that, the previously soloed reference track is also unsoloed, which makes its mute state kick in!</p>
+<p>If I wanna hear my mix, I can simply click on the active solo button, or alternatively <strong>Cmd+Left Click</strong> on any solo button to Unsolo all tracks!</p>
+<p><strong>A/B between two groups of tracks</strong>
+A more complicated A/B set up is when you want to A/B multiple tracks against each other. For example, while arranging, you may want to check your whole mix against a group of 3 guitar elements, or 3 keys elements.</p>
+<p>To do this manually is gruesome and tedious. You would have to select the first 3 tracks, click on solo/mute, then select the next 3 tracks and solo/mute those. Very inefficient and not very fast. The Key to effective A/B action is to be able to do it quickly so that you can focus on what you hear, versus what tracks to select and what buttons to push!</p>
+<p>By default, if you select the first 3 and solo them, then select all 6 tracks and hit solo, it won't work as a toggle. The first click on the solo button will unify all 6 tracks' solo state, and then they just go on/off in parallel.</p>
+<p>However, if you assign a hotkey/toolbar icon to 'Toggle Solo/Mute for selected tracks' then that command will work as a real toggle! If you select 6 tracks, 3 of which are soloed and 3 of which are not, then using the action 'Toggle Solo for selected tracks' you can toggle between them. Every track that is soloed will be unsoloed, and every track that is unsoloed will become soloed.</p>
+<p>I have assigned <strong>Shift+S/M/R</strong> to <strong>Solo, Mute &amp; Record Arm</strong> Selected tracks, respectively!</p>
+<p><img src="/blog/rfrt/85/41.gif" alt=""></p>
+<p><em>Toggle Mute Action (Shift+M for me) in action!</em></p>
+<p><strong>Locking Solo/Mute States &amp; Solo Defeat</strong></p>
+<p>In many context, as you A/B between the Mute/Solo states of multiple tracks, you may want a third set of tracks to remain unaffected by these toggles. For example, if I want to A/B between two different Drum Arrangement, each with 8 tracks, I may want to do that against the rest of the instrumentation. However, our normal exclusive solo or unsolo/unmute modifiers will constantly be muting/unmuting the rest of the instruments.</p>
+<p>You can tackle this in two ways:<br>
+<strong>-Solo Defeat:</strong> By Solo defeating a track (<strong>Opt+Shift+Left Click</strong> on any solo button to enable for selected tracks) it will no longer be muted when other tracks are soloed. What soloing essentially is, is a signal to mute all other tracks. So Solo defeated tracks simply don't obey that signal!</p>
+<p><strong>-Locking Track Controls:</strong> If you have certain tracks soloed or muted, and you want them to retain their solo/mute/fx bypass state as you switch between different states around them, you can just set them to your desired state, select them and <strong>Right Click&gt;Lock Track Controls.</strong></p>
+<p>This will mean that whenever you use a mouse modifier like Exclusive solo or Unsolo/Unmute all, these tracks will remain unaffected. This is also useful because, while we can solo defeat tracks, we cannot "Mute defeat" them, so any tracks you want to keep muted, you can mute once and then lock until you need it!</p>
+<p><strong>SWS Snapshots</strong></p>
+<p>The most advanced form of A/B action is toggling between entire different mixes.<a href="https://www.youtube.com/watch?v=DsWC4XbVXSA"> I have covered this in a past tutorial</a>, but looking back, I did not do a good job of explaining it, so I think given that we're a year and 85 episodes into this series, I have earned a re-do so stay tuned for this tutorial!</p>
+<p><strong>Conclusion</strong></p>
+<p>Before Using REAPER, I always found somewhat-advanced A/B action in most DAWs to be a pain, which meant I A/B'ed stuff less. Now that I can do it with ease in REAPER, I do more of it and my mixes sound better as a result, so hopefully you'll find these as useful as I have!</p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3EhIoFe3vEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
+<p><img src="/blog/rfrt/85/8.png" alt=""></p>
+<p>If you like the work I do, <a href="http://www.buymeacoffee.com/iddqdsound">you can donate to me here</a>! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!<br>
+Join the REAPER squad on our Discord Server:<br>
+<a href="https://discord.gg/YwQESKpBfE">https://discord.gg/YwQESKpBfE</a></p>
+<p>Become a member of ‘IDDQD Sound’ on YouTube: <a href="https://www.youtube.com/channel/UCXom6oGEQL7iBGTGaCpyHng/join">https://www.youtube.com/channel/UCXom6oGEQL7iBGTGaCpyHng/join</a></p>
+<p><strong>My Reaper Stash:</strong> <a href="https://stash.reaper.fm/u/IDDQDSound">https://stash.reaper.fm/u/IDDQDSound</a><br>
+<strong>My Reaper Repository: <a href="https://github.com/iddqdsound/reaper/raw/main/index.xml">https://github.com/iddqdsound/reaper/raw/main/index.xml</a></strong></p>
+<p><strong>Follow me on Instagram:</strong> <a href="https://www.instagram.com/iddqdmusic/">https://www.instagram.com/iddqdmusic/</a></p>
+<p><strong>My Music:</strong> <a href="https://soundcloud.com/iddqdmusic"><strong>https://Soundcloud.com/iddqdmusic</strong></a></p>
+<p><a href="https://soundcloud.com/iddqdmusic"> </a> <a href="https://iddqdmusic.bandcamp.com/"><strong>https://iddqdmusic.bandcamp.com</strong></a></p>
               </div>
             </main>
           

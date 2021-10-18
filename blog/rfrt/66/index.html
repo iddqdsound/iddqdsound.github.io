@@ -1112,24 +1112,43 @@
 
             <main class="style--xv70n9">
               <div class="style--ku4mf3">
-                <h2>REAPER Tutorials</h2>
-<p>Since 2020, I've been making Tutorials on my YouTube Channel. Each Tutorial is also accompanied by a Blog Post, including more details, free downloads &amp; More. See some of our running series below:</p>
-<h2>Donate</h2>
-<p>If you like the work I do, you can donate to me using the links below:
-Paypal donation link
-BMAC Donation link
-YouTube Memberships</p>
-<h2>RAPID-FIRE REAPER TUTORIALS</h2>
-<p>Short, Fast-paced tutorials exploring some of REAPER's vast toolkit &amp; customization options. Since most tutorials are inspired by viewer questions, there's no real order to watching most of this series, but you can see these sorted under various topics.</p>
-<h2>SOUND EDITING &amp; DESIGN FOR VISUAL MEDIA</h2>
-<p>In this series, I explore workflow tips &amp; share knowledge I've picked up doing Sound Editing, Foley Recording, Sound Design, Dialogue Editing &amp; Post-Production Mixing for Film, TV, and other visual media, in REAPER.
-My own career in Sound Design began in Pro Tools, but I have since been able to fully transition to REAPER, and I want to share some of REAPER's wonderful capabilities in this realm of audio!</p>
-<h2>MIXING FEEDBACK MONDAYS</h2>
-<p>In This series I take projects from my viewers and provide detailed feedback to them. If you want to send me a mix, you can do so by becoming a member of the YouTube Channel, and you can receive feedback for one project every month, but feel free to contact me at <a href="mailto:mfm@iddqdsound.com">mfm@iddqdsound.com</a> if you are interested in a one-off feedback session!</p>
-<h2>LET'S LEARN SCRIPTING IN REAPER</h2>
-<p>I am far from a professional coder myself, but with a little bit of help from REAPER community of coders, I've been exploring some of the scripting capabilities of REAPER through Tutorials and Livestreams, featuring mentors such as Leandro Facchinetti, Geraint Luff &amp; Bo Danerius.</p>
-<h2>SOUND RECIPES</h2>
-<p>This series focuses on some of the whacky FX that I've concocted.</p>
+                <h2>Optimizing Zooming defaults in REAPER w/ Hotkeys &amp; Mouse Mods (Rapid-fire REAPER Tutorials Ep66)</h2>
+<p><img src="/blog/rfrt/66/109.jpg" alt=""></p>
+<p>Hey folks!</p>
+<p>In <a href="https://youtu.be/kjwI342Vklk">this episode</a>, we're gonna be looking at a few preferences, Hotkeys and Mouse Modifiers all related to zooming! It's not the sexiest of all subjects, but the larger your projects get, the more important it becomes to be able to quickly navigate through them. I found a few of the REAPER defaults in this area to be less than perfect, and with some customization and a bit of SWS actions action, you can really optimize your zooming!</p>
+<p>Here's a list of all the commands I covered in the video. I'll explain why I replaced the ones I replaced in a second:</p>
+<p><img src="/blog/rfrt/66/110.png" alt=""></p>
+<p><em>Mac to PC Action translation: All the same defaults exist in PC. All you need to do is replace Command with Control, Option with Alt, and Control with Windows. Shift remains shift.</em></p>
+<p><strong>-SWS: Vertical zoom to selected tracks, minimize others:</strong>
+I replaced the default REAPER command of the same name to this SWS equivalent, using the same hotkey of Shift+1 aka !<br>
+The default action doesn't utilize the full height of the arrange window when selecting one or two tracks, and doesn't fit all tracks to screen on higher-count track selections. The SWS action always fills the screen with the tracks selected, and adjust each track's height as your selected track counts get higher to make sure they all fit! (Works up to about 30 tracks depending on Theme settings, etc.)</p>
+<p><strong>-SWS: Toggle zoom to selected items:</strong>
+I replaced the default REAPER command which is bound to Command+- aka _ with this SWS action, also changing the binding to control+Shift+Z. This binding made sense to me because Pressing _ with one hand is rather impossible, so I like to make most of my hotkeys possible to press using my left hand. Z also is a good way to remember that this Zooms.</p>
+<p>The action itself is more robust as well, as it works for multiple items on multiple tracks, and takes whether automation lanes are visible or not into account. Overall, I found the existence of automation lanes to throw the default actions off slightly!</p>
+<p><strong>-Increase/Decrease Selected Track Heights:</strong>
+These are two commands you would find in Pro Tools, and I've bound them to the same hotkeys of Command+Control+Up/Down. The make all the same adjustment to a selected subset of all visible tracks.</p>
+<p><strong>-Mousewheel Scrolling/Zooming:</strong>
+These were among the first actions I re-assigned in REAPER, because the default make little sense in my opinion. Any browser, any website and App, and every other DAW I can think of, simply uses mousewheel to scroll up and down. I am so used to this that I do it unintentionally. Similarly, Command+Option+mousewheel is default hotkey to zoom horizontally in both Pro Tools and Logic Pro X, and quite similar to Ableton's command+Control+Mousewheel. Hence I think switching these two makes a lot of sense, as I still do go to those DAWs from time to time!</p>
+<p><strong>-Marquee Zoom:</strong> The reason I changed this mouse modifier is because REAPER changes your mouse cursor icon based on what is assigned to left drag, and not right drag, so when I hold control anywhere on my Track, I get a magnifying glass, signalling to me that I have the right mouse modifier. I also do most of my dragging with LMB, so this just made sense!</p>
+<p><strong>-Restore Previous Zoom level:</strong> Again, makes a lot of sense because I don't really press middle click* and the default is set to the same action as left clicking. So why not change it?</p>
+<p><em>Note: The middle click is just what happens when you click on your mousewheel! Some of you based on your mouse may not have access to this.</em></p>
+<p><em>Note: Remember that Right Drag &amp; Middle click mouse modifiers exist in Mouse Mods&gt;Arrange View while Left Drag options are in Mouse Mods&gt;Track.</em></p>
+<p><strong>Preset-based Zooming in REAPER (a la Pro Tools):</strong></p>
+<p>Reaper Script amalagma has a number of scripts allowing you to save and recall horizontal and vertical zoom presets. Using this system, you can, for example, set 5 horizontal zoom presets, (1/16th zoom, 1/4 zoom, 1 bar zoom, 4 bar zoom, 16 bar zoom) and then bind hotkeys to the load presets, but I never liked this system in Pro Tools and never really implemented it in REAPER either. Just wanted to throw this one out there!</p>
+<p><strong>MIDI Editor zoom settings:</strong></p>
+<p>All the same zoom actions exist for the MIDI window, but you need to set them manually. Go to your Action List and select MIDI Editor from the top right dropdown menu, then search for and assign the same hotkeys to the same actions!</p>
+<p><strong>Conclusion:</strong></p>
+<p>There you have it! I'm gonna do more of these because I think they can be really useful, but lemme know your thoughts! Here's the video:</p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kjwI342Vklk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
+<p>Watch <a href="https://www.youtube.com/watch?v=PQAaAN6AI0I&amp;list=PLjvmrOUg3J0pEil4PDHyupUI-9MQwsPmd">all my SWS tutorials here</a>.<br>
+Watch a <a href="https://youtu.be/0Ch9hLZBh5M">similar episode on MIDI Editor window here</a>.</p>
+<p>If you like the work I do, <a href="http://www.buymeacoffee.com/iddqdsound">you can donate to me here</a>! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!</p>
+<p><strong>My Reaper Stash:</strong> <a href="https://stash.reaper.fm/u/IDDQDSound">https://stash.reaper.fm/u/IDDQDSound</a></p>
+<p><strong>Follow me on Instagram:</strong> <a href="https://www.instagram.com/iddqdmusic/">https://www.instagram.com/iddqdmusic/</a></p>
+<p><strong>My Music:</strong> <a href="https://soundcloud.com/iddqdmusic"><strong>https://Soundcloud.com/iddqdmusic</strong></a></p>
+<p><a href="https://soundcloud.com/iddqdmusic"> </a> <a href="https://iddqdmusic.bandcamp.com/"><strong>https://iddqdmusic.bandcamp.com</strong></a></p>
               </div>
             </main>
           

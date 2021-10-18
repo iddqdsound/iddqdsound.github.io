@@ -1112,24 +1112,58 @@
 
             <main class="style--xv70n9">
               <div class="style--ku4mf3">
-                <h2>REAPER Tutorials</h2>
-<p>Since 2020, I've been making Tutorials on my YouTube Channel. Each Tutorial is also accompanied by a Blog Post, including more details, free downloads &amp; More. See some of our running series below:</p>
-<h2>Donate</h2>
-<p>If you like the work I do, you can donate to me using the links below:
-Paypal donation link
-BMAC Donation link
-YouTube Memberships</p>
-<h2>RAPID-FIRE REAPER TUTORIALS</h2>
-<p>Short, Fast-paced tutorials exploring some of REAPER's vast toolkit &amp; customization options. Since most tutorials are inspired by viewer questions, there's no real order to watching most of this series, but you can see these sorted under various topics.</p>
-<h2>SOUND EDITING &amp; DESIGN FOR VISUAL MEDIA</h2>
-<p>In this series, I explore workflow tips &amp; share knowledge I've picked up doing Sound Editing, Foley Recording, Sound Design, Dialogue Editing &amp; Post-Production Mixing for Film, TV, and other visual media, in REAPER.
-My own career in Sound Design began in Pro Tools, but I have since been able to fully transition to REAPER, and I want to share some of REAPER's wonderful capabilities in this realm of audio!</p>
-<h2>MIXING FEEDBACK MONDAYS</h2>
-<p>In This series I take projects from my viewers and provide detailed feedback to them. If you want to send me a mix, you can do so by becoming a member of the YouTube Channel, and you can receive feedback for one project every month, but feel free to contact me at <a href="mailto:mfm@iddqdsound.com">mfm@iddqdsound.com</a> if you are interested in a one-off feedback session!</p>
-<h2>LET'S LEARN SCRIPTING IN REAPER</h2>
-<p>I am far from a professional coder myself, but with a little bit of help from REAPER community of coders, I've been exploring some of the scripting capabilities of REAPER through Tutorials and Livestreams, featuring mentors such as Leandro Facchinetti, Geraint Luff &amp; Bo Danerius.</p>
-<h2>SOUND RECIPES</h2>
-<p>This series focuses on some of the whacky FX that I've concocted.</p>
+                <h2>The Hidden Hierarchy of Hotkeys &amp; Shortcut Scopes (Rapid-fire REAPER Tutorials Ep73)</h2>
+<p><img src="/blog/rfrt/73/197.jpg" alt=""></p>
+<p>Hey folks!</p>
+<p>Hey folks! <a href="https://youtu.be/UQV03bGaZSs">This episode is about a little something I like to called the hidden hierarchy of hotkeys in REAPER</a>. Knowing this will hopefully help eradicate some behaviours that may currently be annoying the hell out of you, like not being able to type in 3rd-Party Plugin windows, or your marker shortcuts not working in the MIDI Editor (I covered this from a different angle and in <a href="https://youtu.be/xLD6zDcd-QI">a lot more detail in this video</a>)</p>
+<p><img src="/blog/rfrt/73/198.jpg" alt=""></p>
+<p><strong>How Hotkeys normally work in REAPER</strong>
+As I'm sure you know already, here's how to set a hotkey in REAPER:<br>
+-Open the Action list by clicking on <strong>Actions&gt;Show Action List</strong> or by pressing <strong>?</strong>
+-Click to highlight the action (4) you want a shortcut to (You can search for it by Hotkey (2) or name (1) through the filter bar)<br>
+-On the bottom left (5), click on Add.<br>
+-Hit your hotkey<br>
+-Press Enter or click Ok.</p>
+<p>Simple, right? Not exactly! Doing this will create an action in the <strong>Main Section</strong> with the <strong>scope set to normal</strong>.</p>
+<p><strong>Sections of the Action List</strong>
+On the top right of the action list, you can choose which section you want to browse the action list for (3). The Sections are:<br>
+<strong>-Main:</strong> The majority of Actions on this list reside here. These actions can be triggered while the arrange window is in focus. Some are possible to trigger from other windows too. A general rule of thumb is that if any hotkey is not assigned to any other action in other sections, it is passed through to main, except for...<br>
+<strong>-Main (alt recording):</strong> This section includes a list of pretty much everything you find in main, except that these are assigned for when you are recording. You may want to have some hotkeys not work while in recording mode, or you may want some keys to change their assignment while recording. We will cover some examples of this in future episodes!<br>
+<strong>-Media Explorer:</strong> These commands work when the media explorer, REAPER's own file explorer/player, is focused!<br>
+<strong>-MIDI Editor:</strong> These commands work when the MIDI Editor window for an item is open and in focus.<br>
+<strong>-MIDI Event List Editor:</strong> The event list editor is an alternative way of viewing MIDI Events as a list, which should be familiar to older users and probably a bit of a headache to look at for younger viewers! You can reach this window by pressing <strong>Opt+3</strong> with the MIDI Editor Selected.<br>
+<strong>-MIDI Inline Editor:</strong> The default hotkey to open this is <strong>E.</strong> You can also select any item and run the action 'Open Inline Editors' from the main section. The Inline Editor allows you to modify MIDI events inside an item without opening a MIDI Editor window. You can also assign additional hotkeys to this section to make some MIDI operations easier, like transposing a bunch of items!</p>
+<p><img src="/blog/rfrt/73/199.png" alt=""></p>
+<p><em>What the Inline Editor looks like</em></p>
+<p><strong>Understanding Shortcut Scopes</strong></p>
+<p>Apart from key assignment, every keyboard shortcut has a scope, which is normally set to normal. You can change this in the window that opens when you click on Add (5) with any action highlighted.</p>
+<p><img src="/blog/rfrt/73/200.png" alt=""></p>
+<p>With Scope set to <strong>Normal</strong> The hotkey only works when the correct window/section is focused, meaning if I have, for example, <strong>Remove fades from selected item</strong> set to <strong>Cmd+F,</strong> this will only work with the arrange view in focus. This may sound like a bit of a flaw, but it's actually awesome, because, I can still use <strong>Cmd+F</strong> to do something totally different in, say, the MIDI Editor, (toggle docking perhaps?) and another thing in the Media Explorer (Play the highlighted file from the beginning)!</p>
+<p>If no action has that shortcuts set to it, the shortcut is usually passed through to the main section, except for <strong>main (alt recording).</strong></p>
+<p>With Scope set to <strong>Global</strong> The hotkey becomes global for REAPER, so with any window focused, the hotkey will still be possible trigger, and hotkeys in Main take precedence, meaning if I set <strong>Cmd+F</strong> to global scope, it's no longer possible to assign it to other actions in the other sections!</p>
+<p>This is useful to do if you want, for example, for your project markers hotkeys to work in the MIDI Editor. In the Main section, I can press <strong>1-0 QWERTY</strong> to go to markers 1-10. In the MIDI Editor these don't work, but if I go back to main, and set the scope of these actions to Global, then they work in the MIDI Editor window too, however, that means that I can no longer use those keys to do other things in the MIDI Editor. Still, a worth-it tradeoff if this is something that has been annoying you for a while!</p>
+<p>The only exception where Global shortcuts don't work, is when a text field in <a href="https://youtu.be/aqGtXK1EN0o">any of REAPER's many windows</a> are selected. Search bars in the action list, FX Browser, Media Explorer, and so on, all supercede the global scope, so even with a hotkey set to global, if I hit, say <strong>Shift+F</strong> while a text field is active (they would have a blinking | on them) it will type Capital F, rather than trigger that action.</p>
+<p>With scope set to <strong>Global (+ Text fields)</strong> the hotkey is now possible to trigger any time anywhere, and with anything focused in REAPER. This is useful to set for hotkeys that you trigger a lot, right after switching focus of your windows, or for hotkeys where the key combo doesn't actually type anything (or anything useful)</p>
+<p><em>Note: As a general rule, I don't set the scope of any one-key hotkey or any shift hotkey to Global (+ text fields) because we use those keys to type in text fields. However, with other more elaborate hotkey combos, like</em> <strong><em>Cmd+Ctrl+Shift+M</em></strong> <em>it's likely that even if we press them with a text field focused, that is a mistake, so it's safe to set the scope of those to global (+ text fields) and probably saves you time down the line!</em></p>
+<p><strong>Typing in Third Party Plugins</strong></p>
+<p>There are some third-party plugins that may include text fields of their own, and some plugins even have their own hotkeys for certain operations. You'll have seen that these plugins aren't easy to type in. For example, I can't type space in any of the text fields on my sample libraries like <strong>Kontakt</strong> or <strong>Play</strong> because pressing Space is for playing and stopping, so when I hit space, that command is passed through to the main section. To get around this, you can right click on any plugin in the plugin window, and tick the option <strong>'Send all keyboard input to plugin'.</strong> Voila!</p>
+<p><em>Note: With this option ticked, you can no longer trigger any normal scope hotkeys when the plugin window is selected for that plugin, however, Global scope and above hotkeys still work as they used to.</em></p>
+<p><strong>The Hidden Hierarchy of Hotkeys</strong></p>
+<p>So to take a birds-eye view of where we're at, here's a picture:</p>
+<p><img src="/blog/rfrt/73/201.png" alt=""></p>
+<p><em>Feel free to screenshot this!</em></p>
+<p>Here's the video:</p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UQV03bGaZSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
+<p>If you like the work I do, <a href="http://www.buymeacoffee.com/iddqdsound">you can donate to me here</a>! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!</p>
+<p><img src="/blog/rfrt/73/8.png" alt=""></p>
+<p><strong>My Reaper Stash:</strong> <a href="https://stash.reaper.fm/u/IDDQDSound">https://stash.reaper.fm/u/IDDQDSound</a></p>
+<p><strong>Follow me on Instagram:</strong> <a href="https://www.instagram.com/iddqdmusic/">https://www.instagram.com/iddqdmusic/</a><br>
+<strong>Join our Discord Server:</strong><br>
+<a href="https://discord.gg/YwQESKpBfE">https://discord.gg/YwQESKpBfE</a></p>
+<p><strong>My Music:</strong> <a href="https://soundcloud.com/iddqdmusic"><strong>https://Soundcloud.com/iddqdmusic</strong></a></p>
+<p><a href="https://soundcloud.com/iddqdmusic"> </a> <a href="https://iddqdmusic.bandcamp.com/"><strong>https://iddqdmusic.bandcamp.com</strong></a></p>
               </div>
             </main>
           

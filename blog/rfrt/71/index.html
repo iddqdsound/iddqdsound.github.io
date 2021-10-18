@@ -1112,24 +1112,63 @@
 
             <main class="style--xv70n9">
               <div class="style--ku4mf3">
-                <h2>REAPER Tutorials</h2>
-<p>Since 2020, I've been making Tutorials on my YouTube Channel. Each Tutorial is also accompanied by a Blog Post, including more details, free downloads &amp; More. See some of our running series below:</p>
-<h2>Donate</h2>
-<p>If you like the work I do, you can donate to me using the links below:
-Paypal donation link
-BMAC Donation link
-YouTube Memberships</p>
-<h2>RAPID-FIRE REAPER TUTORIALS</h2>
-<p>Short, Fast-paced tutorials exploring some of REAPER's vast toolkit &amp; customization options. Since most tutorials are inspired by viewer questions, there's no real order to watching most of this series, but you can see these sorted under various topics.</p>
-<h2>SOUND EDITING &amp; DESIGN FOR VISUAL MEDIA</h2>
-<p>In this series, I explore workflow tips &amp; share knowledge I've picked up doing Sound Editing, Foley Recording, Sound Design, Dialogue Editing &amp; Post-Production Mixing for Film, TV, and other visual media, in REAPER.
-My own career in Sound Design began in Pro Tools, but I have since been able to fully transition to REAPER, and I want to share some of REAPER's wonderful capabilities in this realm of audio!</p>
-<h2>MIXING FEEDBACK MONDAYS</h2>
-<p>In This series I take projects from my viewers and provide detailed feedback to them. If you want to send me a mix, you can do so by becoming a member of the YouTube Channel, and you can receive feedback for one project every month, but feel free to contact me at <a href="mailto:mfm@iddqdsound.com">mfm@iddqdsound.com</a> if you are interested in a one-off feedback session!</p>
-<h2>LET'S LEARN SCRIPTING IN REAPER</h2>
-<p>I am far from a professional coder myself, but with a little bit of help from REAPER community of coders, I've been exploring some of the scripting capabilities of REAPER through Tutorials and Livestreams, featuring mentors such as Leandro Facchinetti, Geraint Luff &amp; Bo Danerius.</p>
-<h2>SOUND RECIPES</h2>
-<p>This series focuses on some of the whacky FX that I've concocted.</p>
+                <h2>Controlling your Sends Using track Faders (Rapid-fire REAPER Tutorials Ep71)</h2>
+<p><img src="/blog/rfrt/71/28.jpg" alt=""></p>
+<p>Hey folks! <a href="https://youtu.be/g4-fceuW_Zo">In this episode</a> I'll try to answer a pretty commonly asked question on REAPER forums and groups, which frankly has never been a big issue for me, but hey I don't judge. A lot of people, especially ex-Pro Tools users, seem not to like REAPER's way of adjusting sends and receives via the I/O Routing window, and would like to have track fader controls instead. I'll go over two alternatives approaches for dealing with send levels to I/O.</p>
+<p><strong>How Pro Tools Handles Sends Mixing</strong>
+One Pro Tools feature I really used to enjoy was the ability to create mini-mixers on the fly that allowed you to have all your sends and relevant plugins in view, and save and recall them using Pro Tools configurations (<a href="https://www.youtube.com/watch?v=UmAtNS8jC5c">I made a video about this </a>when I was making Pro Tools tutorials).</p>
+<p><img src="/blog/rfrt/71/29.png" alt=""></p>
+<p><em>A drum buss compressor send including all its receives and plugin window in Pro Tools!</em></p>
+<p>To set up something like this in REAPER takes a bit of work, but once you do that work you can obviously save it as a track template and recall whenever you want. Of course you can also just open the I/O routing window of any receive track and you'll have faders there, but some people don't like this for some reason. So here are some alternatives:</p>
+<p><strong>mpl_sendfader Script</strong></p>
+<p>Legendary scripter mpl has <a href="https://forum.cockos.com/showthread.php?t=187138">sendfader</a>, a series of scripts with a slick GUI designed to make controlling sends quite easy. Simply run the script, and you will get a small dockable window. From there, clicking on any track will show you sends for that track, and all the controls you'd need, including a fader, pan knob, Pre/post toggle, etc. You can also assign MIDI/OSC controllers to control the active send volume, which is handy. The issue with this is that it only shows you one send for the top selected track, not super useful for something like creating a mini mixer to control all your reverb sends in one window.</p>
+<p><strong>Showing Sends in Mixer and TCP</strong></p>
+<p>Of course, another option is to show your sends in TCP by running the action 'Options: Show sends in TCP (when size permits)' which gives you your sends as small icons with a small knob in your TCP, or you can right click on any track in MCP and tick the option to 'Show sends (when size permits' to get the same set up in your MCP. Again, this is fine if you ask me, but you still won't be able to see values at a glance. I think this is the main issue most folks have, they want precise control over send values, and they want to view them as faders. I think a very simple solution to this is right in front of our eyes, being overlooked!</p>
+<p><img src="/blog/rfrt/71/30.png" alt=""></p>
+<p><em>Left: Sends showing in Mixer Control Panel. Right: Sends shown in Track Control Panel</em></p>
+<p><strong>There's a simple solution!</strong></p>
+<p>If you want sends to fully have the appearance and functions of a track's fader, then make a track! This approach takes longer to set up but could be attractive for a few reasons: Big faders, ability to use the same set of hotkeys and controller assignments for sends as track (Soloing, Muting, Panning) and enjoying perks like ability to show and hide them, select them from ReaConsole, and so on.</p>
+<p>Here's how it would work:<br>
+-Create a track and put some FX on it (Reverb, compressor, etc.)<br>
+-Normally you should select all the tracks you want to parallel process, hold Shift and drag from their routing icon to the routing icon of the track you just created. Instead, we're gonna create additional tracks below our FX track, make them children that track, and then route each element to these children tracks.<br>
+-Each send can be named and coloured according to the track it's receiving from. (Custom action for that below) Pre-fader sends are a good idea here, so you have independent control of the reverb from the original fader positions.</p>
+<p><img src="/blog/rfrt/71/31.png" alt=""></p>
+<p><em>Drum group: Tracks 8-14 house the audio. Tracks 17-23 are named and coloured identically to the tracks, each with a send from their corresponding track.</em></p>
+<p>-(Optional) Hide these tracks from the arrange view, and you will only see them in the mixer, where you can use the faders to adjust how much each track sends to the FX track.</p>
+<p>-(Optional) make your faders full size on the send shells to give them visual differentiation from the other tracks.</p>
+<p><img src="/blog/rfrt/71/32.png" alt=""></p>
+<p><em>Tracks 17-23 aren't shown in the arrange view, but opening the mixer will display them, and full-sized faders help us visually distinguish them from the original audio tracks!</em></p>
+<p><strong>Custom Action: Create Send Shells</strong></p>
+<p>**-**Track: Duplicate tracks<br>
+SWS: Delete all items on selected tracks<br>
+SWS/S&amp;M: Bypass all FX for selected tracks<br>
+Script: mpl_Delete bypassed fx from selected tracks<br>
+SWS/S&amp;M: Remove sends from selected tracks<br>
+SWS/S&amp;M: Remove receives from selected tracks<br>
+Script: Archie_Track; Set volume selected tracks to -6.0dB</p>
+<p><img src="/blog/rfrt/71/33.png" alt=""></p>
+<p>After selecting the tracks you want to send from and running this action, you'll get empty tracks that are named and colored the same, but have no sends, fx or items on them. I also set their volume to -6 as a starting point.</p>
+<p>You can download the custom action below. <em>BE WARNED that if you don't have all the scripts above, it won't work for you! So download those from ReaPack and have SWS installed.</em></p>
+<p>IDDQD Sound_Create Send Shells for Selec</p>
+<p>.</p>
+<p>Download • 492B</p>
+<p>If you need instructions on how to download and import custom actions, <a href="https://www.youtube.com/watch?v=LGkB9EOn3sE">watch this video</a>!</p>
+<p><strong>Routing Matrix</strong></p>
+<p>The routing matrix makes quick work of creating individual sends from each track to send shells.</p>
+<p><img src="/blog/rfrt/71/34.png" alt=""></p>
+<p><strong>Conclusion</strong>
+I dunno why people don't like the I/O Routing window, or if this is really that much better, or if all the work required to set it up is worth it, but I actually do like this for some applications better than I/O Routing. Could also be a great way to let musicians mix their own headphone mixes, and can be handy for certain types of parallel processing. Also having access to a full fader, allows you to fine-tune your adjustments, which is also not bad.</p>
+<p>I also hope that mpl would update his script to allow the viewing of multiple selected tracks, cuz other than that I find the mpl send fader script to be quite amazing!</p>
+<p>Here's the video:</p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g4-fceuW\_Zo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
+<p><a href="https://www.buymeacoffee.com/iddqdsound"><img src="/blog/rfrt/71/8.png" alt=""></a></p>
+<p>If you like the work I do, <a href="http://www.buymeacoffee.com/iddqdsound">you can donate to me here</a>! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!</p>
+<p><strong>My Reaper Stash:</strong> <a href="https://stash.reaper.fm/u/IDDQDSound">https://stash.reaper.fm/u/IDDQDSound</a></p>
+<p><strong>Follow me on Instagram:</strong> <a href="https://www.instagram.com/iddqdmusic/"><strong>www.instagram.com/iddqdmusic</strong></a></p>
+<p><strong>My Music:</strong> <a href="https://soundcloud.com/iddqdmusic"><strong>https://Soundcloud.com/iddqdmusic</strong></a></p>
+<p><a href="https://soundcloud.com/iddqdmusic"> </a> <a href="https://iddqdmusic.bandcamp.com/"><strong>https://iddqdmusic.bandcamp.com</strong></a></p>
               </div>
             </main>
           

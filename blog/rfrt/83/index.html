@@ -1112,24 +1112,103 @@
 
             <main class="style--xv70n9">
               <div class="style--ku4mf3">
-                <h2>REAPER Tutorials</h2>
-<p>Since 2020, I've been making Tutorials on my YouTube Channel. Each Tutorial is also accompanied by a Blog Post, including more details, free downloads &amp; More. See some of our running series below:</p>
-<h2>Donate</h2>
-<p>If you like the work I do, you can donate to me using the links below:
-Paypal donation link
-BMAC Donation link
-YouTube Memberships</p>
-<h2>RAPID-FIRE REAPER TUTORIALS</h2>
-<p>Short, Fast-paced tutorials exploring some of REAPER's vast toolkit &amp; customization options. Since most tutorials are inspired by viewer questions, there's no real order to watching most of this series, but you can see these sorted under various topics.</p>
-<h2>SOUND EDITING &amp; DESIGN FOR VISUAL MEDIA</h2>
-<p>In this series, I explore workflow tips &amp; share knowledge I've picked up doing Sound Editing, Foley Recording, Sound Design, Dialogue Editing &amp; Post-Production Mixing for Film, TV, and other visual media, in REAPER.
-My own career in Sound Design began in Pro Tools, but I have since been able to fully transition to REAPER, and I want to share some of REAPER's wonderful capabilities in this realm of audio!</p>
-<h2>MIXING FEEDBACK MONDAYS</h2>
-<p>In This series I take projects from my viewers and provide detailed feedback to them. If you want to send me a mix, you can do so by becoming a member of the YouTube Channel, and you can receive feedback for one project every month, but feel free to contact me at <a href="mailto:mfm@iddqdsound.com">mfm@iddqdsound.com</a> if you are interested in a one-off feedback session!</p>
-<h2>LET'S LEARN SCRIPTING IN REAPER</h2>
-<p>I am far from a professional coder myself, but with a little bit of help from REAPER community of coders, I've been exploring some of the scripting capabilities of REAPER through Tutorials and Livestreams, featuring mentors such as Leandro Facchinetti, Geraint Luff &amp; Bo Danerius.</p>
-<h2>SOUND RECIPES</h2>
-<p>This series focuses on some of the whacky FX that I've concocted.</p>
+                <h2>Separate audio from a video item with one action! (Rapid fire REAPER Tutorials Ep83)</h2>
+<p><img src="/blog/rfrt/83/114.jpg" alt=""></p>
+<p>Hey folks!<br>
+This episode is about another Frequently Asked Questions I see on the forums: How do I separate the audio tracks from my video item?</p>
+<p>REAPER is awesome in that it lets us import all kinds of different media and lets them mix and mingle on the same track. While most other DAWs have a dedicated Video track, REAPER just lets you put video item anywhere and in any quantity, which is awesome. The downside is, what if you want to re-design the sound for a video? What if you did a bunch of recordings and filmed it and now you don't want the sound from your camera's built-in mic.</p>
+<p>If you mute a track with a video item on it, you lose the video too. So for all these reasons, you may want to split your file into a video and an audio item. I'll show you how to do that first, before I show you my custom action that makes the whole thing faster.</p>
+<p>First let's look at ways of just stripping the audio track from a video item</p>
+<p><strong>Method 1: Disabling Master Parent Send:</strong> One way to not hear the audio but still see the video is to make a track dedicated to your videos on your project and simply disable its master parent send. Audio won't get to the master track, but the video will still make it there. This method is easy and quick. the downside is, you haven't actually disabled the audio. At the very least, REAPER is using a non-zero amount of resources to have a meter for the track work in real-time. By the same vain, you can also just bring the fader all the way to zero.</p>
+<p><strong>Method 2: Ignore Audio:</strong> This is a great option but it's quite well hidden and few people know about it. For starters, there's no action for it in the action list, no sign of it in the right click menus, and it is also, literally hidden two menus deep from your item.<br>
+You would need to go to item properties, and then from there look for the submenu 'Properties...' and open that. Yes! It's the properties for the media item properties. Somewhere in 2003 there's an Xzibit meme on this type of thing!</p>
+<p>Alternatively you can just press <strong>Cmd+F2</strong> to open the elusive source media properties, and there you can tick the box called 'ignore audio'.</p>
+<p><img src="/blog/rfrt/83/115.png" alt=""></p>
+<p>This is great, because by ignoring the audio, you are allocating no resources to it, and also the look of your item changes into a block which is good to try and identify video tracks. The downside is that, as if it wasn't hidden enough, this method can't be done via an action, can't be scripted for (AFAIK) and it's also not undoable, meaning that you can't press Cmd+Z and get your audio back once you do this. You need to open this window again and do it again. Still, it's probably the best way to do it if you are working with a single video and you do this one per project!</p>
+<p><strong>Separating Audio from a video track</strong></p>
+<p>Other times, you may want to separate audio and video but keep both, for example, you may be scoring a film. You would need the video visible all the time, the video also comes with some dialogue, maybe even temp music, so you don't want to toss it out, but you still need the option to mute it sometimes and you don't want the video to go away either.</p>
+<p>So in this case there's a simple solution: Gluing.</p>
+<p>-Duplicate the video item to a track below it.<br>
+-Use one of the methods above to remove audio from the original.<br>
+-Take the duplicate and glue it (Right click and select glue item, or press <strong>cmd+shift+G</strong>)</p>
+<p>Done! REAPER can't glue video so if you take any video item and glue it, it'll be bounced as a wav file in your project sample rate. You'll end up with one video track and one audio track! From here, lock the items in post-production after syncing to timecode, or if you're editing videos, just group the items.</p>
+<p><img src="/blog/rfrt/83/116.png" alt=""></p>
+<p><em>Notice in this image that the grey video item is in .m4v and the purple audio item is in .wav</em></p>
+<p>So cool, it's simple enough, but still it's a few steps and a number of clicks. Let's get it down to a single click using a simple ReaScript:</p>
+<p><strong>IDDQD_Separate Audio from Video Item</strong></p>
+<p>My action simply does all the above in a single action. You can download this script by copying the link below to your ReaPack. Go to Extensions&gt;Import Repositories and paste this link:</p>
+<p><a href="https://github.com/iddqdsound/reaper/raw/master/index.xml">https://github.com/iddqdsound/reaper/raw/master/index.xml</a> Next go to Extensions&gt;Browse Packages and search for iddqd. You can then select some or all of my actions to install!<br>
+I am still a beginner in scripting but this one is quite easy to do and hasn't been done before so yay!</p>
+<p>One thing that makes scripting in REAPER relatively easy is the ability to add any action to your script at any time using the 'Main<em>OnCommand' function.<br>
+EEL2: Main_OnCommand(_int</em> command, <em>int</em> flag)</p>
+<p>There are a number of _OnCommand functions. What comes before the underline denotes which section of the action list we want to run actions from (Main, MIDI Editor, Media Explorer, etc.).</p>
+<p>Following that, we provide two argument, the first is the command ID for any action and then it's the flag. I have only seen flag be set to 0 in every script I've seen this function in, and I haven't been able to find anything in the API about what it actually is. Watch the <a href="https://www.youtube.com/watch?v=p8V_rZkOTKc&amp;list=PLjvmrOUg3J0rlHO9Clbo9WLxeN9BsSPlj">ReaScripting tutorials series</a> or any of our <a href="https://youtu.be/YfTVXn730DQ">Tuesday Scripting Livestreams for more info on this</a>. I'll ask my guru Leandro in the next stream!</p>
+<p>So this basically allows us to run any number of native or SWS actions anywhere in our script which is super powerful and sometimes can easily eliminate hours of coding!</p>
+<p><em>Note: You can find the command ID for any command by highlighting any action, right-clicking and choosing 'Copy selected action command ID'. This only works for Native &amp; SWS actions. For other custom scripts, there's another function which we will get to at some point soon!</em></p>
+<p>So basically, I started my script by making the custom action below:</p>
+<p><img src="/blog/rfrt/83/117.png" alt=""></p>
+<p>This gets me 90% of the way there as far as doing all the stuff I would do manually when I separate audio from video.</p>
+<p>Next, you can simply look each of these actions up in the action list, and copy their command ID to a script to provide as an argument to a new Main_OnCommand function!<br>
+...<br>
+...<br>
+...<br>
+Just kidding! That would take a million years! Luckily there's another godsend script to help us do this: Script: Lokasenna_Generate script from custom action.lua</p>
+<p>You can download this also from ReaPack, and this script will generate a script from any custom action. Simply copy command ID of your custom action, paste it on the Lokasenna script, and bob's your uncle! You'll get a script with all of that in there! Awesome!</p>
+<p><img src="/blog/rfrt/83/118.png" alt=""></p>
+<p>The script gets us 90% of the way there, but the keen observers among you will have noticed that we still haven't done all of the stuff from above.</p>
+<p>Once I had my custom action, I made some modifications. First of all, I thought not to disable master parent send, cuz maybe users will have video on a track housing other items, and then they may get confused as to why they don't get audio out of it suddenly!</p>
+<p>I also decided against grouping or locking them, because well, let's leave that up to the user! From there I literally wrote two lines of code:</p>
+<p>VideoItem = reaper.GetSelectedMediaItem(0,0)<br>
+reaper.SetMediaItemInfo_Value(VideoItem,"D_VOL',0)</p>
+<p>and that's it! The rest comes from Lokasenna's action!<br>
+We've explained the first line in <a href="https://youtu.be/hgx0btZuAas">Episode 2 of our scripting tutorial series</a>, and the function after that is used when setting values for an item mute, lock, volume, pan, width, etc. One of the more complex functions in REAPER. The API says:</p>
+<p><strong>EEL2:</strong> <em><strong>bool</strong></em> <strong>SetMediaItemInfo_Value(</strong> <em><strong>MediaItem</strong></em> <strong>item, "parmname", newvalue)</strong><br>
+Set media item numerical-value attributes.</p>
+<p>B_MUTE : bool * : muted (item solo overrides). setting this value will clear C_MUTE_SOLO.</p>
+<p>B_MUTE_ACTUAL : bool * : muted (ignores solo). setting this value will not affect C_MUTE_SOLO.</p>
+<p>C_MUTE_SOLO : char * : solo override (-1=soloed, 0=no override, 1=unsoloed). note that this API does not automatically unsolo other items when soloing (nor clear the unsolos when clearing the last soloed item), it must be done by the caller via action or via this API.</p>
+<p>B_LOOPSRC : bool * : loop source</p>
+<p>B_ALLTAKESPLAY : bool * : all takes play</p>
+<p>B_UISEL : bool * : selected in arrange view</p>
+<p>C_BEATATTACHMODE : char * : item timebase, -1=track or project default, 1=beats (position, length, rate), 2=beats (position only). for auto-stretch timebase: C_BEATATTACHMODE=1, C_AUTOSTRETCH=1</p>
+<p>C_AUTOSTRETCH: : char * : auto-stretch at project tempo changes, 1=enabled, requires C_BEATATTACHMODE=1</p>
+<p>C_LOCK : char * : locked, &amp;1=locked</p>
+<p><strong>D_VOL : double * : item volume, 0=-inf, 0.5=-6dB, 1=+0dB, 2=+6dB, etc</strong></p>
+<p>D_POSITION : double * : item position in seconds</p>
+<p>D_LENGTH : double * : item length in seconds</p>
+<p>D_SNAPOFFSET : double * : item snap offset in seconds</p>
+<p>D_FADEINLEN : double * : item manual fadein length in seconds</p>
+<p>D_FADEOUTLEN : double * : item manual fadeout length in seconds</p>
+<p>D_FADEINDIR : double * : item fadein curvature, -1..1</p>
+<p>D_FADEOUTDIR : double * : item fadeout curvature, -1..1</p>
+<p>D_FADEINLEN_AUTO : double * : item auto-fadein length in seconds, -1=no auto-fadein</p>
+<p>D_FADEOUTLEN_AUTO : double * : item auto-fadeout length in seconds, -1=no auto-fadeout</p>
+<p>C_FADEINSHAPE : int * : fadein shape, 0..6, 0=linear</p>
+<p>C_FADEOUTSHAPE : int * : fadeout shape, 0..6, 0=linear</p>
+<p>I_GROUPID : int * : group ID, 0=no group</p>
+<p>I_LASTY : int * : Y-position of track in pixels (read-only)</p>
+<p>I_LASTH : int * : height in track in pixels (read-only)</p>
+<p>I_CUSTOMCOLOR : int * : custom color, OS dependent color|0x100000 (i.e. ColorToNative(r,g,b)|0x100000). If you do not |0x100000, then it will not be used, but will store the color</p>
+<p>I_CURTAKE : int * : active take number</p>
+<p>IP_ITEMNUMBER : int, item number on this track (read-only, returns the item number directly)</p>
+<p>F_FREEMODE_Y : float * : free item positioning Y-position, 0=top of track, 1=bottom of track (will never be 1)</p>
+<p>F_FREEMODE_H : float * : free item positioning height, 0=no height, 1=full height of track (will never be 0)</p>
+<p>Only the two bold lines are relevant to us, so we can see that our little bit of code will simply select "D_VOL" to specify we're setting the item volume, and gives it a value of 0 which stands for -inf. That's it!</p>
+<p>The command will now separate our audio from a video item, and turn down the video to -inf.</p>
+<p><img src="/blog/rfrt/83/119.gif" alt=""></p>
+<p><strong>Conclusion</strong></p>
+<p>I am perhaps 5% fluent in sripting for REAPER, and already it has truly enriched my life, and honestly it's not that hard. It's my current life mission to get more people to look under the hood of REAPER, and the more you dig the more you see beauty and intricacy everywhere, and you will find new better ways of doing clerical tasks and saving time! And now thanks to scripting, I can quite easily share my actions with all of you too! Exciting times!</p>
+<p>Here's the video:</p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/m/iddqdsound/reaper/raw/master/index.xml" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
+<p><img src="/blog/rfrt/83/8.png" alt=""></p>
+<p>If you like the work I do, <a href="http://www.buymeacoffee.com/iddqdsound">you can donate to me here</a>! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!</p>
+<p><strong>My Reaper Stash:</strong> <a href="https://stash.reaper.fm/u/IDDQDSound">https://stash.reaper.fm/u/IDDQDSound</a><br>
+<strong>My Reaper Repository:</strong> <a href="https://github.com/iddqdsound/reaper/raw/main/index.xml">https://github.com/iddqdsound/reaper/raw/main/index.xml</a></p>
+<p><strong>Follow me on Instagram:</strong> <a href="https://www.instagram.com/iddqdmusic/">https://www.instagram.com/iddqdmusic/</a></p>
+<p><strong>My Music:</strong> <a href="https://soundcloud.com/iddqdmusic"><strong>https://Soundcloud.com/iddqdmusic</strong></a></p>
+<p><a href="https://soundcloud.com/iddqdmusic"> </a> <a href="https://iddqdmusic.bandcamp.com/"><strong>https://iddqdmusic.bandcamp.com</strong></a></p>
               </div>
             </main>
           

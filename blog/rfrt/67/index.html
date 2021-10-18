@@ -1112,24 +1112,72 @@
 
             <main class="style--xv70n9">
               <div class="style--ku4mf3">
-                <h2>REAPER Tutorials</h2>
-<p>Since 2020, I've been making Tutorials on my YouTube Channel. Each Tutorial is also accompanied by a Blog Post, including more details, free downloads &amp; More. See some of our running series below:</p>
-<h2>Donate</h2>
-<p>If you like the work I do, you can donate to me using the links below:
-Paypal donation link
-BMAC Donation link
-YouTube Memberships</p>
-<h2>RAPID-FIRE REAPER TUTORIALS</h2>
-<p>Short, Fast-paced tutorials exploring some of REAPER's vast toolkit &amp; customization options. Since most tutorials are inspired by viewer questions, there's no real order to watching most of this series, but you can see these sorted under various topics.</p>
-<h2>SOUND EDITING &amp; DESIGN FOR VISUAL MEDIA</h2>
-<p>In this series, I explore workflow tips &amp; share knowledge I've picked up doing Sound Editing, Foley Recording, Sound Design, Dialogue Editing &amp; Post-Production Mixing for Film, TV, and other visual media, in REAPER.
-My own career in Sound Design began in Pro Tools, but I have since been able to fully transition to REAPER, and I want to share some of REAPER's wonderful capabilities in this realm of audio!</p>
-<h2>MIXING FEEDBACK MONDAYS</h2>
-<p>In This series I take projects from my viewers and provide detailed feedback to them. If you want to send me a mix, you can do so by becoming a member of the YouTube Channel, and you can receive feedback for one project every month, but feel free to contact me at <a href="mailto:mfm@iddqdsound.com">mfm@iddqdsound.com</a> if you are interested in a one-off feedback session!</p>
-<h2>LET'S LEARN SCRIPTING IN REAPER</h2>
-<p>I am far from a professional coder myself, but with a little bit of help from REAPER community of coders, I've been exploring some of the scripting capabilities of REAPER through Tutorials and Livestreams, featuring mentors such as Leandro Facchinetti, Geraint Luff &amp; Bo Danerius.</p>
-<h2>SOUND RECIPES</h2>
-<p>This series focuses on some of the whacky FX that I've concocted.</p>
+                <h2>Maximizing Screen Real Estate Tips &amp; Hotkeys (Rapid-fire REAPER Tutorials Ep67)</h2>
+<p><img src="/blog/rfrt/67/90.jpg" alt=""></p>
+<p>Hey Folks!<br>
+<a href="https://youtu.be/aqGtXK1EN0o">In this episode </a>we're talking screen real estate, and best ways to maximize every precious inch of your display! In the past, <a href="https://youtu.be/-H770OvDFCE">we've talked about creating screensets</a> to get your REAPER to look the way you want, with windows where you like them, but even with screensets you still have the problem of where windows you haven't placed anywhere will go. Let's solve that with a few hotkeys and custom actions!</p>
+<p><strong>Floating/Docked Windows in REAPER</strong></p>
+<p>There are a large number of windows in REAPER that you may want quick access to, but not have in view all the time. All these windows exist under <strong>View</strong> in your menu. Next to each one, you will see the ones that have a Hotkey, and you can assign hotkeys to the ones that don't.</p>
+<p><img src="/blog/rfrt/67/91.png" alt=""></p>
+<p>Each of these windows can be either floating somewhere or docked (right clicking on any floating window and selecting dock will dock them to the nearest visible, or last opened docker. From there you can move it around (<a href="https://youtu.be/-H770OvDFCE">Explained in detail here</a>).</p>
+<p>I like Docking windows because that would prevent them from popping up somewhere random, cluttering up my screen and obscuring objects &amp; windows behind them.</p>
+<p>Of course you can always hide these using their hotkeys, but that's a lot of hotkeys to memorize! Docking them will allow you to memorize one hotkey, and use the action <strong>Activate Next Tab</strong> to access the rest from there. This command is great, but there are two problems:</p>
+<ol>
+<li>
+<p>The default hotkey (Cmd+Shift+Tab) is already assigned to move backwards through your last opened apps in Mac, so it won't work unless you go to your <strong>System Preferences&gt;Keyboard</strong> and disabling a very useful hotkey. I have instead reassigned it to <strong>Ctrl+Tab,</strong> which brings us to:</p>
+</li>
+<li>
+<p>Once you activate Next tab, that window, whatever it is, will be focused. So this action will only work once, before you have to manually re-focus on the arrange window, and hit it again. As such I have made a custom action.</p>
+</li>
+</ol>
+<p><em>Note: My normal script I use to generate scripts from my custom actions today (LokasennaGenerate Script from Custom Action) has not been working as of late, so I'm just gonna describe the custom actions for now, and you can make them yourself! I'm working on a fix and will add the actions when I do!</em></p>
+<p><strong>Custom: Activate Next Tab</strong><br>
+**-**Docker: Activate Next Tab<br>
+-SWS/BR: Focus Arrange</p>
+<p>This custom action refocuses the arrange automatically so I can quickly tab through windows. I can then click on the tab I am looking for. An alternative is assigning the hotkey to the 'Docker: Activate Next Tab' action, and set its scope to global. This doesn't work all the time though, because if the window in the next tab has a text box, it may still register the hotkey as text input.</p>
+<p><strong>Custom: Maximize Real Estate</strong>
+-View: Toggle Transport Visible<br>
+-View: Show/Hide toolbar at top of main window</p>
+<p>This custom action gives me an extra inch or so of real estate by closing my transport strip and my top toolbar. I can also use the command 'SWS: Hide Dockers' bound to Opt+H to hide all my dockers, and hit Cmd+f11 to fullscreen my REAPER. These 3 actions together maximize my real estate. The reason they are not all together one action is that doing that created more problems than it solved, such as random stuff going missing when switching screensets. I have also run out of screensets and can't save my maximize screen as a screenset.</p>
+<p><strong>Do we need a transport bar?</strong></p>
+<p>I often wonder if a transport bar is needed at all. I never click on Play, Pause or Record on the transport bar when I can run those actions, and I rarely find a usage case for Project Playrate. So do we need a transport bar? You could hide it permanently if you want. I quite like the Selection strip of the bar, which shows me the length of my time selection. Would be nice if REAPER allowed us to dock only that portion of the transport bar somewhere on a toolbar, and crawl back a half inch of screen real estate that way!</p>
+<p><strong>Other Windows</strong></p>
+<p>Earlier, when I said all floating windows in REAPER can be reached via View, well thaat was kind of a lie. there are a huge number of windows that you can open, float and dock, that aren't there. Some examples are:<br>
+<strong>Undockables</strong>
+**-**Dynamic Split Window<br>
+-Render Dialog<br>
+-Transient Detection Settings<br>
+-Preferences windows</p>
+<p><strong>Dockables</strong>
+-SWS Loudness<br>
+-<a href="https://youtu.be/L0TjiCQB8Xo">SWS LFO Generator</a><br>
+-<a href="https://youtu.be/4SPfUPKZ4fE">SWS Resources</a><br>
+-<a href="https://youtu.be/XE9JiHliwNY">SWS Snapshots</a><br>
+-Reaconsole</p>
+<p>For Undockable windows, you can still move them anywhere on your screen and REAPER will remember them. For Preferences windows, you can also use several scripts available in ReaPack by <strong>cfillion</strong> to open specific pages in the Preferences window that you use often. I have two of these:</p>
+<p><strong>-Custom: Stop Playback and Open Audio Devices</strong>
+-Transport:Stop<br>
+-Audio Device Configuration...<br>
+Opening this window mid playback produces an error. I tend to forget this, so I have bound Ctrl+Cmd+Opt+P to this custom action. This is useful for when your audio device doesn't register, and when you hit play the play cursor is shown but doesn't move (usually happens when you open REAPER the first time).</p>
+<p><strong>-Mouse Modifiers</strong></p>
+<p>I also have the action 'Options: Mouse modifier preferences...' set to Cmd+Opt+, so I can quickly access that window.</p>
+<p><strong>Navigator (Cmd+Opt+V)</strong></p>
+<p>The navigator window looks and works like Ableton's Session overview, or the Universe Window in Pro Tools and Logic Pro. It gives you a simple birds-eye view of your project, which you can dock as a thin strip somewhere on your screen, so you can navigate large projects with ease, if that's your style!</p>
+<p><img src="/blog/rfrt/67/92.png" alt=""></p>
+<p><em>REAPER Navigator, showing items, tracks, and markers as small blocks!</em></p>
+<p><strong>TCP on Right Side of Arrange</strong></p>
+<p>This command allows you to place your tracks on the right side of the screen, great for ex-Ableton users who are used to that! Give it a try, you may like it!</p>
+<p><strong>Conclusion</strong></p>
+<p>Taking the time to set your REAPER up in this way saves you tons of time and headache and prevent windows from popping up in random places, which was an early pet-peeve of mine as a new REAPER adopter.</p>
+<p>Here's the video:</p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aqGtXK1EN0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
+<p>If you like the work I do, <a href="http://www.buymeacoffee.com/iddqdsound">you can donate to me here</a>! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!</p>
+<p><strong>My Reaper Stash:</strong> <a href="https://stash.reaper.fm/u/IDDQDSound">https://stash.reaper.fm/u/IDDQDSound</a></p>
+<p><strong>Follow me on Instagram:</strong> <a href="https://www.instagram.com/iddqdmusic/">https://www.instagram.com/iddqdmusic/</a></p>
+<p><strong>My Music:</strong> <a href="https://soundcloud.com/iddqdmusic"><strong>https://Soundcloud.com/iddqdmusic</strong></a></p>
+<p><a href="https://soundcloud.com/iddqdmusic"> </a> <a href="https://iddqdmusic.bandcamp.com/"><strong>https://iddqdmusic.bandcamp.com</strong></a></p>
               </div>
             </main>
           

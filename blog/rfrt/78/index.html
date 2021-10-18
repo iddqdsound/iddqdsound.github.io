@@ -1112,24 +1112,57 @@
 
             <main class="style--xv70n9">
               <div class="style--ku4mf3">
-                <h2>REAPER Tutorials</h2>
-<p>Since 2020, I've been making Tutorials on my YouTube Channel. Each Tutorial is also accompanied by a Blog Post, including more details, free downloads &amp; More. See some of our running series below:</p>
-<h2>Donate</h2>
-<p>If you like the work I do, you can donate to me using the links below:
-Paypal donation link
-BMAC Donation link
-YouTube Memberships</p>
-<h2>RAPID-FIRE REAPER TUTORIALS</h2>
-<p>Short, Fast-paced tutorials exploring some of REAPER's vast toolkit &amp; customization options. Since most tutorials are inspired by viewer questions, there's no real order to watching most of this series, but you can see these sorted under various topics.</p>
-<h2>SOUND EDITING &amp; DESIGN FOR VISUAL MEDIA</h2>
-<p>In this series, I explore workflow tips &amp; share knowledge I've picked up doing Sound Editing, Foley Recording, Sound Design, Dialogue Editing &amp; Post-Production Mixing for Film, TV, and other visual media, in REAPER.
-My own career in Sound Design began in Pro Tools, but I have since been able to fully transition to REAPER, and I want to share some of REAPER's wonderful capabilities in this realm of audio!</p>
-<h2>MIXING FEEDBACK MONDAYS</h2>
-<p>In This series I take projects from my viewers and provide detailed feedback to them. If you want to send me a mix, you can do so by becoming a member of the YouTube Channel, and you can receive feedback for one project every month, but feel free to contact me at <a href="mailto:mfm@iddqdsound.com">mfm@iddqdsound.com</a> if you are interested in a one-off feedback session!</p>
-<h2>LET'S LEARN SCRIPTING IN REAPER</h2>
-<p>I am far from a professional coder myself, but with a little bit of help from REAPER community of coders, I've been exploring some of the scripting capabilities of REAPER through Tutorials and Livestreams, featuring mentors such as Leandro Facchinetti, Geraint Luff &amp; Bo Danerius.</p>
-<h2>SOUND RECIPES</h2>
-<p>This series focuses on some of the whacky FX that I've concocted.</p>
+                <h2>How to swap beats 2 &amp; 4 with custom scripts (Rapid-fire REAPER Tutorials Ep78)</h2>
+<p><img src="/blog/rfrt/78/75.jpg" alt=""></p>
+<p>Hey Folks!</p>
+<p>Hey folks! One of my lovely donors asked for a tutorial on how to swap beats 2 and 4 of a song, so <a href="https://youtu.be/LD_HFJATtQs">here's a quick tutorial</a> with some cool custom scripts that make this quite easy to do! Swapping beats 2 and 4 of popular songs is a relatively recent trend on YouTube (<a href="https://www.youtube.com/results?search_query=swap+beats+2+and+4">Here are some examples</a>) but above and beyond the meme value of doing this, it can actually achieve some quite interesting results!</p>
+<p>Changing out beats 2 and 4 (The downbeat in many western styles of music) will alter the melody and sometimes even the harmony of a track, while leaving the beat relatively unchanged. You will end up with a song that feels more or less like it did before, but all these new patterns emerge that can be hilarious to hear, but also interesting to explore. It could be a great way of injecting some interest into an otherwise stale arrangement, and all of these types of procedural random alterations can get you out of rut!</p>
+<p>So anyway, here are the steps for doing that:</p>
+<ol>
+<li>Make sure your song tempo matches the project bpm, and that it works on grid. (<a href="https://www.youtube.com/watch?v=A4M4BoYcwPc">Watch this video</a> for a full explanation, as we will go over it very quickly in the video)</li>
+<li>Set your grid size to 1/4. You can do this by clicking on your grid settings in your main toolbar, or <a href="https://youtu.be/lu-TjJk-_Ak?t=190">I have some other methods of quickly doing it as explained in this video</a>.)</li>
+<li>Run the native REAPER action 'Item: Split items at timeline grid' with your item selected. This will split your song into 4 items per measure.</li>
+<li>Download &amp; Run 'spk77_select every nth item within time selection' with your track selected. This script doesn't actually require a time selection to work.*</li>
+</ol>
+<p><img src="/blog/rfrt/78/76.png" alt=""></p>
+<ol start="5">
+<li>
+<p>Select your track, and set the script settings to every 4th item, with the offset at 1. You can do this by hovering over each bit of text and moving your mousewheel. This is not very usual but it's the only way this script works. Doing this will select the 2nd item on each measure, starting on beat 2 and ending on beat 3. You can now Group these items (G by default, or you can right click and choose 'Group items'. Optionally run 'set items to random color' to get some visual differential for beat 2 items.</p>
+</li>
+<li>
+<p>Rinse and repeat for beat 4, changing the offset value to 3 using your mousewheel. This will select the 4th item on each measure, starting on beat 4 until the measure end. Similarly group and color these items.</p>
+</li>
+<li>
+<p>Drag each group of items to its own track. You can make this more foolproof by going to mouse modifiers&gt;media items-left drag and assigning a mouse modifier to 'move items vertically'. Move beat 2 items to the second track and beat 4 items to the third track.</p>
+</li>
+<li>
+<p>Double click on the Track Control Panel for track 2 to select all its items, move them from beat 2 to 4. Then do the same for track 3, moving the items from beat 4 to beat 2.</p>
+</li>
+<li>
+<p>Drag all items on track 2 and 3 back to track.</p>
+</li>
+<li>
+<p>Look at the end of the item and you may have some extra items, which happens if your track starts on measure 1 but doesn't end on a measure but in the middle of a measure!</p>
+</li>
+<li>
+<p>Optionally select each group of items and holding shit and dragging on their ends, add a small crossfade for each one. You can also glue it to get a new audio file for your track. Done!</p>
+</li>
+</ol>
+<p><strong>Downloading Custom Scripts</strong></p>
+<p>You can <a href="https://github.com/ReaTeam/ReaScripts/blob/master/Items%20Editing/spk77_Select%20items%20within%20time%20selection%20on%20selected%20tracks.eel">download the spk77 custom script here</a>, or you can make your life much easier by using ReaPack. Check out <a href="https://www.youtube.com/watch?v=S2a4QWqZ53M">this tutorial by my friend Myk from Let's Talk about REAPER</a> for a step-by-step tutorial on this!</p>
+<p><strong>Conclusion</strong></p>
+<p>There you go! Hopefully this will be useful to you. Thanks to my wonderful donor EJV for suggesting this tutorial. Here's the Video:</p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LD\_HFJATtQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
+<p><img src="/blog/rfrt/78/8.png" alt=""></p>
+<p>If you like the work I do, <a href="http://www.buymeacoffee.com/iddqdsound">you can donate to me here</a>! Every little helps!<br>
+Join the REAPER squad on our Discord Server:<br>
+<a href="https://discord.gg/YwQESKpBfE">https://discord.gg/YwQESKpBfE</a></p>
+<p><strong>My Reaper Stash:</strong> <a href="https://stash.reaper.fm/u/IDDQDSound">https://stash.reaper.fm/u/IDDQDSound</a></p>
+<p><strong>Follow me on Instagram:</strong> <a href="https://www.instagram.com/iddqdmusic/">https://www.instagram.com/iddqdmusic/</a></p>
+<p><strong>My Music:</strong> <a href="https://soundcloud.com/iddqdmusic"><strong>https://Soundcloud.com/iddqdmusic</strong></a></p>
+<p><a href="https://soundcloud.com/iddqdmusic"> </a> <a href="https://iddqdmusic.bandcamp.com/"><strong>https://iddqdmusic.bandcamp.com</strong></a></p>
               </div>
             </main>
           

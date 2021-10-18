@@ -1112,24 +1112,69 @@
 
             <main class="style--xv70n9">
               <div class="style--ku4mf3">
-                <h2>REAPER Tutorials</h2>
-<p>Since 2020, I've been making Tutorials on my YouTube Channel. Each Tutorial is also accompanied by a Blog Post, including more details, free downloads &amp; More. See some of our running series below:</p>
-<h2>Donate</h2>
-<p>If you like the work I do, you can donate to me using the links below:
-Paypal donation link
-BMAC Donation link
-YouTube Memberships</p>
-<h2>RAPID-FIRE REAPER TUTORIALS</h2>
-<p>Short, Fast-paced tutorials exploring some of REAPER's vast toolkit &amp; customization options. Since most tutorials are inspired by viewer questions, there's no real order to watching most of this series, but you can see these sorted under various topics.</p>
-<h2>SOUND EDITING &amp; DESIGN FOR VISUAL MEDIA</h2>
-<p>In this series, I explore workflow tips &amp; share knowledge I've picked up doing Sound Editing, Foley Recording, Sound Design, Dialogue Editing &amp; Post-Production Mixing for Film, TV, and other visual media, in REAPER.
-My own career in Sound Design began in Pro Tools, but I have since been able to fully transition to REAPER, and I want to share some of REAPER's wonderful capabilities in this realm of audio!</p>
-<h2>MIXING FEEDBACK MONDAYS</h2>
-<p>In This series I take projects from my viewers and provide detailed feedback to them. If you want to send me a mix, you can do so by becoming a member of the YouTube Channel, and you can receive feedback for one project every month, but feel free to contact me at <a href="mailto:mfm@iddqdsound.com">mfm@iddqdsound.com</a> if you are interested in a one-off feedback session!</p>
-<h2>LET'S LEARN SCRIPTING IN REAPER</h2>
-<p>I am far from a professional coder myself, but with a little bit of help from REAPER community of coders, I've been exploring some of the scripting capabilities of REAPER through Tutorials and Livestreams, featuring mentors such as Leandro Facchinetti, Geraint Luff &amp; Bo Danerius.</p>
-<h2>SOUND RECIPES</h2>
-<p>This series focuses on some of the whacky FX that I've concocted.</p>
+                <h2>20+ Hotkeys, Mouse Modifiers &amp; tips for Fades and Crossfades (Rapid fire REAPER Tutorials Ep82)</h2>
+<p><img src="/blog/rfrt/82/2.jpg" alt=""></p>
+<p>Hey folks!<br>
+<a href="https://youtu.be/349_Vdvaqfc">This episode</a> will be dedicated to hotkeys, mouse modifiers and preferences related to fades and crossfades. Below you can also download my custom hotkeys and mouse modifiers and I'll also show you how to manually add them!</p>
+<p>Let's start with the list of all the hotkeys:</p>
+<p><img src="/blog/rfrt/82/3.png" alt=""></p>
+<p>As you can see there are only two default hotkeys, one to toggle auto-crossfade on/off, which you can also do by clicking on the crossfade icon on your toolbar (looks like an X) and the other requires a time selection and item selection.</p>
+<p>Of course most of the actions we need for fading and crossfading are done via mouse modifiers, but some additional hotkeys can also make our life easy and our fades more precise!</p>
+<p>Normally, if you have auto-crossfade enabled, you can move/trim two items to overlap and a crossfade will be created. Easy! However there are times where you may want to make precise crossfades without adjusting the timing of your items. For this, we use X.</p>
+<p>First make a time selection for the duration of your fade, and next select two items that are to be crossfaded. You can do this step by step, or you can use the mouse modifier 'marquee select items and time'. This used to be the default until Razor Edits were introduced.</p>
+<p>Here's how to set it:<br>
+-Go to Preferences&gt;Mouse Modifiers &amp; choose 'arrange view' as context and 'right drag'.<br>
+-Double click on the column in front of Opt/Alt, or alternatively choose an unassigned mouse modifier.<br>
+-In the menu that open, choose 'Marquee select items' and then 'Set time selection'.<br>
+-Now you can use the modifier+right drag to select items and time in one go.</p>
+<p><img src="/blog/rfrt/82/4.gif" alt=""></p>
+<p>I've additionally added some custom hotkeys for batch fading, as well as to change fade/crossfade curve shapes for one or multiple items.</p>
+<p><strong>Crossfade Editor</strong></p>
+<p><img src="/blog/rfrt/82/5.png" alt=""></p>
+<p>The crossfade editor can be opened by double click on the fade line on any item, or additionally you can set a hotkey for it as I have (Cmd+Shift+Opt+F). This will open the window above where you can make precise edits to one or multiple crossfades as well as audition them in real-time.<br>
+By default, all the parameters in this window are linked, but you can unlink them and work on each side of the crossfade separately.<br>
+You can also save your crossfades as a preset.<br>
+<strong>Equal Gain vs. Equal Power:</strong> As a general rule of thumb, you should use an Equal Gain crossfade when crossfading between two items containing the same-ish sound, like two different iterations of the same drum loop, or to crossfade between two chunks of the same recording, where you may have removed a bit of it in the middle. You use Equal Power to crossfade between two different-sounding items. Equal Power ensures that the loudness level is maintained for the duration of the fade. I usually just use Equal Power, unless this causes a boost in volume (which happens with phase-coherent items).</p>
+<p><strong>Fade parameters:</strong> You can adjust the curve, fade shape, start and end time, and length of each fade from this window. You can also unlink these parameters and customize each side. For example you can adjust the volume of each item to make the fade smoother if needed.</p>
+<p><strong>Auditioning fades:</strong> On the right hand side of the editor, you can tick the 'audition' box and use the transport buttons on the bottom left to play your crossfade. You can also set pre and post-roll durations, solo the track, and so on!</p>
+<p><strong>Editing Multiple Fade-ins/outs</strong></p>
+<p>The crossfade editor is for crossfades. To do any kind of batch fading the best approach is to use the Media Item Properties, by selecting multiple items and hitting <strong>f2</strong>.<br>
+We also have a <a href="https://youtu.be/1u0e5tjxPcg">video covering Media Item Properties in detail</a>.</p>
+<p><strong>Mouse Modifiers</strong></p>
+<p><img src="/blog/rfrt/82/6.png" alt=""></p>
+<p>As we said before, most of our fading and crossfading is done using the mouse. Above you can see the list of defaults and I have added only a couple of custom mouse modifiers as the default features are already plenty robust.</p>
+<p>The ones that I don't like are the click/double-click based ones as there's usually a thin area where the click will work on the fade and this system is very foolhardy.</p>
+<p><strong>Setting Custom Mouse Modifiers</strong>
+You can customize your mouse modifiers from Preferences&gt;Mouse Modifiers. You can also pin this window to use as a cheat sheet as you learn your mouse modifiers. There are many different Contexts in mouse modifiers. Clicking on different areas of REAPER, or on different regions around items, automation lanes, and the ruler, etc. will do different things and each of these are its own context. Let's look at the Media item fade/autocrossfade context. These are mouse modifiers for what happens when you hover the mouse near the top edge of any item, or in the cross-section between two adjacent items:</p>
+<p><img src="/blog/rfrt/82/7.png" alt=""></p>
+<p>After selecting the context from the dropdown menus above, you will see a list of modifiers in the 'Modifier' column and the action associated with the modifier in the 'behavior' column.<br>
+Actions with a ● in front of them indicate that the behavior has been changed from the default (like the Control Modifier above). If the behavior column in front of a modifier is empty, that modifier is unassigned for that context.<br>
+Contexts can be modified completely independently of each other, but there are certain conventions that apply to all of them, and it's good to keep them in mind.<br>
+For example, adding shift to any modifier usually does the same behavior while ignoring snap. Similarly, Command+Opt modifiers are usually for batch editing behaviors. You will become more familiar with these as time goes by. The Control(Windows) modifier is usually unassigned and here's where we can add behaviors of our own. You can also double click on any of these to modify the behavior.</p>
+<p><em>Note: Not every action in REAPER can be assigned to a modifier. However, most double click contexts allow you to open the action and choose any action. For dragging and clicking, you're usually limited to a certain number of behaviors but this is a good thing!</em></p>
+<p>as an exercise, navigate to the context above and manually set Control to 'Adjust fade curve'.</p>
+<p><strong>Importing/Exporting Mouse modifiers</strong>
+by clicking the import/export button on the top right of the Mouse modifiers window, you can save and recall mouse modifiers for one or all your contexts. This is great to quickly import settings from another user (like the ones you can download below) and it's also useful if you wish to switch between two different behavior groups quickly! Online you can find modifier configurations to make REAPER behave like other DAWs for example.</p>
+<p>Before importing my modifiers, you can click on import/export and save your modifiers for all contexts as a backup. Next you will need to go to each context, choose 'import modifiers for this context' and import mine!</p>
+<p>Iddqd_FadeXfadeMouseMods</p>
+<p>.zip</p>
+<p>Download ZIP • 3KB</p>
+<p>In this bundle you can find mouse modifiers for 3 contexts. Each file ends with the context name. Try importing them after exporting your mouse modifiers as a backup, or simply set them manually!</p>
+<p><strong>Conclusion</strong></p>
+<p>Fades are a great way to explore the true power and potential of mouse modifiers, one of REAPER's best features not found in any other DAW (that I know of). We will continue to explore different contexts as we go!</p>
+<p>Here's the video:</p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/349\_Vdvaqfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
+<p><img src="/blog/rfrt/82/8.png" alt=""></p>
+<p>If you like the work I do, <a href="http://www.buymeacoffee.com/iddqdsound">you can donate to me here</a>! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!<br>
+Join the REAPER squad on our Discord Server:<br>
+<a href="https://discord.gg/YwQESKpBfE">https://discord.gg/YwQESKpBfE</a></p>
+<p><strong>My Reaper Stash:</strong> <a href="https://stash.reaper.fm/u/IDDQDSound">https://stash.reaper.fm/u/IDDQDSound</a><br>
+<strong>My Reaper Repository (Copy link to ReaPack):</strong> <a href="https://github.com/iddqdsound/reaper/raw/main/index.xml">https://github.com/iddqdsound/reaper/raw/main/index.xml</a></p>
+<p><strong>Follow me on Instagram:</strong> <a href="https://www.instagram.com/iddqdmusic/">https://www.instagram.com/iddqdmusic/</a></p>
+<p><strong>My Music:</strong> <a href="https://soundcloud.com/iddqdmusic"><strong>https://Soundcloud.com/iddqdmusic</strong></a></p>
+<p><a href="https://soundcloud.com/iddqdmusic"> </a> <a href="https://iddqdmusic.bandcamp.com/"><strong>https://iddqdmusic.bandcamp.com</strong></a></p>
               </div>
             </main>
           

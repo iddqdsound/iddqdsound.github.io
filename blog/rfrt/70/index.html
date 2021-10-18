@@ -1112,24 +1112,67 @@
 
             <main class="style--xv70n9">
               <div class="style--ku4mf3">
-                <h2>REAPER Tutorials</h2>
-<p>Since 2020, I've been making Tutorials on my YouTube Channel. Each Tutorial is also accompanied by a Blog Post, including more details, free downloads &amp; More. See some of our running series below:</p>
-<h2>Donate</h2>
-<p>If you like the work I do, you can donate to me using the links below:
-Paypal donation link
-BMAC Donation link
-YouTube Memberships</p>
-<h2>RAPID-FIRE REAPER TUTORIALS</h2>
-<p>Short, Fast-paced tutorials exploring some of REAPER's vast toolkit &amp; customization options. Since most tutorials are inspired by viewer questions, there's no real order to watching most of this series, but you can see these sorted under various topics.</p>
-<h2>SOUND EDITING &amp; DESIGN FOR VISUAL MEDIA</h2>
-<p>In this series, I explore workflow tips &amp; share knowledge I've picked up doing Sound Editing, Foley Recording, Sound Design, Dialogue Editing &amp; Post-Production Mixing for Film, TV, and other visual media, in REAPER.
-My own career in Sound Design began in Pro Tools, but I have since been able to fully transition to REAPER, and I want to share some of REAPER's wonderful capabilities in this realm of audio!</p>
-<h2>MIXING FEEDBACK MONDAYS</h2>
-<p>In This series I take projects from my viewers and provide detailed feedback to them. If you want to send me a mix, you can do so by becoming a member of the YouTube Channel, and you can receive feedback for one project every month, but feel free to contact me at <a href="mailto:mfm@iddqdsound.com">mfm@iddqdsound.com</a> if you are interested in a one-off feedback session!</p>
-<h2>LET'S LEARN SCRIPTING IN REAPER</h2>
-<p>I am far from a professional coder myself, but with a little bit of help from REAPER community of coders, I've been exploring some of the scripting capabilities of REAPER through Tutorials and Livestreams, featuring mentors such as Leandro Facchinetti, Geraint Luff &amp; Bo Danerius.</p>
-<h2>SOUND RECIPES</h2>
-<p>This series focuses on some of the whacky FX that I've concocted.</p>
+                <h2>Changing REAPER's Editing Behaviour with Hotkeys (Rapid-fire REAPER Tutorials Ep70)</h2>
+<p><img src="/blog/rfrt/70/24.jpg" alt=""></p>
+<p>Hey folks! In this episode, I'll show you how to control some of REAPER's Editing behaviour that you may want to control on the fly! Stuff like Ripple Editing mode, Snapping, Grid and ruler options, etc.</p>
+<p><strong>What's in my Main Toolbar</strong><br>
+My main toolbar consists of everything you would find in your default main toolbar (At least as of REAPER 5.91) and I have added some actions to it. I explained what each button did in the video but cut it out of the final video cuz y'all like them short and sweet, so here's a detailed explanation below. Note that some of these toolbar icons are special, meaning they do a lot more than 1 action, which is something you can't do to your own customized toolbars, a thing I wish REAPER will introduce at some point. Some of these icons also change based on what Editing Behaviour is active, and right-clicking each one will give you access to some preferences and options.</p>
+<p><img src="/blog/rfrt/70/25.jpg" alt=""></p>
+<p><strong>1. Auto-Crossfade:</strong> Enables the automatic creation of crossfades when the edges of two items on the same track meets. I have this on all the time but I keep the icon there because it gives me quick control over these preferences:<br>
+<strong>-Trim Content behind media items:</strong> With this option on, if an item completely overlaps the other, the item that is enveloped will be deleted. I never found a use for this personally.<br>
+<strong>-Always trim content behind razor edits:</strong> A new option. This does the above behaviour but for any razor selection that overlaps an item.</p>
+<p><strong>2. (Custom) Toggle enable/disable default fadein/fadeout:</strong> This option normally lives in Preferences&gt;Project&gt;Media Item Defaults, but I got tired of finding there so I added it here. It's useful most of the time, unless you do sample-based editing, in which you probably want it off. I've also bound it to <strong>Command+Option+K.</strong></p>
+<p><strong>3,4,5. Ripple Editing:</strong> Ripple editing is a great REAPER feature. What it does is making any edit cause a ripple across the rest of the project, which makes it very useful for podcast editing, radio work, tutorials, and Ambience creation. If you delete an item normally, it'll leave an empty space where the item was. With Ripple Editing on, that space will be instead filled with the items that come after. Similarly, with Ripple editing on, if you insert a new item anywhere on your timeline, it'll move the later items forward, creating space for that item. The default hotkey for this is Opt+P, but I changed this to <strong>Opt+R</strong> (re-assigning REAPER's default function for that, opening Routing matrix, to Opt+P) because Opt+P is hard to press with one hand, but Opt+R, isn't.</p>
+<p>This is an interactive icon, meaning the icon will look different based on which mode you are on. When <strong>Ripple Editing is off</strong>, it looks like 3, With <strong>Ripple editing set to track</strong> mode, Ripple editing is only enable for the track being edited, and the icon looks like 4. With <strong>Ripple Editing set to all</strong>, any edit will affect all items that come after it on all tracks, and the icon looks like 5.</p>
+<p>Right-Clicking this icon reveals additional options around Ripple Editing.</p>
+<p>I have also added additional mouse modifiers to temporarily switch Ripple Editing mode. These are all found in <strong>Preferences&gt;Mouse Modifiers&gt;Item - Left Drag</strong><br>
+<strong>Cmd</strong> - Move items, enabling ripple editing per track<br>
+<strong>Cmd+Opt</strong> - Move items, disabling ripple editing<br>
+<strong>Cmd+Ctrl+Opt</strong> - Move items, enabling ripple editing for all tracks<br>
+<strong>Cmd+Ctrl+Opt+Shift</strong> - Move items, ignoring snap and enabling ripple editing for all tracks.</p>
+<p><em>Note: under move items, you can select multiple non-conflicting behaviours for your mouse modifier, which further adds to the versatility of mouse modifiers.</em></p>
+<p><strong>6. Move envelope Points with items and Razor Edits:</strong> Another one I always have turned on, but right-clicking this button gives you quick access to tons of options about envelope points and automation items behaviour. I have covered a lot of these in my automation series, <a href="https://www.youtube.com/watch?v=Kf8TFQ8ov_s&amp;list=PLjvmrOUg3J0r0-Xq2ONWsEOBnHEDonPW2">which you can watch here.</a></p>
+<p><strong>7. Grid Settings:</strong> You can enable grid lines visible by pressing opt+G, and you can right-click the icon or press opt+L to access Grid/Snap settings, where you can set your grid values, snap settings, as well as control what types of stuff in REAPER obey snaps and grids. You can for example tie items to the grid, but have automation items move freely, and so on.</p>
+<p>Another useful thing to do is create some additional hotkeys for changing your grid size, as it can be cumbersome to this via the right-click menu. I have a few of these.</p>
+<p><strong>Ctl+Page Up</strong> - multiply grid size by 2<br>
+<strong>Ctl+Page Down</strong> - multiple grid size by 1/2<br>
+**Ctl+Cmd+Opt+** - Toggle framerate grid<br>
+**** - Cycle through relevant grid sizes (Explained below)</p>
+<p>Finally, I like the custom script <strong>'amagalma_change grid size (via dropdown menu)'</strong> which opens a dropdown menu where your mouse cursor is to quickly change grid settings. I have that tied to an extra button on my Logitech G600 mouse, which has 25+ extra buttons you can bind to macros and hotkeys.</p>
+<p><em>Note: I personally very rarely change my grid size in Arrange view. I change them a lot more often in the MIDI Editor, for which I have it tied to Cmd+Ctl+Mousewheel.</em> <a href="https://youtu.be/0Ch9hLZBh5M"><em>Watch this video for more info.</em> </a><br>
+<strong>8. (Custom) Toggle pre-Roll:</strong> Bound to <strong>Cmd+K</strong> for me, this enables pre-roll for recording. You can additionally right-click this icon or the next, to access metronome settings where you can change your pre-roll settings and amount, change your metronome sound or beat pattern, and more.</p>
+<p><strong>9. Toggle metronome:</strong> Click to enable/disable metronome, or right-click to open the settings window. This doesn't have a hotkey be default, but I have bound it to <strong>Cmd+Opt+T</strong> which is normally for showing/hiding transport, but really, how often are we doing that to give it its own hotkey? I instead prefer to have this hotkey toggle the metronome, and I can always go to View&gt;Transport to show/hide my transport.</p>
+<p>Another useful unassigned REAPER action is 'Adjust metronome volume (CC/OSC only)' which I have tied to Opt+Shift+Mousewheel which allows me to turn up and down my metronome without opening the menu, really useful when time-correcting a dynamic performance.</p>
+<p><strong>10. Snapping:</strong> Enables/Disables snapping, which you can do by clicking the icon or pressing Opt+S, and right-clicking the icon gets you to the snap settings.<br>
+What snap does is to allow more precise editing by snapping your items to the grid, meaning, If I move an item, the beginning (or snap offset) will always snap to the grid, and never fall slightly after or before the grid.</p>
+<p><em>Bonus Tip: By default, holding Shift while dragging on an item temporarily disables snapping.</em></p>
+<p><strong>11. Locking:</strong> Press L or click the icon to enable/disable Locking, or press Shift+L or right-click the icon to open the Lock parameters. This is Project-based locking, not to be confused with locking items and tracks, and it's a very under-utilized feature in my opinion. You can set several things to be locked when this is enabled, such as locking the left-right movement of items (useful for mixing), the markers and regions (once you have them finalized), the time selection (if you are doing precise work like exporting libraries or stems) and so on.</p>
+<p><strong>12. (Custom) Unsolo All:</strong> While Command+Clicking any solo button on any track will unsolo all, I found that I need to be able to just click this with one hand when I'm recording, so I added it to the main toolbar.</p>
+<p><strong>13. (Custom) Solo in front:</strong> I have covered this before <a href="https://youtu.be/9CpTS9zvoW8">in this video, so check it out</a> if you're wondering.</p>
+<p><strong>14. (Custom) Unarm all tracks:</strong> This is very useful if you are forgetful like me and you have big projects going on, where you have intermittently armed various audio and MIDI tracks for recording, and moved on to other things. Then you start recording and suddenly, you're recording 10 tracks while playing only one. Hence why I added this icon to my toolbar.</p>
+<p><strong>15. Item Edit grouping and selection grouping:</strong> You can enable/disable grouping temporarily by pressing Opt+Shift+G. Think of this like suspending the groupings temporarily. With this on, grouping items behaves as it should. With this off, you will temporarily be able to control and edit individual items in a group. Additionally, right-clicking it gives you access to another preference for selecting any item in a grouping to select all the items, which is useful if you want to use further actions and mouse modifiers on the grouped items, like fade or trim, or dynamic split.</p>
+<p><strong>16-17. Mute/Solo Guide Track:</strong> This is really for me, and if you watch my sound design series you will know what this does (<a href="https://www.youtube.com/watch?v=V1K0uSvKChk">explained here</a>).</p>
+<p><strong>Cycle Action 1: Cycle through relevant grid sizes</strong></p>
+<p><img src="/blog/rfrt/70/26.png" alt=""></p>
+<p><em>Pretty simple and</em> <a href="https://www.youtube.com/watch?v=PvzbBeW_F4c"><em>Courtesy of Jon Tidey</em></a><em>. (Unfortunately I wasn't able to find the direct video to link you to.)</em></p>
+<p>I have this set to **Cmd+** and it toggles through my most commonly used grid settings. You can add as many as you want. Make sure NOT to put a step at the end or beginning, just between each command. For more on Cycle Actions, watch <a href="https://youtu.be/PQAaAN6AI0I">Episodes 3</a>, <a href="https://youtu.be/cve527gA22M">4</a>, and<a href="https://youtu.be/SwbcLZDccB0"> 5</a> of Rapid-Fire REAPER tutorials. (Don't worry, they used to be 2 minutes long!)</p>
+<p><strong>Cycle Action 2: Cycle through ruler options</strong></p>
+<p><img src="/blog/rfrt/70/27.png" alt=""></p>
+<p>Another great candidate for a cycle action. Like with Grid Sizes, there are simple too many commands to cycle through all of them each time. I have my 4 most-used ruler types in this cycle action, each with or without a secondary time unit, and I can quickly cycle through them without opening any menus (Normally, you'd have to right click the ruler and menu-dive to change these) with <strong>Ctl+Opt+R.</strong></p>
+<p>The first mode is for <strong>Music.</strong> The second mode is for <strong>Film Music.</strong> The third mode is just for <strong>Film sound editing,</strong> and the final one is for <strong>Podcast/Radio Editing.</strong> I added samples to the last one to give me some visual differentiation, as timecode and minutes:seconds look very similar at a glance.</p>
+<p><strong>Conclusion</strong></p>
+<p>I love the main toolbar for all the preferences it gives me access too, as well as being a great visual indicator of what Editing Behaviours I have enabled, but moving my mouse over from my items to click them is not necessarily something I enjoy doing. By making all these hotkeys executable with my left hand alone, I get the fastest possible workflow with just a mouse and keyboard.</p>
+<p>Here's the video:</p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/be.com/watch?v=Kf8TFQ8ov\_s&amp;list=PLjvmrOUg3J0r0-Xq2ONWsEOBnHEDonPW2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
+<p>New videos out every Monday at 12pm EST and Friday 1pm EST!</p>
+<p>If you like the work I do, <a href="http://www.buymeacoffee.com/iddqdsound">you can donate to me here</a> or by clicking the image! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!</p>
+<p><a href="https://www.buymeacoffee.com/iddqdsound"><img src="/blog/rfrt/70/8.png" alt=""></a></p>
+<p><strong>My Reaper Stash:</strong> <a href="https://stash.reaper.fm/u/IDDQDSound">https://stash.reaper.fm/u/IDDQDSound</a></p>
+<p><strong>Follow me on Instagram:</strong> <a href="https://www.instagram.com/iddqdmusic/">https://www.instagram.com/iddqdmusic/</a></p>
+<p><strong>My Music:</strong> <a href="https://soundcloud.com/iddqdmusic"><strong>https://Soundcloud.com/iddqdmusic</strong></a></p>
+<p><a href="https://soundcloud.com/iddqdmusic"> </a> <a href="https://iddqdmusic.bandcamp.com/"><strong>https://iddqdmusic.bandcamp.com</strong></a></p>
               </div>
             </main>
           

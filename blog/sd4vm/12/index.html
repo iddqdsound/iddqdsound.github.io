@@ -1112,24 +1112,161 @@
 
             <main class="style--xv70n9">
               <div class="style--ku4mf3">
-                <h2>REAPER Tutorials</h2>
-<p>Since 2020, I've been making Tutorials on my YouTube Channel. Each Tutorial is also accompanied by a Blog Post, including more details, free downloads &amp; More. See some of our running series below:</p>
-<h2>Donate</h2>
-<p>If you like the work I do, you can donate to me using the links below:
-Paypal donation link
-BMAC Donation link
-YouTube Memberships</p>
-<h2>RAPID-FIRE REAPER TUTORIALS</h2>
-<p>Short, Fast-paced tutorials exploring some of REAPER's vast toolkit &amp; customization options. Since most tutorials are inspired by viewer questions, there's no real order to watching most of this series, but you can see these sorted under various topics.</p>
-<h2>SOUND EDITING &amp; DESIGN FOR VISUAL MEDIA</h2>
-<p>In this series, I explore workflow tips &amp; share knowledge I've picked up doing Sound Editing, Foley Recording, Sound Design, Dialogue Editing &amp; Post-Production Mixing for Film, TV, and other visual media, in REAPER.
-My own career in Sound Design began in Pro Tools, but I have since been able to fully transition to REAPER, and I want to share some of REAPER's wonderful capabilities in this realm of audio!</p>
-<h2>MIXING FEEDBACK MONDAYS</h2>
-<p>In This series I take projects from my viewers and provide detailed feedback to them. If you want to send me a mix, you can do so by becoming a member of the YouTube Channel, and you can receive feedback for one project every month, but feel free to contact me at <a href="mailto:mfm@iddqdsound.com">mfm@iddqdsound.com</a> if you are interested in a one-off feedback session!</p>
-<h2>LET'S LEARN SCRIPTING IN REAPER</h2>
-<p>I am far from a professional coder myself, but with a little bit of help from REAPER community of coders, I've been exploring some of the scripting capabilities of REAPER through Tutorials and Livestreams, featuring mentors such as Leandro Facchinetti, Geraint Luff &amp; Bo Danerius.</p>
-<h2>SOUND RECIPES</h2>
-<p>This series focuses on some of the whacky FX that I've concocted.</p>
+                <h2>Sound Editing &amp; Design for Visual Media - Ep12 Tutorial Notes (Foley Recording in REAPER)</h2>
+<p><img src="/blog/sd4vm/12/178.jpg" alt=""></p>
+<p>Hey folks!</p>
+<p>Welcome to Episode 12 of Sound Editing &amp; Design for Visual Media! Our last episode was back in January. I've been busy recording my new album and March-May is peak film season for post-production folks, so I hope you've missed this series and had a chance to watch all previous episodes!</p>
+<p>This episode is all about Recording Foley and our longest episode to date! Still, given that we've condensed literally months of learning into half an hour, it should be action-packed and watch-worthy! By the end of this episode, I will promise you that you will have a hard time recording Foley in any DAW other than REAPER!</p>
+<p>The focus of this episode will largely be on being the Foley Recordist as opposed to Foley Artist. I wanted to show you my foley recording workflow, a system I devised while working at my first job out of film school. This system builds upon the decades-old foley recording procedures and protocols, while using REAPER's many awesome features and custom scripts, to automate a large amount of the clerical tasks involved in being a Foley Recordist.</p>
+<p>My assumption in the video will be that those of you watching are at least somewhat familiar with foley, more than a bit familiar with REAPER, and hopefully may have even done a few sessions of foley recording at some point in your life. If this is you, you can skip the next chapter, which will be a 101 Foley crash course for those not so familiar with this incredible artform!</p>
+<p><strong>What is Foley?</strong></p>
+<p>Foley is the act of performing sound effects using our bodies and props in sync to picture! Performing is a keyword here, as much as it may get lost among all the other fancy words in that sentence. As opposed to SFX editing, which is cutting sounds to picture using a DAW, foley is a performance-based art form, and one that dates back to the advent of audio in films. <a href="https://www.youtube.com/watch?v=_Jznye0iqYE">This wonderful video by Filmmaker IQ</a> takes a deep dive into the history of Foley (and SFX as a whole), how it came to be a useful method of post-production audio editing in the days before DAWs, and why it continues to be common practice for any film and animation, even with today's technology and the vast amounts of sound libraries at the fingertips of sound editors!</p>
+<p>Foley falls under the umbrella of Sound Effects (SFX) in the film audio pipeline. We’ve already covered this in Episode 0 (which <a href="https://youtu.be/7SXGtB3TQzo">you can watch here</a>, or <a href="https://www.iddqdsound.com/post/sound-design-for-visual-media-tutorial-notes-ep00-ep01">read the blog post here</a>)</p>
+<p><img src="/blog/sd4vm/12/126.jpg" alt=""></p>
+<p><em>Foley, alongside SFX, SPFX &amp; make up the SFX pipeline of film audio!</em></p>
+<p>Foley itself can be further broken down into three categories:</p>
+<ol>
+<li>
+<p>Footsteps</p>
+</li>
+<li>
+<p>Props</p>
+</li>
+<li>
+<p>Cloth (movement)</p>
+</li>
+</ol>
+<p>In short, Foley is the sound of the characters in a movie moving &amp; interacting with each other, the set and various objects. The necessity to record foley for films stems from how the production phase of a film is typically conducted. During the shooting of a film, production sound crew focuses on capturing Dialogue. It’s nearly impossible to capture all the various sounds of movement on set like a character touching their body in a wide shot, or even the sounds of footsteps.</p>
+<p>Even Dialogue, despite being the focus of production sound crew, is still often in need of being re-recorded in post-production. Sets are noisy, imperfect audio recording environments and that’s where ADR comes in! You can think of Foley as ADR for all the sound effects that occur during production. Much like an actor gets in the studio, hears their line and tries to reproduce it matching the lip movements and intensity, a Foley Artist watches movement on screen and reproduces those sounds in sync to picture. Every film scene is unique as every character is unique. They all move differently and they are living, breathing entities in the film world and we need sound to reflect that!</p>
+<p>This is why these elements are usually performed by a Foley Artist, rather than edited, or cut to use industry jargon, by an SFX Editor. A good Foley performance ties the sound of movies together, and pulls the audience into the scene and the heart of the action, and it takes a foley artists less time to cover a sequence of an actor walking to a fridge, grabbing a beer and sitting down, than it does an sfx editor to find all these sounds from libraries and edit them to picture!</p>
+<p>It’s also important to remember that these sounds are very familiar for audiences. The average person may not have a clear idea of what the Bat-mobile may sound like, but they are instinctively know if someone walking sounds...wrong.</p>
+<p><strong>Footsteps</strong> sound easy in theory but there are many considerations to be taken: You have to know what footwear the character is wearing, you have to consider what surface they are walking on, and you need to take their weight, their pace, potential nuances like a limp, a drunken stammer, and even the character’s emotions and intent into account! There’s a big sonic difference between nervously pacing outside the surgery ward, running from the cops, or seductively walking down the steps of your mansion to meet your prom date.</p>
+<p><img src="/blog/sd4vm/12/179.png" alt=""></p>
+<p><em>Not to burst your bubble, but every bit of dialogue, as well as every footstep you hear in a typical walk-and-talk scene in movies, is re-recorded in the studio. Imagine what the shooting of the scene above would entail: You have three actors walking and talking together, but behind the camera, you probably have a cam op, boom op, a cable runner, a focus puller, and maybe even a couple of gaffers walking with them. The sound will just not be pristine, and neither the dialogue nor the sound effects recorded on set are usable!</em></p>
+<p>Keep in mind that not all characters in a film or animation are human. As a foley artist, not only do you have to master human walking, but you would need to imagine and recreate the sound of anything moving: A cat, an 8 legged monster, or even a slimy blob!</p>
+<p><img src="/blog/sd4vm/12/180.jpg" alt=""></p>
+<p><em>These things need foley too, and a human has to figure out how to make it sound right!</em></p>
+<p><strong>Props</strong> are sounds pertaining to characters interacting with objects or each other. Taking your phone or keys out of your pocket, smashing someone’s skull with a baseball bat, a handshake, or the sound of gulping beer are all examples of Props. This is another aspect of Foley that requires true artistry. A good foley artist knows what stuff sound like. Not only do they have access to a variety of objects and gadgets, but they are able to combine sounds of other objects to make the sound of another. Using a heavy stapler to recreate the sound of gun handling, or using celery sticks to imitate the sounds of someone’s bones shattering are all inventions of gifted foley artists!</p>
+<p>Finally you have <strong>Cloth</strong>. It may not seem like such an important aspect of Foley, but cloth is essentially the sound of movement. Whenever a character turns around, sits down, or when two characters embrace each other with passion, it’s cloth that brings life to that. Like footsteps, cloth tracks aren’t made just with cloth. Your character may be a ghost, a bird person or a tree person from Lord of the Rings!</p>
+<p>A final subcategory of these is what is known as <strong>Gack</strong>. Gack is a special track for characters when they move with a certain uniform or carrying an object. Think of a soldier walking down a road. They are probably wearing army boots, but may also have a backpack with stuff in it, a gun holstered, various things hanging off their body, all of which makes a sound, and all of which a Foley artist recreates layer by layer!</p>
+<p>The lines between these elements are not super clear cut sometimes. Normally cloth covers movement, but if a character takes their jacket off to pat out fire, their jacket is now a prop. Similarly, if one character touches another character, the sound of that moment is covered in cloth, but also by an additional prop element of the hand itself. Similarly, chairs and beds are considered props. So every time a character sits or gets off of a chair or bed, that is covered in props, despite beds and chairs not technically being props!</p>
+<p>Other than all of this, Foley artists sometimes perform additional sounds that may also be covered by the SFX Editor. If a bag of oranges breaks and falls all around the floor, this is something that Foley covers as the SFX editor may struggle. Similarly, a Foley artist may add additional sounds to a scene where an earthquake is making objects fall around a house. Check out <a href="https://vimeo.com/518690844">this short clip of Foley sounds in Cast Away</a>.</p>
+<p>Foley is an art into itself. A Foley artist has a keen ear, a knack for object-based sound design, and is extremely good at outside-the-box thinking. They won’t always use the objects we see on camera to make the sounds for various reasons. How do you cut footsteps in the snow if you are editing it in the summer? You can use cornstarch to get the crunch of the sound, while using a mop to get some wet squish-ness, and blend both of these with the sound of regular footsteps!</p>
+<p>Similarly, you may use something like a piece of wood with three nails poking out of it to recreate the sounds of a cat running around.I can give examples all day, but the fact is, each project presents unique foley challenges, and a good foley artist knows how to tackle them, improvise on the spot, and use stuff lying around to recreate it.</p>
+<p>I don’t consider myself a Foley Artist. I have worked as a Foley Recordist and this will be the focus of the rest of this episode. The foley recording process is extremely fluid. Almost every new element being recorded requires you to quickly and efficiently adjust pre-amp levels, and the large volume of audio items recorded means that you need to have a good way of quickly renaming and organizing the project. This is why Foley is usually a two-person (minimum) operation: <strong>Foley Recordist,</strong> and <strong>Foley Artist.</strong></p>
+<p><strong>(A) Foley Artist(s)</strong> are in the recording room. They are watching the picture, and using various props and their bodies, performing whatever they see on screen! A <strong>Foley Recordist</strong> is the person in the control room, behind the DAW. They cue up different foley elements for the artist to record, keep track of what elements are done and what's left, and most importantly, constantly make sure that the recording levels are optimal. In a typical foley session, you may covering a wide range of sounds, from very quiet (things like a nose scratch, or reaching into one's pockets) to very loud (breaking a bunch of dishes) and everything in between. A Foley Artist may also want to jump back and forth between quiet and loud elements. So a foley recordist is constantly doing mini-soundchecks, and setting levels based on whatever is up next, all the while keeping up with a number of clerical tasks: Naming each clip appropriately, organizing clips in a logical manner, and discarding bad takes.</p>
+<p>Back in the Pro Tools days, a lot of this had to be done manually and by memorizing hotkeys, but also staying after the session to organize and further categorize sounds. Thankfully, with REAPER you can automate most of these clerical tasks, leaving you free to simply adjust levels and listen for sync!</p>
+<p><strong>Foley Spotting</strong></p>
+<p>We have discussed Spotting in <a href="https://www.iddqdsound.com/post/sound-design-for-visual-media-tutorial-notes-ep03">Episode 3, in the context of SFX Editing</a> and essentially, Foley Spotting is the same process for Foley. The foley team sits down, ideally with a director or producer, and they go over the movie, taking notes of what needs to be covered and where. This is often done in the DAW, using Clip Regions, Markers or empty items, that the Foley team will then name, and it'll serve as the guide to recording all foley sounds!</p>
+<p>Spotting is often overlooked, or set aside deliberately by amateurs, who may see it as a waste of time, but Spotting is extremely important, and the time it takes to do will save a lot more time down the line, especially with REAPER! Here's 4 reasons why:</p>
+<p><strong>1. Full coverage:</strong> Imagine a 90 minute movie full of movement from start to finish. It would be arrogant to think that a foley team can just show up to the studio, watch the picture, cover every sound, never missing a single element, and staying fully faithful to the story. While foley seems straightforward, it is almost impossible to execute well without a good understanding of the story, characters' intent and the flow of the video edit.</p>
+<p><strong>2. Continuity:</strong> There is a fundamental difference between video editors and audio editors. Video editors, cinematographers, and a large number of directors, have a visual mind. When it comes to filmmaking, their brain operates within the confines of the frame, because the story in their mind takes place within the frame. Sound editors are different. While visuals can be fit into a square, and ignore everything outside of that square, Audio is omnidirectional! It exists all around us, both in and out of the frame. We can't just ignore the fact that character A is walking towards character B, just because the walking is not in the frame. Video editors forget stuff like this ALL THE TIME, which leads to continuity errors. You may see character A walking from across the hall towards character B, we cut to character B's face for 2 seconds, and suddenly character A is right in front of B! Similarly, you may have one character holding a cup of coffee one moment, and not in the next shot. All of this, is the job of the Foley team to solve, by adding additional sound effects that explain away these continuity errors!</p>
+<p><strong>3. Preparation:</strong> Every foley session starts with gathering a palette of objects, footwear, surfaces and mics to record! Spotting provides the foley team with a fetch list. Say we're working on a movie, where there are 2 characters. They start at the beach wearing sandals, then put on shoes, walk on concrete to their cars, then get home and remove their shoes to walk on tiles, then when they get out it's raining. All of these surfaces and various footwear makes a unique sound, so Foley needs to prepare for all of that, not to mention all the objects the characters may interact with (Towel, Car Keys, Car stereo knobs, door knobs, Kitchen gadgets and cutlery, umbrellas)</p>
+<p>Every foley studio would have a storage space full of weird objects, old smelly footwear and a bunch of clothing. A good foley spotting means one trip to the storage and you are ready to rock n' roll. Don't do spotting and you'll find yourself walking back and forth between the control room and the storage space, wandering around, looking for garbage!</p>
+<p><strong>4. Automation of Clerical Tasks:</strong> With REAPER, simply having a list of elements can help you with automating your clerical tasks as the foley recordist. In the video you will see all the stuff that I've come up with!</p>
+<p><strong>Spotted Items Naming Convention</strong></p>
+<p>In order for the custom actions to work, you need to spot in a specific way. Firstly, you need to create empty items in 1-4 Spot tracks. I do this by assigning <strong>Cmd+Left Drag</strong> to <strong>Draw an Empty MIDI Item</strong> in Preferences&gt;Mouse Modifiers&gt;Track-Left Drag.</p>
+<p>Simply draw an empty item, and then use <strong>'Xenakios/SWS: Rename takes...'</strong> to rename. I have assigned <strong>Cmd+R</strong> to this action. Alternatively, you can select each empty item, press <strong>F2</strong> to open the item properties, name the item and hit enter, but the SWS action allows you to quickly rename multiple tracks.</p>
+<p>Each empty item name should by either 'Feet -' or 'Prop -'. This is how my custom action will decide where the recorded elements will go.</p>
+<p>Optionally, with footsteps, indicate the type of footwear and surface for every time one of these changes for the first time!</p>
+<p><strong>Exporting a Fetch List:</strong>
+Once you are finished spotting the tracks, you can select all items on 1-4 Spot, and run the action <strong>'Script: X-Raym_Display list of selected media items active take names in the console.lua'</strong></p>
+<p>This will generate a list of all the spotted items, which you can then use as a fetch list to prepare your palette of props, cloth and footwear/surfaces.</p>
+<p>Optionally, you can colour-code your prop &amp; feet elements using the Project Bay. Follow the instructions in the video!</p>
+<p><strong>Foley Template &amp; Set-up</strong></p>
+<p>I have devised a well-automated system of recording foley in REAPER, but to set this up takes a bit of time and bit of tweaking. Below you will see a list of all the assets that I have shown in the video, but each assets depends on other things being set-up to work properly. My Custom actions only work if you have all the underlying custom scripts and SWS actions, and my Foley template is only good if you have my custom actions, and the custom actions only work if you use them in the foley template, as they rely on a specific order of tracks to function properly as intended. If you are more advanced, you can easily figure out how to tweak my actions to work in your template, but otherwise, follow these steps carefully!</p>
+<p><strong>STEP 0:</strong> DO NOT download my actions and templates before completing steps 1-3! My custom actions use SWS and other custom scripts, and if you don't have them, my custom actions won't function properly (or at all!)<br>
+<strong>STEP 1:</strong> Download &amp; Install SWS for REAPER. <a href="https://www.youtube.com/watch?v=y71-rcVK7jQ">This video</a> will show you how. Installing SWS is free and will add a ton of functionality and new actions to REAPER's already-extensive action list, a lot of which we will use throughout the project.</p>
+<p><strong>STEP 2:</strong> Download &amp; Install ReaPack for REAPER. <a href="https://www.youtube.com/watch?v=S2a4QWqZ53M">This video</a> will show you how. ReaPack is another extension for REAPER that allows you to download custom script repositories, coded by REAPER users and available for free.</p>
+<p><strong>STEP 3:</strong> Here are the non-SWS custom scripts that are used in My custom actions:<br>
+-<strong>Script: mpl_Move selected items to tracks with same name as items.lua:</strong> this is used in my 'Move Foley Element to Relevant Folder' action.<br>
+<strong>-Script: X-Raym_Move edit cursor to next/Previous frame.lua:</strong> Optional but highly recommended for film work, these two actions (which I have assigned to <strong>,</strong> and <strong>.</strong>) are great for moving through the video frame by frame.<br>
+<strong>-Script: X-Raym_Display list of selected media items active take names in the console.lua:</strong> Another optional but highly recommended script. This is what I use at the end of the Foley Spotting session to generate a fetch list for all the props and footwear we need.<br>
+<strong>-Script: Archie_Item; Move selected items down one track.lua:</strong> This script by Archie is used in my Cycle Action 'Distribute to Bank of 8', however, you can actually the REAPER native action <strong>'Item edit: Move items/envelope points down one track/a bit'</strong><br>
+Since I can't export my cycle actions anyway, I will suggest you create your own, and skip this script. That said, Archie has a number of really useful scripts! <a href="https://github.com/ArchieScript/Archie_ReaScripts">Find his repo here.</a></p>
+<p><strong>STEP 4:</strong> Once you downloaded all the above, you can now download my template and custom actions using the link below:</p>
+<p>SD4VM Ep12 Downloads</p>
+<p>.zip</p>
+<p>Download ZIP • 24KB</p>
+<p><strong>Contents</strong>
+<strong>1. 3beeps.wav:</strong> this is 3beeps audio file that we use to cue up foley and ADR in films. More on this in the video and later in the blog!<br>
+<strong>2. IDDQD Sound_Foley Rec Template.RPP:</strong> My Foley Recording template. Once downloaded, open the template, import the <strong>3beeps.wav</strong> and place it on Track 06 (3 beeps) and save it as a project template, making sure to tick 'include items' in the dialog box. I didn't include it in the template because you may be using a different organizational structure for your projects!<br>
+<strong>3. IDDQD Sound_Move Foley Element to Relevant Folder.lua:</strong> This is the custom action you will run AFTER you finished recording a new foley element. More instructions in the video and below.<br>
+<strong>4. IDDQD Sound_Move Selected items To Bin track.lua:</strong> Bonus action for temporarily "binning" an item. This is explained<a href="https://www.youtube.com/watch?v=mUc-rOBWndY&amp;t=545s"> in the field recording episode</a>.<br>
+<strong>5. IDDQD Sound_Prepare Foley Element for Recording.lua:</strong> This is the custom action you will run BEFORE you begin recording a new foley element. More instruction in the video and below!</p>
+<p>If you need instructions on how to download and import custom actions, <a href="https://www.youtube.com/watch?v=LGkB9EOn3sE">watch this video</a>!</p>
+<p><strong>My recording Template</strong></p>
+<p>The Foley recording template consists of 46 tracks (no plugins):</p>
+<ol>
+<li>Vid: This is where you import the video.<br>
+2-4 GT: This is where you would import the Guide track, temp Dialogue, SFX and Music, if needed/Available.</li>
+<li>Rec: This is the single recording track in the project. Using my custom actions, you can have each spotted item automatically rename this track, so you don't have to rename it manually for each foley element.</li>
+<li>3 beeps: 3 beeps is the standard film way of cueing up a performance in post-production, whether it's an actor doing ADR, or a Foley Artist. The way the 3 beeps works is the same as a pre-roll bar in music, except there is only 3 beeps rather than 4 and it has a fixed tempo.</li>
+</ol>
+<p>Each beep is a 1000Hz Sine tone at -20dBFS, and is 1 frame long. Between each two beeps is 21 frames of silence, as well as at the end of the third beep. Line up the END of this audio item to the beginning of your spotted foley element, and begin recording. The foley artist will hear the 3 beeps and begin performing from where the fourth beep would be. So in music, we usually go: 1, 2, 3, 4, Play, but in films we go: 1, 2, 3, Go.</p>
+<p>7-10 Spot tracks: On these four tracks are where all our empty spotted items will go.</p>
+<p>11 HP Buss: This is a Headphone Buss for the Foley Artist. It has pre-fader audio receives from the 3 beeps track, Feet and Prop folder, and the Cloth and Room tone tracks. I personally send the feed from the mic directly from my interface. If you don't have this option you will need to create that receive yourself. By default, this Headphone Buss is sending audio to output 3-4, and again, you can change this based on your own I/O</p>
+<p>12-18 Feet Folder: All your footsteps are auto-moved to the parent track, and then propagated on Feet 1-6.</p>
+<p>19-27 Prop Folder: All your props are auto-moved to the parent track, and then propagated to Prop 1-8</p>
+<p>28 Cloth: A single cloth track, where you will record cloth.<br>
+29 Foley Room Tone: This track is optional, but highly recommended in case you record foley from home. We will cover this in the next episode in more detail.</p>
+<p>30 Bin: Optional bin track for temporarily trashing items.</p>
+<p>31-46 Fly Tracks: On these 16 tracks we will put our edited foley audio to send to the mixing stage. We will cover this in the next episode in more detail.</p>
+<p><em>Note: based on your workflow, your project's needs and your mixer's preferences, you may want to export your foley tracks in a different order, with different names, or fewer or more tracks than 16. As long as you don't change the order of tracks 1-10, and as long as you have at least one track called prop with 8 children, and one track called feet with some children, you can modify this template any way you want without messing up the custom actions.</em></p>
+<p><strong>Foley Recording Custom Actions</strong></p>
+<p>Below you can see the breakdown of my custom/cycle actions. If you wish to make these yourself, or if you had trouble installing mine (it's been known to happen) then just manually create these yourself:</p>
+<p><strong>IDDQD Sound_Prepare Foley Element for Recording.lua:</strong> This is the action we run when we are ready to record a new foley element from the spotted empty items. Simply select the item you want to record and run it (I have assigned this action to <strong>Page Down</strong>) and it will name the Rec Track based on the empty item, line up the 3beeps to it, and you can start recording! After you're done, press Space any number of times and record new takes on top of the audio.</p>
+<p><em>HINT: assign a hotkey to REAPER native action 'Tranport: Stop (DELETE all recorded media)' For me it's <strong>Cmd+Opt+Space</strong> and run it when you do a bad take instead of stopping and deleting. Doing so will delete the recording audio directly to trash, saving work and hard disk space!</em><br>
+Custom: Prepare Foley Element for Recording</p>
+<p>Edit: Copy items/tracks/envelope points (depending on focus) ignoring time selection</p>
+<p>Track: Select track 05</p>
+<p>Item: Paste items/tracks</p>
+<p>SWS: Set track name from first selected item on track</p>
+<p>Item navigation: Move cursor to start of items</p>
+<p>SWS: Delete all items on selected track(s)</p>
+<p>Track: Select track 06</p>
+<p>Item: Select all items in track</p>
+<p>Item edit: Move right edge of item to edit cursor</p>
+<p>Item navigation: Move cursor to start of items</p>
+<p>Action: Wait 0.1 seconds before next action</p>
+<p>Track: Select track 05</p>
+<p><strong>IDDQD Sound_Move Foley Element to Relevant Folder.lua:</strong> This is the action we run after we are done recording a foley element. Simply select the first item on track 5, and run it. It will move the takes to either Feet or Prop tracks, based on the empty item. Of course, this will only happen if you included this info in your spotted items.</p>
+<p>Custom: Move Foley Element to Relevant Folder</p>
+<p>SWS: Save selected item(s)</p>
+<p>Track: Select track 06</p>
+<p>Item: Select all items in track</p>
+<p>Item navigation: Move cursor to end of items</p>
+<p>Track: Select track 05</p>
+<p>SWS: Restore saved selected item(s)</p>
+<p>Item edit: Trim left edge of item to edit cursor</p>
+<p>Item: Select all items in track</p>
+<p>Script: mpl_Move selected items to tracks with same name as items.lua</p>
+<p><strong>Cycle Action: Distribute to Bank of 8:</strong> This cycle action is NOT included in the download bundle but you can make it easily yourself:</p>
+<p><img src="/blog/sd4vm/12/181.png" alt=""></p>
+<p>Each Step is the same as the last, with an extra iteration of Archi_item; move selected items down one track, the final step using the action 8 times! This action is used to propagate all the takes from the parent prop folder to Prop 1-8 tracks. tap the hotkey repeatedly (<strong>Clear</strong> button for me) until all the items are laid in a cascading fashion, from left to right and top to bottom!</p>
+<p><strong>Video Window Limits in REAPER</strong></p>
+<p>One area where REAPER is a bit lacking when it comes to the Foley workflow, is the fact that you can only have one video window open in REAPER. This is a problem because Ideally, you would want the Foley Recordist and the Foley Artist, each working in a different room, to see the video. If I have the video docked on my screenset, I can't also show it to my artist, and if I show it to them, then I'd have to control the DAW kinda blind.</p>
+<p>Here are a few possible workarounds:<br>
+<strong>1. the 3 Screens Solution:</strong> If you happen to have 3 screens connected to your system, you can get around this limitation quite easily.<br>
+Simply have your REAPER on Screen A, Your video Fullscreen on Screen B, and then you can use Screen C to mirror Screen B from Control Panel/System Preferences in the display settings. Both you and the Foley Artist will now have a fullscreen video to watch!<br>
+This is great but of course, not everyone has 3 screens, and maybe some systems may not even have 3 ports for screens.<br>
+<strong>2. The 2 Screens+OBS Solution:</strong> If you only have 2 screen, you can set up the two screens like Screens A &amp; B in the above solution, but Screen B this time will be in front of the artist. Next, using something like OBS you can capture the video on Screen B, either via Window or display capture, and then use OBS kind of like a monitoring device, somewhere on your screen. This is annoying because of lag being an issue, but also, you'll have to resize REAPER to make space for OBS, and every time you click on REAPER you may also get the video track partially covered by additional REAPER windows &amp; Menus.<br>
+<strong>3. The 2 REAPER Installs solution:</strong> I have not tested this myself but will do and post the results soon! The idea is using two different REAPER installs. You could, for example, Run the project off of your REAPER, with the video wherever you want (for example, Screen A using my audio video template, then in the other REAPER install, I am just importing the video, syncing the two REAPER instances using ReWire or an External/MIDI Clock, and make that second install's video window fullscreen on Screen B for your artists to see.</p>
+<p>Again I haven't tested solution 3 so I'll keep you posted, but do let me know in the comments if you know a better workaround, or if you have tested solution 3 and your thoughts on it!</p>
+<p><strong>Conclusion</strong></p>
+<p>I hope you enjoyed this video and I hope you will use my system, or tweak it to your liking. Honestly, this system has the potential to automate any kind of big recording project with a bit of tweaking. I know this is a very involved system so don't hesitate to reach out to me with your questions.</p>
+<p>For the first time, this video will be premiered tomorrow, <strong>May 7th, at 1pm EST</strong> on YouTube, and I will be online and ready to answer any questions you may have, so join me!</p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/be.com/watch?v=\_Jznye0iqYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
+<p><img src="/blog/sd4vm/12/8.png" alt=""></p>
+<p>If you like the work I do, <a href="http://www.buymeacoffee.com/iddqdsound">you can donate to me here</a>! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!<br>
+Join the REAPER squad on our Discord Server:<br>
+<a href="https://discord.gg/YwQESKpBfE">https://discord.gg/YwQESKpBfE</a></p>
+<p><strong>My Reaper Stash:</strong> <a href="https://stash.reaper.fm/u/IDDQDSound">https://stash.reaper.fm/u/IDDQDSound</a></p>
+<p><strong>Follow me on Instagram:</strong> <a href="https://www.instagram.com/iddqdmusic/">https://www.instagram.com/iddqdmusic/</a></p>
+<p><strong>My Music:</strong> <a href="https://soundcloud.com/iddqdmusic"><strong>https://Soundcloud.com/iddqdmusic</strong></a></p>
+<p><a href="https://soundcloud.com/iddqdmusic"> </a> <a href="https://iddqdmusic.bandcamp.com/"><strong>https://iddqdmusic.bandcamp.com</strong></a></p>
               </div>
             </main>
           

@@ -1112,24 +1112,65 @@
 
             <main class="style--xv70n9">
               <div class="style--ku4mf3">
-                <h2>REAPER Tutorials</h2>
-<p>Since 2020, I've been making Tutorials on my YouTube Channel. Each Tutorial is also accompanied by a Blog Post, including more details, free downloads &amp; More. See some of our running series below:</p>
-<h2>Donate</h2>
-<p>If you like the work I do, you can donate to me using the links below:
-Paypal donation link
-BMAC Donation link
-YouTube Memberships</p>
-<h2>RAPID-FIRE REAPER TUTORIALS</h2>
-<p>Short, Fast-paced tutorials exploring some of REAPER's vast toolkit &amp; customization options. Since most tutorials are inspired by viewer questions, there's no real order to watching most of this series, but you can see these sorted under various topics.</p>
-<h2>SOUND EDITING &amp; DESIGN FOR VISUAL MEDIA</h2>
-<p>In this series, I explore workflow tips &amp; share knowledge I've picked up doing Sound Editing, Foley Recording, Sound Design, Dialogue Editing &amp; Post-Production Mixing for Film, TV, and other visual media, in REAPER.
-My own career in Sound Design began in Pro Tools, but I have since been able to fully transition to REAPER, and I want to share some of REAPER's wonderful capabilities in this realm of audio!</p>
-<h2>MIXING FEEDBACK MONDAYS</h2>
-<p>In This series I take projects from my viewers and provide detailed feedback to them. If you want to send me a mix, you can do so by becoming a member of the YouTube Channel, and you can receive feedback for one project every month, but feel free to contact me at <a href="mailto:mfm@iddqdsound.com">mfm@iddqdsound.com</a> if you are interested in a one-off feedback session!</p>
-<h2>LET'S LEARN SCRIPTING IN REAPER</h2>
-<p>I am far from a professional coder myself, but with a little bit of help from REAPER community of coders, I've been exploring some of the scripting capabilities of REAPER through Tutorials and Livestreams, featuring mentors such as Leandro Facchinetti, Geraint Luff &amp; Bo Danerius.</p>
-<h2>SOUND RECIPES</h2>
-<p>This series focuses on some of the whacky FX that I've concocted.</p>
+                <h2>Sound Design For Visual Media - Tutorial Notes Ep04</h2>
+<p><img src="/blog/sd4vm/4/144.jpg" alt=""></p>
+<p><strong>Episode 04: Fundamentals of Audio Editing</strong></p>
+<p><a href="https://youtu.be/rMnx2Sybxs4">This video</a> is chock full of actions, hotkeys and mouse modifiers all to help you edit audio quickly and swiftly! Before you get to design the next Godzilla Roar, Spaceship, or futuristic robot, you need to "git gud" at editing audio. This means learning a bunch of hotkeys and getting so fluent at them that you do run them unconsciously with one eye closed! You also need to learn to use Reaper's Media Explorer (Or Pro Tools Databases) so you can quickly bring in audio from your libraries and edit them, without disrupting your workflow.</p>
+<p><strong>The Media Explorer</strong></p>
+<p>The Media Explorer is essentially a finder built into Reaper. You can open it by pressing <strong>Command Option X</strong> and quickly browsing through your samples, audio libraries, or images and videos.</p>
+<p>I highly recommend placing all your libraries into one folder, and creating a <strong>shortcut</strong> or <strong>database</strong> from it. You can also audition files in the media explorer before bringing it into your project, as well as do some basic DSP to it like <strong>changing pitch, reversing, tempo-matching,</strong> and so on.</p>
+<p>You can then drag the whole file into your project, or select a portion of it by left dragging on the media player, and bringing that in!</p>
+<p>In the Media Explorer you can also <strong>set custom tags</strong> for your files. These won't rename the file, but allow you to write your own keywords for them. So listen to your files, and see if you can add anything to them.</p>
+<p>For example, I may have a recording called 'city sounds' but when I listen to it, I can hear there's some construction going on in the back, so I can edit the custom tag to say 'Construction, drilling, men at work' and so on. Later when I search those terms, this audio file will come up in the search! Another use of custom tags is to add the project you used the audio file in, so later if you are working on a similar project, you can run a search and then create a separate database from all of those sounds!</p>
+<p><strong>The Philosophy of Hotkey Customization</strong></p>
+<p>When it comes to editing hotkeys (Trimming, Cutting, Making and moving fades) you need to consider the default stance of an editor: Dominant hand on the mouse, the other hand on the left side of the keyboard, allowing them to press modifiers quickly.</p>
+<p>This limits the number of keys on our keyboard that make for appropriate shortcuts for editing actions.</p>
+<p><img src="/blog/sd4vm/4/145.jpg" alt=""></p>
+<p><em>The red square is where your left hand rests, so here's where we will put our editing hotkeys!</em></p>
+<p>So, <strong>P</strong> wouldn't make for a great editing hotkey, cuz your brain is so used to typing it with the right hand that you will take your hand off the mouse. Anything from within the Red square in the image above, will be appropriate possibly a smaller or bigger subsection based on your hand size!</p>
+<p>Another consideration when setting the hotkey, is how often you use the command. Something you do often should be a one-key shortcut, and any action you don't want to accidentally run, should be set to have one or two modifiers.</p>
+<p>Finally, and I didn't mention this in the video, have a system for which key to choose. Maybe have the first letter of the command dictate the hotkey, or my favourite way is to have adjacent keys do similar actions, the left one doing one and the right doing the other. Alternatively you can have, say <strong>A</strong> do one thing and <strong>option+A</strong> to do the opposite.</p>
+<p><em>Note: I would personally advise against modifying Reaper's default hotkeys until you are used to them. Every DAW sets its hotkeys based on an overall philosophy, and learning those before inventing your own system just makes tons of sense!</em></p>
+<p>With all that in mind, here are the editing hotkeys I use the most, and the hotkey I set to them. Feel free to set those to mine, or use the default or make up your own if you are feeling confident:</p>
+<p>Cmd = ⌘ Shift = ⇧ Option/Alt = ⌥ Ctrl = ⌃</p>
+<p><strong>⇧ 1</strong> - Vertical Zoom to selected tracks, minimize others (Default)</p>
+<p><strong>⌘ T</strong> - Trim selected items to time selection<br>
+<strong>A</strong> - Trim Item Left Edge to Edit Cursor<br>
+<strong>D</strong> - Trim Item Right Edge to Edit Cursor<br>
+<strong>S</strong> - Split Item under mouse cursor*<br>
+<strong>F</strong> - Fade in Item to Edit Cursor<br>
+<strong>G</strong> - Fade Out Item to Edit Cursor<br>
+<strong>⇧ F1</strong> - Ripple Delete Item**<br>
+<strong>⌥ X</strong> - Crossfade adjacent Selected Items<br>
+<strong>X</strong> - Crossfade Items within Time Selection***<br>
+<strong>E</strong> - XRaym_Move Selected Items to Edit cursor****<br>
+<strong>⌥ E</strong> - XRaym_Move Selected Items Right Edge to Edit cursor*<strong>*<br>
+<strong>⌥</strong> ⌃ E - Xenakis_Move selected Items to Edit Cursor (respects Snap Offset)**</strong></p>
+<p><em>*This is the same hotkey but different command than the default, as I like to split items under mouse cursor, so I won't need to select them, move the edit cursor or disrupt playback.</em>
+<em>**This custom action is available to download below</em>
+<em>***To get the most out of this, Go to preference &gt; Mouse Modifiers &gt; Arrange view &gt; Right Drag and Set the mouse modifier Option to 'Marquee Select Items and Time'</em>
+<em>****These all come with SWS extensions and Reapack so install those ASAP!</em></p>
+<p>IDDQDSound_Ripple Delete Item.lua</p>
+<p>.zip</p>
+<p>Download ZIP • 425B</p>
+<p><strong>Crossfade Mouse Modifiers</strong></p>
+<p>These Mouse modifiers is the ones I set for editing Crossfades via Left Drag:</p>
+<p>Cmd = ⌘ Shift = ⇧ Option/Alt = ⌥ Ctrl = ⌃</p>
+<p><strong>(No mouse mod) Left Drag</strong> - Move fade cross-section Left and Right<br>
+<strong>⇧</strong> - Move Crossfade without changing size<br>
+<strong>⌘</strong> - Stretch Crossfade without changing centre point<br>
+<strong>⌥</strong> - Move crossfade in any direction</p>
+<p><strong>Arranging Sound Effects in your SFX Edit Group</strong></p>
+<p>When Editing Sound Effects, it's common to cascade items from top to bottom and left to right. My Sound Mixer likes 8 Mono Tracks and 8 Stereo SFX tracks. You should ask yours how they like it.</p>
+<p>So if I'm cutting Mono SFX in a project, I put the first one of each scene to SFX 1 then move down to SFX 2 and the second one goes there. When I get to SFX 8, I go back up! Whether your items line up or not, this is how we cascade audio items, making sure the mixer has them at their fingertips at all times! We'll discuss this further when we get to mixing down the line!</p>
+<p><strong>HOMEWORK TIME!</strong></p>
+<p>So until next week, you have all these commands to memorize, but also begin to put your SFX library in order. Import all libraries to one folder, create a shortcut or database from it, and then go through and listen to ALL of them! I understand that these are hundreds of hours of audio files, but that's what you've gotten yourself into! If you go through them an hour or so every day, create custom tags as you go, you will quickly familiarize yourself with all of them, and then save a bunch of time down the line when you are editing, as you will know where to look for what kind of Sound Effect!</p>
+<p>In the next episode we will dive deep in BG editing, and go out into the field and record some of our own sounds!</p>
+<p>Watch Episode 4 Below:</p>
+<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rMnx2Sybxs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </p>
+<p>Thanks for watching and I'll see you next week!</p>
               </div>
             </main>
           

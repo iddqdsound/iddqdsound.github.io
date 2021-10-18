@@ -1,13 +1,3 @@
-- Finish the migration.
-  - Remark
-    - Messing up with bold text, for example.
-  - Showdown
-    - Error mentioning `window`.
-  - Turndown
-    - A bit of junk and lost paragraphs.
-  - node-html-markdown
-    - Good results
-
 - A list of blog posts.
 
 https://aryafsharm.wixsite.com/iddqdsound
