@@ -10,7 +10,7 @@ With Delta solo enabled on any plugin, you will pass through only the difference
 
  To Enable Delta Solo, Hold **Option on Mac, Alt on PC & Left click the Dry/Wet knob of any FX window**  
 ![](/blog/rfrt/91/rfrtep91-1.png)
-_\*Option clicking the Dry/Wet knob will enable Delta Solo for any plugin!_
+_\Option clicking the Dry/Wet knob will enable Delta Solo for any plugin!_
 
 In the image above, since delta solo is enabled, we will only be hearing the band that is active on our EQ. This is very helpful when identifying troublesome frequencies in a sound. I can just sweep to find the frequency and then disable Delta Solo to hear the result. Similarly, when I want to cut any sound out, I can use Delta solo to make sure I am not cutting anything that I shouldn't be!
 
@@ -20,7 +20,7 @@ Most EQ plugins will also have a native hotkey or a button somewhere to do the s
 
 Delta Solo largely eliminates the need for thess type of band soloing but not exactly! If you have a single band active, Delta Solo will solo that band, but if you have more than one band active, Delta solo won't exactly act as a band soloing function. For example, in the image below, we are using two bands in the high-end of the spectrum. Delta Solo'ing this instance of ReaEQ will cut the unaltered Low-End but we will hear the effects of both bands simultaneously, which can be a huge benefit or a nuisance!
 ![](/blog/rfrt/91/rfrtep91-2.png)
-_\*In this instance, Delta Solo will effectively solo two bands for us, which could be something you always wanted but something you may not want if you need to solo a single band!_
+_\In this instance, Delta Solo will effectively solo two bands for us, which could be something you always wanted but something you may not want if you need to solo a single band!_
 
 **True Single-band Soloing**  
 There's a workaround for a true solo band function. The new update also provides you with a new action called **FX: Toggle delta solo for last focused FX** that you can use instead of option-clicking the wet knob. I have set mine to **Opt+Shift+D**. You can also create a custom action like below:  
