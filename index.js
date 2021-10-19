@@ -130,9 +130,8 @@ const { JSDOM } = require("jsdom");
                   margin: var(--space--4);
                 `}"
               >
-                Hi! We are currently under reconstruction. If you have questions
-                or comments. Contact me at:
-                <a href="mailto:info@iddqdsound.com">info@iddqdsound.com</a>
+                Hi! This website has been coded by <a href="www.leafac.com">leafac</a>
+                find the source code on my Github & feel free to re-use/re-purpose!
               </div>
             </div>
             <header
