@@ -130,8 +130,8 @@ const { JSDOM } = require("jsdom");
                   margin: var(--space--4);
                 `}"
               >
-                Hi! This website has been coded by <a href="www.leafac.com">leafac</a>
-                find the source code on my Github & feel free to re-use/re-purpose!
+                Hi! This website has been coded by <a href="www.leafac.com">leafac</a>.
+                You can find the source code on my Github!
               </div>
             </div>
             <header
