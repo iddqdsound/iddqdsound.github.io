@@ -131,7 +131,7 @@ const { JSDOM } = require("jsdom");
                 `}"
               >
                 Hi! This website has been coded by <a href="www.leafac.com">leafac</a>.
-                You can find the source code on my Github!
+                You can find the source code on my Github! Some parts may be under construction!
               </div>
             </div>
             <header
