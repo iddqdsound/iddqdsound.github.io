@@ -211,6 +211,14 @@ const { JSDOM } = require("jsdom");
                     >Tutorials</a
                   >
                   <a
+                    hidden
+                    href="/Lessons"
+                    class="link ${file.startsWith("Lessons/")
+                      ? "active"
+                      : ""}"
+                    >Tutorials</a
+                  >
+                  <a
                     href="/reel"
                     class="link ${file.startsWith("reel/") ? "active" : ""}"
                     >Reel</a

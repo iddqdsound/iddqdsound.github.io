@@ -16,7 +16,4 @@ _“Arya is one of the most reliable sound designers I have worked with. He is a
 **Yusuke Konishi aka Sound Designerd**
 
 _“Arya's commitment to creating original custom assets was refreshing. In his final Game Audio project, he and a partner accomplished an impressive amount of content and integration in a short timeframe. His hands-on, proactive approach will serve him well in the future.”_  
-**Dorian Pareis, Audio Director at EA**
-
-_"Arya is a fantastic teacher: knowledgeable and patient, and great at explaining complex ideas in a way I can digest. The hands-on, real-time approach is so helpful for me. Even when I ask a vague question about a concept I'm curious about, he knows EXACTLY what to show me to fill the gaps in my knowledge. If you want to learn about REAPER, production & making music in general, I highly recommend setting up a lesson with this guy."_  
-**Natalie S., Former Student**
+**Dorian Pareis, Audio Director at EA**  
