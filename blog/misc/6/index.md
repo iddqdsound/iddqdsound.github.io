@@ -49,7 +49,7 @@ When unticked, REAPER will always render a single file per selected track, and e
 WAV: The most cross-compatible option possible, WAV files (pronounced Wave) are the most common type of professional audio. This format is recognized by All DAWs, but they are also the heaviest option available. You can calculate the size of WAV files with the formula below:  
 Number of channels * Duration (seconds) * sample rate * bit-depth = file bitrate (in bits)  
 divide that by 1024*1024 to get to MB.  
-_/example: 1 second of stereo WAV audio at 48k/24bit is 0.144MB_  
+_example: 1 second of stereo WAV audio at 48k/24bit is 0.288MB_  
 AIFF: Apple-Proprietary lossless audio format. This format is still quite cross-compatible on Mac system, and can store certain metadata useful for samples & loops, such as loop points, and sample pitch. Suitable for sample & loop libraries. In cases other than this, it's best to stick to WAV.  
 DDP: DDP stands for Disc Protection Protocol. This format is commonly used when delivering audio material for Physical Disk releases. I store my final mastered albums in this format, as well as the regular WAV format. Many labels & CD/DVD manufacturers may specifically request this format, which includes important metadata for mass-manufactured commercial releases.  
 FLAC: FLAC is a lossless compression format. You can store your files in this format at no bit reduction, but beware that while REAPER is able to process this format, many DAWs don't accept it, so it may not be suitable if you don't plan to stick to REAPER for the foreseeable future, or if you collaborate with other artists and users of other DAWs.  
