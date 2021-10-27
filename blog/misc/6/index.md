@@ -29,7 +29,7 @@ Before storing your projects, there are a few things you should do. Some of us d
 **Consolidate/Export Tracks window**
 
 This window is designed to quickly render all your project media for exporting, archiving & organizing. To access it, go to **File>Consolidate/Export Tracks** to see a window with lots of options. Let's break them down:  
-![](blog/misc/6/reaper-consolidate-export-window.png)  
+![](/blog/misc/6/reaper-consolidate-export-window.png)  
 **1. Project Bounds, Tracks & Items**: From the top, you can select the bounds of your project in time.  
 Set to 'Entire Project' to consolidate the entire project. You can define your project bounds two ways:  
 -In File>Project Settings, you can set a start & end time for your project.
