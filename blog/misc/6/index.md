@@ -83,7 +83,7 @@ Finally, you can tick the final box to save your current project state to be rel
  The first method uses the Consolidate/Export Tracks menu to print multitracks. These are useful in that they will produce files that are future-proof and DAW-proof. Even if, some time down the road in your career, you decide to switch DAWs, you can easily and quickly import these into any DAW if needed. This method is also useful if you have a recording project with lots of discarded audio, that you need to archive and/or send to a producer to be mixed.  
 
  To do this, I will select the settings below:  
-  ![](blog/misc/6/consolidation-method-1.png)    
+  ![](/blog/misc/6/consolidation-method-1.png)    
 
  Once done, you will end up with multitrack wav files that are all the same duration, with some useful metadata baked into them, and they will be neatly named & numbered, allowing you to drag & drop them into any DAW, and they will immediately be on grid, in the same order you left them, and ready to be mixed. If you frequently collaborate with other artists, or if you have to deliver work to other professionals, this method is highly recommended. You can store these files in your archives, and delete the project if needed!
 
@@ -100,7 +100,7 @@ Finally, you can tick the final box to save your current project state to be rel
  The second method will give you the smallest project size possible, and as a bonus, will make your current project your archive project, so your routing, folder structure, color, automation & FX Chains will all be preserved. The only downside to it is that you will only be able to use REAPER to open these in the future! So commiting to this style of archiving will also mean a commitment to REAPER as your DAW, which is not much of a big deal if you ask me. REAPER is cheap, runs on anything, and REAPER devs have a spotless track record when it comes to assuring backwards compatibility despite updating the DAW more often than arguably any DAW out there! I am confident that REAPER project I archive today can be opened easily in 10 years, and I will be able to navigate my way around those projects just as easily then! If not, I also know that older installs of REAPER are always available, short of a major evolutionary leap in computing technology!
 
   This is my preffered method, and I will select the settings below:  
- ![](blog/misc/6/consolidation-method-2.png)  
+ ![](/blog/misc/6/consolidation-method-2.png)  
 
  Once done, your current projectory will become what you archive. You will notice that your project file gets bigger after you're done, but all the longer audio files that were once referenced in your project are no longer in use, so once you clean up your project directory, you will see a massive reduction in the size of your project media.
 
