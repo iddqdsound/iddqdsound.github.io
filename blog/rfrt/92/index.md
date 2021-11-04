@@ -52,18 +52,18 @@ _Rest your fingers in this position & practice and you will get quick at editing
   Of course, the whole point of REAPER is to let users do what they feel comfortable with, and as always there's pros and cons to both methods. Really I'd say learn both, and here's my two cents on the Pros & Cons of each:
   **My Method**  
   **Pros**:  
-  ✔ Works both while writing & in Post Editing  
-  ✔ Works on multiple selected notes  
-  ✔ You can get to any value from 1 to 127
-  ✔ Great for Expressive instrument writing (orchestral instruments, realistic VSTi like Bass & Guitars)  
+  ✓ Works both while writing & in Post Editing  
+  ✓ Works on multiple selected notes  
+  ✓ You can get to any value from 1 to 127  
+  ✓ Great for Expressive instrument writing (orchestral instruments, realistic VSTi like Bass & Guitars)  
   **Cons**:  
   ✘ Requires multiple hotkey presses for drastic jumps in dynamics (ie 5 times to go down by 50)  
   ✘ Less suitable to quickly insert hard hits & ghost notes in a pattern  
   **Jon Tidey Method**  
   **Pros**:  
-  ✔ Faster after you're used to it  
-  ✔ Great for Drum Editing  
-  ✔ Easy to access really soft & really hard dynamics quickly for creating dynamic patterns  
+  ✓ Faster after you're used to it  
+  ✓ Great for Drum Editing  
+  ✓ Easy to access really soft & really hard dynamics quickly for creating dynamic patterns  
   **Cons**:  
   ✘ The hotkeys don't work for post editing, so an additional set up is required  
   ✘ Inserting notes under mouse cursor may slow you down if you're writing instruments vs. drums  
