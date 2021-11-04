@@ -46,9 +46,31 @@ _Rest your fingers in this position & practice and you will get quick at editing
  _Look at me go!_  
  For more complex velocity moves, like ramping them up and Down, or setting velocity values for all notes of the same pitch class to a specific number, I first write out my notes, and then edit them later. For cresendos, I can use my mouse modifier from **MIDI CC Lane - Left Drag** where I have set **Command to Draw/Edit CC lane values** and if I want to set all values for the same note to the same number, I can right-click that pitch in my piano roll, and then use my hotkeys there.  
 
- **My Method vs. the Jon Tidey Method** 
-  These hotkeys will work both on the fly but also when selecting multiple notes, so I prefer them to the [Jon Tidey method](https://www.youtube.com/watch?v=pVuOHgOyp0Q) of creating Custom Actions to insert notes at preset velocities, as those will then require you to come up with another system for post-editing of velocity values.  
-  That said, of course, the whole point of REAPER is to let users do what they feel comfortable with, and as always there's pros and cons to both methods. Really I'd say learn both. I didn't get used to that set up because I was already used to mine, but I can see how that would be superior, if you, for example, only do Drum Editing. I find that method less fluid, as with most instruments I need more than just 4 preset values, and creating more and more actions and taking up more hotkeys is just not ergonomic!
+ **My Method vs. the Jon Tidey Method**  
+  You should also check out how [Jon Tidey of the REAPER Blog tackles this](https://www.youtube.com/watch?v=pVuOHgOyp0Q)! I won't get into the details but check out the video, but to summarize, his method is to create Custom Actions to insert notes at preset velocities under mouse. So with his method, you already input notes at the velocity you need, so once you're used to it, it could be lots quicker. I saw his tutorial after I was already really accustomed to my system, so I set it up but it never fully made it into my muscle memory. 
+  
+  Of course, the whole point of REAPER is to let users do what they feel comfortable with, and as always there's pros and cons to both methods. Really I'd say learn both, and here's my two cents on the Pros & Cons of each:
+  **My Method**  
+  **Pros**:  
+  ✔ Works both while writing & in Post Editing  
+  ✔ Works on multiple selected notes  
+  ✔ You can get to any value from 1 to 127
+  ✔ Great for Expressive instrument writing (orchestral instruments, realistic VSTi like Bass & Guitars)  
+  **Cons**:  
+  ✘ Requires multiple hotkey presses for drastic jumps in dynamics (ie 5 times to go down by 50)  
+  ✘ Less suitable to quickly insert hard hits & ghost notes in a pattern  
+  **Jon Tidey Method**  
+  **Pros**:  
+  ✔ Faster after you're used to it  
+  ✔ Great for Drum Editing  
+  ✔ Easy to access really soft & really hard dynamics quickly for creating dynamic patterns  
+  **Cons**:  
+  ✘ The hotkeys don't work for post editing, so an additional set up is required  
+  ✘ Inserting notes under mouse cursor may slow you down if you're writing instruments vs. drums  
+  ✘ Changing the preset values is more difficult  
+
+   So really, the best way is to have both and switch between them based on context! If you do lots of MIDI Editing, really memorizing 8 hotkeys is a small price to pay for the fluidity that it'll bring you!
+
 
 **Conclusion**
 
