@@ -36,7 +36,7 @@ In this episode, I show you my MIDI Editing workflow by demonstrating some of my
 
 IDDQD Sound - RFRT Ep36 Downloads
 
-![](/blog/rfrt/4/MIDI-101-102-Downloads.zip)
+![Click here to download](/blog/rfrt/4/MIDI-101-102-Downloads.zip)
 
 Download ZIP • 432KB
 
