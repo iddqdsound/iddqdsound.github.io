@@ -10,17 +10,16 @@ _Other actions come from Reapack, but the names are given so in case you don't h
 
 **_BIGGER WARNING:_** _As requested by multiple users, I am also making my entire configurations of Reaper available for download here. Everything from all my actions, all my icons and screensets, to all my preferences, templates & so on. You are welcome to download them, import all or parts of them to your own Reaper. Just know that I can't guarantee that these changes will be to your liking, and I can't guarantee that everything will work. That said, if you have SWS installed, and you know your way around Importing configurations, you could pick and choose what you need from it. If you see any icons on my channel that you like, they are included in the download, but they do not belong to me and are all from the Reaper Stash._
 
+**UPDATE:** All downloadables from this bundle are now available as a single file, instead of separate downloads, but opening the zip file you will find them organized by episode name:  
+[IDDQD Sound - RFRT Ep36 Downloads](/blog/rfrt/4/MIDI-101-102-Downloads.zip)
+Download ZIP • 432KB
+
 **Episode 35 Downloads:**
 
 In this episode, I start the MIDI 101 series by showing you how I quickly use two actions to quickly insert a MIDI Track ready for jotting down ideas, or an Audio track to quickly record. I go into more detail on the audio track in [episode 30](https://youtu.be/fEYtZkv8j4w).
 
 <youtube id="be.com/watch?v=V7ZMZYpQl4w&#x26;list=PLjvmrOUg3J0qUO8LLIbJTYD7j0l9VUsJ3"></youtube>
 
-IDDQD Sound - RFRT Ep35 Downloads
-
-.zip
-
-Download ZIP • 3KB
 
 **Includes:**
 Two Track Templates that mimic Logic Pro X's default MIDI & Audio Tracks.  
@@ -34,12 +33,6 @@ In this episode, I show you my MIDI Editing workflow by demonstrating some of my
 
 <youtube id="be.com/watch?v=V7ZMZYpQl4w&#x26;list=PLjvmrOUg3J0qUO8LLIbJTYD7j0l9VUsJ3"></youtube>
 
-IDDQD Sound - RFRT Ep36 Downloads
-
-![Click here to download](/blog/rfrt/4/MIDI-101-102-Downloads.zip)
-
-Download ZIP • 432KB
-
 **Includes:** 3 Custom Actions, My Hotkey Bindings & My MIDI Editor Hotkey Cheat Sheet  
 **1. Move MIDI Note Down a fifth:** This custom script moves selected notes down a fifth, or 7 semitones. I have this hotkey bound to **Option + Numpad 5.**
 **2. Move MIDI Note Up a fifth:** This custom script moves selected notes up a fifth, or 7 semitones. I have this hotkey bound to **Numpad 5.**
@@ -52,12 +45,6 @@ Download ZIP • 432KB
 In this episode, I show you my MIDI Editing workflow by demonstrating some of my most used mouse modifiers. This video and the last are meant to provide you with some inspiration to hopefully get into customizing your own Reaper to your liking. You can copy me or simply use your own hotkeys. Regardless, I think my MIDI editing workflow is very similar to most people who use Reaper to score, edit MIDI drums or sequence synthesizers & software instruments.
 
 <youtube id="be.com/watch?v=V7ZMZYpQl4w&#x26;list=PLjvmrOUg3J0qUO8LLIbJTYD7j0l9VUsJ3"></youtube>
-
-IDDQD Sound - RFRT Ep37 Downloads
-
-.zip
-
-Download ZIP • 293KB
 
 **Includes:** 1 Custom Action, My Mouse Maps & My MIDI Editor Mouse Mof Cheat Sheet  
 **1. Insert Ghost Note:** This is a custom MIDI Editor script that inserts a note at a velocity value 20 lower than the previous inserted note. I have this tied to my mouse modifier **Control + Left Click** or it can also be bound to a hotkey. Useful for quickly accessing multiple velocities as you write notes.  
@@ -86,19 +73,7 @@ In this episode I show you how to work in a given key or scale in Reaper. For th
 
 <youtube id="be.com/watch?v=V7ZMZYpQl4w&#x26;list=PLjvmrOUg3J0qUO8LLIbJTYD7j0l9VUsJ3"></youtube>
 
-IDDQD Sound - RFRT Ep40 Downloads
-
-.zip
-
-Download ZIP • 12KB
-
 **Includes:** 13 MIDI Files each corresponding to a scale.
-
-IDDQD Sound - Create Scale.lua
-
-.zip
-
-Download ZIP • 406B
 
 **Bonus Download:** Download the 'Create Scale' custom action to create a scale cluster from your selected root note. Useful if you want to create Tone clusters from your own scales.
 
@@ -117,12 +92,6 @@ In this episode, I show you a few ways of working with multiple MIDI instruments
 
 <youtube id="be.com/watch?v=V7ZMZYpQl4w&#x26;list=PLjvmrOUg3J0qUO8LLIbJTYD7j0l9VUsJ3"></youtube>
 
-IDDQD Sound - RFRT Ep41 Downloads
-
-.zip
-
-Download ZIP • 15KB
-
 **Includes:** My custom menus and toolbars, including the channel MIDI Toolbar shown in this video. You can also make your own by creating a toolbar and putting the actions for 'Set Channel for new events to 01-16' and finding the default number icons for each one and setting it to those. If you download my toolbars, you will get everything. You can additionally import them into a portable install of reaper, open your own, copy and paste. (I think that's possible! Comment here if it doesn't!)
 
 **Episode 42 Downloads:**
@@ -137,11 +106,6 @@ In this episode I will show you 2 custom actions that are useful for various of 
 
 <youtube id="be.com/watch?v=V7ZMZYpQl4w&#x26;list=PLjvmrOUg3J0qUO8LLIbJTYD7j0l9VUsJ3"></youtube>
 
-IDDQD Sound - RFRT Ep43 Downloads
-
-.zip
-
-Download ZIP • 1KB
 
 **Includes:** 2 Custom actions for duplicating MIDI Notes.  
 **1. Duplicate MIDI Passage:** This custom action copies selected notes, then pastes them right after the last note, wherever that may be. This works better than the default **Command + D** Action because it works for passages shorter than one measure. My hotkey for this is **V.**  
@@ -149,13 +113,6 @@ Download ZIP • 1KB
 
 So there we are. If I make more MIDI-related episodes I will update this blog post to include those as well.
 
-You can download all the goodies for the series here:
-
-MIDI 101 & 102 Downloads
-
-.zip
-
-Download ZIP • 763KB
 
 **Episode 45 Downloads:**
 
@@ -163,23 +120,27 @@ In this episode, I show you a cool custom action to send one MIDI item to multip
 
 <youtube id="be.com/watch?v=V7ZMZYpQl4w&#x26;list=PLjvmrOUg3J0qUO8LLIbJTYD7j0l9VUsJ3"></youtube>
 
-IDDQD_Send MIDI to Selected Tracks.lua
-
-.z
-
-Download Z • 450B
 
 **Includes:** Custom action to send MIDI from track under mouse cursor to selected tracks. Watch the video for instructions. Must be bound to a hotkey.
 
 **My Entire Reaper Configuration File:**
 
-You have been warned multiple times to use this only after you save all your configurations. If you want it, here it is:
+You have been warned multiple times to use this only after you save all your configurations. If you want it, send an email to info@iddqdsound.com to get the most up-to-date version. Since I host my webpage on Git, the configuration file is too big to be hosted here!
 
-IDDQD Sound Entire Configuration Set 12-
+**Thanks for visiting the blog!** 
 
-.
+If you like the work I do, [you can donate to me here](http://www.buymeacoffee.com/iddqdsound)! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!  
+ Join the REAPER squad on our Discord Server:  
+<https://discord.gg/YwQESKpBfE>
 
-Download • 36.06MB
+Become a member of ‘IDDQD Sound’ on YouTube: <https://www.youtube.com/channel/UCXom6oGEQL7iBGTGaCpyHng/join>
 
-**Thanks for visiting the blog!** I hope you find some of these useful, and if you like the work I do and all the goodies, please consider l[eaving a small donation to me here](https://www.buymeacoffee.com/iddqdsound).
+**My Reaper Stash:** <https://stash.reaper.fm/u/IDDQDSound>  
+**My Reaper Repository:** <https://github.com/iddqdsound/reaper/raw/main/index.xml>
+
+**Follow me on Instagram:** <https://www.instagram.com/iddqdmusic/>
+
+**My Music:**  
+[**https://Soundcloud.com/iddqdmusic**](https://soundcloud.com/iddqdmusic)  
+[**https://iddqdmusic.bandcamp.com**](https://iddqdmusic.bandcamp.com/)
 

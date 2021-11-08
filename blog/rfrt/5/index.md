@@ -10,10 +10,7 @@ As a token of my appreciation, here's a little download bundle, including every 
 
 _**CAUTION: Before you import my toolbars, you should back up your configurations for safety. If you don't know how,**_ [_**this video shows the process**_](https://youtu.be/XE9JiHliwNY)_**. Also carefully read the instructions below. If you don't have SWS extensions installed, you need them before you can fully use these, and also make sure to download the appropriate Reapack scripts for all the toolbar icons to function. You can find out more in the videos themselves which I will link.**_
 
-IDDQD Sound - 50 RFRT Bundle
-
-.zip
-
+[IDDQD Sound - 50 RFRT Bundle](blog/rfrt/5/IDDQDSound-50-RFRT-Bundle.zip)
 Download ZIP • 537KB
 
 **Includes:**
@@ -85,3 +82,17 @@ If you like the work I do, [please consider donating to me on my BuyMeACoffee pa
 
 See you all soon with more tutorials!
 
+If you like the work I do, [you can donate to me here](http://www.buymeacoffee.com/iddqdsound)! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!  
+ Join the REAPER squad on our Discord Server:  
+<https://discord.gg/YwQESKpBfE>
+
+Become a member of ‘IDDQD Sound’ on YouTube: <https://www.youtube.com/channel/UCXom6oGEQL7iBGTGaCpyHng/join>
+
+**My Reaper Stash:** <https://stash.reaper.fm/u/IDDQDSound>  
+**My Reaper Repository:** <https://github.com/iddqdsound/reaper/raw/main/index.xml>
+
+**Follow me on Instagram:** <https://www.instagram.com/iddqdmusic/>
+
+**My Music:**  
+[**https://Soundcloud.com/iddqdmusic**](https://soundcloud.com/iddqdmusic)  
+[**https://iddqdmusic.bandcamp.com**](https://iddqdmusic.bandcamp.com/)
