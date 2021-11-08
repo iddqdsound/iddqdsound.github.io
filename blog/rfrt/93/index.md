@@ -19,7 +19,7 @@ Hey folks!
  The FX Browser is your definitive list of all plugins, but for this very reason may not always provide you with the quickest way to access your go-to plugins. You'll have to be in the right place through the left column, and then either navigate manually, or enter additional keywords to search for your desired plugins. Especially if you have lots and lots of plugins, you may find yourself more than a few clicks away from your go-to plugin. Also opening this window may take up some screen real estate, so closing it may introduce an extra click.
 
 **Method 2(Right-clicking on the FX Tab on Tracks/Items):** A slightly less cluttered alternative is to right click the FX icon on any track or icon*:    
-![](/blog/rfrt/93/rfrt93-1.jpg)  
+![](/blog/rfrt/93/rfrt93-2.jpg)  
 _This dropdown menu appears when you right click on the FX Icon._
 
 From here, you can click to float any plugins already on the selected track/item (if any), and you will see all the regular groupings of your tracks, through which you can navigate to your desired plugin. This is, once again, a useful option, but the more FX you have, the more clicking and scrolling you'd have to do sometimes.
