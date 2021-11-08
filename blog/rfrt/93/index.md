@@ -20,7 +20,7 @@ Hey folks!
 
 **Method 2(Right-clicking on the FX Tab on Tracks/Items):** A slightly less cluttered alternative is to right click the FX icon on any track or icon*:    
 ![](/blog/rfrt/93/rfrt93-2.jpg)  
-_This dropdown menu appears when you right click on the FX Icon._
+_These menus appear when you right click on the FX Icon. Left: Tracks Right: Items_
 
 From here, you can click to float any plugins already on the selected track/item (if any), and you will see all the regular groupings of your tracks, through which you can navigate to your desired plugin. This is, once again, a useful option, but the more FX you have, the more clicking and scrolling you'd have to do sometimes.
 
