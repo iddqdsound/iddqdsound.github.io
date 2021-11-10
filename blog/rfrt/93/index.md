@@ -34,7 +34,7 @@ I personally use **Opt+Q** for my favourite all-purpose EQ (Currently Fabfilter 
 
 In order to do this, first you must have REAPER create the Insert FX action for you. To do this, you can right click on them after finding them in your FX browser, and select 'Create shortcut' but then simply cancel out of the following dialog box. This will nevertheless create the action, which you can then find in your action list and add to any toolbar or right click menu. Watch the video for a more detailed tutorial on how to do this, if you don't already!
 
-**Adding icons to your FX Toolbars:** I will cover this in the next episode!
+**Adding icons to your FX Toolbars:** I was going to cover this in the next episode, but my good buddy Tormy Van Cool did a [tutorial on this just today](https://youtu.be/12AjqFcbZEU)! So instead of repeating what he said, I'll just link to that, and as a bonus, hopefully introduce some of you to a great REAPER tutorial channel. Go check it out, and be warned! It's an easy process but it's not a quick process.
 
 **Conclusion**
 
