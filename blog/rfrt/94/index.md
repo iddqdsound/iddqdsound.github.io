@@ -1,29 +1,31 @@
-## How to create shortcuts to Insert FX (Rapid-Fire REAPER Tutorials Ep93)
+## The Quick way to Adjust MIDI Grid Size (Rapid-Fire REAPER Tutorials Ep94) ##
 
 ![](/blog/rfrt/94/RFRT-Ep94.jpg)
 
 Hey folks!  
- In [this episode](https://youtu.be/V5XqgHdWsH8) I wanted to take a deeper dive into MIDI Grid Sizes, Types & how I customized the REAPER defaults to allow for a smoother more fluid way to adjust the grid size as we edit, since the defaults leave a whole ton to be desired. I have covered all my MIDI Hotkeys in Two separate videos before. Find [Part 1](https://youtu.be/0Ch9hLZBh5M) & [Part 2](https://youtu.be/ByfB7OYzR4E) or [a whole playlist dedicated to MIDI Editing](https://www.youtube.com/watch?v=akqKvLiO0xc&list=PLjvmrOUg3J0qpyLea1FiRBrpfWyRaUbgg) on the channel! I'll also be sharing my Entire MIDI Editor Keymap below, but be warned that you would need both the [SWS Extension](https://www.youtube.com/watch?v=JSpDNz8c_do) and ReaTeam Scripts from [ReaPack](https://www.youtube.com/watch?v=S2a4QWqZ53M) installed!
+ In [this episode](https://youtu.be/V5XqgHdWsH8) I wanted to take a deeper dive into MIDI Grid Sizes, Types & how I customized the REAPER defaults to allow for a smoother more fluid way to adjust the grid size as we edit, since the defaults leave a whole ton to be desired. I have covered all my MIDI Hotkeys in Two separate videos before. Find [Part 1](https://youtu.be/0Ch9hLZBh5M) & [Part 2](https://youtu.be/ByfB7OYzR4E) or [a whole playlist dedicated to MIDI Editing](https://www.youtube.com/watch?v=akqKvLiO0xc&list=PLjvmrOUg3J0qpyLea1FiRBrpfWyRaUbgg) on the channel! I'll also be sharing my Entire MIDI Editor Keymap below, but be warned that you would need both the [SWS Extension](https://www.youtube.com/watch?v=JSpDNz8c_do) and MPL Scripts from [ReaPack](https://www.youtube.com/watch?v=S2a4QWqZ53M) installed! Find the link to install MPL Scripts below and refer to the linked videos for more info on how to install them. For now, let's get to it!
 
 **The Basics & Defaults of MIDI Grid Size**  
 **Setting Grid Size & Grid Type:** With a MIDI Editor Window open, you can access and change your Grid size & type from the bottom left corner.  
  ![](/blog/rfrt/94/rfrt94-1.png)  
  _The default way to change grid size & type is via the dropdown menus above!_  
+
  **1. Grid Size:** The Grid Size is a number expressed in fractions or whole numbers, relative to the length of a whole note, or a single measure in 4/4 time. For example, a grid size of 1/4 is a quarter note, 1/8 is an eighth, & 2 is 2 whole measures in 4/4 or 8 quarter notes.  
  **2. Grid Type:** The 4 Grid Types modifies the Grid Size in some way:  
- **Straight:** The straight grid doesn't modify the grid size or the grid lines in any way. 1/8 is 1/8, 1/16 is 1/16 and so on.
+ **Straight:** The straight grid doesn't modify the grid size or the grid lines in any way. 1/8 is 1/8, 1/16 is 1/16 and so on.  
  **Triplet:** With the Triplet grid type selected, the value set in the grid size dropdown menu is multiplied by 2/3.  
- _For example 1/8 triplet is equal to 1/12, because 1/8 x 2/3 = 2/24 = 1/12_  
+ _For example 1/8 triplet is equal to 1/12, because 1/8 x 2/3 = 2/24 = 1/12_   
  _            1/4 triplet is equal to 1/6, because 1/4 x 2/3 = 2/12 = 1/6_   
  **Dotted:** With the dotted grid type selected, the value set in the grid size dropdown menu is multiplied by 3/2.  
   _For example 1/8 dotted is equal to 3/16, because 1/8 x 3/2 = 3/16_  
  _            1/4 dotted is equal to 3/8, because 1/4 x 3/2 = 3/8_  
  **Swing:** The swing grid type doesn't multiply the grid size by anything. Instead it shifts every other grid line to be later or earlier than they would normally be. You have control over this using the swing strength slider. (more on this in a moment)  
  **3. Note Length:** When set to Grid (like in the image above) the length of every note input using the mouse is equal to the size of the grid. However, you can set this to any number that you want! For example, if you want your notes to ring out in an arpeggio pattern, you can set the grid size to 1/8 to input eighth notes, but set the Notes length to 1/4 so that each note rings out an additional eighth.  
-![](/blog/rfrt/94/rfrt94-2.gif)  
-_When the grid type is set to swing, you get an additional slider to control the swing strength!_  
+
 **Adjusting Swing Strength:** The Swing strength slider sets the swing strength, which determines how much every second grid line is shifted in time, in relation to a straight grid type. At 0% there is no difference between the straight & swing grid types at all! Negative values will shift every second grid line earlier than where the would normally fall, while positive values will shift every second grid line later!  
 Writing MIDI using the Swing grid type will give your passages the swing feel. You find examples of this feel all over the music spectrum, most commonly in Jazz but also very commonly in Rap & Hip-Hop, Funk, Be-Bop & Even film music. If you want to give your MIDI passages a sense that they are performed by a human, you should probably use the Humanize function instead of the swing type, as this is a totally separate feel than simply a humanized passage!
+![](/blog/rfrt/94/rfrt94-2.gif)  
+_When the grid type is set to swing, you get an additional slider to control the swing strength!_  
 
 **What's Wrong with the defaults?**  
 The only way to change the grid size by default is by clicking on the dropdown menus to change the grid size and type to pre-determined values, or with grid size you can also manually type in ANY FRACTION or whole number to change to less common grid sizes (more on this in a moment). The obvious problem with this is that it's slow. It may be fine enough if your entire MIDI passage is written in a single type of note length, but if you write modern music, this is very likely not to be the case, so every time you need to change it, you need to move your mouse down there, change the grid size, and possibly also the grid type, only to have to come back down to the dropdowns in a short moment. I also found that I constantly forget to change the grid type, when, for example, I switch from 1/8 triplet to 1/4 straight. So my preference is to set some hotkeys so I can simply look at the dropdowns to know where I'm at, without almost ever needing to click on them. These are the actions I use & the hotkeys I've assigned to them. All these actions are in the **Action List>MIDI Editor**:  
