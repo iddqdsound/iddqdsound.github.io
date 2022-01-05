@@ -136,11 +136,26 @@ Here's the video for episode 5 below:
 <youtube id="le.com/spreadsheets/d/e/2PACX-1vTNirFGDv-ZRttAb68DQNRGtKwoSu0FFj08Aw4WUjSCXQ6aMK0VhM2n60L6wUIdAZlyBlfFv4AjqmmE/pubhtml"></youtube>
 
 **Downloads:**
-Here are all the downloads for this episode. It includes a few audio files, my field recording template, toolbar, and custom actions. If you download these and enjoy them, please consider joining my email list, subscribing to my channel and leaving a tip at the tip jar!
+Here are all the downloads for this episode.
 
-SD4VM Ep05 Downloads
+[SD4VM Ep05 Downloads](/blog/sd4vm/5/SD4VM-Ep05-Downloads.zip)
 
-.zip
+ It includes a few audio files, my field recording template, toolbar, and custom actions. If you download these and enjoy them, please consider joining my email list, subscribing to my channel and leaving a tip at the tip jar (links below)!
 
-Download ZIP • 17.22MB
 
+
+If you like the work I do, [you can donate to me here](http://www.buymeacoffee.com/iddqdsound)! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!  
+ Join the REAPER squad on our Discord Server:  
+<https://discord.gg/YwQESKpBfE>
+
+Become a member of ‘IDDQD Sound’ on YouTube: <https://www.youtube.com/channel/UCXom6oGEQL7iBGTGaCpyHng/join>
+
+**My Reaper Stash:** <https://stash.reaper.fm/u/IDDQDSound>  
+**My Reaper Repository:** <https://github.com/iddqdsound/reaper/raw/main/index.xml>
+
+**Follow me on Instagram:** <https://www.instagram.com/iddqdmusic/>
+
+**My Music:**  
+[**https://Soundcloud.com/iddqdmusic**](https://soundcloud.com/iddqdmusic)  
+[**https://iddqdmusic.bandcamp.com**](https://iddqdmusic.bandcamp.com/)  
+ 
