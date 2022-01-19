@@ -1,3 +1,14 @@
+---
+tags:
+  - Unique REAPER Features 
+  - Hotkeys & Mouse Modifiers in REAPER 
+  - REAPER Hacks & Workarounds
+date: 2021-04-27
+youtube: NyQo1BOK970
+related-posts:
+  - /blog/rfrt/73
+---
+
 ## Locking Tracks, Items, Stretch Markers, Tempo Map, etc. (Rapid-fire REAPER Tutorials Ep72)
 
 ![](/blog/rfrt/72/85.jpg)

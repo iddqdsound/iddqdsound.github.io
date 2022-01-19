@@ -1,8 +1,19 @@
+---
+tags:
+  - Unique REAPER Features 
+  - Custom Actions, Cycle Actions & Scripts in REAPER 
+  - Hotkeys & Mouse Modifiers in REAPER
+date: 2021-04-12
+youtube: lu-TjJk-_Ak
+related-posts:
+  - /blog/rfrt/75
+---
+
 ## Changing REAPER's Editing Behaviour with Hotkeys (Rapid-fire REAPER Tutorials Ep70)
 
 ![](/blog/rfrt/70/24.jpg)
 
-Hey folks! In this episode, I'll show you how to control some of REAPER's Editing behaviour that you may want to control on the fly! Stuff like Ripple Editing mode, Snapping, Grid and ruler options, etc.
+Hey folks! In [this episode](https://youtu.be/lu-TjJk-_Ak), I'll show you how to control some of REAPER's Editing behaviour that you may want to control on the fly! Stuff like Ripple Editing mode, Snapping, Grid and ruler options, etc.
 
 **What's in my Main Toolbar**  
  My main toolbar consists of everything you would find in your default main toolbar (At least as of REAPER 5.91) and I have added some actions to it. I explained what each button did in the video but cut it out of the final video cuz y'all like them short and sweet, so here's a detailed explanation below. Note that some of these toolbar icons are special, meaning they do a lot more than 1 action, which is something you can't do to your own customized toolbars, a thing I wish REAPER will introduce at some point. Some of these icons also change based on what Editing Behaviour is active, and right-clicking each one will give you access to some preferences and options.
@@ -88,7 +99,7 @@ I love the main toolbar for all the preferences it gives me access too, as well 
 
 Here's the video:
 
-<youtube id="be.com/watch?v=Kf8TFQ8ov\_s&#x26;list=PLjvmrOUg3J0r0-Xq2ONWsEOBnHEDonPW2"></youtube>
+<youtube id="lu-TjJk-_Ak"></youtube>
 
 New videos out every Monday at 12pm EST and Friday 1pm EST!
 

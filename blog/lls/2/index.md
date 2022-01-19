@@ -1,3 +1,12 @@
+---
+tags:
+  - Let's Learn Scripting in REAPER
+date: 2022-01-17
+
+related-posts:
+  - /blog/lls/1/
+---
+
 ## Let’s learn scripting in REAPER Ep02: Functions, Arguments, Returns & Variables
 
 ![](/blog/lls/2/84.jpg)

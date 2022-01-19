@@ -1,3 +1,18 @@
+---
+tags:
+  - Advanced REAPER Tutorial
+  - REAPER SWS Extensions Demystified 
+  - Templates in REAPER
+  - REAPER Tracks
+  - Ideas for Custom Toolbars in REAPER
+  - REAPER Hacks & Workarounds
+date: 2022-01-16
+youtube: Mp97UB9Ctro
+related-posts:
+  - /blog/rfrt/51
+  - /blog/rfrt/52
+---
+
 ## Assembling Modular Mixing Templates with SWS (Rapid-Fire REAPER Tutorials Ep98) ##
 
 ![](/blog/rfrt/98/RFRT-EP98.jpg)

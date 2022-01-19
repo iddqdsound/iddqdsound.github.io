@@ -1,3 +1,13 @@
+---
+tags:
+  - Advanced REAPER Tutorials 
+  - Recreating Ableton Live features in REAPER
+date: 2021-06-25
+youtube: FWhJqK2XKW0
+related-posts:
+  - /blog/rfrt/99
+---
+
 ## How to Route Audio & MIDI Between Any two DAWs & Sync them! (Rapid-fire REAPER Tutorials Ep80/81)
 
 ![](/blog/rfrt/80/66.jpg)

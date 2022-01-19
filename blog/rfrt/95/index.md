@@ -1,4 +1,16 @@
-## The Quick way to Adjust MIDI Grid Size (Rapid-Fire REAPER Tutorials Ep94) ##
+---
+tags:
+  - Custom Actions, Cycle Actions & Scripts in REAPER 
+  - Hotkeys & Mouse Modifiers in REAPER
+  - Recreating Logic Pro X features in REAPER
+  - Item-based Editing & Mixing in REAPER
+date: 2021-11-23
+youtube: Eds4igcIh9A
+related-posts:
+  - /blog/rfrt/35
+---
+
+## Quick-Swipe Comping Logic Pro Style (Rapid-Fire REAPER Tutorials Ep95) ##
 
 ![](/blog/rfrt/95/RFRT-EP95.jpg)
 

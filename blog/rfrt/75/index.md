@@ -1,3 +1,14 @@
+---
+tags:
+  - Item-based Editing & Mixing in REAPER 
+  - Hotkeys & Mouse Modifiers in REAPER 
+  - Custom Actions, Cycle Actions & Scripts in REAPER 
+date: 2021-05-24
+youtube: p9zS4t1ohCI
+related-posts:
+  - /blog/rfrt/75
+---
+
 ## Advanced Audio Editing in REAPER: 30+ Hotkeys for Editing (Rapid-fire Reaper Tutorials Ep75)
 
 ![](/blog/rfrt/75/13.jpg)

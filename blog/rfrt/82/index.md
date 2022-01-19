@@ -1,3 +1,14 @@
+---
+tags:
+  - Custom Actions, Cycle Actions & Scripts in REAPER 
+  - Hotkeys & Mouse Modifiers in REAPER
+  - Item-based Editing & Mixing in REAPER
+date: 2021-08-09
+youtube: 349_Vdvaqfc
+related-posts:
+  - /blog/rfrt/5
+---
+
 ## 20+ Hotkeys, Mouse Modifiers & tips for Fades and Crossfades (Rapid fire REAPER Tutorials Ep82)
 
 ![](/blog/rfrt/82/2.jpg)
@@ -86,7 +97,7 @@ Fades are a great way to explore the true power and potential of mouse modifiers
 
 Here's the video:
 
-<youtube id="349\_Vdvaqfc"></youtube>
+<youtube id="349_Vdvaqfc"></youtube>
 
 ![](/blog/rfrt/82/8.png)
 

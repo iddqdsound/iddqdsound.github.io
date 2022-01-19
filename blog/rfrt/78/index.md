@@ -1,3 +1,14 @@
+---
+tags:
+  - Item-based Editing & Mixing in REAPER 
+  - Custom Actions, Cycle Actions & Scripts in REAPER 
+  - REAPER Hacks & Workarounds
+date: 2021-06-14
+youtube: LD_HFJATtQs
+related-posts:
+  - /blog/rfrt/65
+---
+
 ## How to swap beats 2 & 4 with custom scripts (Rapid-fire REAPER Tutorials Ep78)
 
 ![](/blog/rfrt/78/75.jpg)
@@ -39,7 +50,7 @@ You can [download the spk77 custom script here](https://github.com/ReaTeam/ReaSc
 
 There you go! Hopefully this will be useful to you. Thanks to my wonderful donor EJV for suggesting this tutorial. Here's the Video:
 
-<youtube id="LD\_HFJATtQs"></youtube>
+<youtube id="LD_HFJATtQs"></youtube>
 
 ![](/blog/rfrt/78/8.png)
 

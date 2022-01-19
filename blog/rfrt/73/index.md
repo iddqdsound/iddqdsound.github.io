@@ -1,3 +1,13 @@
+---
+tags:
+  - Weird & Hidden Stuff in REAPER 
+  - Hotkeys & Mouse Modifiers in REAPER 
+date: 2021-05-03
+youtube: UQV03bGaZSs
+related-posts:
+  - /blog/rfrt/78
+---
+
 ## The Hidden Hierarchy of Hotkeys & Shortcut Scopes (Rapid-fire REAPER Tutorials Ep73)
 
 ![](/blog/rfrt/73/197.jpg)

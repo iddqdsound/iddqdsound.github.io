@@ -1,3 +1,14 @@
+---
+tags:
+  - REAPER SWS Extensions Demystified
+  - Unique REAPER Features 
+  - Mixing Tips & Workflow Improvements in REAPER
+date: 2021-10-20
+youtube: atWmyZxob30
+related-posts:
+  - /blog/rfrt/90
+---
+
 ## SWS Snapshots: How to save/recall mix states with one click (Rapid-Fire REAPER Tutorials Ep86)
 
 ![](/blog/rfrt/86/190.jpg)

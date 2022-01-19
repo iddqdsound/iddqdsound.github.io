@@ -1,3 +1,14 @@
+---
+tags:
+  - Unique REAPER Features
+  - Using FX in REAPER 
+  - REAPER JSFX Spotlight
+date: 2021-10-20
+youtube: xxYuM0bpFew
+related-posts:
+  - /blog/misc/6/
+---
+
 ## Delta Solo in REAPER Demystified (Rapid-Fire REAPER Tutorials Ep91)
 
 ![](/blog/rfrt/91/RFRT-EP91.jpg)

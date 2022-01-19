@@ -1,3 +1,15 @@
+---
+tags:
+  - MIDI Editing in REAPER
+  - Custom Actions, Cycle Actions & Scripts in REAPER 
+  - Hotkeys & Mouse Modifiers in REAPER
+  - From N00b to GOAT
+date: 2021-11-16
+youtube: V5XqgHdWsH8
+related-posts:
+  - /blog/rfrt/36
+---
+
 ## The Quick way to Adjust MIDI Grid Size (Rapid-Fire REAPER Tutorials Ep94) ##
 
 ![](/blog/rfrt/94/RFRT-Ep94.jpg)

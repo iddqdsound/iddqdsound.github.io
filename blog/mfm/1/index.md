@@ -1,3 +1,11 @@
+---
+tags:
+  - Others (Non-REAPER related)
+  - Mixing
+date: 2022-01-17
+
+---
+
 ## [LIMITED TIME DISCOUNT] Mixing Feedback Session
 
 ![](/blog/mfm/1/36.png)

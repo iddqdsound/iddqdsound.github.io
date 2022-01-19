@@ -1,3 +1,14 @@
+---
+tags:
+  - MIDI Editing in REAPER
+  - Custom Actions, Cycle Actions & Scripts in REAPER 
+  - Hotkeys & Mouse Modifiers in REAPER
+  - From N00b to GOAT
+date: 2021-11-03
+youtube: er38jXJRDVo
+related-posts:
+  - /blog/rfrt/36
+---
 ## MIDI 101: Editing MIDI Velocity (Rapid-Fire REAPER Tutorials Ep91)
 
 ![](/blog/rfrt/92/RFRT-EP92.jpg)

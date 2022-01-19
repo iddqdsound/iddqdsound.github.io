@@ -1,10 +1,20 @@
+---
+tags:
+  - Item-based Editing & Mixing in REAPER 
+  - The Many Windows and Sub-menus of REAPER 
+date: 2021-06-02
+youtube: 1u0e5tjxPcg
+related-posts:
+  - /blog/rfrt/75
+---
+
 ## Media Item Properties & Hotkeys for batch editing items (Rapid-fire Reaper Tutorials Ep76)
 
 ![](/blog/rfrt/76/93.jpg)
 
 Hey folks!
 
-     [This episode](https://youtu.be/1u0e5tjxPcg) is kind of a part II of our [last episode on editing items](https://youtu.be/p9zS4t1ohCI). In the last episode, we looked at multiple actions that we use often, and we assigned one-key shortcuts to all of them. There's a lot of additional stuff we may wanna do to items, most of which are accessible through the Media Item Properties window. So we're gonna start with a quick tour of the Media Item Properties window, and then talk about a bunch of unassigned native actions, some SWS and some cycle actions I like to use, in order to avoid having to open this window for quick edits.
+ So, [This Episode](https://youtu.be/1u0e5tjxPcg) is kind of a part II of our [last episode on editing items](https://youtu.be/p9zS4t1ohCI). In the last episode, we looked at multiple actions that we use often, and we assigned one-key shortcuts to all of them. There's a lot of additional stuff we may wanna do to items, most of which are accessible through the Media Item Properties window. So we're gonna start with a quick tour of the Media Item Properties window, and then talk about a bunch of unassigned native actions, some SWS and some cycle actions I like to use, in order to avoid having to open this window for quick edits.
 
 **Media Item Properties**
 

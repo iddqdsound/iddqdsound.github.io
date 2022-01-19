@@ -1,3 +1,15 @@
+---
+tags:
+  - Answering Community Questions 
+  - Templates in REAPER
+  - Mixing Tips & Workflow Improvements in REAPER
+  - REAPER Hacks & Workarounds
+date: 2021-04-27
+youtube: g4-fceuW_Zo
+related-posts:
+  - /blog/rfrt/73
+---
+
 ## Controlling your Sends Using track Faders (Rapid-fire REAPER Tutorials Ep71)
 
 ![](/blog/rfrt/71/28.jpg)
@@ -62,11 +74,7 @@ After selecting the tracks you want to send from and running this action, you'll
 
 You can download the custom action below. _BE WARNED that if you don't have all the scripts above, it won't work for you! So download those from ReaPack and have SWS installed._
 
-IDDQD Sound_Create Send Shells for Selec
-
-.
-
-Download • 492B
+[IDDQD Sound_Create Send Shells for Selected Tracks](/blog/rfrt/71/IDDQDSound_Create-send-shells.lua.zip)
 
 If you need instructions on how to download and import custom actions, [watch this video](https://www.youtube.com/watch?v=LGkB9EOn3sE)!
 
@@ -83,7 +91,7 @@ I also hope that mpl would update his script to allow the viewing of multiple se
 
 Here's the video:
 
-<youtube id="g4-fceuW\_Zo"></youtube>
+<youtube id="g4-fceuW_Zo"></youtube>
 
 [![](/blog/rfrt/71/8.png)](https://www.buymeacoffee.com/iddqdsound)
 

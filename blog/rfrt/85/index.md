@@ -1,3 +1,13 @@
+---
+tags:
+  - Hotkeys & Mouse Modifiers in REAPER
+  - Mixing Tips & Workflow Improvements in REAPER
+date: 2021-09-10
+youtube: 3EhIoFe3vEY
+related-posts:
+  - /blog/rfrt/86
+---
+
 ## Hotkeys & Hacks to A/B Plugins & Tracks (Rapid-Fire REAPER Tutorials Ep85)
 
 ![](/blog/rfrt/85/39.jpg)

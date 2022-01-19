@@ -1,3 +1,13 @@
+---
+tags:
+  - Advanced REAPER Tutorials 
+  - Recreating Ableton Live features in REAPER
+date: 2021-06-18
+youtube: 9wpndk1v75Q
+related-posts:
+  - /blog/rfrt/80
+---
+
 ## How to use ReWire to connect Ableton Live to REAPER (Rapid-fire REAPER Tutorials Ep79)
 
 ![](/blog/rfrt/79/77.jpg)
@@ -56,11 +66,7 @@ Unfortunately, at the time of this writing, I couldn't get this module of ReWire
 
 You can download the bundle for this episode here:
 
-IDDQD Sound_ReWire Templates
-
-.zip
-
-Download ZIP • 85KB
+[IDDQD Sound_ReWire Templates](/blog/rfrt/79/IDDQDSound_ReWire-Templates.zip)
 
 Contents:
 
@@ -75,4 +81,17 @@ If you are among the few who don't plan to/can't afford to upgrade Ableton 11, n
 Here's the video:
 
 <youtube id="9wpndk1v75Q"></youtube>
+
+If you like the work I do, [you can donate to me here](http://www.buymeacoffee.com/iddqdsound)! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!  
+ Join the REAPER squad on our Discord Server:  
+ <https://discord.gg/YwQESKpBfE>
+
+**My Reaper Stash:** <https://stash.reaper.fm/u/IDDQDSound>  
+**My Reaper Repository (Copy link to ReaPack):** <https://github.com/iddqdsound/reaper/raw/main/index.xml>
+
+**Follow me on Instagram:** <https://www.instagram.com/iddqdmusic/>
+
+**My Music:** [**https://Soundcloud.com/iddqdmusic**](https://soundcloud.com/iddqdmusic)
+
+[ ](https://soundcloud.com/iddqdmusic) [**https://iddqdmusic.bandcamp.com**](https://iddqdmusic.bandcamp.com/)
 

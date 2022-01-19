@@ -1,48 +1,36 @@
+---
+tags:
+  - Hotkeys & Mouse Modifiers in REAPER
+  - Mixing Tips & Workflow Improvements in REAPER
+date: 2021-08-09
+youtube: 9yhCtATxIq4
+related-posts:
+  - /blog/rfrt/5
+---
+
 ## Making your Frozen Tracks stand out with a track icon (Rapid Fire REAPER tutorials Ep84)
 
 ![](/blog/rfrt/84/88.jpg)
 
 Hey folks!
 
-Here's the download bundle for [this episode](https://youtu.be/9yhCtATxIq4):
+Here's the [Download Bundle](/blog/rfrt/84/Download-bundle-ep-88.zip) for [this episode](https://youtu.be/9yhCtATxIq4):
 
-Download Bundle - Freezing menu, Icons, Scripts
+Download Bundle (Contains 4 actions, 1 png icon, 1 ReaperMenu file)
 
-.zip
+-Start by moving the .png icon. Go to REAPER, Options>Show Resource path in Explorer/Finder...Then go Data>track_icons and paste the icon there.
 
-Download ZIP • 27KB
+-In Extensions>Resources, Click on the 'image' tab.
 
-<li id="viewer-g0hb" class="\_1atvN \_3\_0WU public-DraftStyleDefault-orderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-list-ltr public-DraftStyleDefault-reset \_2QAo- \_25MYV \_2WrB- \_1atvN">
+-Choose slot 1, right click>Add Slot/file... and navigate to the png icon, hit open
 
-Download Bundle (Contains 4 actions, 1 png icon, 1 ReaperMenu
+-Import all 4 actions by going to the Actions List>New Action>Load ReaScript and load all 4 actions in. (You can also download them from my Repository by copying the link below)
 
-<li id="viewer-13s5" class="\_1atvN \_3\_0WU public-DraftStyleDefault-orderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-list-ltr \_2QAo- \_25MYV \_2WrB- \_1atvN">
+-Go to Options>Customize Menus/Toolbars and click on Import.
 
-Start by moving the .png icon. Go to REAPER, Options>Show Resource path in Explorer/Finder...Then go Data>track_icons and paste the icon there.
+-Find the file titled 'iddqd_TCP Context Custom Menu.ReaperMenu and click on it.
 
-<li id="viewer-80qnv" class="\_1atvN \_3\_0WU public-DraftStyleDefault-orderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-list-ltr \_2QAo- \_25MYV \_2WrB- \_1atvN">
-
-In Extensions>Resources, Click on the 'image' tab.
-
-<li id="viewer-1t2o1" class="\_1atvN \_3\_0WU public-DraftStyleDefault-orderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-list-ltr \_2QAo- \_25MYV \_2WrB- \_1atvN">
-
-Choose slot 1, right click>Add Slot/file... and navigate to the png icon, hit open
-
-<li id="viewer-emga4" class="\_1atvN \_3\_0WU public-DraftStyleDefault-orderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-list-ltr \_2QAo- \_25MYV \_2WrB- \_1atvN">
-
-Import all 4 actions by going to the Actions List>New Action>Load ReaScript and load all 4 actions in. (You can also download them from my Repository by copying the link below)
-
-<li id="viewer-eemfg" class="\_1atvN \_3\_0WU public-DraftStyleDefault-orderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-list-ltr \_2QAo- \_25MYV \_2WrB- \_1atvN">
-
-Go to Options>Customize Menus/Toolbars and click on Import.
-
-<li id="viewer-eneie" class="\_1atvN \_3\_0WU public-DraftStyleDefault-orderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-list-ltr \_2QAo- \_25MYV \_2WrB- \_1atvN">
-
-Find the file titled 'iddqd_TCP Context Custom Menu.ReaperMenu and click on it.
-
-<li id="viewer-c0umb" class="\_1atvN \_3\_0WU public-DraftStyleDefault-orderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-list-ltr \_2QAo- \_25MYV \_2WrB- \_1atvN">
-
-Make sure all the scripts were found and installed.
+-Make sure all the scripts were found and installed.
 
 You can also download the actions from my repository, paste this URL to your Extensions>Reapack>Import Repositories...
 

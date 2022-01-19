@@ -1,3 +1,12 @@
+---
+tags:
+  - Let's Learn Scripting in REAPER
+date: 2022-01-17
+
+related-posts:
+  - /blog/lls/2/
+---
+
 ## Let's Learn Scripting in REAPER: Ep00 & Ep01 Notes
 
 ![](/blog/lls/1/82.png)

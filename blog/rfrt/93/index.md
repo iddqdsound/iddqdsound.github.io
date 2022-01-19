@@ -1,3 +1,14 @@
+---
+tags:
+  - Using FX in REAPER
+  - Custom Actions, Cycle Actions & Scripts in REAPER 
+  - Hotkeys & Mouse Modifiers in REAPER
+date: 2021-11-08
+youtube: rRYcndmRs0M
+related-posts:
+  - /blog/rfrt/98
+---
+
 ## How to create shortcuts to Insert FX (Rapid-Fire REAPER Tutorials Ep93)
 
 ![](/blog/rfrt/93/RFRT-EP-93.jpg)

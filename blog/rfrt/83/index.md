@@ -1,3 +1,15 @@
+---
+tags:
+  - Custom Actions, Cycle Actions & Scripts in REAPER 
+  - Video Editing in REAPER
+  - Let’s Learn Scripting in REAPER!
+date: 2021-07-22
+youtube: G-uMXYFy4Xc
+related-posts:
+  - /blog/misc/1
+  - /blog/lls/1
+---
+
 ## Separate audio from a video item with one action! (Rapid fire REAPER Tutorials Ep83)
 
 ![](/blog/rfrt/83/114.jpg)
@@ -159,7 +171,7 @@ I am perhaps 5% fluent in sripting for REAPER, and already it has truly enriched
 
 Here's the video:
 
-<youtube id="m/iddqdsound/reaper/raw/master/index.xml"></youtube>
+<youtube id="G-uMXYFy4Xc"></youtube>
 
 ![](/blog/rfrt/83/8.png)
 
