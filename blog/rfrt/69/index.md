@@ -1,3 +1,13 @@
+---
+tags:
+  - REAPER SWS Extensions Demystified
+  - Mixing Tips & Workflow Improvements in REAPER
+date: 2021-04-01
+youtube: CJpTV3Zzdtw
+related-posts:
+  - /blog/rfrt/91
+---
+
 ## LUFS, True Peak & Dynamic Range Analysis with SWS Loudness (Rapid-fire Reaper Tutorials Ep69)
 
 ![](/blog/rfrt/69/87.jpg)

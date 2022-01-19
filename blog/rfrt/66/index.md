@@ -1,3 +1,13 @@
+---
+tags:
+  - Hotkeys & Mouse Modifiers in REAPER
+  - Advanced Customization in REAPER
+date: 2021-03-22
+youtube: kjwI342Vklk
+related-posts:
+  - /blog/rfrt/67
+---
+
 ## Optimizing Zooming defaults in REAPER w/ Hotkeys & Mouse Mods (Rapid-fire REAPER Tutorials Ep66)
 
 ![](/blog/rfrt/66/109.jpg)

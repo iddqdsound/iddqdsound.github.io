@@ -341,17 +341,7 @@ const { JSDOM } = require("jsdom");
                   >
                     <i class="fab fa-github"></i>
                   </a>
-                   <a
-                    href="https://github.com/iddqdsound/reaper/tree/main"
-                    class="link"
-                    oninteractive="${javascript`
-                      tippy(this, {
-                        content: "Github Repository",
-                      });
-                    `}"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
+          
                   </a>
                    <a
                     href="mail to:info@iddqdsound.com"

@@ -1,3 +1,14 @@
+---
+tags:
+  - REAPER Tracks
+  - Mixing Tips & Workflow Improvements in REAPER
+  - Hotkeys & Mouse Modifiers in REAPER
+date: 2021-03-26
+youtube: uprTMzSOL20
+related-posts:
+  - /blog/rfrt/75
+---
+
 ## 25+ Hotkeys for Track Controls (Rapid-Fire REAPER tutorials Ep68)
 
 ![](/blog/rfrt/68/10.jpg)
@@ -57,3 +68,12 @@ Here's the video:
 
 <youtube id="uprTMzSOL20"></youtube>
 
+If you like the work I do, [you can donate to me here](http://www.buymeacoffee.com/iddqdsound)! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!
+
+**My Reaper Stash:** <https://stash.reaper.fm/u/IDDQDSound>
+
+**Follow me on Instagram:** <https://www.instagram.com/iddqdmusic/>
+
+**My Music:** [**https://Soundcloud.com/iddqdmusic**](https://soundcloud.com/iddqdmusic)
+
+[ ](https://soundcloud.com/iddqdmusic) [**https://iddqdmusic.bandcamp.com**](https://iddqdmusic.bandcamp.com/)

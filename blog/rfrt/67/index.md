@@ -1,3 +1,14 @@
+---
+tags:
+  - Hotkeys & Mouse Modifiers in REAPER
+  - Advanced Customization in REAPER
+  - Unique REAPER Features
+date: 2021-03-22
+youtube: aqGtXK1EN0o
+related-posts:
+  - /blog/rfrt/68
+---
+
 ## Maximizing Screen Real Estate Tips & Hotkeys (Rapid-fire REAPER Tutorials Ep67)
 
 ![](/blog/rfrt/67/90.jpg)
