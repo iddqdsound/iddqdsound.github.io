@@ -1,3 +1,12 @@
+---
+tags:
+  - Sound Editing & Design for Visual Media in REAPER
+date: 2020-10-21
+youtube: rMnx2Sybxs4
+related-posts:
+  - /blog/sd4vm/5
+---
+
 ## Sound Design For Visual Media - Tutorial Notes Ep04
 
 ![](/blog/sd4vm/4/144.jpg)

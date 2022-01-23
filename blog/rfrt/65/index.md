@@ -1,3 +1,14 @@
+---
+tags:
+  - Using FX in REAPER
+  - REAPER JSFX Spotlight
+  - MIDI Editing in REAPER
+date: 2021-03-15
+youtube: XtnuecwO8hM
+related-posts:
+  - /blog/rfrt/66
+---
+
 ## Audio to MIDI Drum Trigger JS Plugin Explained (Rapid-Fire REAPER tutorials Ep65)
 
 ![](/blog/rfrt/65/17.jpg)

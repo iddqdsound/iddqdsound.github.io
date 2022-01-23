@@ -1,3 +1,12 @@
+---
+tags:
+  - Sound Editing & Design for Visual Media in REAPER
+date: 2021-05-07
+youtube: _Jznye0iqYE
+related-posts:
+  - /blog/sd4vm/13
+---
+
 ## Sound Editing & Design for Visual Media - Ep12 Tutorial Notes (Foley Recording in REAPER)
 
 ![](/blog/sd4vm/12/178.jpg)
@@ -244,7 +253,7 @@ I hope you enjoyed this video and I hope you will use my system, or tweak it to 
 
 For the first time, this video will be premiered tomorrow, **May 7th, at 1pm EST** on YouTube, and I will be online and ready to answer any questions you may have, so join me!
 
-<youtube id="be.com/watch?v=\_Jznye0iqYE"></youtube>
+<youtube id="_Jznye0iqYE"></youtube>
 
 ![](/blog/sd4vm/12/8.png)
 

@@ -1,3 +1,13 @@
+---
+tags:
+  - MIDI Editing in REAPER
+  - Live Performance tips for REAPER
+date: 2021-01-22
+youtube: OfmBzZqCUMA
+related-posts:
+  - /blog/rfrt/59
+---
+
 ## How to Jam in any key without knowing Music Theory (Rapid-fire Reaper Tutorials Ep54)
 
 ![](/blog/rfrt/54/65.jpg)
@@ -17,5 +27,5 @@ If you like the work I do, you can [donate to me](http://www.buymeacoffee.com/id
 **My Reaper Stash:**  
  https://stash.reaper.fm/u/IDDQDSound
 
-<youtube id="be.com/watch?v=Uvg5j-OK2AE"></youtube>
+<youtube id="OfmBzZqCUMA"></youtube>
 

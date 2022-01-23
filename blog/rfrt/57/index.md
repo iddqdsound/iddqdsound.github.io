@@ -1,3 +1,14 @@
+---
+tags:
+  - MIDI Editing in REAPER
+  - Weird & Hidden Stuff in REAPER
+  - REAPER Hacks & Workarounds
+  - Audio Recording in REAPER
+date: 2021-02-05
+youtube: SEJ71xEFCMw
+related-posts:
+  - /blog/rfrt/58
+---
 ## Setting multiple tracks' inputs in sequence aka cascading inputs (Rapid-Fire REAPER tutorials Ep57)
 
 ![](/blog/rfrt/57/120.jpg)

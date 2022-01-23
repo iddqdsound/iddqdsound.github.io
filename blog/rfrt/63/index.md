@@ -1,3 +1,16 @@
+---
+tags:
+  - REAPER SWS Extensions Demystified 
+  - Unique REAPER Features
+  - Markers, Regions, & Project Organization in REAPER
+date: 2021-03-01
+youtube: QYRKtXG_5BU
+related-posts:
+  - /blog/rfrt/61
+  - /blog/rfrt/62
+  - /blog/rfrt/64
+---
+
 ## SWS Smart Marker 201: Skip Markers & More (Rapid-Fire REAPER tutorials Ep63)
 
 ![](/blog/rfrt/63/188.jpg)
@@ -52,7 +65,7 @@ With Smart Markers you can essentially make REAPER your own recording assistant,
 
 Here's the video:
 
-<youtube id="QYRKtXG\_5BU"></youtube>
+<youtube id="QYRKtXG_5BU"></youtube>
 
 If you like the work I do, [you can donate to me here](http://www.buymeacoffee.com/iddqdsound)! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!
 

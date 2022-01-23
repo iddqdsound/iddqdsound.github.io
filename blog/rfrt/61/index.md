@@ -1,3 +1,16 @@
+---
+tags:
+  - REAPER SWS Extensions Demystified 
+  - Unique REAPER Features
+  - Markers, Regions, & Project Organization in REAPER
+date: 2021-02-22
+youtube: Lu_Z5GFj0Ts
+related-posts:
+  - /blog/rfrt/62
+  - /blog/rfrt/63
+  - /blog/rfrt/64
+---
+
 ## SWS Smart Markers 101: Intro to Smart Markers (Rapid-fire Reaper Tutorials Ep61)
 
 ![](/blog/rfrt/61/189.jpg)
@@ -23,7 +36,7 @@ To create a smart marker, simply:
 
 Here's the video:
 
-<youtube id="Lu\_Z5GFj0Ts"></youtube>
+<youtube id="Lu_Z5GFj0Ts"></youtube>
 
 If you like the work I do, you can donate to me [here](http://www.buymeacoffee.com/iddqdsound). Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!
 

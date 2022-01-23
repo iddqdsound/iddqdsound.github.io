@@ -1,3 +1,12 @@
+---
+tags:
+  - Sound Editing & Design for Visual Media in REAPER
+date: 2020-12-16
+youtube: nifgJyN6P7U
+related-posts:
+  - /blog/sd4vm/11
+---
+
 ## Sound Design for Visual Media - Tutorial Notes Ep09
 
 ![](/blog/sd4vm/9/124.jpg)
@@ -55,7 +64,7 @@ For this project, I used Kontakt, but in the tutorial I'll also show you how to 
 
 I hope you enjoyed this tutorial! Every sound design project is different, and while the exact process I used may not be applicable to your projects, the way I do it is something I hope you can take away from.
 
-<youtube id="be.com/watch?v=nifgJyN6P7U"></youtube>
+<youtube id="nifgJyN6P7U"></youtube>
 
 **Extra Study Material**
 

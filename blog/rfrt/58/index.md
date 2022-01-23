@@ -1,3 +1,15 @@
+---
+tags:
+  - MIDI Editing in REAPER
+  - Custom Actions, Cycle Actions & Scripts in REAPER 
+  - Hotkeys & Mouse Modifiers in REAPER
+date: 2021-02-08
+youtube: 0Ch9hLZBh5M
+related-posts:
+  - /blog/rfrt/57
+  - /blog/rfrt/36
+---
+
 ## MIDI 202: 20+ More Actions for MIDI Editing (Rapid-Fire Reaper Tutorials Ep58)
 
 ![](/blog/rfrt/58/97.jpg)
@@ -14,11 +26,8 @@ Here's a list of all the hotkeys used in the video and my (suggested) hotkeys fo
 
 **Retrograde Events:** This is a simple custom action that retrogrades a selected MIDI passage. Retrograde means 'Reversed and upside down' and is a well-known technique for melody development since the 14th century, and later popularized in styles such as 12-tone music. You can learn more about the technique [in this video](https://www.youtube.com/watch/gQgZYJyYZ2w) as I had to cut it for time (this is already the longest ever Rapid-fire Reaper Tutorial)
 
-IDDQD Sound_Retrograde Selected Events
+[IDDQD Sound_Retrograde Selected Events](/blog/rfrt/58/IDDQDSound_Retrograde-Selected-Events.lua.zip)
 
-.l
-
-Download L • 435B
 
 **Instructions:** Download the script and open from REAPER. If you don't know how to import scripts, [watch this video](https://youtu.be/LGkB9EOn3sE).
 

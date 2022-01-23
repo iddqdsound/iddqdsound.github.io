@@ -1,3 +1,13 @@
+---
+tags:
+  - Unique REAPER Features
+  - Mixing Tips & Workflow Improvements in REAPER
+date: 2021-01-29
+youtube: 9CpTS9zvoW8
+related-posts:
+  - /blog/rfrt/91
+---
+
 ## How to Solo in Front (Rapid-Fire Reaper Tutorials Ep55)
 
 ![](/blog/rfrt/55/73.jpg)
@@ -12,10 +22,10 @@ There's a dilemma with soloing. On one hand, if I'm working on the tone of my ki
 
 Luckily, REAPER allows for a compromise: Soloing in Front. Instead of muting all other tracks when you solo a track, it just dims them, allowing you to still hear the context of the mix, while being able to focus on what you are soloing!
 
-If you like the work I do, [you can donate to me](http://www.buymeacoffee.com/iddqdsound)!  Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!
+If you like the work I do, [you can donate to me](http://www.buymeacoffee.com/iddqdsound)! Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!
 
-**My Reaper Stash:**  https://stash.reaper.fm/u/IDDQDSound   
-**My Music:** [https://Soundcloud.com/iddqdmusic  https://iddqdmusic.bandcamp.com ](https://Soundcloud.com/iddqdmusic) Here's the video:
+**My Reaper Stash:** https://stash.reaper.fm/u/IDDQDSound  
+**My Music:** [https://Soundcloud.com/iddqdmusic https://iddqdmusic.bandcamp.com ](https://Soundcloud.com/iddqdmusic) Here's the video:
 
 <youtube id="9CpTS9zvoW8"></youtube>
 

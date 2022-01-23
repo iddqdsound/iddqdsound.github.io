@@ -1,3 +1,11 @@
+---
+tags:
+  - Others (Non-REAPER related)
+  - How to do Audio Tutorials
+date: 2020-12-07
+
+---
+
 ## How to do Audio Tutorials - Episode 1: Setting up your DAW & OBS
 
 ![](/blog/misc/1/61.jpg)

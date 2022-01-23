@@ -1,3 +1,16 @@
+---
+tags:
+  - REAPER SWS Extensions Demystified 
+  - Unique REAPER Features
+  - Markers, Regions, & Project Organization in REAPER
+date: 2021-03-05
+youtube: Vzx4F-IaCKw
+related-posts:
+  - /blog/rfrt/61
+  - /blog/rfrt/62
+  - /blog/rfrt/63
+---
+
 ## Smart Markers 202: SWS Marker Utilities/Smart marker toolbar(Rapid-Fire REAPER tutorials Ep64)
 
 ![](/blog/rfrt/64/123.jpg)

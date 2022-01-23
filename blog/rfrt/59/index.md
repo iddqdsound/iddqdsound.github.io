@@ -1,3 +1,13 @@
+---
+tags:
+  - MIDI Editing in REAPER
+  - Live Performance tips for REAPER
+date: 2021-02-15
+youtube: mOUqxLisJ0M
+related-posts:
+  - /blog/rfrt/58
+---
+
 ## How to Split your MIDI Keyboard to play different VSTi (Rapid-Fire REAPER Tutorials Ep59)
 
 ![](/blog/rfrt/59/74.jpg)
@@ -10,7 +20,7 @@ For this, all you need is the JS Plugin MIDI Note Filter, which you can download
 
 Enjoy!
 
-<youtube id="be.com/watch?v=S2a4QWqZ53Mv"></youtube>
+<youtube id="mOUqxLisJ0M"></youtube>
 
 If you like the work I do, you can donate to me [here](http://www.buymeacoffee.com/iddqdsound).Every little helps, so even if you send a dollar or two my way, I’ll be eternally grateful to you!
 

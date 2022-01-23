@@ -1,3 +1,12 @@
+---
+tags:
+  - Sound Editing & Design for Visual Media in REAPER
+date: 2020-09-20
+youtube: V1K0uSvKChk
+related-posts:
+  - /blog/sd4vm/2
+---
+
 ## Sound Design For Visual Media - Tutorial Notes Ep00 & Ep01
 
 Hey folks!
@@ -81,7 +90,7 @@ Once again, watch [this video by Filmmaker IQ](https://www.youtube.com/watch?v=_
 
 ![](/blog/sd4vm/1/130.jpg)
 
-In the [first episode](https://www.youtube.com/watch?v=V1K0uSvKChk&t=336s), I describe my base template for film sound editing in Reaper, as well as provide a breakdown of my various Track groups. In the next episode's notes, I will also share my own Track and Project Templates. You can find all Reaper-related downloads in [my page on the Reaper Stash](https://stash.reaper.fm/browse.php?q=user:IDDQDArya), a free platform for Templates, Icons, Scripts, Themes and other files related to the Reaper DAW.
+In the [first episode](https://www.youtube.com/watch?v=V1K0uSvKChk), I describe my base template for film sound editing in Reaper, as well as provide a breakdown of my various Track groups. In the next episode's notes, I will also share my own Track and Project Templates. You can find all Reaper-related downloads in [my page on the Reaper Stash](https://stash.reaper.fm/browse.php?q=user:IDDQDArya), a free platform for Templates, Icons, Scripts, Themes and other files related to the Reaper DAW.
 
 So that's it for now! Please comment me your suggestions for future videos, and [subscribe to my YouTube channel](https://www.youtube.com/channel/UCXom6oGEQL7iBGTGaCpyHng?sub_confirmation=1) for new episodes every Wednesday! I also do daily 1-min tutorial videos on the same channel, and many more!
 

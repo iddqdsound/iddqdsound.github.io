@@ -1,3 +1,17 @@
+---
+tags:
+  - REAPER SWS Extensions Demystified 
+  - Unique REAPER Features
+  - Automation in REAPER
+  - MIDI Editing in REAPER
+date: 2021-02-19
+youtube: L0TjiCQB8Xo
+related-posts:
+  - /blog/rfrt/62
+  - /blog/rfrt/63
+  - /blog/rfrt/64
+---
+
 ## Padre LFO Generator: LFO/Randomize Items, Takes & CC (Rapid-Fire Reaper Tutorials Ep60)
 
 ![](/blog/rfrt/60/111.jpg)

@@ -1,3 +1,12 @@
+---
+tags:
+  - Sound Editing & Design for Visual Media in REAPER
+date: 2021-07-09
+youtube: JgJaPj3hB9k
+related-posts:
+  - /blog/sd4vm/14
+---
+
 ## Sound Editing & Design for Visual Media - Ep13 Tutorial Notes
 
 ![](/blog/sd4vm/13/182.jpg)
@@ -106,5 +115,5 @@ You are also required to deliver a D M E stem mix, something we covered in Episo
 
 I will update this blog as time goes on, adding more animation and articles. For now, hopefully the extra articles will nudge in the right direction & watch the video for more graphics and demonstrations using audio:
 
-<youtube id=".com/about/support/guide/speaker-setup-guides/5.1-virtual-speakers-setup-guide/"></youtube>
+<youtube id="JgJaPj3hB9k"></youtube>
 
