@@ -496,4 +496,30 @@ const { JSDOM } = require("jsdom");
       `,
     })
   );
+
+  // await fs.writeFile(
+  //   "blog/index.html",
+  //   await layout({
+  //     file: "blog/index.html",
+  //     body: html`
+  //       $${[
+  //         ...Object.entries(JSON.parse(await fs.readFile("tags.json", "utf8"))),
+  //       ].map(
+  //         ([tag, posts]) => html`
+  //           <details>
+  //             <summary>${tag}</summary>
+
+  //             $${[...Object.entries(posts)].map(
+  //               ([url, DONT_REALLY_USE_THIS]) => html`
+  //                 <a href="/${url.slice(0, -"index.md")}"
+  //                   >${DONT_REALLY_USE_THIS}</a
+  //                 >
+  //               `
+  //                   )}
+  //           </details>
+  //               `
+  //       )}
+  //     `,
+  //   })
+  // );
 })();
