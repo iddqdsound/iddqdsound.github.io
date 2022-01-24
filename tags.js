@@ -41,10 +41,10 @@ const { JSDOM } = require("jsdom");
 
   const output = {};
   for (const tag of allTags) {
-    const postsWithTag = [];
+    const postsWithTag = {};
     for (const { tags, fileMarkdown, title } of metadata) {
       if (tags === undefined) continue;
-      if (tags.includes(tag)) postsWithTag.push({ [fileMarkdown]: title });
+      if (tags.includes(tag)) postsWithTag[fileMarkdown] = title;
     }
     output[tag] = postsWithTag;
   }

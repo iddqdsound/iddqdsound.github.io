@@ -1,328 +1,136 @@
 {
-  "Let's Learn Scripting in REAPER": [
-    {
-      "blog/lls/1/index.md": "Let's Learn Scripting in REAPER: Ep00 & Ep01 Notes"
-    },
-    {
-      "blog/lls/2/index.md": "Let’s learn scripting in REAPER Ep02: Functions, Arguments, Returns & Variables"
-    }
-  ],
-  "Others (Non-REAPER related)": [
-    {
-      "blog/mfm/1/index.md": "[LIMITED TIME DISCOUNT] Mixing Feedback Session"
-    },
-    {
-      "blog/misc/1/index.md": "How to do Audio Tutorials - Episode 1: Setting up your DAW & OBS"
-    },
-    {
-      "blog/misc/2/index.md": "How to do Audio Tutorials Episode 2: Making a tutorial Editing Template"
-    }
-  ],
-  "Editing Audio in REAPER": [
-    {
-      "blog/misc/3/index.md": "5 AWESOME Custom Actions for Quicker Editing in REAPER!"
-    }
-  ],
-  "Tempo/Time Signature Mapping & Warping in REAPER": [
-    {
-      "blog/misc/4/index.md": "Time Signature Mapping in REAPER: From N00b to GOAT"
-    }
-  ],
-  "Weird & Hidden Stuff in REAPER": [
-    {
-      "blog/misc/5/index.md": "The Entire Audio Signal Path in REAPER...I guess"
-    },
-    {
-      "blog/rfrt/57/index.md": "Setting multiple tracks' inputs in sequence aka cascading inputs (Rapid-Fire REAPER tutorials Ep57)"
-    },
-    {
-      "blog/rfrt/73/index.md": "The Hidden Hierarchy of Hotkeys & Shortcut Scopes (Rapid-fire REAPER Tutorials Ep73)"
-    }
-  ],
-  "The Many Windows and Sub-menus of REAPER": [
-    {
-      "blog/misc/6/index.md": "3 ways to reduce the size of your finished REAPER Projects"
-    },
-    {
-      "blog/rfrt/76/index.md": "Media Item Properties & Hotkeys for batch editing items (Rapid-fire Reaper Tutorials Ep76)"
-    }
-  ],
-  "MIDI Editing in REAPER": [
-    {
-      "blog/rfrt/53/index.md": "Ripple Delete MIDI Events & How to design your own custom action (Rapid-Fire Reaper Tutorials Ep53)"
-    },
-    {
-      "blog/rfrt/54/index.md": "How to Jam in any key without knowing Music Theory (Rapid-fire Reaper Tutorials Ep54)"
-    },
-    {
-      "blog/rfrt/57/index.md": "Setting multiple tracks' inputs in sequence aka cascading inputs (Rapid-Fire REAPER tutorials Ep57)"
-    },
-    {
-      "blog/rfrt/59/index.md": "How to Split your MIDI Keyboard to play different VSTi (Rapid-Fire REAPER Tutorials Ep59)"
-    },
-    {
-      "blog/rfrt/58/index.md": "MIDI 202: 20+ More Actions for MIDI Editing (Rapid-Fire Reaper Tutorials Ep58)"
-    },
-    {
-      "blog/rfrt/60/index.md": "Padre LFO Generator: LFO/Randomize Items, Takes & CC (Rapid-Fire Reaper Tutorials Ep60)"
-    },
-    {
-      "blog/rfrt/65/index.md": "Audio to MIDI Drum Trigger JS Plugin Explained (Rapid-Fire REAPER tutorials Ep65)"
-    },
-    {
-      "blog/rfrt/92/index.md": "MIDI 101: Editing MIDI Velocity (Rapid-Fire REAPER Tutorials Ep91)"
-    },
-    {
-      "blog/rfrt/94/index.md": "The Quick way to Adjust MIDI Grid Size (Rapid-Fire REAPER Tutorials Ep94)"
-    }
-  ],
-  "Unique REAPER Features": [
-    {
-      "blog/rfrt/55/index.md": "How to Solo in Front (Rapid-Fire Reaper Tutorials Ep55)"
-    },
-    {
-      "blog/rfrt/61/index.md": "SWS Smart Markers 101: Intro to Smart Markers (Rapid-fire Reaper Tutorials Ep61)"
-    },
-    {
-      "blog/rfrt/62/index.md": "Smart Markers 102: Smart Markers for Live Audio/Amp Sims (Rapid-Fire REAPER Tutorials Ep62)"
-    },
-    {
-      "blog/rfrt/63/index.md": "SWS Smart Marker 201: Skip Markers & More (Rapid-Fire REAPER tutorials Ep63)"
-    },
-    {
-      "blog/rfrt/64/index.md": "Smart Markers 202: SWS Marker Utilities/Smart marker toolbar(Rapid-Fire REAPER tutorials Ep64)"
-    },
-    {
-      "blog/rfrt/60/index.md": "Padre LFO Generator: LFO/Randomize Items, Takes & CC (Rapid-Fire Reaper Tutorials Ep60)"
-    },
-    {
-      "blog/rfrt/67/index.md": "Maximizing Screen Real Estate Tips & Hotkeys (Rapid-fire REAPER Tutorials Ep67)"
-    },
-    {
-      "blog/rfrt/70/index.md": "Changing REAPER's Editing Behaviour with Hotkeys (Rapid-fire REAPER Tutorials Ep70)"
-    },
-    {
-      "blog/rfrt/72/index.md": "Locking Tracks, Items, Stretch Markers, Tempo Map, etc. (Rapid-fire REAPER Tutorials Ep72)"
-    },
-    {
-      "blog/rfrt/86/index.md": "SWS Snapshots: How to save/recall mix states with one click (Rapid-Fire REAPER Tutorials Ep86)"
-    },
-    {
-      "blog/rfrt/91/index.md": "Delta Solo in REAPER Demystified (Rapid-Fire REAPER Tutorials Ep91)"
-    }
-  ],
-  "Recreating Pro Tools Functionality in REAPER": [
-    {
-      "blog/rfrt/53/index.md": "Ripple Delete MIDI Events & How to design your own custom action (Rapid-Fire Reaper Tutorials Ep53)"
-    },
-    {
-      "blog/rfrt/56/index.md": "How to Set up Tab to Transient Pro Tools-style (Rapid-Fire Reaper Tutorials Ep56)"
-    }
-  ],
-  "REAPER SWS Extensions Demystified": [
-    {
-      "blog/rfrt/61/index.md": "SWS Smart Markers 101: Intro to Smart Markers (Rapid-fire Reaper Tutorials Ep61)"
-    },
-    {
-      "blog/rfrt/62/index.md": "Smart Markers 102: Smart Markers for Live Audio/Amp Sims (Rapid-Fire REAPER Tutorials Ep62)"
-    },
-    {
-      "blog/rfrt/63/index.md": "SWS Smart Marker 201: Skip Markers & More (Rapid-Fire REAPER tutorials Ep63)"
-    },
-    {
-      "blog/rfrt/64/index.md": "Smart Markers 202: SWS Marker Utilities/Smart marker toolbar(Rapid-Fire REAPER tutorials Ep64)"
-    },
-    {
-      "blog/rfrt/60/index.md": "Padre LFO Generator: LFO/Randomize Items, Takes & CC (Rapid-Fire Reaper Tutorials Ep60)"
-    },
-    {
-      "blog/rfrt/69/index.md": "LUFS, True Peak & Dynamic Range Analysis with SWS Loudness (Rapid-fire Reaper Tutorials Ep69)"
-    },
-    {
-      "blog/rfrt/86/index.md": "SWS Snapshots: How to save/recall mix states with one click (Rapid-Fire REAPER Tutorials Ep86)"
-    },
-    {
-      "blog/rfrt/98/index.md": "Assembling Modular Mixing Templates with SWS (Rapid-Fire REAPER Tutorials Ep98)"
-    }
-  ],
-  "Using FX in REAPER": [
-    {
-      "blog/rfrt/65/index.md": "Audio to MIDI Drum Trigger JS Plugin Explained (Rapid-Fire REAPER tutorials Ep65)"
-    },
-    {
-      "blog/rfrt/91/index.md": "Delta Solo in REAPER Demystified (Rapid-Fire REAPER Tutorials Ep91)"
-    },
-    {
-      "blog/rfrt/93/index.md": "How to create shortcuts to Insert FX (Rapid-Fire REAPER Tutorials Ep93)"
-    }
-  ],
-  "Hotkeys & Mouse Modifiers in REAPER": [
-    {
-      "blog/rfrt/58/index.md": "MIDI 202: 20+ More Actions for MIDI Editing (Rapid-Fire Reaper Tutorials Ep58)"
-    },
-    {
-      "blog/rfrt/66/index.md": "Optimizing Zooming defaults in REAPER w/ Hotkeys & Mouse Mods (Rapid-fire REAPER Tutorials Ep66)"
-    },
-    {
-      "blog/rfrt/67/index.md": "Maximizing Screen Real Estate Tips & Hotkeys (Rapid-fire REAPER Tutorials Ep67)"
-    },
-    {
-      "blog/rfrt/68/index.md": "25+ Hotkeys for Track Controls (Rapid-Fire REAPER tutorials Ep68)"
-    },
-    {
-      "blog/rfrt/70/index.md": "Changing REAPER's Editing Behaviour with Hotkeys (Rapid-fire REAPER Tutorials Ep70)"
-    },
-    {
-      "blog/rfrt/72/index.md": "Locking Tracks, Items, Stretch Markers, Tempo Map, etc. (Rapid-fire REAPER Tutorials Ep72)"
-    },
-    {
-      "blog/rfrt/73/index.md": "The Hidden Hierarchy of Hotkeys & Shortcut Scopes (Rapid-fire REAPER Tutorials Ep73)"
-    },
-    {
-      "blog/rfrt/75/index.md": "Advanced Audio Editing in REAPER: 30+ Hotkeys for Editing (Rapid-fire Reaper Tutorials Ep75)"
-    },
-    {
-      "blog/rfrt/82/index.md": "20+ Hotkeys, Mouse Modifiers & tips for Fades and Crossfades (Rapid fire REAPER Tutorials Ep82)"
-    },
-    {
-      "blog/rfrt/85/index.md": "Hotkeys & Hacks to A/B Plugins & Tracks (Rapid-Fire REAPER Tutorials Ep85)"
-    },
-    {
-      "blog/rfrt/84/index.md": "Making your Frozen Tracks stand out with a track icon (Rapid Fire REAPER tutorials Ep84)"
-    },
-    {
-      "blog/rfrt/92/index.md": "MIDI 101: Editing MIDI Velocity (Rapid-Fire REAPER Tutorials Ep91)"
-    },
-    {
-      "blog/rfrt/93/index.md": "How to create shortcuts to Insert FX (Rapid-Fire REAPER Tutorials Ep93)"
-    },
-    {
-      "blog/rfrt/94/index.md": "The Quick way to Adjust MIDI Grid Size (Rapid-Fire REAPER Tutorials Ep94)"
-    },
-    {
-      "blog/rfrt/95/index.md": "Quick-Swipe Comping Logic Pro Style (Rapid-Fire REAPER Tutorials Ep95)"
-    }
-  ],
-  "REAPER Tracks": [
-    {
-      "blog/rfrt/68/index.md": "25+ Hotkeys for Track Controls (Rapid-Fire REAPER tutorials Ep68)"
-    },
-    {
-      "blog/rfrt/98/index.md": "Assembling Modular Mixing Templates with SWS (Rapid-Fire REAPER Tutorials Ep98)"
-    }
-  ],
-  "Answering Community Questions": [
-    {
-      "blog/rfrt/71/index.md": "Controlling your Sends Using track Faders (Rapid-fire REAPER Tutorials Ep71)"
-    }
-  ],
-  "Item-based Editing & Mixing in REAPER": [
-    {
-      "blog/rfrt/75/index.md": "Advanced Audio Editing in REAPER: 30+ Hotkeys for Editing (Rapid-fire Reaper Tutorials Ep75)"
-    },
-    {
-      "blog/rfrt/76/index.md": "Media Item Properties & Hotkeys for batch editing items (Rapid-fire Reaper Tutorials Ep76)"
-    },
-    {
-      "blog/rfrt/78/index.md": "How to swap beats 2 & 4 with custom scripts (Rapid-fire REAPER Tutorials Ep78)"
-    },
-    {
-      "blog/rfrt/82/index.md": "20+ Hotkeys, Mouse Modifiers & tips for Fades and Crossfades (Rapid fire REAPER Tutorials Ep82)"
-    },
-    {
-      "blog/rfrt/95/index.md": "Quick-Swipe Comping Logic Pro Style (Rapid-Fire REAPER Tutorials Ep95)"
-    }
-  ],
-  "Advanced REAPER Tutorials": [
-    {
-      "blog/rfrt/79/index.md": "How to use ReWire to connect Ableton Live to REAPER (Rapid-fire REAPER Tutorials Ep79)"
-    },
-    {
-      "blog/rfrt/80/index.md": "How to Route Audio & MIDI Between Any two DAWs & Sync them! (Rapid-fire REAPER Tutorials Ep80/81)"
-    }
-  ],
-  "Custom Actions, Cycle Actions & Scripts in REAPER": [
-    {
-      "blog/misc/3/index.md": "5 AWESOME Custom Actions for Quicker Editing in REAPER!"
-    },
-    {
-      "blog/rfrt/53/index.md": "Ripple Delete MIDI Events & How to design your own custom action (Rapid-Fire Reaper Tutorials Ep53)"
-    },
-    {
-      "blog/rfrt/56/index.md": "How to Set up Tab to Transient Pro Tools-style (Rapid-Fire Reaper Tutorials Ep56)"
-    },
-    {
-      "blog/rfrt/58/index.md": "MIDI 202: 20+ More Actions for MIDI Editing (Rapid-Fire Reaper Tutorials Ep58)"
-    },
-    {
-      "blog/rfrt/70/index.md": "Changing REAPER's Editing Behaviour with Hotkeys (Rapid-fire REAPER Tutorials Ep70)"
-    },
-    {
-      "blog/rfrt/75/index.md": "Advanced Audio Editing in REAPER: 30+ Hotkeys for Editing (Rapid-fire Reaper Tutorials Ep75)"
-    },
-    {
-      "blog/rfrt/78/index.md": "How to swap beats 2 & 4 with custom scripts (Rapid-fire REAPER Tutorials Ep78)"
-    },
-    {
-      "blog/rfrt/82/index.md": "20+ Hotkeys, Mouse Modifiers & tips for Fades and Crossfades (Rapid fire REAPER Tutorials Ep82)"
-    },
-    {
-      "blog/rfrt/83/index.md": "Separate audio from a video item with one action! (Rapid fire REAPER Tutorials Ep83)"
-    },
-    {
-      "blog/rfrt/92/index.md": "MIDI 101: Editing MIDI Velocity (Rapid-Fire REAPER Tutorials Ep91)"
-    },
-    {
-      "blog/rfrt/93/index.md": "How to create shortcuts to Insert FX (Rapid-Fire REAPER Tutorials Ep93)"
-    },
-    {
-      "blog/rfrt/94/index.md": "The Quick way to Adjust MIDI Grid Size (Rapid-Fire REAPER Tutorials Ep94)"
-    },
-    {
-      "blog/rfrt/95/index.md": "Quick-Swipe Comping Logic Pro Style (Rapid-Fire REAPER Tutorials Ep95)"
-    }
-  ],
-  "Advanced REAPER Tutorial": [
-    {
-      "blog/rfrt/98/index.md": "Assembling Modular Mixing Templates with SWS (Rapid-Fire REAPER Tutorials Ep98)"
-    }
-  ],
-  "Sound Editing & Design for Visual Media in REAPER": [
-    {
-      "blog/sd4vm/1/index.md": "Sound Design For Visual Media - Tutorial Notes Ep00 & Ep01"
-    },
-    {
-      "blog/sd4vm/12/index.md": "Sound Editing & Design for Visual Media - Ep12 Tutorial Notes (Foley Recording in REAPER)"
-    },
-    {
-      "blog/sd4vm/11/index.md": "Sound Design for Visual Media - Tutorial Notes Ep11"
-    },
-    {
-      "blog/sd4vm/13/index.md": "Sound Editing & Design for Visual Media - Ep13 Tutorial Notes"
-    },
-    {
-      "blog/sd4vm/2/index.md": "Sound Design for Visual Media - Tutorial Notes Ep02"
-    },
-    {
-      "blog/sd4vm/3/index.md": "Sound Design For Visual Media - Tutorial Notes Ep03"
-    },
-    {
-      "blog/sd4vm/4/index.md": "Sound Design For Visual Media - Tutorial Notes Ep04"
-    },
-    {
-      "blog/sd4vm/5/index.md": "Sound Design For Visual Media - Tutorial Notes Ep05"
-    },
-    {
-      "blog/sd4vm/6/index.md": "Sound Design For Visual Media - Tutorial Notes Ep06"
-    },
-    {
-      "blog/sd4vm/7/index.md": "Sound Design For Visual Media - Tutorial Notes Ep07"
-    },
-    {
-      "blog/sd4vm/8/index.md": "Sound Design For Visual Media - Tutorial Notes Ep08"
-    },
-    {
-      "blog/sd4vm/9/index.md": "Sound Design for Visual Media - Tutorial Notes Ep09"
-    }
-  ]
+  "Let's Learn Scripting in REAPER": {
+    "blog/lls/2/index.md": "Let’s learn scripting in REAPER Ep02: Functions, Arguments, Returns & Variables",
+    "blog/lls/1/index.md": "Let's Learn Scripting in REAPER: Ep00 & Ep01 Notes"
+  },
+  "Others (Non-REAPER related)": {
+    "blog/mfm/1/index.md": "[LIMITED TIME DISCOUNT] Mixing Feedback Session",
+    "blog/misc/1/index.md": "How to do Audio Tutorials - Episode 1: Setting up your DAW & OBS",
+    "blog/misc/2/index.md": "How to do Audio Tutorials Episode 2: Making a tutorial Editing Template"
+  },
+  "Editing Audio in REAPER": {
+    "blog/misc/3/index.md": "5 AWESOME Custom Actions for Quicker Editing in REAPER!"
+  },
+  "Weird & Hidden Stuff in REAPER": {
+    "blog/misc/5/index.md": "The Entire Audio Signal Path in REAPER...I guess",
+    "blog/rfrt/57/index.md": "Setting multiple tracks' inputs in sequence aka cascading inputs (Rapid-Fire REAPER tutorials Ep57)",
+    "blog/rfrt/73/index.md": "The Hidden Hierarchy of Hotkeys & Shortcut Scopes (Rapid-fire REAPER Tutorials Ep73)"
+  },
+  "Tempo/Time Signature Mapping & Warping in REAPER": {
+    "blog/misc/4/index.md": "Time Signature Mapping in REAPER: From N00b to GOAT"
+  },
+  "The Many Windows and Sub-menus of REAPER": {
+    "blog/misc/6/index.md": "3 ways to reduce the size of your finished REAPER Projects",
+    "blog/rfrt/76/index.md": "Media Item Properties & Hotkeys for batch editing items (Rapid-fire Reaper Tutorials Ep76)"
+  },
+  "MIDI Editing in REAPER": {
+    "blog/rfrt/53/index.md": "Ripple Delete MIDI Events & How to design your own custom action (Rapid-Fire Reaper Tutorials Ep53)",
+    "blog/rfrt/54/index.md": "How to Jam in any key without knowing Music Theory (Rapid-fire Reaper Tutorials Ep54)",
+    "blog/rfrt/57/index.md": "Setting multiple tracks' inputs in sequence aka cascading inputs (Rapid-Fire REAPER tutorials Ep57)",
+    "blog/rfrt/58/index.md": "MIDI 202: 20+ More Actions for MIDI Editing (Rapid-Fire Reaper Tutorials Ep58)",
+    "blog/rfrt/59/index.md": "How to Split your MIDI Keyboard to play different VSTi (Rapid-Fire REAPER Tutorials Ep59)",
+    "blog/rfrt/60/index.md": "Padre LFO Generator: LFO/Randomize Items, Takes & CC (Rapid-Fire Reaper Tutorials Ep60)",
+    "blog/rfrt/65/index.md": "Audio to MIDI Drum Trigger JS Plugin Explained (Rapid-Fire REAPER tutorials Ep65)",
+    "blog/rfrt/92/index.md": "MIDI 101: Editing MIDI Velocity (Rapid-Fire REAPER Tutorials Ep91)",
+    "blog/rfrt/94/index.md": "The Quick way to Adjust MIDI Grid Size (Rapid-Fire REAPER Tutorials Ep94)"
+  },
+  "Unique REAPER Features": {
+    "blog/rfrt/55/index.md": "How to Solo in Front (Rapid-Fire Reaper Tutorials Ep55)",
+    "blog/rfrt/60/index.md": "Padre LFO Generator: LFO/Randomize Items, Takes & CC (Rapid-Fire Reaper Tutorials Ep60)",
+    "blog/rfrt/61/index.md": "SWS Smart Markers 101: Intro to Smart Markers (Rapid-fire Reaper Tutorials Ep61)",
+    "blog/rfrt/62/index.md": "Smart Markers 102: Smart Markers for Live Audio/Amp Sims (Rapid-Fire REAPER Tutorials Ep62)",
+    "blog/rfrt/63/index.md": "SWS Smart Marker 201: Skip Markers & More (Rapid-Fire REAPER tutorials Ep63)",
+    "blog/rfrt/64/index.md": "Smart Markers 202: SWS Marker Utilities/Smart marker toolbar(Rapid-Fire REAPER tutorials Ep64)",
+    "blog/rfrt/67/index.md": "Maximizing Screen Real Estate Tips & Hotkeys (Rapid-fire REAPER Tutorials Ep67)",
+    "blog/rfrt/70/index.md": "Changing REAPER's Editing Behaviour with Hotkeys (Rapid-fire REAPER Tutorials Ep70)",
+    "blog/rfrt/72/index.md": "Locking Tracks, Items, Stretch Markers, Tempo Map, etc. (Rapid-fire REAPER Tutorials Ep72)",
+    "blog/rfrt/86/index.md": "SWS Snapshots: How to save/recall mix states with one click (Rapid-Fire REAPER Tutorials Ep86)",
+    "blog/rfrt/91/index.md": "Delta Solo in REAPER Demystified (Rapid-Fire REAPER Tutorials Ep91)"
+  },
+  "Recreating Pro Tools Functionality in REAPER": {
+    "blog/rfrt/53/index.md": "Ripple Delete MIDI Events & How to design your own custom action (Rapid-Fire Reaper Tutorials Ep53)",
+    "blog/rfrt/56/index.md": "How to Set up Tab to Transient Pro Tools-style (Rapid-Fire Reaper Tutorials Ep56)"
+  },
+  "REAPER SWS Extensions Demystified": {
+    "blog/rfrt/60/index.md": "Padre LFO Generator: LFO/Randomize Items, Takes & CC (Rapid-Fire Reaper Tutorials Ep60)",
+    "blog/rfrt/61/index.md": "SWS Smart Markers 101: Intro to Smart Markers (Rapid-fire Reaper Tutorials Ep61)",
+    "blog/rfrt/62/index.md": "Smart Markers 102: Smart Markers for Live Audio/Amp Sims (Rapid-Fire REAPER Tutorials Ep62)",
+    "blog/rfrt/63/index.md": "SWS Smart Marker 201: Skip Markers & More (Rapid-Fire REAPER tutorials Ep63)",
+    "blog/rfrt/64/index.md": "Smart Markers 202: SWS Marker Utilities/Smart marker toolbar(Rapid-Fire REAPER tutorials Ep64)",
+    "blog/rfrt/69/index.md": "LUFS, True Peak & Dynamic Range Analysis with SWS Loudness (Rapid-fire Reaper Tutorials Ep69)",
+    "blog/rfrt/86/index.md": "SWS Snapshots: How to save/recall mix states with one click (Rapid-Fire REAPER Tutorials Ep86)",
+    "blog/rfrt/98/index.md": "Assembling Modular Mixing Templates with SWS (Rapid-Fire REAPER Tutorials Ep98)"
+  },
+  "Using FX in REAPER": {
+    "blog/rfrt/65/index.md": "Audio to MIDI Drum Trigger JS Plugin Explained (Rapid-Fire REAPER tutorials Ep65)",
+    "blog/rfrt/91/index.md": "Delta Solo in REAPER Demystified (Rapid-Fire REAPER Tutorials Ep91)",
+    "blog/rfrt/93/index.md": "How to create shortcuts to Insert FX (Rapid-Fire REAPER Tutorials Ep93)"
+  },
+  "Hotkeys & Mouse Modifiers in REAPER": {
+    "blog/rfrt/58/index.md": "MIDI 202: 20+ More Actions for MIDI Editing (Rapid-Fire Reaper Tutorials Ep58)",
+    "blog/rfrt/66/index.md": "Optimizing Zooming defaults in REAPER w/ Hotkeys & Mouse Mods (Rapid-fire REAPER Tutorials Ep66)",
+    "blog/rfrt/67/index.md": "Maximizing Screen Real Estate Tips & Hotkeys (Rapid-fire REAPER Tutorials Ep67)",
+    "blog/rfrt/68/index.md": "25+ Hotkeys for Track Controls (Rapid-Fire REAPER tutorials Ep68)",
+    "blog/rfrt/70/index.md": "Changing REAPER's Editing Behaviour with Hotkeys (Rapid-fire REAPER Tutorials Ep70)",
+    "blog/rfrt/72/index.md": "Locking Tracks, Items, Stretch Markers, Tempo Map, etc. (Rapid-fire REAPER Tutorials Ep72)",
+    "blog/rfrt/73/index.md": "The Hidden Hierarchy of Hotkeys & Shortcut Scopes (Rapid-fire REAPER Tutorials Ep73)",
+    "blog/rfrt/75/index.md": "Advanced Audio Editing in REAPER: 30+ Hotkeys for Editing (Rapid-fire Reaper Tutorials Ep75)",
+    "blog/rfrt/82/index.md": "20+ Hotkeys, Mouse Modifiers & tips for Fades and Crossfades (Rapid fire REAPER Tutorials Ep82)",
+    "blog/rfrt/84/index.md": "Making your Frozen Tracks stand out with a track icon (Rapid Fire REAPER tutorials Ep84)",
+    "blog/rfrt/85/index.md": "Hotkeys & Hacks to A/B Plugins & Tracks (Rapid-Fire REAPER Tutorials Ep85)",
+    "blog/rfrt/93/index.md": "How to create shortcuts to Insert FX (Rapid-Fire REAPER Tutorials Ep93)",
+    "blog/rfrt/92/index.md": "MIDI 101: Editing MIDI Velocity (Rapid-Fire REAPER Tutorials Ep91)",
+    "blog/rfrt/95/index.md": "Quick-Swipe Comping Logic Pro Style (Rapid-Fire REAPER Tutorials Ep95)",
+    "blog/rfrt/94/index.md": "The Quick way to Adjust MIDI Grid Size (Rapid-Fire REAPER Tutorials Ep94)"
+  },
+  "REAPER Tracks": {
+    "blog/rfrt/68/index.md": "25+ Hotkeys for Track Controls (Rapid-Fire REAPER tutorials Ep68)",
+    "blog/rfrt/98/index.md": "Assembling Modular Mixing Templates with SWS (Rapid-Fire REAPER Tutorials Ep98)"
+  },
+  "Answering Community Questions": {
+    "blog/rfrt/71/index.md": "Controlling your Sends Using track Faders (Rapid-fire REAPER Tutorials Ep71)"
+  },
+  "Item-based Editing & Mixing in REAPER": {
+    "blog/rfrt/75/index.md": "Advanced Audio Editing in REAPER: 30+ Hotkeys for Editing (Rapid-fire Reaper Tutorials Ep75)",
+    "blog/rfrt/76/index.md": "Media Item Properties & Hotkeys for batch editing items (Rapid-fire Reaper Tutorials Ep76)",
+    "blog/rfrt/78/index.md": "How to swap beats 2 & 4 with custom scripts (Rapid-fire REAPER Tutorials Ep78)",
+    "blog/rfrt/82/index.md": "20+ Hotkeys, Mouse Modifiers & tips for Fades and Crossfades (Rapid fire REAPER Tutorials Ep82)",
+    "blog/rfrt/95/index.md": "Quick-Swipe Comping Logic Pro Style (Rapid-Fire REAPER Tutorials Ep95)"
+  },
+  "Advanced REAPER Tutorials": {
+    "blog/rfrt/79/index.md": "How to use ReWire to connect Ableton Live to REAPER (Rapid-fire REAPER Tutorials Ep79)",
+    "blog/rfrt/80/index.md": "How to Route Audio & MIDI Between Any two DAWs & Sync them! (Rapid-fire REAPER Tutorials Ep80/81)"
+  },
+  "Custom Actions, Cycle Actions & Scripts in REAPER": {
+    "blog/misc/3/index.md": "5 AWESOME Custom Actions for Quicker Editing in REAPER!",
+    "blog/rfrt/53/index.md": "Ripple Delete MIDI Events & How to design your own custom action (Rapid-Fire Reaper Tutorials Ep53)",
+    "blog/rfrt/56/index.md": "How to Set up Tab to Transient Pro Tools-style (Rapid-Fire Reaper Tutorials Ep56)",
+    "blog/rfrt/58/index.md": "MIDI 202: 20+ More Actions for MIDI Editing (Rapid-Fire Reaper Tutorials Ep58)",
+    "blog/rfrt/70/index.md": "Changing REAPER's Editing Behaviour with Hotkeys (Rapid-fire REAPER Tutorials Ep70)",
+    "blog/rfrt/75/index.md": "Advanced Audio Editing in REAPER: 30+ Hotkeys for Editing (Rapid-fire Reaper Tutorials Ep75)",
+    "blog/rfrt/78/index.md": "How to swap beats 2 & 4 with custom scripts (Rapid-fire REAPER Tutorials Ep78)",
+    "blog/rfrt/82/index.md": "20+ Hotkeys, Mouse Modifiers & tips for Fades and Crossfades (Rapid fire REAPER Tutorials Ep82)",
+    "blog/rfrt/83/index.md": "Separate audio from a video item with one action! (Rapid fire REAPER Tutorials Ep83)",
+    "blog/rfrt/93/index.md": "How to create shortcuts to Insert FX (Rapid-Fire REAPER Tutorials Ep93)",
+    "blog/rfrt/92/index.md": "MIDI 101: Editing MIDI Velocity (Rapid-Fire REAPER Tutorials Ep91)",
+    "blog/rfrt/95/index.md": "Quick-Swipe Comping Logic Pro Style (Rapid-Fire REAPER Tutorials Ep95)",
+    "blog/rfrt/94/index.md": "The Quick way to Adjust MIDI Grid Size (Rapid-Fire REAPER Tutorials Ep94)"
+  },
+  "Advanced REAPER Tutorial": {
+    "blog/rfrt/98/index.md": "Assembling Modular Mixing Templates with SWS (Rapid-Fire REAPER Tutorials Ep98)"
+  },
+  "Sound Editing & Design for Visual Media in REAPER": {
+    "blog/sd4vm/11/index.md": "Sound Design for Visual Media - Tutorial Notes Ep11",
+    "blog/sd4vm/1/index.md": "Sound Design For Visual Media - Tutorial Notes Ep00 & Ep01",
+    "blog/sd4vm/12/index.md": "Sound Editing & Design for Visual Media - Ep12 Tutorial Notes (Foley Recording in REAPER)",
+    "blog/sd4vm/13/index.md": "Sound Editing & Design for Visual Media - Ep13 Tutorial Notes",
+    "blog/sd4vm/4/index.md": "Sound Design For Visual Media - Tutorial Notes Ep04",
+    "blog/sd4vm/3/index.md": "Sound Design For Visual Media - Tutorial Notes Ep03",
+    "blog/sd4vm/2/index.md": "Sound Design for Visual Media - Tutorial Notes Ep02",
+    "blog/sd4vm/5/index.md": "Sound Design For Visual Media - Tutorial Notes Ep05",
+    "blog/sd4vm/6/index.md": "Sound Design For Visual Media - Tutorial Notes Ep06",
+    "blog/sd4vm/7/index.md": "Sound Design For Visual Media - Tutorial Notes Ep07",
+    "blog/sd4vm/8/index.md": "Sound Design For Visual Media - Tutorial Notes Ep08",
+    "blog/sd4vm/9/index.md": "Sound Design for Visual Media - Tutorial Notes Ep09"
+  }
 }
