@@ -205,17 +205,15 @@ const { JSDOM } = require("jsdom");
                   <a
                     hidden
                     href="/tutorials"
-                    class="link ${file.startsWith("tutorials/")
-                      ? "active"
-                      : ""}"
+                    class="link ${
+                      file.startsWith("tutorials/") ? "active" : ""
+                    }"
                     >Tutorials</a
                   >
                   <a
                     hidden
                     href="/Lessons"
-                    class="link ${file.startsWith("Lessons/")
-                      ? "active"
-                      : ""}"
+                    class="link ${file.startsWith("Lessons/") ? "active" : ""}"
                     >Tutorials</a
                   >
                   <a
