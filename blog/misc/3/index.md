@@ -1,3 +1,13 @@
+---
+tags:
+  - Editing Audio in REAPER
+  - Custom Actions, Cycle Actions & Scripts in REAPER
+date: 2020-11-25
+youtube: oct6BXj6nmI
+related-posts:
+  - /blog/rfrt/77
+---
+
 ## 5 AWESOME Custom Actions for Quicker Editing in REAPER!
 
 ![](/blog/misc/3/12.jpg)
@@ -6,11 +16,8 @@ Hey folks!
 
 [This episode](https://youtu.be/oct6BXj6nmI) is a list of 5 custom actions for editing. I'm releasing a tutorial on editing soon and this would be a primer on that, so that I don't have to explain these again in the video. Here are the custom actions as a download bundle. Make sure to read the instructions first before downloading!
 
-Top 5 Editing Custom Actions
+[Top 5 Editing Custom Actions](/blog/misc/3/Top-5-Editing-Custom-Actions.zip)
 
-.zip
-
-Download ZIP • 3KB
 
 **Contents:**
 **-IDDQD Sound_Audition Item:** Requires SWS Installed to function. Click on any item, and this action will loop the item, solo the track it's on, open the item FX window and FX Browser, and plays the file. Great for quickly auditioning items and processing them. Useful for dialogue editing, surgical noise removal, etc. Since this is an optimization of REAPER's native 'Item: Show FX chain for item take', I recommend using the same hotkey, **Cmd+E.**

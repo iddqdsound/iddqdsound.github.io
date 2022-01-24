@@ -3,7 +3,9 @@ tags:
   - Others (Non-REAPER related)
   - How to do Audio Tutorials
 date: 2020-12-07
-
+youtube: jRhZcC3SEyE
+related-posts:
+  - /blog/misc/2
 ---
 
 ## How to do Audio Tutorials - Episode 1: Setting up your DAW & OBS
@@ -56,11 +58,7 @@ I'd recommend you start a null test with a simple sine wave. If that passed, you
 
 Here are my three audio test files for you to use in your tests:
 
-Test Tones
-
-.zip
-
-Download ZIP • 1.12MB
+[Test Tones](/blog/misc/1/Test-Tones.zip)
 
 _Zip file contains: 2 audio files, each starting with 4 clicks followed by a 220Hz Sine wave in one and Pink noise in the other._
 

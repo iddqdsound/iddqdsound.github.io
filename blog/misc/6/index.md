@@ -1,3 +1,13 @@
+---
+tags:
+  - The Many Windows and Sub-menus of REAPER
+  - Project Management in REAPER
+  - Non-Video Blog Posts
+date: 2021-10-27
+related-posts:
+  - /blog/misc/4
+---
+
 ## 3 ways to reduce the size of your finished REAPER Projects
 ![](/blog/misc/6/AYP.png)  
 [Artwork Designed by upklyak / Freepik](http://www.freepik.com)

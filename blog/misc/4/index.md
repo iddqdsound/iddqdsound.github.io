@@ -1,3 +1,13 @@
+---
+tags:
+  - Tempo/Time Signature Mapping & Warping in REAPER
+  - From N00b to GOAT
+date: 2021-08-27
+youtube: NoSr8VHpTy8
+related-posts:
+  - /blog/misc/5
+---
+
 ## Time Signature Mapping in REAPER: From N00b to GOAT
 
 ![](/blog/misc/4/202.png)
@@ -7,11 +17,8 @@ Hey folks!
 
 That said, I highly recommend you watch all the way to Level 3 and check out my Time Signature Toolbar, which you can download, with all its icons right here:
 
-iddqd_Time Signature Toolbar Download Bundle
+[iddqd_Time Signature Toolbar Download Bundle](/blog/misc/4/IDDQDSound_Time-Signature-Toolbar-Download-Bundle.zip)
 
-.zip
-
-Download ZIP • 45KB
 
 **Contents:**
 1 toolbar (iddqd_time signature toolbar.ReaperMenu  
@@ -61,7 +68,7 @@ My website is going to be down starting from September 9th for a short time, whi
 
 Here's the video:
 
-<youtube id="coffee.com/iddqdsound"></youtube>
+<youtube id="NoSr8VHpTy8"></youtube>
 
 ![](/blog/misc/4/8.png)
 

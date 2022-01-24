@@ -1,3 +1,13 @@
+---
+tags:
+  - Weird & Hidden Stuff in REAPER
+  - Routing in REAPER
+  - Non-Video Blog Posts
+date: 2021-08-27
+related-posts:
+  - /blog/misc/4
+---
+
 ## The Entire Audio Signal Path in REAPER...I guess
 
 Hey folks! After lots of testing, I came up with this monstrous image (1280x7200) that encapsulates the entire audio signal path in REAPER...I guess. As REAPER is REAPER there's always the possibility that I missed something, but I had Jon Tidey of the REAPER blog look this over and seems like we've covered it all! The image is hard to upload and display on most platforms, so you can scroll to the bottom and download it to your computer, and hopefully it'll serve as a decent resource for anyone interested!
@@ -10,9 +20,6 @@ I will do a video on this very soon! Let me know your thoughts!
 
 Download the image in its entirety here:
 
-The Entire REAPER signal path...I guess.jpg
+[The Entire REAPER signal path...I guess.jpg](/blog/misc/5/The-Entire-REAPER-signal-path...I guess.jpg.zip)
 
-.zip
-
-Download ZIP • 4.39MB
 

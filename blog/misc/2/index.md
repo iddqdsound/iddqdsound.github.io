@@ -1,3 +1,13 @@
+---
+tags:
+  - Others (Non-REAPER related)
+  - How to do Audio Tutorials
+date: 2020-12-14
+youtube: PL33oQmK4oQ
+related-posts:
+  - /blog/misc/1
+---
+
 ## How to do Audio Tutorials Episode 2: Making a tutorial Editing Template
 
 ![](/blog/misc/2/64.jpg)
@@ -8,9 +18,7 @@ In [this episode](https://youtu.be/PL33oQmK4oQ) I wanted to show you my tutorial
 
 Since I personally use Waves and Eiosis Plugins for my chain, the template will include the REAPER equivalents, or you can remove those channels and add your own.
 
-IDDQD Sound - Tutorial Editing template
-
-Download • 9KB
+[IDDQD Sound - Tutorial Editing template](/blog/misc/2/IDDQDSound_Tutorial-Editing-template.RPP.zip)
 
 **Instructions:** Download the file, and paste it to your Project Template Folder (go to Options>Show REAPER path in Explorer/finder and navigate to ProjectTemplates). Then open REAPER, File>Project Template and click on it. Choose a directory and save.
 
