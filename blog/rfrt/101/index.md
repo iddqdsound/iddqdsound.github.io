@@ -22,8 +22,8 @@ Hey folks!
  The wonderful Kenny Gioia covered this topic in [this video](https://youtu.be/tjnrGU83PB4) and this method is inspired by him! In fact, this method has been around way longer than his method of using the JS: Loudness Meter, which is an indication of his genius, cuz no one thought to do a tutorial on that until now!
 
   There are some trade-offs with each method:
-  -Kenny's method gives you a higher resolution (more automation points).
-  -The SWS Loudness tool method is faster as the envelope is generated offline rather than in real-time.
+  -Kenny's method gives you a higher resolution (more automation points).  
+  -The SWS Loudness tool method is faster as the envelope is generated offline rather than in real-time.  
 
 **Automation Items**  
 
@@ -36,10 +36,10 @@ Hey folks!
  As shown in [this video](https://www.youtube.com/watch?v=2CCzT7WlKAA) Andrew Scheps likes to buss his non-vocal busses to a parallel buss for some extra compression. This is a great technique when you want your vocals to remain upfront without the instruments being drowned out. 
 
  The settings I use are much gentler than what he does:
- Ratio 2:1
- Threshold ~ -20dB
- Attack 5-10ms
- Release (60000/bpm)
+ Ratio 2:1  
+ Threshold ~ -20dB  
+ Attack 5-10ms  
+ Release (60000/bpm)  
 
  Nevertheless, it's a great way to fatten up the mix without having to deal with annoying peaks! 
 
