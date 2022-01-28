@@ -205,17 +205,15 @@ const { JSDOM } = require("jsdom");
                   <a
                     hidden
                     href="/tutorials"
-                    class="link ${file.startsWith("tutorials/")
-                      ? "active"
-                      : ""}"
+                    class="link ${
+                      file.startsWith("tutorials/") ? "active" : ""
+                    }"
                     >Tutorials</a
                   >
                   <a
                     hidden
                     href="/Lessons"
-                    class="link ${file.startsWith("Lessons/")
-                      ? "active"
-                      : ""}"
+                    class="link ${file.startsWith("Lessons/") ? "active" : ""}"
                     >Tutorials</a
                   >
                   <a
@@ -498,4 +496,30 @@ const { JSDOM } = require("jsdom");
       `,
     })
   );
+
+  // await fs.writeFile(
+  //   "blog/index.html",
+  //   await layout({
+  //     file: "blog/index.html",
+  //     body: html`
+  //       $${[
+  //         ...Object.entries(JSON.parse(await fs.readFile("tags.json", "utf8"))),
+  //       ].map(
+  //         ([tag, posts]) => html`
+  //           <details>
+  //             <summary>${tag}</summary>
+
+  //             $${[...Object.entries(posts)].map(
+  //               ([url, DONT_REALLY_USE_THIS]) => html`
+  //                 <a href="/${url.slice(0, -"index.md")}"
+  //                   >${DONT_REALLY_USE_THIS}</a
+  //                 >
+  //               `
+  //                   )}
+  //           </details>
+  //               `
+  //       )}
+  //     `,
+  //   })
+  // );
 })();
