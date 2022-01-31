@@ -4,6 +4,7 @@ const globby = require("globby");
 const { html } = require("@leafac/html");
 const { css, extractInlineStyles } = require("@leafac/css");
 const { javascript } = require("@leafac/javascript");
+const grayMatter = require("gray-matter");
 const unified = require("unified");
 const remarkParse = require("remark-parse");
 const remarkGfm = require("remark-gfm");
@@ -435,12 +436,13 @@ const { JSDOM } = require("jsdom");
       continue;
     process.stdout.write(`Starting ‘${fileMarkdown}’ → ‘${fileHTML}’...`);
     await fs.ensureDir(path.dirname(fileMarkdown));
+    const { data, content } = grayMatter(
+      await fs.readFile(fileMarkdown, "utf8")
+    );
     const dom = new JSDOM(
       await layout({
         file: fileHTML,
-        body: await markdownProcessor.process(
-          await fs.readFile(fileMarkdown, "utf8")
-        ),
+        body: await markdownProcessor.process(content),
       })
     );
     const document = dom.window.document;
@@ -469,14 +471,11 @@ const { JSDOM } = require("jsdom");
           (await globby("blog/**/index.md"))
             .reverse()
             .map(async (fileMarkdown) => {
+              const { data, content } = grayMatter(
+                await fs.readFile(fileMarkdown, "utf8")
+              );
               const document = JSDOM.fragment(
-                html`
-                  <div>
-                    $${await markdownProcessor.process(
-                      await fs.readFile(fileMarkdown, "utf8")
-                    )}
-                  </div>
-                `
+                html`<div>$${await markdownProcessor.process(content)}</div>`
               );
 
               const image = document.querySelector("img");
