@@ -1,6 +1,6 @@
 ---
 tags:
-  - Advanced REAPER Tutorial
+  - Advanced REAPER Tutorials
   - REAPER SWS Extensions Demystified 
   - Templates in REAPER
   - REAPER Tracks
