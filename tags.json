@@ -5,7 +5,7 @@
     
   },
   "Others (Non-REAPER related)": {
-    "blog/mfm/1/index.md": "[LIMITED TIME DISCOUNT] Mixing Feedback Session",
+    "blog/mfm/1/index.md": "Mixing Feedback For your projects!",
     "blog/misc/1/index.md": "How to do Audio Tutorials - Episode 1: Setting up your DAW & OBS",
     "blog/misc/2/index.md": "How to do Audio Tutorials Episode 2: Making a tutorial Editing Template"
   },
@@ -121,17 +121,21 @@
     "blog/rfrt/98/index.md": "Assembling Modular Mixing Templates with SWS (Rapid-Fire REAPER Tutorials Ep98)"
   },
   "Sound Editing & Design for Visual Media in REAPER": {
-    "blog/sd4vm/11/index.md": "Sound Design for Visual Media - Tutorial Notes Ep11",
     "blog/sd4vm/1/index.md": "Sound Design For Visual Media - Tutorial Notes Ep00 & Ep01",
-    "blog/sd4vm/12/index.md": "Sound Editing & Design for Visual Media - Ep12 Tutorial Notes (Foley Recording in REAPER)",
-    "blog/sd4vm/13/index.md": "Sound Editing & Design for Visual Media - Ep13 Tutorial Notes",
-    "blog/sd4vm/4/index.md": "Sound Design For Visual Media - Tutorial Notes Ep04",
-    "blog/sd4vm/3/index.md": "Sound Design For Visual Media - Tutorial Notes Ep03",
     "blog/sd4vm/2/index.md": "Sound Design for Visual Media - Tutorial Notes Ep02",
+    "blog/sd4vm/3/index.md": "Sound Design For Visual Media - Tutorial Notes Ep03",
+    "blog/sd4vm/4/index.md": "Sound Design For Visual Media - Tutorial Notes Ep04",
     "blog/sd4vm/5/index.md": "Sound Design For Visual Media - Tutorial Notes Ep05",
     "blog/sd4vm/6/index.md": "Sound Design For Visual Media - Tutorial Notes Ep06",
     "blog/sd4vm/7/index.md": "Sound Design For Visual Media - Tutorial Notes Ep07",
     "blog/sd4vm/8/index.md": "Sound Design For Visual Media - Tutorial Notes Ep08",
-    "blog/sd4vm/9/index.md": "Sound Design for Visual Media - Tutorial Notes Ep09"
+    "blog/sd4vm/9/index.md": "Sound Design for Visual Media - Tutorial Notes Ep09",
+    "blog/sd4vm/11/index.md": "Sound Design for Visual Media - Tutorial Notes Ep11",
+    "blog/sd4vm/12/index.md": "Sound Editing & Design for Visual Media - Ep12 Tutorial Notes (Foley Recording in REAPER)",
+    "blog/sd4vm/13/index.md": "Sound Editing & Design for Visual Media - Ep13 Tutorial Notes",
+    
+    
+    
+    
   }
 }
