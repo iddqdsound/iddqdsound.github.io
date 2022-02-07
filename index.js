@@ -343,7 +343,7 @@ const { JSDOM } = require("jsdom");
           
                   </a>
                    <a
-                    href="mail to:info@iddqdsound.com"
+                    href="mailto:info@iddqdsound.com"
                     class="email"
                     oninteractive="${javascript`
                       tippy(this, {
