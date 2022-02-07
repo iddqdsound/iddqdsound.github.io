@@ -2,7 +2,6 @@
   "Let's Learn Scripting in REAPER": {
     "blog/lls/1/index.md": "Let's Learn Scripting in REAPER: Ep00 & Ep01 Notes",
     "blog/lls/2/index.md": "Let’s learn scripting in REAPER Ep02: Functions, Arguments, Returns & Variables"
-    
   },
   "Others (Non-REAPER related)": {
     "blog/mfm/1/index.md": "Mixing Feedback For your projects!",
@@ -132,10 +131,6 @@
     "blog/sd4vm/9/index.md": "Sound Design for Visual Media - Tutorial Notes Ep09",
     "blog/sd4vm/11/index.md": "Sound Design for Visual Media - Tutorial Notes Ep11",
     "blog/sd4vm/12/index.md": "Sound Editing & Design for Visual Media - Ep12 Tutorial Notes (Foley Recording in REAPER)",
-    "blog/sd4vm/13/index.md": "Sound Editing & Design for Visual Media - Ep13 Tutorial Notes",
-    
-    
-    
-    
+    "blog/sd4vm/13/index.md": "Sound Editing & Design for Visual Media - Ep13 Tutorial Notes"
   }
 }
