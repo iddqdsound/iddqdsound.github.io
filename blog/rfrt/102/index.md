@@ -71,7 +71,7 @@ _The Musicmath GUI_
 
 **Conclusion**
 
-I hope you enjoyed this tutorial, and as always let me know if you have any questions, no matter how related/unrelated!
+I hope you enjoyed this tutorial, and as always let me know if you have any questions, no matter how related/unrelated!  
 
 Here's the video:
 
