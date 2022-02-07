@@ -14,7 +14,7 @@ const rehypeStringify = require("rehype-stringify");
 const { JSDOM } = require("jsdom");
 
 (async () => {
-  const layout = async ({ file, body }) =>
+  const layout = async ({ file, wideColumn = false, body }) =>
     extractInlineStyles(
       html`
         <!DOCTYPE html>
@@ -372,7 +372,15 @@ const { JSDOM } = require("jsdom");
                 style="${css`
                   flex: 1;
                   min-width: var(--space--0);
-                  max-width: var(--width--prose);
+                  ${wideColumn
+                    ? css`
+                        max-width: calc(
+                          2 * var(--width--prose) + var(--space--8)
+                        );
+                      `
+                    : css`
+                        max-width: var(--width--prose);
+                      `}
                   margin: var(--space--4);
                   & > * + * {
                     margin-top: var(--space--2);
@@ -462,63 +470,139 @@ const { JSDOM } = require("jsdom");
     console.log(" Done.");
   }
 
+  const tags = [
+    ...Object.entries(JSON.parse(await fs.readFile("tags.json", "utf8"))),
+  ];
+  const tagsSplitPoint = 10;
   await fs.writeFile(
     "blog/index.html",
     await layout({
       file: "blog/index.html",
+      wideColumn: true,
       body: html`
-        $${await Promise.all(
-          (await globby("blog/**/index.md"))
-            .reverse()
-            .map(async (fileMarkdown) => {
-              const { data, content } = grayMatter(
-                await fs.readFile(fileMarkdown, "utf8")
-              );
-              const document = JSDOM.fragment(
-                html`<div>$${await markdownProcessor.process(content)}</div>`
-              );
+        <h2>Blogs</h2>
+        <h2>Choose a Category Below</h2>
+        <div
+          style="${css`
+            display: flex;
+            @media (max-width: 599px) {
+              flex-direction: column;
+            }
+            @media (min-width: 600px) {
+              gap: var(--space--8);
+              & > * {
+                flex: 1;
+              }
+            }
+          `}"
+        >
+          $${await Promise.all(
+            [tags.slice(0, tagsSplitPoint), tags.slice(tagsSplitPoint)].map(
+              async (tagsColumn) => html`
+                <div>
+                  $${await Promise.all(
+                    tagsColumn.map(
+                      async ([tag, posts]) => html`
+                        <details
+                          style="${css`
+                            margin-bottom: var(--space--4);
+                          `}"
+                        >
+                          <summary
+                            style="${css`
+                              cursor: pointer;
+                              transition-property: var(
+                                --transition-property--colors
+                              );
+                              transition-duration: var(
+                                --transition-duration--150
+                              );
+                              transition-timing-function: var(
+                                --transition-timing-function--in-out
+                              );
+                              &:hover,
+                              &:focus-within {
+                                color: var(--color--purple--400);
+                              }
+                              details[open] > & {
+                                color: var(--color--purple--500);
+                              }
+                            `}"
+                          >
+                            <span
+                              style="${css`
+                                details[open] > summary > & {
+                                  display: none;
+                                }
+                                width: var(--space--2);
+                                display: inline-block;
+                              `}"
+                            >
+                              <i class="fas fa-caret-right"></i>
+                            </span>
+                            <span
+                              style="${css`
+                                details:not([open]) > summary > & {
+                                  display: none;
+                                }
+                                width: var(--space--2);
+                                display: inline-block;
+                              `}"
+                            >
+                              <i class="fas fa-caret-down"></i>
+                            </span>
+                            ${tag}
+                          </summary>
 
-              const image = document.querySelector("img");
-
-              return html`
-                <a href="/${fileMarkdown.slice(0, -"/index.md".length)}">
-                  <div>
-                    <p>$${document.querySelector("h2").innerHTML}</p>
-                    $${image === null
-                      ? html``
-                      : html`<p>$${image.outerHTML}</p>`}
-                  </div>
-                </a>
-              `;
-            })
-        )}
+                          <ol
+                            style="${css`
+                              padding-left: var(--space--8);
+                              & > li {
+                                list-style: disc;
+                              }
+                            `}"
+                          >
+                            $${await Promise.all(
+                              [...Object.entries(posts)].map(
+                                async ([fileMarkdown]) => {
+                                  const { data, content } = grayMatter(
+                                    await fs.readFile(fileMarkdown, "utf8")
+                                  );
+                                  const document = JSDOM.fragment(
+                                    html`
+                                      <div>
+                                        $${await markdownProcessor.process(
+                                          content
+                                        )}
+                                      </div>
+                                    `
+                                  );
+                                  return html`
+                                    <li>
+                                      <a
+                                        href="/${fileMarkdown.slice(
+                                          0,
+                                          -"index.md".length
+                                        )}"
+                                        >$${document.querySelector("h2")
+                                          .innerHTML}</a
+                                      >
+                                    </li>
+                                  `;
+                                }
+                              )
+                            )}
+                          </ol>
+                        </details>
+                      `
+                    )
+                  )}
+                </div>
+              `
+            )
+          )}
+        </div>
       `,
     })
   );
-
-  // await fs.writeFile(
-  //   "blog/index.html",
-  //   await layout({
-  //     file: "blog/index.html",
-  //     body: html`
-  //       $${[
-  //         ...Object.entries(JSON.parse(await fs.readFile("tags.json", "utf8"))),
-  //       ].map(
-  //         ([tag, posts]) => html`
-  //           <details>
-  //             <summary>${tag}</summary>
-
-  //             $${[...Object.entries(posts)].map(
-  //               ([url, DONT_REALLY_USE_THIS]) => html`
-  //                 <a href="/${url.slice(0, -"index.md")}"
-  //                   >${DONT_REALLY_USE_THIS}</a
-  //                 >
-  //               `
-  //                   )}
-  //           </details>
-  //               `
-  //       )}
-  //     `,
-  //   })
-  // );
 })();
