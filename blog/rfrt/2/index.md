@@ -1,4 +1,4 @@
-## 20 Rapid-Fire Reaper Tutorials Made! (Free Reaper Scripts!)
+## 20 Rapid-Fire Reaper Tutorials Made! (Free Reaper Scripts!) ##
 
 ![](/blog/rfrt/2/9.jpg)
 
@@ -6,7 +6,6 @@ RFRT Custom Actions Ep1-20
 
 [.zip](/blog/rfrt/2/RFRT-Custom-Actions-Ep1-20.zip)
 
-Download ZIP • 3KB
 
 **Download Contents:**
 
