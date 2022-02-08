@@ -1,6 +1,20 @@
-## One-minute DAW Tutorials!
+---
+tags:
+  - Item-based Editing & Mixing in REAPER
+  - Custom Actions, Cycle Actions & Scripts in REAPER 
+  - Recreating Pro Tools Functionality in REAPER
+date: 2020-09-20
+youtube: wgzNt7UbBtA
+related-posts:
+  - /blog/rfrt/56
+---
+
+## Converting two Mono items to Stereo, or One Stereo item to Mono, Destructively ##
 
 ![](/blog/rfrt/1/108.png)
+
+**Update: The first episode is now somewhat obsolete, given the action 'Item properties: Set take channel mode to mono (downmix)'!
+ The one upside of using my custom action is that it creates a mono file destructively, so it could make some extra space for you by letting you discard one channel's worth of data, if it's a consideration!**
 
 Hey folks!
 

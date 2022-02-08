@@ -91,6 +91,7 @@
     "blog/rfrt/71/index.md": "Controlling your Sends Using track Faders (Rapid-fire REAPER Tutorials Ep71)"
   },
   "Item-based Editing & Mixing in REAPER": {
+    "blog/rfrt/1/index.md": "Converting two Mono items To Stereo or One Stereo item to two Mono files (Destructively) ",
     "blog/rfrt/75/index.md": "Advanced Audio Editing in REAPER: 30+ Hotkeys for Editing (Rapid-fire Reaper Tutorials Ep75)",
     "blog/rfrt/76/index.md": "Media Item Properties & Hotkeys for batch editing items (Rapid-fire Reaper Tutorials Ep76)",
     "blog/rfrt/78/index.md": "How to swap beats 2 & 4 with custom scripts (Rapid-fire REAPER Tutorials Ep78)",
@@ -99,9 +100,11 @@
   },
   "Advanced REAPER Tutorials": {
     "blog/rfrt/79/index.md": "How to use ReWire to connect Ableton Live to REAPER (Rapid-fire REAPER Tutorials Ep79)",
-    "blog/rfrt/80/index.md": "How to Route Audio & MIDI Between Any two DAWs & Sync them! (Rapid-fire REAPER Tutorials Ep80/81)"
+    "blog/rfrt/80/index.md": "How to Route Audio & MIDI Between Any two DAWs & Sync them! (Rapid-fire REAPER Tutorials Ep80/81)",
+    "blog/rfrt/98/index.md": "Assembling Modular Mixing Templates with SWS (Rapid-Fire REAPER Tutorials Ep98)"
   },
   "Custom Actions, Cycle Actions & Scripts in REAPER": {
+    "blog/rfrt/1/index.md": "Converting two Mono items To Stereo or One Stereo item to two Mono files (Destructively) ",
     "blog/misc/3/index.md": "5 AWESOME Custom Actions for Quicker Editing in REAPER!",
     "blog/rfrt/53/index.md": "Ripple Delete MIDI Events & How to design your own custom action (Rapid-Fire Reaper Tutorials Ep53)",
     "blog/rfrt/56/index.md": "How to Set up Tab to Transient Pro Tools-style (Rapid-Fire Reaper Tutorials Ep56)",
@@ -116,9 +119,7 @@
     "blog/rfrt/95/index.md": "Quick-Swipe Comping Logic Pro Style (Rapid-Fire REAPER Tutorials Ep95)",
     "blog/rfrt/94/index.md": "The Quick way to Adjust MIDI Grid Size (Rapid-Fire REAPER Tutorials Ep94)"
   },
-  "Advanced REAPER Tutorial": {
-    "blog/rfrt/98/index.md": "Assembling Modular Mixing Templates with SWS (Rapid-Fire REAPER Tutorials Ep98)"
-  },
+  
   "Sound Editing & Design for Visual Media in REAPER": {
     "blog/sd4vm/1/index.md": "Sound Design For Visual Media - Tutorial Notes Ep00 & Ep01",
     "blog/sd4vm/2/index.md": "Sound Design for Visual Media - Tutorial Notes Ep02",
@@ -130,7 +131,10 @@
     "blog/sd4vm/8/index.md": "Sound Design For Visual Media - Tutorial Notes Ep08",
     "blog/sd4vm/9/index.md": "Sound Design for Visual Media - Tutorial Notes Ep09",
     "blog/sd4vm/11/index.md": "Sound Design for Visual Media - Tutorial Notes Ep11",
-    "blog/sd4vm/12/index.md": "Sound Editing & Design for Visual Media - Ep12 Tutorial Notes (Foley Recording in REAPER)",
+    "blog/sd4vm/12/index.md": "Sound Editing & Design for Visual Media - Ep12 Tutorial Notes",
     "blog/sd4vm/13/index.md": "Sound Editing & Design for Visual Media - Ep13 Tutorial Notes"
+  },
+  "Free Downloadables": {
+    "blog/rfrt/2/index.md": "Episodes 1-20 Downloads",
   }
 }
