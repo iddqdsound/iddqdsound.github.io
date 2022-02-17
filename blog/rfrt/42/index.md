@@ -33,7 +33,7 @@ Here are the MIDI Maps for the preset Drum Kits in EZDrummer. As you make your c
 
 [EZDrummer2 - Drum Map](/blog/rfrt/42/EZDrummer2-Drum-Map.txt)
 
-**Addictive Drummer 2** 
+**Addictive Drummer 2**
 
 Here are the MIDI Maps for Addictive Drummer 2. If you want to request these, please include the kit name, as they are very different from Kit to Kit. If you have made your own custom kits, [my tutorial should show you all you need to make your own kit](https://youtu.be/iYE2V1j_8is). Feel free to share your kit with me and I'll paste it here for others to use. Of course, you will be credited!
 
