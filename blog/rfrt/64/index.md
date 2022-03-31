@@ -25,11 +25,7 @@ I will also show you my Smart Marker Toolbar, and you can download it, including
 
 _Note: in order for the toolbar to work, you need SWS installed and updated to the latest version, and you need my custom actions. First download and load the actions then load the toolbar._ If you need instructions on how to download and import custom actions, [watch this video](https://www.youtube.com/watch?v=LGkB9EOn3sE)!
 
-IDDQD Sound_Smart Marker Actions & Toolb
-
-.
-
-Download • 19KB
+[IDDQD Sound_Smart Marker Actions & Toolbar](/blog/rfrt/64/IDDQDSound_Smart-Marker-Actions-&-Toolbar.zip)
 
 **Contents**
 
