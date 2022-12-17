@@ -112,4 +112,3 @@ Watch the video for this week's episode below:
 <youtube id="Wk1jt7vZMSA"></youtube>
 
 Finally, if you find my tutorials, these blog posts, and the quizzes useful, please consider leaving me a tip on my [blog page](https://www.iddqdsound.com/blog) or the [Quiz page](https://www.iddqdsound.com/tutorials). I am currently finding myself with very little work thanks to the Pandemic, and making these tutorials requires tons of work, which I will happily do forever and provide you with this info for free. That said, if you can tip me it would help me immensely and go towards helping me make more of these without going homeless in the process!
-

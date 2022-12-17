@@ -69,11 +69,7 @@ _\*\*This custom action is available to download below_
 _\*\*\*To get the most out of this, Go to preference > Mouse Modifiers > Arrange view > Right Drag and Set the mouse modifier Option to 'Marquee Select Items and Time'_
 _\*\*\*\*These all come with SWS extensions and Reapack so install those ASAP!_
 
-IDDQDSound_Ripple Delete Item.lua
-
-.zip
-
-Download ZIP • 425B
+[IDDQDSound_Ripple Delete Item.lua](/blog/sd4vm/4/IDDQDSound_Ripple-Delete-Item.lua)
 
 **Crossfade Mouse Modifiers**
 

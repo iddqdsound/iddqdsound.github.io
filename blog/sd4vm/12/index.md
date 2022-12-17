@@ -130,11 +130,7 @@ I have devised a well-automated system of recording foley in REAPER, but to set 
 
 **STEP 4:** Once you downloaded all the above, you can now download my template and custom actions using the link below:
 
-SD4VM Ep12 Downloads
-
-.zip
-
-Download ZIP • 24KB
+[SD4VM Ep12 Downloads](/blog/sd4vm/12/SD4VM-Ep12-Downloads.zip)
 
 **Contents**
 **1. 3beeps.wav:** this is 3beeps audio file that we use to cue up foley and ADR in films. More on this in the video and later in the blog!  

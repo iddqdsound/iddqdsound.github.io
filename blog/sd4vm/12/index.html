@@ -412,14 +412,6 @@
             --animation--none: none;
             --animation--spin: spin 1s linear infinite;
 }
-          @-webkit-keyframes spin {
-              from {
-                transform: rotate(0deg);
-              }
-              to {
-                transform: rotate(360deg);
-              }
-            }
           @keyframes spin {
               from {
                 transform: rotate(0deg);
@@ -431,13 +423,6 @@
           :root {
             --animation--ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
-          @-webkit-keyframes ping {
-              75%,
-              100% {
-                transform: scale(2);
-                opacity: 0;
-              }
-            }
           @keyframes ping {
               75%,
               100% {
@@ -448,15 +433,6 @@
           :root {
             --animation--pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
-          @-webkit-keyframes pulse {
-              0%,
-              100% {
-                opacity: 1;
-              }
-              50% {
-                opacity: 0.5;
-              }
-            }
           @keyframes pulse {
               0%,
               100% {
@@ -469,17 +445,6 @@
           :root {
             --animation--bounce: bounce 1s infinite;
 }
-          @-webkit-keyframes bounce {
-              0%,
-              100% {
-                transform: translateY(-25%);
-                animationtimingfunction: cubic-bezier(0.8, 0, 1, 1);
-              }
-              50% {
-                transform: translateY(0);
-                animationtimingfunction: cubic-bezier(0, 0, 0.2, 1);
-              }
-            }
           @keyframes bounce {
               0%,
               100% {
@@ -1196,9 +1161,7 @@ Once you are finished spotting the tracks, you can select all items on 1-4 Spot,
 <strong>-Script: Archie_Item; Move selected items down one track.lua:</strong> This script by Archie is used in my Cycle Action 'Distribute to Bank of 8', however, you can actually the REAPER native action <strong>'Item edit: Move items/envelope points down one track/a bit'</strong><br>
 Since I can't export my cycle actions anyway, I will suggest you create your own, and skip this script. That said, Archie has a number of really useful scripts! <a href="https://github.com/ArchieScript/Archie_ReaScripts">Find his repo here.</a></p>
 <p><strong>STEP 4:</strong> Once you downloaded all the above, you can now download my template and custom actions using the link below:</p>
-<p>SD4VM Ep12 Downloads</p>
-<p>.zip</p>
-<p>Download ZIP • 24KB</p>
+<p><a href="/blog/sd4vm/12/SD4VM-Ep12-Downloads.zip">SD4VM Ep12 Downloads</a></p>
 <p><strong>Contents</strong>
 <strong>1. 3beeps.wav:</strong> this is 3beeps audio file that we use to cue up foley and ADR in films. More on this in the video and later in the blog!<br>
 <strong>2. IDDQD Sound_Foley Rec Template.RPP:</strong> My Foley Recording template. Once downloaded, open the template, import the <strong>3beeps.wav</strong> and place it on Track 06 (3 beeps) and save it as a project template, making sure to tick 'include items' in the dialog box. I didn't include it in the template because you may be using a different organizational structure for your projects!<br>
