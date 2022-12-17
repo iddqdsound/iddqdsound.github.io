@@ -22,7 +22,6 @@ Click below to download all Project & Track templates discussed in Episode 1 & 2
 [SD4VM Ep00-02 Downloads](/blog/sd4vm/2/SD4VM Ep00-02 Downloads.zip)
 
 
-
 **Timecode**
 
 Timecode is an essential aspect of syncing audio to picture. This [video from Filmmaker IQ](https://www.youtube.com/watch?v=PgX_R-JgpJE) breaks down Timecode in incredible detail, as well as delves into its history and science. In every step of the way, from Production Audio all the way to final mixing, Timecode is our insurance for our sync being correct. Timecode is a set of 8 numbers. From left to right the format is:
