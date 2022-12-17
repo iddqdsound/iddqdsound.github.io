@@ -19,7 +19,7 @@ Every Video for this series will come with its own blog post, which you can find
 
 Click below to download all Project & Track templates discussed in Episode 1 & 2. You will also find a Stereo and a Mono 2pop!
 
-[SD4VM Ep00-02 Downloads](/blog/sd4vm/2/SD4VM Ep00-02 Downloads.zip)
+[SD4VM Ep00-02 Downloads](/blog/sd4vm/2/SD4VM-Ep00-02-Downloads.zip)
 
 
 **Timecode**
@@ -92,11 +92,8 @@ This can be done in about 20 seconds, but when you use Reaper, 20 seconds is som
 
 You can download my custom action as a script below, import it into Reaper, and bob's your uncle! However, I encourage you to watch the video and copy my action step by step, especially if you have never created a custom action before. Get as familiar as you can with custom actions as they are the single most useful Reaper feature, and can help to optimize you workflow immensely. Almost any set of tasks you regularly do can be made into a single custom action, reducing the time you spend on these sets of tasks to about 1 second! Optimizing workflow is all about chipping away at those boring and repetitive tasks, freeing up all your time for the actually fun parts. Beyond that, the faster you work, the more you are earning. In films you often get paid a fee to do a task. So if you're getting 500 to edit dialogue for a 5-minute short, you are making 100 an hour if you do it in 5 hours, and only 20 an hour if it takes you 25, so every second you shave off is extra money in your pockets. Literally!
 
-Video Import Clericals.lua
+[Video Import Clericals.lua](/blog/sd4vm/2/IDDQDSound_Video-Import-Clericals.lua)
 
-.zip
-
-Download ZIP • 480B
 
 **Screensets:**
 
