@@ -114,7 +114,3 @@ In my video I will show you each of these and break them down, and you can follo
 **Conclusion**
 
 So that's it for this episode. In the next episode, we will spot a video together. Cards on the table, I am stalling a little bit here, as I am still looking for appropriate videos that I can use in my tutorials to teach sound design, that won't get my video taken down for copyright infringement. I am in the process of securing a few short films, animations and documentaries for these purposes. That said, it's truly crucial to me to make sure you have your workflow optimized fully before we get to the fun stuff. Optimization of Workflow is not the most...sexy of topics, but I assure you that jumping straight into Sound Design before doing some homework, will only lose you time in the long run, as well as make Sound Design and editing annoying enough to discourage you. So bear with me!
-
-Thanks for reading! See you next Wednesday for Episode 3!  
-
-

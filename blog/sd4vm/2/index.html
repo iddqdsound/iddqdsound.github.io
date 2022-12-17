@@ -412,14 +412,6 @@
             --animation--none: none;
             --animation--spin: spin 1s linear infinite;
 }
-          @-webkit-keyframes spin {
-              from {
-                transform: rotate(0deg);
-              }
-              to {
-                transform: rotate(360deg);
-              }
-            }
           @keyframes spin {
               from {
                 transform: rotate(0deg);
@@ -431,13 +423,6 @@
           :root {
             --animation--ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
-          @-webkit-keyframes ping {
-              75%,
-              100% {
-                transform: scale(2);
-                opacity: 0;
-              }
-            }
           @keyframes ping {
               75%,
               100% {
@@ -448,15 +433,6 @@
           :root {
             --animation--pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
-          @-webkit-keyframes pulse {
-              0%,
-              100% {
-                opacity: 1;
-              }
-              50% {
-                opacity: 0.5;
-              }
-            }
           @keyframes pulse {
               0%,
               100% {
@@ -469,17 +445,6 @@
           :root {
             --animation--bounce: bounce 1s infinite;
 }
-          @-webkit-keyframes bounce {
-              0%,
-              100% {
-                transform: translateY(-25%);
-                animationtimingfunction: cubic-bezier(0.8, 0, 1, 1);
-              }
-              50% {
-                transform: translateY(0);
-                animationtimingfunction: cubic-bezier(0, 0, 0.2, 1);
-              }
-            }
           @keyframes bounce {
               0%,
               100% {
@@ -1129,9 +1094,7 @@
 <p>In this episode we will import a video to our project, do a set of tasks to set up our Video and Audio Guide Track (Hereby GT), Burn Timecode onto our video, and finally discuss Screensets in Reaper.</p>
 <p>Every Video for this series will come with its own blog post, which you can find on this website on the day or a day after the release of the video (Every Wednesday) and these blog posts will contain Notes, Cheat Sheets, Scripts, Free Downloads, as well as extra study material on the topics covered for you to deep dive into them. The aim of the videos is to focus on Reaper, but obviously if you are unfamiliar with concepts discussed, these posts will give you more than a starting point to do some extra research.</p>
 <p>Click below to download all Project &amp; Track templates discussed in Episode 1 &amp; 2. You will also find a Stereo and a Mono 2pop!</p>
-<p>SD4VM Ep00-02 Downloads</p>
-<p>.zip</p>
-<p>Download ZIP • 36KB</p>
+<p><a href="/blog/sd4vm/2/SD4VM-Ep00-02-Downloads.zip">SD4VM Ep00-02 Downloads</a></p>
 <p><strong>Timecode</strong></p>
 <p>Timecode is an essential aspect of syncing audio to picture. This <a href="https://www.youtube.com/watch?v=PgX_R-JgpJE">video from Filmmaker IQ</a> breaks down Timecode in incredible detail, as well as delves into its history and science. In every step of the way, from Production Audio all the way to final mixing, Timecode is our insurance for our sync being correct. Timecode is a set of 8 numbers. From left to right the format is:</p>
 <p><img src="/blog/sd4vm/2/132.png" alt=""></p>
@@ -1171,9 +1134,7 @@
 -Insert a marker at the last frame of the video.</p>
 <p>This can be done in about 20 seconds, but when you use Reaper, 20 seconds is something you can afford to cut down to say, one! I created a custom action that does all the above with one click! All you have to do is have your Video Track as track 01, a marker on 01:00:00.00 (which is saved on my project template) and have an empty track on track 02.</p>
 <p>You can download my custom action as a script below, import it into Reaper, and bob's your uncle! However, I encourage you to watch the video and copy my action step by step, especially if you have never created a custom action before. Get as familiar as you can with custom actions as they are the single most useful Reaper feature, and can help to optimize you workflow immensely. Almost any set of tasks you regularly do can be made into a single custom action, reducing the time you spend on these sets of tasks to about 1 second! Optimizing workflow is all about chipping away at those boring and repetitive tasks, freeing up all your time for the actually fun parts. Beyond that, the faster you work, the more you are earning. In films you often get paid a fee to do a task. So if you're getting 500 to edit dialogue for a 5-minute short, you are making 100 an hour if you do it in 5 hours, and only 20 an hour if it takes you 25, so every second you shave off is extra money in your pockets. Literally!</p>
-<p>Video Import Clericals.lua</p>
-<p>.zip</p>
-<p>Download ZIP • 480B</p>
+<p><a href="/blog/sd4vm/2/IDDQDSound_Video-Import-Clericals.lua">Video Import Clericals.lua</a></p>
 <p><strong>Screensets:</strong></p>
 <p>Another immensely powerful feature in Reaper are the screensets. Screensets exist in one form or another in almost every DAW (by the same name in Logic Pro X or known as Window Configurations in Pro Tools) and are a way of saving and recalling an arrangement of various windows, menus and toolbars within Reaper. You can access the Screensets window by pressing Command+E (on Mac) or Control+E (on PC) and from there you can save up to 10 screensets. Simply move your windows, timeline, and mixer around your (one or more) screen, dock what you gotta dock, save it as a screenset, and you can load that screenset at anytime by recalling the screenset window or by pressing a hotkey.</p>
 <p><img src="/blog/sd4vm/2/136.png" alt=""></p>
@@ -1184,7 +1145,6 @@
 <p>In my video I will show you each of these and break them down, and you can follow along and create your own in no time! I actually won't provide these as a download, to really force you to make some of your own and customize them based on your needs. Also mine only make sense for one screen, and most sound editors I know use 2 or 3! I have my own arguments for why I use 1 screen, despite actually owning 2.</p>
 <p><strong>Conclusion</strong></p>
 <p>So that's it for this episode. In the next episode, we will spot a video together. Cards on the table, I am stalling a little bit here, as I am still looking for appropriate videos that I can use in my tutorials to teach sound design, that won't get my video taken down for copyright infringement. I am in the process of securing a few short films, animations and documentaries for these purposes. That said, it's truly crucial to me to make sure you have your workflow optimized fully before we get to the fun stuff. Optimization of Workflow is not the most...sexy of topics, but I assure you that jumping straight into Sound Design before doing some homework, will only lose you time in the long run, as well as make Sound Design and editing annoying enough to discourage you. So bear with me!</p>
-<p>Thanks for reading! See you next Wednesday for Episode 3!</p>
               </div>
             </main>
           
