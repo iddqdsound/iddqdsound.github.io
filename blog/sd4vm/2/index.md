@@ -19,11 +19,9 @@ Every Video for this series will come with its own blog post, which you can find
 
 Click below to download all Project & Track templates discussed in Episode 1 & 2. You will also find a Stereo and a Mono 2pop!
 
-SD4VM Ep00-02 Downloads
+[SD4VM Ep00-02 Downloads](/blog/sd4vm/2/SD4VM Ep00-02 Downloads.zip)
 
-.zip
 
-Download ZIP • 36KB
 
 **Timecode**
 
